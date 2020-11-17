@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141013
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app101.us.archive.org';v.server_ms=4083;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13F","20180429215810","http://web.archive.org/","web","/_static/",
+	      "1525039090");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180429215810im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180429215810cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13E" rel="prev" rev="next">
+  <link href="Chapter13G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Survey of all Six-Element Groups</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+    Let <span class="Set">G</span> be any group of order six. By Cauchy's
+    Theorem, it has elements a with order 2 and b with order 3.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that ba &notin; {e, a, b, b<sup>2</sup>}.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; e</span>
+	If ba=e, then a = b<sup>-1</sup>. However, the order of an element
+	is the same as the order of its inverse. Since ord(a) = 2 and ord(b) =
+	3, this cannot be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; a</span>
+	If ba=a, then b=e. Since ord(b) = 3 and ord(e) = 1, this cannot
+	be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b</span>
+	If ba=b, then a=e. Since ord(a) = 2 and ord(e) = 1, this cannot
+	be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b<sup>2</sup></span>
+	If ba=b<sup>2</sup>, then a=b. Since ord(a) = 2 and ord(b) = 3,
+	this cannot be true.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if ba=ab, then <span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>6</sub></span>.
+      </p>
+
+      <p>
+	One possible isomorphism is:
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">Z<sub>6</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>1</td>
+	  <td>ab, ba</td>
+	</tr>
+	<tr>
+	  <td>2</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>4</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>5</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	Prove that if ba=ab<sup>2</sup>, then <span class="Set">G</span>
+	&#8792; <span class="Set">S<sub>3</sub></span>.
+      </p>
+
+      <p>
+	One possible isomorphism is:
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">S<sub>3</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>()</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>(12)</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>(23)</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <td>(13)</td>
+	  <td>ab<sup>2</sup>, ba</td>
+	</tr>
+	<tr>
+	  <td>(123)</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>(321)</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180429215810/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180429215810/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180429215810/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180429215810im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180429215810/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180429215810im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:58:10 Apr 29, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:46 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.017
+  load_resource: 1720.574
+  captures_list: 2350.987
+  LoadShardBlock: 1833.944 (3)
+  PetaboxLoader3.datanode: 2100.794 (4)
+  exclusion.robots: 0.209
+  CDXLines.iter: 22.44 (3)
+  RedisCDXSource: 490.222
+  exclusion.robots.policy: 0.193
+  PetaboxLoader3.resolve: 693.152
+-->

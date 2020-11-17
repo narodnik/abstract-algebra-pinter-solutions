@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140604 - Exercise 1
+  Modified:	20140607 - Exercises 2 and 3
+		20140628 - Exercise 4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=2881;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09D","20180509031621","http://web.archive.org/","web","/_static/",
+	      "1525835781");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180509031621cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.FuncTab TD {text-align: right;}
+    TABLE.CompareGroups, TABLE.CompareGroups TH, TABLE.CompareGroups TD
+    {border-width: 1px;}
+    TABLE.CompareGroups
+    {border-style: solid none none solid;}
+    TABLE.CompareGroups TH, TABLE.CompareGroups TD
+    {border-style: none solid solid none;}
+    TABLE.CompareGroups TH
+    {text-align: left;
+     vertical-align: center;}
+    TABLE.CompareGroups TD
+    {text-align: center;
+     vertical-align: center;}
+    OL#DiagramList LI
+    {display: inline;
+     list-style-type: upper-roman;}
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09C" rel="prev" rev="next">
+  <link href="Chapter09E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Separating Groups Into Isomorphism Classes</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    For each of the following sets of groups, separate it into isomorphism
+    classes, and prove your answer.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">Z<sub>4</sub></span>,
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>,
+	<span class="Set">P<sub>2</sub></span>,
+	<span class="Set">V</span>
+      </p>
+
+      <p>
+	<span class="Set">Z<sub>4</sub></span> and
+	<span class="Set">V</span> are isomorphic, with the isomorphism:
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">Z<sub>4</sub></span></th>
+	  <th><span class="Set">V</span></th>
+	</tr>
+	<tr>
+	  <td>0</td> <td>1</td>
+	</tr>
+	<tr>
+	  <td>1</td> <td>i</td>
+	</tr>
+	<tr>
+	  <td>2</td> <td>-1</td>
+	</tr>
+	<tr>
+	  <td>3</td> <td>-i</td>
+	</tr>
+      </table>
+
+      <p>
+	Every element in <span class="Set">P<sub>2</sub></span> is its own
+	inverse, so it is not isomorphic to
+	<span class="Set">Z<sub>4</sub></span>, in which 1 and 3 are not their
+	own inverses or to <span class="Set">V</span>, in which i and -i are
+	not their own inverses.
+      </p>
+
+      <p>
+	However, <span class="Set">P<sub>2</sub></span> is isomorphic to
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>, with the isomorphism:
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">P<sub>2</sub></span></th>
+	  <th><span class="Set">Z<sub>2</sub></span> &times;
+	      <span class="Set">Z<sub>2</sub></span></th>
+	</tr>
+	<tr>
+	  <td>&empty;</td> <td>(0,0)</td>
+	</tr>
+	<tr>
+	  <td>{a}</td> <td>(1,0)</td>
+	</tr>
+	<tr>
+	  <td>{b}</td> <td>(0,1)</td>
+	</tr>
+	<tr>
+	  <td>{a,b}</td> <td>(1,1)</td>
+	</tr>
+      </table>
+
+      <p>
+	Since <span class="Set">P<sub>2</sub></span> is isomorphic to
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>, it is not isomorphic to either
+	<span class="Set">Z<sub>4</sub></span> or
+	<span class="Set">V</span>.
+      </p>
+
+      <p>
+	Therefore, the two isomorphism classes are:
+      </p>
+
+      <ul>
+        <li>
+	  <span class="Set">P<sub>2</sub></span> and
+	  <span class="Set">Z<sub>2</sub></span> &times;
+	  <span class="Set">Z<sub>2</sub></span>
+	</li>
+	<li>
+	  <span class="Set">Z<sub>4</sub></span> and
+	  <span class="Set">V</span>
+	</li>
+      </ul>
+
+      <p>
+	(Since <a href="/web/20180509031621/http://www.math.wisc.edu/~mstemper2/Math/MisGroup#Order4">there are only two groups of
+	order 4</a>, simply counting their self-inverses is enough to show
+	that the functions given above are isomorphisms.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">S<sub>3</sub></span>,
+	<span class="Set">Z<sub>6</sub></span>,
+	<span class="Set">Z<sub>3</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>, and
+	<span class="Set">Z<sub>7</sub><sup>*</sup></span>
+      </p>
+
+      <p>
+	First, we note that all four of these groups have order 6.
+      </p>
+
+      <p>
+	In <span class="Set">S<sub>3</sub></span>, the identity and all
+	three transpositions are their own inverses.
+	In <span class="Set">Z<sub>6</sub></span>, the identity and 3 are
+	their own inverses.
+	In <span class="Set">Z<sub>3</sub></span> &times;
+        <span class="Set">Z<sub>2</sub></span>, the identity and (0,1) are
+	their own inverses.
+	In <span class="Set">Z<sub>7</sub><sup>*</sup></span>, the identity
+	and 6 are their own inverses.
+      </p>
+
+      <p>
+	From these facts we can see that <span class="Set">S<sub>3</sub></span>
+	is <em>not</em> isomorphic to any of the other three groups. It will
+	not be considered further.
+      </p>
+
+      <p>
+	<span class="Set">Z<sub>6</sub></span> is a cyclic group, with
+	generator 1 or 5. <span class="Set">Z<sub>3</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> is a cyclic group, with
+	generator (1,1) or (2,1).
+	<span class="Set">Z<sub>7</sub><sup>*</sup></span> is a cyclic group,
+	with generator 3 or 5.
+      </p>
+
+      <p>
+	Since these three groups are all cyclic groups of order 6, they are
+	all isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">Z<sub>8</sub></span>,
+	<span class="Set">P<sub>3</sub></span>,
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>,
+	<span class="Set">D<sub>4</sub></span>
+      </p>
+
+      <div class="SideBar">
+      <p>
+	From here on, I will not bother to mention the identity element when
+	listing elements that are self-inverses, although I will include it
+	when I count them. As it is <em>always</em> its own inverse,
+	mentioning it is not useful in distinguishing group structures.
+      </p>
+      </div>
+
+      <p>
+	First, we note that all four of these groups have order 8.
+      </p>
+
+      <p>
+	<span class="Set">Z<sub>8</sub></span> has only one element that is
+	its own inverse: 4.
+	In <span class="Set">P<sub>3</sub></span>, every element is its own
+	inverse.
+	In <span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>, every element is its own
+	inverse.
+	In <span class="Set">D<sub>4</sub></span>, two elements are not their
+	own inverses.
+      </p>
+
+      <p>
+	From the above, we can see that neither
+	<span class="Set">Z<sub>8</sub></span> nor
+	<span class="Set">D<sub>4</sub></span> is isomorphic to any of the
+	other groups.
+      </p>
+
+      <p>
+	<span class="Set">Z<sub>8</sub></span> is Abelian.
+	<span class="Set">P<sub>3</sub></span> is Abelian.
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> is Abelian.
+	<span class="Set">D<sub>4</sub></span> is not Abelian.
+      </p>
+
+      <p>
+	<span class="Set">Z<sub>8</sub></span> is a cyclic group, generated
+	by 1, 3, 5, or 7.
+	Since every element of <span class="Set">P<sub>3</sub></span> is its
+	own inverse, none of them can be a generator, and it is not a
+	cyclic group.
+	Since every element of <span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> is its own inverse, none of
+	them can be a generator, and it is not a cyclic group.
+	Since <span class="Set">D<sub>4</sub></span> is not Abelian, it is not
+	cyclic.
+      </p>
+
+      <p>
+	So far, we have:
+      </p>
+
+      <table class="CompareGroups">
+        <tr>
+	  <th></th>
+	  <th><span class="Set">Z<sub>8</sub></span></th>
+	  <th><span class="Set">P<sub>3</sub></span></th>
+	  <th><span class="Set">Z<sub>2</sub></span> &times;
+	      <span class="Set">Z<sub>2</sub></span> &times;
+	      <span class="Set">Z<sub>2</sub></span></th>
+	  <th><span class="Set">D<sub>4</sub></span></th>
+	</tr>
+        <tr>
+	  <th>Self-inverses</th>
+	  <td>2</td>
+	  <td>8</td>
+	  <td>8</td>
+	  <td>6</td>
+	</tr>
+        <tr>
+	  <th>Cyclic</th>
+	  <td>Yes</td>
+	  <td>No</td>
+	  <td>No</td>
+	  <td>No</td>
+	</tr>
+        <tr>
+	  <th>Abelian</th>
+	  <td>Yes</td>
+	  <td>Yes</td>
+	  <td>Yes</td>
+	  <td>No</td>
+	</tr>
+      </table>
+
+      <p>
+	It is therefore possible that <span class="Set">P<sub>3</sub></span>
+	and <span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> are isomorphic.
+	The definition of "symmetric difference" implies that x &isin;
+	<span class="Set">A</span> + <span class="Set">B</span> when x
+	is an element of exactly one of <span class="Set">A</span> or
+	<span class="Set">B</span>.
+	The definition of arithmetic in <span class="Set">Z<sub>2</sub></span>
+	implies that any digit of (u,v,w) + (x,y,z) will be 1 when exactly
+	one of the corresponding digits in (u,v,w) or (x,y,z) is 1.
+	These two facts show that we can define an isomorphism between
+	<span class="Set">P<sub>3</sub></span> and
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> with:
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">P<sub>3</sub></span></th>
+	  <th><span class="Set">Z<sub>2</sub></span> &times;
+	      <span class="Set">Z<sub>2</sub></span> &times;
+	      <span class="Set">Z<sub>2</sub></span></th>
+	</tr>
+	<tr>
+	  <td>{a}</td>
+	  <td>(0,0,1)</td>
+	</tr>
+	<tr>
+	  <td>{b}</td>
+	  <td>(0,1,0)</td>
+	</tr>
+	<tr>
+	  <td>{c}</td>
+	  <td>(1,0,0)</td>
+	</tr>
+      </table>
+
+      <p>
+	Any other mapping between singleton sets and ordered triples with
+	exactly one non-zero coordinate will also work. A similar mapping
+	may be used to establish an isomorphsim between
+	<span class="Set">P<sub>n</sub></span> and
+	<span class="Set">Z<sub>2</sub><sup>n</sup></span> for any positive n.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The groups having the following Cayley diagrams:
+      </p>
+
+      <div class="SideBar">
+      <p>
+	The last diagram has an error in it, since it gives multiple results
+	for multiplying by the (single) generator. The most plausible
+	interpretation is that each edge should have an arrow on it, with all
+	arrows pointing in the same direction (either clockwise or
+	counter-clockwise).
+      </p>
+      <p>
+	This exercise will be done with that interpretation.
+      </p>
+      </div>
+
+      <ol id="DiagramList">
+	<li><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/09D4a.png" alt=""></li>
+	<li><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/09D4b.png" alt=""></li>
+	<li><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/09D4c.png" alt=""></li>
+	<li><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/09D4d.png" alt=""></li>
+      </ol>
+
+      <p>
+	First, we'll name the generators of these groups:
+      </p>
+
+      <table>
+        <tr>
+	  <th>Group</th>
+	  <th>Generators</th>
+	  <th>Solid line</th>
+	  <th>Broken line</th>
+	</tr>
+        <tr>
+	  <td>First</td>
+	  <td>a,b</td>
+	  <td>a</td>
+	  <td>b</td>
+	</tr>
+        <tr>
+	  <td>Second</td>
+	  <td>c,d</td>
+	  <td>c</td>
+	  <td>d</td>
+	</tr>
+        <tr>
+	  <td>Third</td>
+	  <td>f,g</td>
+	  <td>f</td>
+	  <td>g</td>
+	</tr>
+        <tr>
+	  <td>Fourth</td>
+	  <td>h</td>
+	  <td>h</td>
+	  <td>(&mdash;)</td>
+	</tr>
+      </table>
+
+      <p>
+	In the first group, ab = ba, making it commutative.
+	In the third group, fg = gf, making it commutative.
+	Since the fourth group has a single generator, it is cyclic and hence
+	commutative.
+	In the second group, cd &ne; dc.
+      </p>
+
+      <p>
+	Since the second group is non-commutative, while the other are
+	commutative, it (the second group) is not isomorphic to any of them.
+      </p>
+
+      <p>
+	In the first group, a<sup>3</sup> = e = b<sup>2</sup>.
+	In the fourth group, we can let h<sup>2</sup> = p and h<sup>3</sup> =
+	q. Then, p<sup>3</sup> = (h<sup>2</sup>)<sup>3</sup> =
+	h<sup>6</sup> = e, and q<sup>2</sup> = (h<sup>3</sup>)<sup>2</sup> =
+	h<sup>6</sup> = e. Therefore, the first and fourth groups are
+	isomorphic with a&rarr;h<sup>2</sup> and b&rarr;h<sup>3</sup>.
+      </p>
+
+      <p>
+	In the third group, f<sup>2</sup> = e = g<sup>2</sup>. Letting p and
+	q be as before, we see that mapping f&rarr;h<sup>3</sup> and
+	g&rarr;h<sup>2</sup> gives an isomorhpism.
+      </p>
+
+      <p>
+	So, the first, third, and fourth groups are an equivalence class with
+	respect to isomorphism.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180509031621/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180509031621/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180509031621/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180509031621/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180509031621im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:16:21 May 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:12 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 174.56 (3)
+  exclusion.robots.policy: 0.223
+  esindex: 0.016
+  captures_list: 212.257
+  RedisCDXSource: 8.865
+  exclusion.robots: 0.238
+  PetaboxLoader3.resolve: 1872.919
+  PetaboxLoader3.datanode: 907.648 (4)
+  CDXLines.iter: 24.152 (3)
+  load_resource: 2633.798
+-->

@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140725 - Exercises 1-4
+  Modified:	20140726 - Exercises 5-8
+		20140730 - Added ID to Exercise 4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=946;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter10C","20180605205606","http://web.archive.org/","web","/_static/",
+	      "1528232166");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 10, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605205606im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605205606cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter10" rel="parent" rev="child">
+  <link href="Chapter10B" rel="prev" rev="next">
+  <link href="Chapter10D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Elementary Properties of Order</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Let a, b, and c be elements of the group <span class="Set">G</span>.
+    Prove the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Ord(a) = 1 if and only if a=e.
+      </p>
+
+      <p>
+	If a=e, then a<sup>1</sup> = e<sup>1</sup> = e. Therefore, ord(a) = 1.
+      </p>
+
+      <p>
+	If ord(a) = 1, then a<sup>1</sup> = e. Since a<sup>1</sup> = a, a=e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) = n, then a<sup>n-r</sup> = (a<sup>r</sup>)<sup>-1</sup>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+          <td>a<sup>n-r</sup></td>
+	  <td>a<sup>n+(-r)</sup></td>
+	  <td>Definition of subtraction</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>n</sup>a<sup>-r</sup></td>
+	  <td>a<sup>x+y</sup> = a<sup>x</sup>a<sup>y</sup></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(e)a<sup>-r</sup></td>
+	  <td>ord(a) = n</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>-r</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	If a<sup>k</sup> = e where k is odd, then ord(a) is odd.
+      </p>
+
+      <p>
+	Since k is odd, it is not a multiple of 2. Therefore, by Theorem 5,
+	ord(a) is not a multiple of 2.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Ord(a) = ord(bab<sup>-1</sup>).
+      </p>
+
+      <p>
+	As shown in <a href="Chapter04H">Chapter 4, Problem H</a>,
+	(bab<sup>-1</sup>)<sup>n</sup> = ba<sup>n</sup>b<sup>-1</sup>.
+      </p>
+
+      <p>
+	If ord(a) = p, then (bab<sup>-1</sup>)<sup>p</sup> =
+	ba<sup>p</sup>b<sup>-1</sup> = beb<sup>-1</sup> = bb<sup>-1</sup> = e.
+	Since ord(bab<sup>-1</sup>) is the least positive integer with this
+	property, ord(bab<sup>-1</sup>) &le; p = ord(a).
+      </p>
+
+      <p>
+	<span class="Case">Lemma</span> If xyx<sup>-1</sup> = e, then y = e.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>xyx<sup>-1</sup></td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>xyx<sup>-1</sup>x</td>
+	  <td>ex</td>
+	  <td>post-multiply by x</td>
+	</tr>
+	<tr>
+	  <td>xye</td>
+	  <td>ex</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>xy</td>
+	  <td>x</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>xy</td>
+	  <td>x<sup>-1</sup>x</td>
+	  <td>premultiply by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ey</td>
+	  <td>e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>y</td>
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	If ord(bab<sup>-1</sup>) = q, then (bab<sup>-1</sup>)<sup>q</sup> = e.
+	Since e = (bab<sup>-1</sup>)<sup>q</sup> = ba<sup>q</sup>b<sup>-1</sup>,
+	by the lemma a<sup>q</sup> = e.
+	Since ord(a) is the least positive integer with this property, ord(a)
+	&le; q = ord(bab<sup>-1</sup>).
+      </p>
+
+      <p>
+	Since ord(bab<sup>-1</sup>) &le; ord(a) and ord(a) &le;
+	ord(bab<sup>-1</sup>), ord(a) = ord(bab<sup>-1</sup>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Ord(a) = ord(a<sup>-1</sup>).
+      </p>
+
+      <p>
+	Let ord(a) = n.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>e</td>
+	  <td>aa<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(aa<sup>-1</sup>)<sup>n</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>n</sup>(a<sup>-1</sup>)<sup>n</sup></td>
+	  <td>an element commutes with its inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>e(a<sup>-1</sup>)<sup>n</sup></td>
+	  <td>ord(a) = n</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>-1</sup>)<sup>n</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Since (a<sup>-1</sup>)<sup>n</sup> = e, ord(a) = n is a multiple of
+	ord(a<sup>-1</sup>). A similar argument shows that
+	ord(a<sup>-1</sup>) is a multiple of ord(a). Therefore,
+	ord(a<sup>-1</sup>) = ord(a).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	ord(ab) = ord(ba).
+      </p>
+
+      <p>
+	Let ord(ab) = p. Then e = (ab)<sup>p</sup> = (ab)<sup>p-1</sup>ab.
+	This means that (ab)<sup>p-1</sup>a = b<sup>-1</sup>, and they
+	commute. This gives e = b(ab)<sup>p-1</sup>a = (ba)<sup>p</sup>.
+      </p>
+
+      <p>
+	Therefore, ord(ba) is a multiple of p = ord(ab). A similar argument
+	shows that ord(ab) is a multiple of ord(ba), which means that
+	ord(ab) = ord(ba).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Ord(abc) = ord(cab) = ord(bca).
+      </p>
+
+      <p>
+	Let ord(abc) = q. Then e = (abc)<sup>q</sup> = (abc)<sup>q-1</sup>(abc)
+	= (abc)<sup>q-1</sup>(ab)c. Therefore, (abc)<sup>q-1</sup>(ab) =
+	c<sup>-1</sup>, and they commute, giving e = c(abc)<sup>q-1</sup>(ab) =
+	(cab)<sup>q</sup>. This means that ord(cab) is a multiple of q =
+	ord(abc).
+      </p>
+
+      <p>
+	Let ord(cab) = r. Then e = (cab)<sup>r</sup> = (cab)<sup>r-1</sup>(cab)
+	= (cab)<sup>r-1</sup>(ca)b. Therefore, (cab)<sup>r-1</sup>(ca) =
+	b<sup>-1</sup>, and they commute, giving e = b(cab)<sup>r-1</sup>(ca) =
+	(bca)<sup>r</sup>. This means that ord(bca) is a multiple of r =
+	ord(cab).
+      </p>
+
+      <p>
+	Let ord(bca) = s. Then e = (bca)<sup>s</sup> = (bca)<sup>s-1</sup>(bca)
+	= (bca)<sup>s-1</sup>(bc)a. Therefore, (bca)<sup>s-1</sup>(bc) =
+	a<sup>-1</sup>, and they commute, giving e = a(bca)<sup>s-1</sup>(bc) =
+	(abc)<sup>s</sup>. This means that ord(abc) is a multiple of s =
+	ord(bca).
+      </p>
+
+      <p>
+	Since ord(cab) is a multiple of ord(abc), ord(bca) is a multiple of
+	ord(cab), and ord(abc) is a multiple of ord(bca), it must be true that
+	ord(abc) = ord(cab) = ord(bca).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let x = a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub> and let y =
+	a<sub>k</sub>... a<sub>n</sub>a<sub>1</sub>... a<sub>k-1</sub>
+	be a product of the same factors as x, permuted cyclically. Prove that
+	ord(x) = ord(y).
+      </p>
+
+      <p>
+	Let ord(x) = p. Then e = x<sup>p</sup> =
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>)<sup>p</sup> =
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>)<sup>p-1</sup>
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>) =
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>)<sup>p-1</sup>
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>k-1</sub>)
+	(a<sub>k</sub>... a<sub>n</sub>). Therefore,
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>)<sup>p-1</sup>
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>k-1</sub>) =
+	(a<sub>k</sub>... a<sub>n</sub>)<sup>-1</sup>, and they commute,
+	giving e = (a<sub>k</sub>... a<sub>n</sub>).
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub>)<sup>p-1</sup>
+	(a<sub>1</sub>a<sub>2</sub>... a<sub>k-1</sub>) =
+	(a<sub>k</sub>... a<sub>n</sub>a<sub>1</sub>...
+	a<sub>k-1</sub>)<sup>p</sup>. Therefore, ord(y) is a multiple of p =
+	ord(x).
+      </p>
+
+      <p>
+	A similar argument shows that ord(x) is a multiple of ord(y), which
+	means that ord(x) = ord(y).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter10">Chapter 10</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605205606/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605205606/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605205606/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605205606im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605205606/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605205606im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:56:06 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:46 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.011
+  exclusion.robots.policy: 0.14
+  CDXLines.iter: 24.292 (3)
+  LoadShardBlock: 573.649 (3)
+  PetaboxLoader3.datanode: 562.013 (4)
+  RedisCDXSource: 49.73
+  PetaboxLoader3.resolve: 257.222 (3)
+  load_resource: 278.688
+  exclusion.robots: 0.151
+  captures_list: 652.363
+-->

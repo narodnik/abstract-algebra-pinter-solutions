@@ -1,0 +1,743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121215 - Exercises 1-3
+  Modified:	20121219 - Exercise 4
+		20121220 - Exercises 5 and 6
+		20121222 - Noted fact that exercise 4 is the dihedral group
+		20140929 - Fixed vertical alignment of images
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app56.us.archive.org';v.server_ms=2181;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05G","20180408073823","http://web.archive.org/","web","/_static/",
+	      "1523173103");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180408073823cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    LI P IMG {vertical-align: top;}
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05F" rel="prev" rev="next">
+  <link href="Chapter05H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Cayley Diagrams</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    Write the table of the groups having the following Cayley diagrams:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G1.png" alt="">
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>ab</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G2.png" alt="">
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>ab</th>
+	  <th>ba</th>
+	  <th>aba</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>aba</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>aba</td>
+	  <td>ba</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ba</td>
+	  <td>e</td>
+	  <td>aba</td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>aba</td>
+	  <td>a</td>
+	  <td>ba</td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>ba</th>
+	  <td>ba</td>
+	  <td>b</td>
+	  <td>aba</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>aba</th>
+	  <td>aba</td>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G3.png" alt="">
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>ab</th>
+	  <th>ba</th>
+	  <th>aba</th>
+	  <th>bab</th>
+	  <th>abab</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>aba</td>
+	  <td>bab</td>
+	  <td>abab</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>aba</td>
+	  <td>ba</td>
+	  <td>abab</td>
+	  <td>bab</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ba</td>
+	  <td>e</td>
+	  <td>bab</td>
+	  <td>a</td>
+	  <td>abab</td>
+	  <td>ab</td>
+	  <td>aba</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>aba</td>
+	  <td>a</td>
+	  <td>abab</td>
+	  <td>e</td>
+	  <td>bab</td>
+	  <td>b</td>
+	  <td>ba</td>
+	</tr>
+	<tr>
+	  <th>ba</th>
+	  <td>ba</td>
+	  <td>b</td>
+	  <td>bab</td>
+	  <td>e</td>
+	  <td>abab</td>
+	  <td>a</td>
+	  <td>aba</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>aba</th>
+	  <td>aba</td>
+	  <td>ab</td>
+	  <td>abab</td>
+	  <td>a</td>
+	  <td>bab</td>
+	  <td>e</td>
+	  <td>ba</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>bab</th>
+	  <td>bab</td>
+	  <td>abab</td>
+	  <td>ba</td>
+	  <td>aba</td>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>abab</th>
+	  <td>abab</td>
+	  <td>bab</td>
+	  <td>aba</td>
+	  <td>ba</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G4.png" alt="">
+      </p>
+      <div class="SideBar">
+	<p>
+	  This is the "dihedral group", <span class="Set">D<sub>4</sub></span>,
+	  from <a href="Chapter05F">Problem F, Exercise 2</a>.
+	</p>
+      </div>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>b<sup>3</sup></th>
+	  <th>ba</th>
+	  <th>b<sup>2</sup>a</th>
+	  <th>b<sup>3</sup>a</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>ba</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>3</sup>a</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>ba</td>
+	  <td>b<sup>3</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ba</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>a</td>
+	  <td>ba</td>
+	</tr>
+	<tr>
+	  <th>b<sup>3</sup></th>
+	  <td>b<sup>3</sup></td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>a</td>
+	  <td>ba</td>
+	  <td>b<sup>2</sup>a</td>
+	</tr>
+	<tr>
+	  <th>ba</th>
+	  <td>ba</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>e</td>
+	  <td>b<sup>3</sup></td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup>a</th>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>a</td>
+	  <td>b<sup>3</sup>a</td>
+	  <td>b</td>
+	  <td>e</td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>b<sup>3</sup>a</th>
+	  <td>b<sup>3</sup>a</td>
+	  <td>b<sup>3</sup></td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>ba</td>
+	  <td>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G5.png" alt="">
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>b<sup>3</sup></th>
+	  <th>ab</th>
+	  <th>ab<sup>2</sup></th>
+	  <th>ab<sup>3</sup></th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>b<sup>3</sup></th>
+	  <td>b<sup>3</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>2</sup></th>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>3</sup></th>
+	  <td>ab<sup>3</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Diagrams/05G6.png" alt="">
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>ab</th>
+	  <th>ba</th>
+	  <th>bab</th>
+	  <th>ab<sup>2</sup></th>
+	  <th>aba</th>
+	  <th>b<sup>2</sup>a</th>
+	  <th>b<sup>2</sup>ab</th>
+	  <th>bab<sup>2</sup></th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>bab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>aba</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>bab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b</td>
+	  <td>aba</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>bab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>b<sup>2</sup>ab</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ba</td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	  <td>bab</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>aba</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>aba</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>bab</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>aba</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>bab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ba</td>
+	</tr>
+	<tr>
+	  <th>ba</th>
+	  <td>ba</td>
+	  <td>b</td>
+	  <td>bab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>aba</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>bab</th>
+	  <td>bab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>bab<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>a</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>aba</td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>2</sup>a</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>2</sup></th>
+	  <td>ab<sup>2</sup></td>
+	  <td>bab</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ba</td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>aba</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>aba</th>
+	  <td>aba</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>bab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup>a</th>
+	  <td>b<sup>2</sup>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>aba</td>
+	  <td>e</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>ba</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>bab</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup>ab</th>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>bab<sup>2</sup></td>
+	  <td>aba</td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>ba</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>bab</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>bab<sup>2</sup></th>
+	  <td>bab<sup>2</sup></td>
+	  <td>b<sup>2</sup>ab</td>
+	  <td>ba</td>
+	  <td>bab</td>
+	  <td>aba</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>2</sup>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180408073823/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180408073823/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180408073823/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180408073823/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180408073823im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 07:38:23 Apr 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:36 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  load_resource: 187.182
+  exclusion.robots: 0.201
+  exclusion.robots.policy: 0.186
+  CDXLines.iter: 24.339 (3)
+  PetaboxLoader3.datanode: 1847.987 (4)
+  LoadShardBlock: 1842.224 (3)
+  RedisCDXSource: 92.022
+  captures_list: 1963.583
+  PetaboxLoader3.resolve: 82.542
+  esindex: 0.015
+-->

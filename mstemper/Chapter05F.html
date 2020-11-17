@@ -1,0 +1,512 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121202 - Exercises 1 and 2
+  Modified:	20121209 - Exercises 3 and 4
+		20140716 - Added ids to Exercises
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app41.us.archive.org';v.server_ms=178;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05F","20180703043726","http://web.archive.org/","web","/_static/",
+	      "1530592646");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180703043726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180703043726cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05E" rel="prev" rev="next">
+  <link href="Chapter05G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Groups Determined by Generators and
+	       Defining Equations</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	Let <span class="Set">G</span> = {e, a, b, b<sup>2</sup>, ab,
+	ab<sup>2</sup>}, satisfying the equations a<sup>2</sup>=e,
+	b<sup>3</sup>=e, ba=ab<sup>2</sup>. Show the Cayley table of
+	<span class="Set">G</span>.
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>ab</th>
+	  <th>ab<sup>2</sup></th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>2</sup></th>
+	  <td>ab<sup>2</sup></td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>b<sup>2</sup></td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li id="Ex02">
+      <div class="SideBar">
+      <p>
+	<span class="Set">G</span> is called the dihedral group
+	<span class="Set">D<sub>4</sub></span>.
+      </p>
+      </div>
+      <p>
+	Let <span class="Set">G</span> = {e, a, b, b<sup>2</sup>,
+	b<sup>3</sup>, ab, ab<sup>2</sup>, ab<sup>3</sup>}, satisfying the
+	equations a<sup>2</sup>=e, b<sup>4</sup>=e, ba=ab<sup>3</sup>.
+	Show the Cayley table of <span class="Set">G</span>.
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>b<sup>3</sup></th>
+	  <th>ab</th>
+	  <th>ab<sup>2</sup></th>
+	  <th>ab<sup>3</sup></th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>b<sup>3</sup></th>
+	  <td>b<sup>3</sup></td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b<sup>3</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>ab<sup>2</sup></th>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>3</sup></th>
+	  <td>ab<sup>3</sup></td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li id="Ex03">
+      <div class="SideBar">
+      <p>
+	<span class="Set">G</span> is called the quaternion group.
+      </p>
+      </div>
+      <p>
+	Let <span class="Set">G</span> = {e, a, b, b<sup>2</sup>,
+	b<sup>3</sup>, ab, ab<sup>2</sup>, ab<sup>3</sup>}, satisfying the
+	equations a<sup>4</sup>=e, a<sup>2</sup>=b<sup>2</sup>,
+	ba=ab<sup>3</sup>.
+	Show the Cayley table of <span class="Set">G</span>.
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>b<sup>2</sup></th>
+	  <th>b<sup>3</sup></th>
+	  <th>ab</th>
+	  <th>ab<sup>2</sup></th>
+	  <th>ab<sup>3</sup></th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <th>b<sup>2</sup></th>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>b<sup>3</sup></th>
+	  <td>b<sup>3</sup></td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>ab<sup>2</sup></th>
+	  <td>ab<sup>2</sup></td>
+	  <td>e</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>ab<sup>3</sup></th>
+	  <td>ab<sup>3</sup></td>
+	  <td>b<sup>3</sup></td>
+	  <td>a</td>
+	  <td>ab</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>e</td>
+	  <td>b</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Let <span class="Set">G</span> = {e, a, b, c, ab, bc, ac, abc}
+	be a <em>commutative</em> group satisfying the equation
+	a<sup>2</sup> = b<sup>2</sup> = c<sup>2</sup>.
+	Show the Cayley table of <span class="Set">G</span>.
+      </p>
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>c</th>
+	  <th>ab</th>
+	  <th>bc</th>
+	  <th>ac</th>
+	  <th>abc</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>c</td>
+	  <td>ab</td>
+	  <td>bc</td>
+	  <td>ac</td>
+	  <td>abc</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>ac</td>
+	  <td>b</td>
+	  <td>abc</td>
+	  <td>c</td>
+	  <td>bc</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>bc</td>
+	  <td>a</td>
+	  <td>c</td>
+	  <td>abc</td>
+	  <td>ac</td>
+	</tr>
+	<tr>
+	  <th>c</th>
+	  <td>c</td>
+	  <td>ac</td>
+	  <td>bc</td>
+	  <td>e</td>
+	  <td>abc</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>abc</td>
+	  <td>e</td>
+	  <td>ac</td>
+	  <td>bc</td>
+	  <td>c</td>
+	</tr>
+	<tr>
+	  <th>bc</th>
+	  <td>bc</td>
+	  <td>abc</td>
+	  <td>c</td>
+	  <td>b</td>
+	  <td>ac</td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>ac</th>
+	  <td>ac</td>
+	  <td>c</td>
+	  <td>abc</td>
+	  <td>a</td>
+	  <td>bc</td>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>abc</th>
+	  <td>abc</td>
+	  <td>bc</td>
+	  <td>ac</td>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180703043726/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180703043726/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180703043726/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180703043726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180703043726/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180703043726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:37:26 Jul 03, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:31 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.021
+  exclusion.robots: 0.272
+  LoadShardBlock: 42.912 (3)
+  captures_list: 77.808
+  RedisCDXSource: 0.96
+  load_resource: 77.97
+  CDXLines.iter: 28.74 (3)
+  exclusion.robots.policy: 0.255
+  PetaboxLoader3.datanode: 85.853 (4)
+  PetaboxLoader3.resolve: 27.077
+-->

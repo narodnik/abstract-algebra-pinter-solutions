@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140906
+  Modified:	20140907 - Exercise 1
+		20140908 - Exercises 2-7
+		20140910 - Replaced lt/gt with proper angle brackets, Ex 8
+		20140911 - Exercise 9
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=1150;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter11E","20180607152706","http://web.archive.org/","web","/_static/",
+	      "1528385226");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 11, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607152706im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607152706cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter11" rel="parent" rev="child">
+  <link href="Chapter11D" rel="prev" rev="next">
+  <link href="Chapter11F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Direct Products of Cyclic Groups</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    Let <span class="Set">G</span> and <span class="Set">H</span> be
+    groups, with a&isin;<span class="Set">G</span> and
+    b&isin;<span class="Set">H</span>.
+    Prove parts 1-4:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	If (a,b) is a generator of <span class="Set">G</span> &times;
+	<span class="Set">H</span>, then a is a generator of
+	<span class="Set">G</span> and b is a generator of
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Let (p,q) be any element of <span class="Set">G</span> &times;
+	<span class="Set">H</span>. Then p&isin;<span class="Set">G</span>
+	and q&isin;<span class="Set">H</span>. Since (a,b) is a generator,
+	there is some j such that (a,b)<sup>j</sup> = (p,q). Since
+	(a,b)<sup>j</sup> = (a<sup>j</sup>,b<sup>j</sup>), this means that
+	a<sup>j</sup> = p and b<sup>j</sup> = q.
+      </p>
+
+      <p>
+	Since (p,q) was <em>any</em> element of <span class="Set">G</span>
+	&times; <span class="Set">H</span>, p is any element of
+	<span class="Set">G</span> and q is any element of
+	<span class="Set">H</span>. Therefore, every element of
+	<span class="Set">G</span> is a power of a and every element of
+	<span class="Set">H</span> is a power of b.
+      </p>
+
+      <p>
+	Assume that there is some x such that a<sup>x</sup> &notin;
+	<span class="Set">G</span>. Then (a,b)<sup>x</sup> &notin;
+	<span class="Set">G</span> &times; <span class="Set">H</span>, which
+	would mean that (a,b) is not a generator of <span class="Set">G</span>
+	&times; <span class="Set">H</span>. Since (a,b) is a generator of
+	<span class="Set">G</span> &times; <span class="Set">H</span>, there
+	can be no such x.
+      </p>
+
+      <p>
+	Since all elements of <span class="Set">G</span> are powers of a
+	and there is no power of a that is not an element of
+	<span class="Set">G</span>, a generates <span class="Set">G</span>.
+      </p>
+
+      <p>
+	A similar argument shows that there is no y such that
+	b<sup>y</sup> &notin; <span class="Set">H</span>, which means that
+	b generates <span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	If <span class="Set">G</span> &times; <span class="Set">H</span> is
+	cyclic, then <span class="Set">G</span> and <span class="Set">H</span>
+	are both cyclic.
+      </p>
+
+      <p>
+	If <span class="Set">G</span> &times; <span class="Set">H</span> is
+	cyclic, then it has a generator. As shown in
+	<a href="#Ex01">Exercise 1</a>, this implies that
+	<span class="Set">G</span> and <span class="Set">H</span> have
+	generators, which implies that they are cyclic.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	The converse of <a href="#Ex02">Exercise 2</a> is false.
+      </p>
+
+      <p>
+	Let <span class="Set">G</span> = <span class="Set">Z<sub>2</sub></span>
+	= <span class="Set">H</span>.
+	The Cayley table for <span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> is:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th>(0,0)</th>
+	  <th>(0,1)</th>
+	  <th>(1,0)</th>
+	  <th>(1,1)</th>
+	</tr>
+	<tr>
+	  <th>(0,0)</th>
+	  <td>(0,0)</td>
+	  <td>(0,1)</td>
+	  <td>(1,0)</td>
+	  <td>(1,1)</td>
+	</tr>
+	<tr>
+	  <th>(0,1)</th>
+	  <td>(0,1)</td>
+	  <td>(0,0)</td>
+	  <td>(1,1)</td>
+	  <td>(1,0)</td>
+	</tr>
+	<tr>
+	  <th>(1,0)</th>
+	  <td>(1,0)</td>
+	  <td>(1,1)</td>
+	  <td>(0,0)</td>
+	  <td>(0,1)</td>
+	</tr>
+	<tr>
+	  <th>(1,1)</th>
+	  <td>(1,1)</td>
+	  <td>(1,0)</td>
+	  <td>(0,1)</td>
+	  <td>(0,0)</td>
+	</tr>
+      </table>
+
+      <p>
+	The groups generated by the various elements are:
+      </p>
+
+      <dl>
+	<dt>(0,0)</dt>
+	<dd>{ (0,0) }</dd>
+	<dt>(0,1)</dt>
+	<dd>{ (0,0), (0,1) }</dd>
+	<dt>(1,0)</dt>
+	<dd>{ (0,0), (1,0) }</dd>
+	<dt>(1,1)</dt>
+	<dd>{ (0,0), (1,1) }</dd>
+      </dl>
+
+      <p>
+	There is no element in <span class="Set">Z<sub>2</sub></span> &times;
+        <span class="Set">Z<sub>2</sub></span> that generates the entire
+	group, so it is not cyclic.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Let ord(a) = m and ord(b) = n. The order of (a,b) in
+	<span class="Set">G</span> &times; <span class="Set">H</span> is
+	lcm(m,n).
+      </p>
+
+      <p>
+	Let ord( (a,b) ) = p. By the definition of the order of an element,
+	this means that (a,b)<sup>p</sup> = e = (e,e) =
+	(a<sup>p</sup>,b<sup>p</sup>). Therefore, a<sup>p</sup>=e and
+	b<sup>p</sup>=e.
+      </p>
+
+      <p>
+	By <span title="Pinter really should have given this a name">Theorem 5
+	of Chapter 10</span>, a<sup>p</sup>=e iff p is a multiple of m and
+	b<sup>p</sup>=e iff p is a multiple of n. Therefore, (a,b)<sup>p</sup>
+	= e iff p is a multiple of both m and n. Since the order of an element
+	is the least positive power that yields the identity, it must be true
+	that ord( (a,b) ) = lcm(m,n).
+      </p>
+    </li>
+
+    <li id="Ex05">
+      <p>
+	Conclude from <a href="#Ex04">Exercise 4</a> that if m and n are
+	relatively prime, then ord( (a,b) ) = mn.
+      </p>
+
+      <p>
+	Since lcm(m,n) = mn iff m and n are relatively prime, this is true.
+      </p>
+    </li>
+
+    <li id="Ex06">
+      <p>
+	Suppose (c,d) &isin;
+	<span class="Set">G</span> &times; <span class="Set">H</span> where
+	ord(c) = m and ord(d) = n. Prove that if m and n are not relatively
+	prime, ord( (c,d) ) &lt; mn.
+      </p>
+
+      <p>
+	By <a href="#Ex04">Exercise 4</a>, ord( (c,d) ) = lcm(m,n). It's a
+	basic result of number theory that lcm(x,y) = xy/gcd(x,y). Since
+	c and d are not relatively prime, gcd(c,d) &rang; 1. Therefore,
+	ord( (c,d) ) = lcm(m,n) = mn/gcd(m,n) &lt; mn.
+      </p>
+    </li>
+
+    <li id="Ex07">
+      <p>
+	Conclude from Exercises <a href="#Ex05">5</a> and <a href="#Ex06">6</a>
+	that &lang;a&rang; &times; &lang;b&rang; is cyclic iff ord(a) and
+	ord(b) are relatively prime.
+      </p>
+
+      <p>
+	Let ord(a) = p and ord(b) = q. Then, |&lang;a&rang; &times;
+	&lang;b&rang;| = pq.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	If ord(a) and ord(b) are relatively prime, then ord( (a,b) ) = pq
+	(by <a href="#Ex05">Exercise 5</a>). Since ord(a,b) =
+	|&lang;a&rang; &times; &lang;b&rang;|, &lang;a&rang; &times;
+	&lang;b&rang; = &lang;(a,b)&rang;, and &lang;a&rang; &times;
+	&lang;b&rang; is cyclic.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If ord(a) and ord(b) are not relatively prime, then ord( (a,b) ) &lt;
+	pq (by <a href="#Ex06">Exercise 6</a>). In that case, (a,b) does not
+	generate &lang;a&rang; &times; &lang;b&rang;.
+      </p>
+
+      <p>
+	If x&isin;&lang;a&rang; and ord(x) = ord(a), then x generates
+	&lang;a&rang;. If y&isin;&lang;b&rang; and ord(y) = ord(b), then y
+	generates &lang;b&rang;. So no element (x,y) can generate
+	&lang;a&rang; &times; &lang;b&rang;, which means that it is not cyclic.
+      </p>
+    </li>
+
+    <li id="Ex08">
+      <p>
+	Let <span class="Set">G</span> be an Abelian group of order mn,
+	where m and n are relatively prime. Prove: if
+	<span class="Set">G</span> has an element a of order m and an element
+	b of order n, then <span class="Set">G</span> &#8792; &lang;a&rang;
+	&times; &lang;b&rang;.
+      </p>
+
+      <p>
+	Let f:<span class="Set">G</span> &rarr; &lang;a&rang; &times;
+	&lang;b&rang; be defined as f((ab)<sup>i</sup>) =
+	(a<sup>i</sup>,b<sup>i</sup>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f((ab)<sup>p</sup>(ab)<sup>q</sup>)</td>
+	  <td>f(a<sup>p</sup>b<sup>p</sup>a<sup>q</sup>b<sup>q</sup>)</td>
+	  <td><span class="Set">G</span> is Abelian</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(a<sup>p+q</sup>b<sup>p+q</sup>)</td>
+	  <td><span class="Set">G</span> is Abelian</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>p+q</sup>,b<sup>p+q</sup>)</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>p</sup>,b<sup>p</sup>)(a<sup>q</sup>,b<sup>q</sup>)</td>
+	  <td>multiplication in &lang;a&rang; &times; &lang;b&rang;</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f((ab)<sup>p</sup>)f((ab)<sup>q</sup>)
+	  <td>definition of f</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, f preserves products.
+      </p>
+
+      <p>
+	The order of <span class="Set">G</span> = mn, per the problem 
+	statement. |&lang;a&rang; &times; &lang;b&rang;| = mn, so the
+	two groups have the same order. (Since the order is the product
+	of two integers, their order is finite.)
+      </p>
+
+      <p>
+	Assume that f((ab)<sup>p</sup>) = f((ab)<sup>q</sup>). Then,
+	(a<sup>p</sup>,b<sup>p</sup>) = (a<sup>q</sup>,b<sup>q</sup>).
+	This means that a<sup>p</sup> = a<sup>q</sup> and
+	b<sup>p</sup> = b<sup>q</sup>. Since <span class="Set">G</span> is
+	Abelian, this implies that (ab)<sup>p</sup> = (ab)<sup>q</sup>.
+	This means that f is a one-to-one function.
+      </p>
+
+      <p>
+	Since |<span class="Set">G</span>| =
+	|&lang;a&rang; &times; &lang;b&rang;|, the fact that f is one-to-one
+	means that f is a bijection.
+      </p>
+
+      <p>
+	Since f is a bijection, and preserves products, it is an isomorphism.
+	Since there is an isomorphism between |<span class="Set">G</span>|
+	and |&lang;a&rang; &times; &lang;b&rang;|, they are isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let &lang;a&rang; be a cyclic group of order mn, gcd(m,n) = 1.
+	Prove that &lang;a&rang; &#8792; &lang;a<sup>m</sup>&rang; &times;
+	&lang;a<sup>n</sup>&rang;.
+      </p>
+
+      <p>
+	A cyclic group is Abelian. Since gcd(m,n) = 1, ord(a<sup>n</sup>) = m
+	and ord(a<sup>m</sup>) = n. Therefore, the result proved in
+	<a href="#Ex08">Exercise 8</a> applies.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter11">Chapter 11</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607152706/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607152706/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607152706/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607152706im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607152706/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607152706im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 15:27:06 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:23 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 19.714 (3)
+  LoadShardBlock: 633.502 (3)
+  esindex: 0.013
+  exclusion.robots.policy: 0.191
+  PetaboxLoader3.datanode: 609.748 (4)
+  captures_list: 743.138
+  load_resource: 395.979
+  PetaboxLoader3.resolve: 406.122 (2)
+  exclusion.robots: 0.205
+  RedisCDXSource: 85.974
+-->

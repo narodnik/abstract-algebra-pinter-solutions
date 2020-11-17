@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140717
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app23.us.archive.org';v.server_ms=305;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09G","20180623002730","http://web.archive.org/","web","/_static/",
+	      "1529713650");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180623002730im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180623002730cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09F" rel="prev" rev="next">
+  <link href="Chapter09H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Isomorphic Groups on the
+    Set <span class="Set">R</span></h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">G</span> is the set
+	{x&isin;<span class="Set">R</span> : x&ne;-1}, with the
+	operation x*y = x+y+xy. Show that f(x) = x-1 is an isomorphism from
+	<span class="Set">R<sup>*</sup></span> (the multiplicative group of
+	non-zero reals) to <span class="Set">G</span>.
+      </p>
+
+      <p>
+	If z&isin;<span class="Set">R<sup>*</sup></span>, then z&ne;0 and
+	f(z)&ne;-1, and f(z)&isin;<span class="Set">G</span>.
+	Let a,b &isin; <span class="Set">R<sup>*</sup></span>.
+	If a&ne;b then f(a) = a-1 &ne; b-1 = f(b), so f is one-to-one.
+	Let p,q &isin; <span class="Set">R<sup>*</sup></span>.
+	If f(p)=f(q), then p-1=q-1, and p=q. Therefore f is onto, and hence a
+	bijection.
+      </p>
+
+      <p>
+	Let c,d &isin; <span class="Set">R<sup>*</sup></span>. Then
+	f(c)*f(d) = (c-1)*(d-1) = (c-1)+(d-1)+(c-1)(d-1) = c+d-2 + cd-c-d+1 =
+	cd-1 = f(cd). Therefore, f preserves products and is an isomorphism.
+      </p>
+    </li>
+
+    <li>
+      <div class="SideBar">
+      <p>
+	I am going to assume that the operation on <span class="Set">R</span>
+	is intended to be addition.
+      </p>
+      </div>
+
+      <p>
+	<span class="Set">G</span> is the set of reals with the operation
+	x*y = x+y+1. Find an isomorphism f:<span class="Set">R</span> &rarr;
+	<span class="Set">G</span> and prove that it is an isomorphism.
+      </p>
+
+      <p>
+	Let f(z) = z-1. It is obvious that f is a bijection.
+      </p>
+
+      <p>
+	If p,q &isin; <span class="Set">R</span>, then
+	f(p)*f(q) = p-1 + q-1 + 1 = p+q-1 = f(p+q), and f preserves products.
+      </p>
+
+      <p>
+	Since f is a bijection and preserves products, it is an isomorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> is the set of non-zero reals with the
+	operation x*y = xy/2. Find an isomorphism from
+	<span class="Set">R<sup>*</sup></span> to <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let f(z) = 2z. It is obvious that f is a bijection.
+      </p>
+
+      <p>
+	If p,q &isin; <span class="Set">R</span>, then
+	f(p)*f(q) = 2p*2q/2 = 2pq = f(pq), so f preserves products.
+      </p>
+
+      <p>
+	Since f is a bijection and preserves products, it is an isomorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Show that f(x,y) = (-1)<sup>y</sup>x is an isomorphsim from
+	<span class="Set">R<sup>+</sup></span> &times;
+	<span class="Set">Z<sub>2</sub></span> to
+	<span class="Set">R<sup>*</sup></span>.
+      </p>
+
+      <p>
+	If (w,z) &isin; (<span class="Set">R<sup>+</sup></span> &times;
+	<span class="Set">Z<sub>2</sub></span>), then since z&isin;{0,1},
+	(-1)<sup>z</sup>&isin;{-1,1}. Combining this with
+	w&isin;<span class="Set">R<sup>+</sup></span> gives
+	f(w,z)&isin;<span class="Set">R<sup>*</sup></span>.
+      </p>
+
+      <p>
+	Let (p,q),(r,s) &isin; (<span class="Set">R<sup>+</sup></span> &times;
+	<span class="Set">Z<sub>2</sub></span>). If (p,q)&ne;(r,s) we must have
+	at least one of p&ne;r or q&ne;s. If p&ne;r then
+	(-1)<sup>q</sup>p &ne; (-1)<sup>s</sup>r no matter the values of q and
+	s, since p and q are both positive. If q&ne;s, then one of
+	{(-1)<sup>q</sup>p, (-1)<sup>s</sup>r} is positive and the other is
+	negative. Therefore, f is onto.
+      </p>
+
+      <p>
+	Let (a,b),(c,d) &isin; (<span class="Set">R<sup>+</sup></span> &times;
+	<span class="Set">Z<sub>2</sub></span>).
+	If f(a,b) = f(c,d), then they must have the same signs, which requires
+	that b=d. Also, they must have the same magnitudes, which requires
+	that a=c. Therefore, if f(a,b) = f(c,d), then (a,b) = (c,d), and
+	f is one-to-one.
+      </p>
+
+      <p>
+	Therefore, f is a bijection.
+      </p>
+
+      <p>
+	If (w,x),(y,z) &isin; (<span class="Set">R<sup>+</sup></span> &times;
+	<span class="Set">Z<sub>2</sub></span>), then
+	f(w,x)f(y,z) = (-1)<sup>x</sup>w(-1)<sup>z</sup>y =
+	(-1)<sup>x+z</sup>wy = f((wy),(x+z)).
+	Therefore, f preserves products.
+      </p>
+
+      <p>
+	Since f is a bijection and preserves products, it is an isomorphism.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180623002730/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180623002730/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180623002730/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180623002730im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180623002730/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180623002730im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 00:27:30 Jun 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:21 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 32.447 (3)
+  exclusion.robots.policy: 0.338
+  exclusion.robots: 0.358
+  captures_list: 142.114
+  LoadShardBlock: 101.358 (3)
+  load_resource: 147.742
+  esindex: 0.022
+  PetaboxLoader3.resolve: 48.501
+  RedisCDXSource: 1.979
+  PetaboxLoader3.datanode: 131.197 (4)
+-->

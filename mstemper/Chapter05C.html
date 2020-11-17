@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121110 - Problems C1-4
+  Modified:	20121111 - Problems C5-7
+		20121120 - Split off problems into individual pages
+		20140825 - Add ID to Exercise 2
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=1663;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05C","20180605041425","http://web.archive.org/","web","/_static/",
+	      "1528172065");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605041425im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605041425cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05B" rel="prev" rev="next">
+  <link href="Chapter05D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Subgroups of Abelian Groups</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    In the following exercises, <span class="Set">G</span> is an Abelian
+    group.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Let <span class="Set">H</span> = {x&isin;<span class="Set">G</span>:
+	x=x<sup>-1</sup>}. Show that <span class="Set">H</span> is a subgroup
+	of <span class="Set">G</span>.
+      </p>
+      <p>
+	Let a,b&isin;<span class="Set">H</span>. Then a=a<sup>-1</sup> and
+	b=b<sup>-1</sup>. Then, (ab)<sup>-1</sup> =
+	b<sup>-1</sup>a<sup>-1</sup> = ba = ab, since elements are their own
+	inverses and <span class="Set">G</span> is Abelian. Since ab is its
+	own inverse, ab&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under multiplication.
+      </p>
+      <p>
+	Let a&isin;<span class="Set">H</span>. Then a<sup>-1</sup>=a and
+	therefore a<sup>-1</sup>&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <div class="SideBar">
+	<p>
+	  Note that the previous exercise is a special case of this one,
+	  with n=2, since x<sup>2</sup>=xx=xx<sup>-1</sup>=e.
+	</p>
+      </div>
+      <p>
+	Let n&isin;<span class="Set">Z</span> be fixed, then let
+	<span class="Set">H</span> = {x&isin;<span class="Set">G</span>:
+	x<sup>n</sup>=e}. Show that <span class="Set">H</span> is a subgroup
+	of <span class="Set">G</span>.
+      </p>
+      <p>
+	Let a,b&isin;<span class="Set">H</span>. Then a<sup>n</sup>=e and
+	b<sup>n</sup>=e. Then, since <span class="Set">G</span> is Abelian,
+	(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup> = ee = e, and
+	ab&isin;<span class="Set">H</span>, and <span class="Set">H</span> is
+	closed under multiplication.
+      </p>
+      <p>
+	Let a&isin;<span class="Set">H</span>. Then,
+	(a<sup>-1</sup>)<sup>n</sup> = (a<sup>n</sup>)<sup>-1</sup> =
+	e<sup>-1</sup> = e, so a<sup>-1</sup>&isin;<span class="Set">H</span>,
+	and <span class="Set">H</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> = {x&isin;<span class="Set">G</span>:
+	&exist;y&isin;<span class="Set">G</span> such that
+	y<sup>2</sup>=x}. Show that <span class="Set">H</span> is a subgroup
+	of <span class="Set">G</span>.
+      </p>
+      <p>
+	Let r,s&isin;<span class="Set">G</span> and let a=r<sup>2</sup> and
+	b=s<sup>2</sup>. Then, a,b&isin;<span class="Set">H</span>. Then,
+	ab = r<sup>2</sup>s<sup>2</sup> = (rs)<sup>2</sup>, since
+	<span class="Set">G</span> is Abelian. Therefore,
+	ab&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under multiplication.
+      </p>
+      <p>
+	Let r&isin;<span class="Set">G</span> and let a=r<sup>2</sup>. Then,
+	a<sup>-1</sup> = (r<sup>2</sup>)<sup>-1</sup> =
+	(r<sup>-1</sup>)<sup>2</sup>, and
+	a<sup>-1</sup>&isin; <span class="Set">H</span> and
+	<span class="Set">H</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> be a subgroup of
+	<span class="Set">G</span>, and let <span class="Set">K</span> =
+	{x&isin;<span class="Set">G</span>:
+	x<sup>2</sup>&isin;<span class="Set">H</span>}. Show that
+	<span class="Set">K</span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	Let r,s&isin;<span class="Set">G</span> such that
+	r<sup>2</sup>,s<sup>2</sup>&isin;<span class="Set">H</span>. Then
+	r,s&isin;<span class="Set">K</span>. Since <span class="Set">H</span>
+	is a group, it is closed under multiplication, so
+	r<sup>2</sup>s<sup>2</sup>&isin;<span class="Set">H</span>.
+	Since <span class="Set">G</span>
+	is Abelian, r<sup>2</sup>s<sup>2</sup> = (rs)<sup>2</sup>.
+	So (rs)<sup>2</sup>&isin;<span class="Set">H</span>. Therefore,
+	rs&isin;<span class="Set">K</span> and
+	<span class="Set">K</span> is closed under multiplication.
+      </p>
+      <p>
+	Let r&isin;<span class="Set">G</span> such that
+	r<sup>2</sup>&isin;<span class="Set">H</span>. Since
+	<span class="Set">H</span> is a group, it is closed under inversion,
+	so is (r<sup>2</sup>)<sup>-1</sup>.
+	Since (r<sup>2</sup>)<sup>-1</sup>=(r<sup>-1</sup>)<sup>2</sup>,
+	r<sup>-1</sup>&isin;<span class="Set">K</span> and therefore,
+	<span class="Set">K</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">K</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> be a subgroup of
+	<span class="Set">G</span>, and for some
+	n&isin;<span class="Set">Z</span> (n&gt;0), let
+	<span class="Set">K</span> = {x&isin;<span class="Set">G</span>:
+	x<sup>n</sup>&isin;<span class="Set">H</span>}. Show that
+	<span class="Set">K</span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	The same proof as in the previous exercise, with n taking the place
+	of 2, will work, since no special properties of 2 were used in that
+	proof. In fact, the restriction that n&gt;0 is not even needed.
+	Since <span class="Set">H</span> is closed under inversion, -n will
+	give the same set as n, and n=0 would give
+	<span class="Set">K</span>=<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> and <span class="Set">K</span> be
+	subgroups of <span class="Set">G</span>. Define
+	<span class="Set">H</span><span class="Set">K</span> = {xy:
+	x&isin;<span class="Set">H</span> and
+	y&isin;<span class="Set">K</span>}. Show that
+	<span class="Set">H</span><span class="Set">K</span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	Let a,b&isin;<span class="Set">H</span> and
+	c,d&isin;<span class="Set">K</span>. Since <span class="Set">H</span>
+	and <span class="Set">K</span> are groups,
+	ab&isin;<span class="Set">H</span> and
+	cd&isin;<span class="Set">K</span>. Therefore,
+	(ab)(cd)&isin;<span class="Set">H</span><span class="Set">K</span>.
+	Since <span class="Set">G</span> is Abelian, (ab)(cd)=(ac)(bd), and
+	(ac)(bd)&isin;<span class="Set">H</span><span class="Set">K</span>.
+	<span class="Set">H</span><span class="Set">K</span> is therefore
+	closed under multiplication.
+      </p>
+      <p>
+	Let a&isin;<span class="Set">H</span> and
+	c&isin;<span class="Set">K</span>. Since <span class="Set">H</span>
+	and <span class="Set">K</span> are groups,
+	a<sup>-1</sup>&isin;<span class="Set">H</span> and
+	c<sup>-1</sup>&isin;<span class="Set">K</span>. Therefore,
+	a<sup>-1</sup>c<sup>-1</sup> = (ca)<sup>-1</sup> =
+	(ac)<sup>-1</sup>&isin;<span class="Set">H</span><span class="Set">K</span>, and
+	<span class="Set">H</span><span class="Set">K</span> is closed under
+	inversion.
+      </p>
+      <p>
+	Since <span class="Set">H</span><span class="Set">K</span> is closed
+	under multiplication and inversion, it is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Explain why exercises 4, 5, and 6 are not true if
+	<span class="Set">G</span> is non-Abelian.
+      </p>
+      <p>
+	In 4, we made use of the fact that r<sup>2</sup>s<sup>2</sup> =
+	(rs)<sup>2</sup>, which is only true when r and s commute. The same
+	fact (with 2 replaced by n) was used in 5.
+      </p>
+      <p>
+	In 6, commutativity was used to prove closure under both multiplication
+	and inversion.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605041425/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605041425/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605041425/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605041425im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605041425/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605041425im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:14:25 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:24 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1509.983
+  exclusion.robots: 0.162
+  exclusion.robots.policy: 0.148
+  RedisCDXSource: 102.017
+  esindex: 0.013
+  LoadShardBlock: 1378.202 (3)
+  PetaboxLoader3.datanode: 1352.339 (4)
+  CDXLines.iter: 25.195 (3)
+  PetaboxLoader3.resolve: 67.103 (2)
+  load_resource: 144.253
+-->

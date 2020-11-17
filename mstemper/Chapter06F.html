@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130127
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app105.us.archive.org';v.server_ms=31824;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter06F","20180605042605","http://web.archive.org/","web","/_static/",
+	      "1528172765");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 6, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605042605im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605042605cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter06" rel="parent" rev="child">
+  <link href="Chapter06E" rel="prev" rev="next">
+  <link href="Chapter06G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Functions on Finite Sets</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <ol>
+    <li>
+      <p>
+	If the members of a committee vote for an officer, and each vote
+	differs from all others, describe the range of the function f(x) that
+	maps each member, x, to their vote.
+      </p>
+
+      <p>
+	Since each member votes for a different person, the number of unique
+	votes is the same as the number of members. Since the votes are in
+	the same set as the voters, and the number of votes is the same as
+	the number of voters, the range of votes must be the entire set of
+	voters.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">A</span> be a finite set. Explain why any
+	injection f:<span class="Set">A</span>&rarr;<span class="Set">A</span>
+	must be a surjection.
+      </p>
+
+      <p>
+	If f is an injection, then |f(<span class="Set">A</span>)| =
+	|<span class="Set">A</span>|. Since <span class="Set">A</span> is
+	finite, <a href="http://web.archive.org/web/20180605042605/http://en.wikipedia.org/wiki/Dedekind-infinite_set">it
+	has no proper subsets with the same size as itself</a> (assuming the
+	Axiom of Choice). Therefore, the set of elements of
+	<span class="Set">A</span> that are mapped to is exactly
+	<span class="Set">A</span> itself, and f is a surjection.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">A</span> be a finite set. Explain why any
+	surjection f:<span class="Set">A</span>&rarr;<span class="Set">A</span>
+	must be an injection.
+      </p>
+
+      <p>
+	Assume that f is not an injection. Then,
+	&exist;a,b&isin;<span class="Set">A</span> such that f(a)=f(b). In
+	this case, since <span class="Set">A</span> is finite, there must
+	be some c&isin;<span class="Set">A</span> that is not in the image
+	of f, which makes f not a surjection. Therefore, if f is a sujection,
+	it must be an injection.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Are the statements in exercises 2 and 3 necessarily true when
+	<span class="Set">A</span> is infinite?
+      </p>
+
+      <p>
+	Let <span class="Set">A</span>=<span class="Set">N</span>, and
+	let f(x)=2x. This is an injection, since a&ne;b implies 2a&ne;2b.
+	However, it is not a surjection, since
+	&forall;c&isin;<span class="Set">N</span>, 2c&ne;3.
+      </p>
+
+      <p>
+	Let <span class="Set">A</span>=<span class="Set">N</span>, and
+	let f(x)=
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(x)</td>
+	  <td>x/2</td>
+	  <td>if x is even</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(x-1)/2</td>
+	  <td>if x is odd</td>
+	</tr>
+      </table>
+
+      <p>
+	This is a surjection, since for any p&isin;<span class="Set">N</span>,
+	f(2p)=p. However, it is not an injection, since for any
+	any p&isin;<span class="Set">N</span>, f(2p+1)=f(2p).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If |<span class="Set">A</span>|=n, how many functions
+	f:<span class="Set">A</span>&rarr;<span class="Set">A</span> are there?
+	How many of these are bijections?
+      </p>
+
+      <p>
+	There are n<sup>n</sup> functions, and n! of these are bijections.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter06">Chapter 6</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605042605/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605042605/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605042605/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605042605im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605042605/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605042605im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:26:05 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:56:54 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  load_resource: 149.588
+  exclusion.robots: 0.206
+  PetaboxLoader3.datanode: 31645.79 (5)
+  captures_list: 31662.631
+  exclusion.robots.policy: 0.19
+  PetaboxLoader3.resolve: 84.633
+  CDXLines.iter: 25.308 (3)
+  LoadShardBlock: 31607.35 (3)
+  esindex: 0.015
+  RedisCDXSource: 25.388
+-->

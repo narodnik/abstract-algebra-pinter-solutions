@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130716 - Exercise 1
+  Modified:	20130717 - Cleaned up 1, did Exercise 2
+		20130719 - Cleaned up 2 (what's wrong with me?)
+		20130720 - Exercises 3-6
+		20130729 - Exercises 7-9
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=2562;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter07I","20180501133759","http://web.archive.org/","web","/_static/",
+	      "1525181879");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 7, Problem I
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180501133759im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180501133759cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    OL.KinshipRules LI {list-style-type: lower-roman;}
+  </style>
+
+  <link href="./Chapter07" rel="parent" rev="child">
+  <link href="Chapter07H" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem I &mdash; The Algebra of Kinship Structures</h1>
+
+<div class="Section Problem" id="ProblemI">
+
+  <p>
+    Let <span class="Set">K</span> be the set of clans in a society, with
+    k<sub>i</sub>&isin;<span class="Set">K</span> for i&isin;{1, ... n}. We
+    have the following rules:
+  </p>
+
+  <ol class="KinshipRules">
+    <li>The clans form an equivalence relation on the society.</li>
+    <li>If a man is a member of k<sub>j</sub>, then he must marry a woman
+	from clan w(k<sub>j</sub>), where
+	w:<span class="Set">K</span>&rarr;<span class="Set">K</span>.</li>
+    <li>If w(x)=w(y) then x=y.</li>
+    <li>If a man is a member of k<sub>j</sub>, then his children are in
+	clan c(k<sub>j</sub>), where
+	c:<span class="Set">K</span>&rarr;<span class="Set">K</span>.</li>
+    <li>If c(x)=c(y) then x=y.</li>
+    <li>A man cannot marry a woman of his own clan: w(x)&ne;x.</li>
+    <li>For any x,y there is a permutation &alpha; that is the composite
+	of various of w, w<sup>-1</sup>, c, and c<sup>-1</sup> such that
+	&alpha;(x)=y.</li>
+    <li>If for any &alpha; and &beta; that are compostions of the various
+	kinship relations &alpha;(k<sub>j</sub>) = &beta;(k<sub>j</sub>),
+	then &alpha;(k<sub>i</sub>) = &beta;(k<sub>i</sub>) for all
+	i&isin;{1, ... n}</li>
+  </ol>
+
+  <p>
+    Letting <span class="Set">G</span> be the group of all compostions of
+    the various kinship relations and their inverses, prove items 1-3, and
+    explain items 4-9:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If &alpha;(k<sub>i</sub>)=k<sub>i</sub> for any clan k<sub>i</sub>,
+	then &alpha;=e (the identity).
+      </p>
+
+      <p>
+	e(k<sub>j</sub>)=k<sub>j</sub> for any clan k<sub>j</sub>.
+	Since &alpha;(k<sub>i</sub>)=k<sub>i</sub>, Rule viii says that
+	&alpha; = e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	&exist;m&le;n such that &alpha;<sup>m</sup> = e.
+      </p>
+
+      <p>
+	Since |<span class="Set">K</span>|=n, &exist; p,q
+	(1&le;p,q&le;n+1 and p&ne;q) such that
+	&alpha;<sup>p</sup>(k<sub>i</sub>) =
+	&alpha;<sup>q</sup>(k<sub>i</sub>), by the pigeon-hole principle.
+	Without loss of generality, let p&gt;q.
+	Rule viii implies that &alpha;<sup>p-q</sup>=e. Since p&le;n+1,
+	p-q&le;n.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> consists of exactly n permutations.
+      </p>
+
+      <p>
+	By rule vii, there must be at least n permutations, in order to map
+	x to each different k<sub>i</sub>&isin;<span class="Set">K</span>.
+	If there were more than n permutations, two of them would map x
+	to the same k<sub>i</sub>. By rule viii, these two permutations
+	would be identical. Therefore, there are exactly n permutations.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a person belongs to clan k<sub>i</sub>, their father belongs
+	to c<sup>-1</sup>(k<sub>i</sub>). If a woman belongs to clan
+	k<sub>j</sub>, her husband belongs to w<sup>-1</sup>(k<sub>j</sub>).
+      </p>
+
+      <p>
+	The identity function maps a clan to itself. Since all children of
+	a father belong to the same clan, the clan of the children of the
+	father of a person is that person's clan, which is modeled by
+	c&#8728;c<sup>-1</sup> = e. Since the wives of all of the men in a
+	given clan are from one (different) clan, the clan of the wives of
+	the men in the clan of one woman's husband is that person's clan,
+	which is modeled by w&#8728;w<sup>-1</sup> = e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a man is in the same clan as his son, c=e. If a woman is in the
+	same clan as her son, c=w.
+      </p>
+
+      <p>
+	If a man and his son are both in clan k<sub>j</sub>, then
+	c(k<sub>j</sub>) = k<sub>j</sub>. By Exercise 1, c=e.
+      </p>
+
+      <p>
+	If a man is in clan k<sub>j</sub>, then his wife is in
+	clan w(k<sub>j</sub>) and his son (hence <em>her</em> son) is in
+	clan c(k<sub>j</sub>). If w(k<sub>j</sub>) = c(k<sub>j</sub>),
+	then w=c by rule viii.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a person is in clan k<sub>i</sub>, the clan of their mother's
+	sister's son is
+	c&#8728;w<sup>-1</sup>&#8728;w&#8728;c<sup>-1</sup>(k<sub>i</sub>),
+	which prohibits marriage between matrilineal parallel cousins.
+      </p>
+
+      <p>
+	Call the person in question "x". Since x is in clan k<sub>i</sub>,
+	the father of x is in clan c<sup>-1</sup>(k<sub>i</sub>), the
+	mother of x is in clan w&#8728;c<sup>-1</sup>(k<sub>i</sub>),
+	as is her sister. Then, the husband of x's mother's sister is in
+	clan w<sup>-1</sup>&#8728;w&#8728;c<sup>-1</sup>(k<sub>i</sub>),
+	and the son of x's mother's sister's husband (who is, of course,
+	also the son of x's mother's sister) is in clan
+	c&#8728;w<sup>-1</sup>&#8728;w&#8728;c<sup>-1</sup>(k<sub>i</sub>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>c&#8728;w<sup>-1</sup>&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>c&#8728;e&#8728;c<sup>-1</sup></td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>c&#8728;c<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>e</td>
+	  <td>inverses</td>
+	</tr>
+      </table>
+
+      <p>
+	By rule ii, people from the same clan cannot marry.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Marriage between a man and the daughter of his father's sister
+	is prohibited.
+      </p>
+
+      <p>
+	Let the man be "y", and let him be a member of clan k<sub>j</sub>.
+	The father of y is a member of c<sup>-1</sup>(k<sub>j</sub>), as
+	is the sister of the father of y. The husband of the sister of the
+	father of y comes from clan
+	w<sup>-1</sup>&#8728;c<sup>-1</sup>(k<sub>j</sub>), and his daughter
+	is a member of clan
+	c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup>(k<sub>j</sub>). If a
+	man can marry the daughter of his father's sister, then
+	w = c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup>.
+      </p>
+
+      <p>
+	The assertion is false. One counter-example will suffice to show this.
+      </p>
+
+      <p>
+	If there are only two clans (n=2), then w = w<sup>-1</sup>. If we let
+	c = e (explicitly allowed by exercise 5), then the above expression
+	turns into:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>w</td>
+	  <td>c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup></td>
+	  <td>above expression</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>c&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>w = w<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>e&#8728;w&#8728;e<sup>-1</sup></td>
+	  <td>c = e</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>e&#8728;w&#8728;e</td>
+	  <td>identity is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>w</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	If matri-lineal cross-cousins may marry (that is, a woman may marry
+	the son of her mother's brother), then c&#8728;w =
+	w<sup>-1</sup>&#8728;c.
+      </p>
+
+      <p>
+	If the woman is in clan k<sub>j</sub>, then her father is in clan 
+	c<sup>-1</sup>(k<sub>j</sub>). Her mother, and her mother's brother,
+	are in clan w&#8728;c<sup>-1</sup>(k<sub>j</sub>). Her mother's
+	brother's son is in clan c&#8728;w&#8728;c<sup>-1</sup>(k<sub>j</sub>).
+	If he can marry her, then she is in clan
+	w&#8728;c&#8728;w&#8728;c<sup>-1</sup>(k<sub>j</sub>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>w&#8728;c&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>e</td>
+	  <td>a person's own clan is defined by the identity function</td>
+	</tr>
+	<tr>
+	  <td>w<sup>-1</sup>&#8728;w&#8728;c&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup>&#8728;e</td>
+	  <td>pre-multiply by w<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e&#8728;c&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup>&#8728;e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w&#8728;c<sup>-1</sup>&#8728;c</td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	  <td>post-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w&#8728;e</td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w</td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	If patri-lineal cross-cousins may marry (that is, a woman may marry the
+	son of her father's sister), then c and w<sup>-1</sup> commute.
+      </p>
+
+      <p>
+	If the woman is in clan k<sub>j</sub>, then her father is in clan 
+	c<sup>-1</sup>(k<sub>j</sub>), as is her father's sister. Her father's
+	sister's husband is in clan
+	w<sup>-1</sup>&#8728;c<sup>-1</sup>(k<sub>j</sub>), and his son is in
+	clan c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup>(k<sub>j</sub>). If
+	she can marry him, then she is in clan
+	w&#8728;c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup>(k<sub>j</sub>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>w&#8728;c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup></td>
+	  <td>e</td>
+	  <td>a person's own clan is defined by the identity function</td>
+	</tr>
+	<tr>
+	  <td>w<sup>-1</sup>&#8728;w&#8728;c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup>&#8728;e</td>
+	  <td>pre-multiply by w<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e&#8728;c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup>&#8728;e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup></td>
+	  <td>w<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w<sup>-1</sup>&#8728;c<sup>-1</sup>&#8728;c</td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	  <td>pre-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w<sup>-1</sup>&#8728;e</td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>c&#8728;w<sup>-1</sup></td>
+	  <td>w<sup>-1</sup>&#8728;c</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemI -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter07">Chapter 7</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180501133759/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180501133759/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180501133759/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180501133759im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180501133759/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180501133759im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 13:37:59 May 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:01:15 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1658.014
+  exclusion.robots: 0.126
+  exclusion.robots.policy: 0.116
+  RedisCDXSource: 2.507
+  esindex: 0.01
+  LoadShardBlock: 1631.77 (3)
+  PetaboxLoader3.datanode: 1915.534 (4)
+  CDXLines.iter: 20.767 (3)
+  load_resource: 897.509
+  PetaboxLoader3.resolve: 160.959
+-->

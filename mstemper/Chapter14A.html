@@ -1,0 +1,694 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141108 - Exercises 1-3
+  Modified:	20141109 - Exercise 4
+		20141120 - Exercises 5 and 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=1155;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14A","20180526144355","http://web.archive.org/","web","/_static/",
+	      "1527345835");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180526144355im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180526144355cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Examples of Homomorphisms of Finite Groups</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <ol>
+    <li>
+      <p>
+	Consider the following function
+	f:<span class="Set">Z<sub>8</sub></span> &rarr;
+	<span class="Set">Z<sub>4</sub></span>:
+      </p>
+
+      <table class="Matrix">
+	<caption>f&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>5</td>
+	  <td>6</td>
+	  <td>7</td>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+      </table>
+
+      <p>
+	Verify that f is a homomorphism, find its
+	kernel <span class="Set">K</span>, and list the cosets of
+	<span class="Set">K</span>.
+      </p>
+
+      <p>
+	The book suggests performing all 64 possible additions of elements
+	of <span class="Set">Z<sub>8</sub></span>. Since both
+	<span class="Set">Z<sub>8</sub></span> and
+	<span class="Set">Z<sub>4</sub></span> are commutative, even that
+	brute force approach only needs 32 additions.
+	The amount of work can be greatly reduced by observing that
+	&forall; a &isin; <span class="Set">Z<sub>8</sub></span>,
+	a &cong; f(a) (mod 4).
+      </p>
+
+      <p>
+	By the laws of congruences, if x &cong; f(x) (mod 4) and y &cong;
+	f(y) (mod 4), then x+y &cong; f(x) + f(y) (mod 4). But, by the
+	definition of f, x+y &cong; f(x+y) (mod 4). Since congruence is a
+	transitive relation, this gives f(x+y) &cong; f(x) + f(y) (mod 4).
+	Therefore, f preserves sums and is a homomorphism.
+      </p>
+
+      <p>
+	The kernel of f, <span class="Set">K</span> = {0, 4}.
+      </p>
+
+      <p>
+	The cosets of <span class="Set">K</span> are {0, 4}, {1, 5},
+	{2, 6}, and 3{, 7}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Consider the following function
+	f:<span class="Set">S<sub>3</sub></span> &rarr;
+	<span class="Set">Z<sub>2</sub></span>:
+      </p>
+
+      <table class="Matrix">
+	<caption>f&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>&epsilon;</td>
+	  <td>&alpha;</td>
+	  <td>&beta;</td>
+	  <td>&gamma;</td>
+	  <td>&delta;</td>
+	  <td>&kappa;</td>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+      </table>
+
+      <p>
+	Verify that f is a homomorphism, find its
+	kernel <span class="Set">K</span>, and list the cosets of
+	<span class="Set">K</span>.
+      </p>
+
+      <p>
+	Since f(&epsilon;) = 0, it can be seen that f(&epsilon;&#8728;x) =
+	f(x) = f(0) + f(x) = f(x) + f(0) = f(x&#8728;&epsilon;). Looking at
+	compositions of the remaining elements of
+	<span class="Set">S<sub>3</sub></span>:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;/+</th>
+	  <th>&alpha;/1</th>
+	  <th>&beta;/0</th>
+	  <th>&gamma;/1</th>
+	  <th>&delta;/0</th>
+	  <th>&kappa;/1</th>
+	</tr>
+	<tr>
+	  <th>&alpha;/1</th>
+	  <td>&epsilon;/0</td>
+	  <td>&gamma;/1</td>
+	  <td>&beta;/0</td>
+	  <td>&kappa;/1</td>
+	  <td>&delta;/0</td>
+	</tr>
+	<tr>
+	  <th>&beta;/0</th>
+	  <td>&kappa;/1</td>
+	  <td>&delta;/0</td>
+	  <td>&alpha;/1</td>
+	  <td>&epsilon;/0</td>
+	  <td>&gamma;/1</td>
+	</tr>
+	<tr>
+	  <th>&gamma;/1</th>
+	  <td>&delta;/0</td>
+	  <td>&kappa;/1</td>
+	  <td>&epsilon;/0</td>
+	  <td>&alpha;/1</td>
+	  <td>&beta;/0</td>
+	</tr>
+	<tr>
+	  <th>&delta;/0</th>
+	  <td>&gamma;/1</td>
+	  <td>&epsilon;/0</td>
+	  <td>&kappa;/1</td>
+	  <td>&beta;/0</td>
+	  <td>&alpha;/1</td>
+	</tr>
+	<tr>
+	  <th>&kappa;/1</th>
+	  <td>&beta;/0</td>
+	  <td>&alpha;/1</td>
+	  <td>&delta;/0</td>
+	  <td>&gamma;/1</td>
+	  <td>&epsilon;/0</td>
+	</tr>
+      </table>
+
+      <p>
+	In each case, f(a&#8728;b) = f(a) + f(b), making f a homomorphism.
+      </p>
+
+      <p>
+	The kernel of f, <span class="Set">K</span> =
+	{&epsilon;, &beta;, &delta;}.
+      </p>
+
+      <p>
+	The cosets of <span class="Set">K</span> are
+	{&epsilon;, &beta;, &delta;} and
+	{&alpha;, &gamma;, &kappa;}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find a homomorphism
+	f:<span class="Set">Z<sub>15</sub></span> &rarr;
+	<span class="Set">Z<sub>5</sub></span> and indicate its kernel.
+      </p>
+
+      <p>
+	The homomorphism is:
+      </p>
+
+      <table class="Matrix">
+	<caption>f&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>5</td>
+	  <td>6</td>
+	  <td>7</td>
+	  <td>8</td>
+	  <td>9</td>
+	  <td>10</td>
+	  <td>11</td>
+	  <td>12</td>
+	  <td>13</td>
+	  <td>14</td>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	</tr>
+      </table>
+
+      <p>
+	It can be shown to be a homomorphism by noting that x &cong; f(x)
+	(mod 5) and following the approach used in Exercise 1.
+      </p>
+
+      <p>
+	ker(f) = {0, 5, 10}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The rotations of a square piece of paper always present side A or
+	side B to view. Let g(R<sub>i</sub>) be defined as:
+      </p>
+
+      <table class="Matrix">
+	<caption>&epsilon;&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>A</td>
+	  <td>B</td>
+	</tr>
+	<tr>
+	  <td>A</td>
+	  <td>B</td>
+	</tr>
+      </table>
+
+      <p>
+	if R<sub>i</sub> does not cause the displayed side to change, and as:
+      </p>
+
+      <table class="Matrix">
+	<caption>&alpha;&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>A</td>
+	  <td>B</td>
+	</tr>
+	<tr>
+	  <td>B</td>
+	  <td>A</td>
+	</tr>
+      </table>
+
+      <p>
+	if R<sub>i</sub> causes the displayed side to change. Prove that
+	g:<span class="Set">D<sub>4</sub></span> &rarr;
+	<span class="Set">S<sub>2</sub></span> is a homomorphism and give
+	its kernel.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I am using Chapter 7's notation for
+	<span class="Set">D<sub>4</sub></span>, {R<sub>0</sub> ...
+	R<sub>7</sub>}, rather than Chapter 5's notation, {e, a, b, ...
+	ab<sup>3</sup>}.
+      </p>
+      </div>
+
+      <p>
+	The function g is:
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">D<sub>4</sub></span></th>
+	  <th><span class="Set">S<sub>2</sub></span></th>
+	</tr>
+	<tr>
+	  <td>R<sub>0</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>1</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>2</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>3</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>4</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>5</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>7</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>7</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+      </table>
+
+      <p>
+	Rather than write out the entire Cayley table, I will use geometric
+	reasoning for each possible case, based on the facts that
+	R<sub>0</sub>, R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>
+	do not change which face is presented, while
+	R<sub>4</sub>, R<sub>5</sub>, R<sub>6</sub>, R<sub>7</sub>
+	change it.
+      </p>
+
+      <ul>
+        <li><span class="Case">&epsilon;&#8728;&epsilon;</span>
+	  Following one rotation that does not change the presented face with
+	  another ends with the presented face unchanged. Therefore, if
+	  m,n &isin; {0, 1, 2, 3}, R<sub>m</sub>&#8728;R<sub>n</sub> =
+	  R<sub>p</sub>, with p &isin; {0, 1, 2, 3}.
+	  Since &epsilon;&#8728;&epsilon; = &epsilon;, products are
+	  preserved in this case.
+	</li>
+        <li><span class="Case">&alpha;&#8728;&epsilon;</span>
+	  Following a rotation that does not change the presented face with
+	  one that does ends with the presented face changed.
+	  Therefore, if m &isin; {4, 5, 6, 7} and
+	  n &isin; {0, 1, 2, 3}, R<sub>m</sub>&#8728;R<sub>n</sub> =
+	  R<sub>p</sub>, with p &isin; {4, 5, 6, 7}.
+	  Since &epsilon;&#8728;&alpha; = &alpha;, products are preserved
+	  in this case.
+	</li>
+        <li><span class="Case">&epsilon;&#8728;&alpha;</span>
+	  Following a rotation that changes the presented face with
+	  one that does not ends with the presented face changed.
+	  Therefore, if m &isin; {0, 1, 2, 3} and
+	  n &isin; {4, 5, 6, 7}, R<sub>m</sub>&#8728;R<sub>n</sub> =
+	  R<sub>p</sub>, with p &isin; {4, 5, 6, 7}.
+	  Since &epsilon;&#8728;&alpha; = &alpha;, products are preserved
+	  in this case.
+	</li>
+        <li><span class="Case">&alpha;&#8728;&alpha;</span>
+	  Following one rotation that changes the presented face with
+	  another ends with the presented face unchanged. Therefore, if
+	  m,n &isin; {4, 5, 6, 7}, R<sub>m</sub>&#8728;R<sub>n</sub> =
+	  R<sub>p</sub>, with p &isin; {0, 1, 2, 3}.
+	  Since &alpha;&#8728;&alpha; = &epsilon;, products are
+	  preserved in this case.
+	</li>
+      </ul>
+
+      <p>
+	Since products are preserved in all cases, g is a homomorphism.
+      </p>
+
+      <p>
+	The kernel, ker(g) = {R<sub>0</sub>, R<sub>1</sub>, R<sub>2</sub>,
+	R<sub>3</sub>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Every motion of the regular hexagon brings about a permutation of
+	its diagonals, {1, 2, 3}. For each R<sub>i</sub> in
+	<span class="Set">D<sub>6</sub></span>, let f(R<sub>i</sub>) be the
+	permutation of the diagonals produced by R<sub>i</sub>. Argue
+	informally to explain why f:<span class="Set">D<sub>6</sub></span>
+	&rarr; <span class="Set">S<sub>3</sub></span> is a homomorphism.
+	Then explicitly state all values of f.
+      </p>
+
+      <p>
+	Whether the hexagon is moved from one orientation to another directly
+	or by performing multiple flips and rotations, the diagonals end up
+	in the same orientation. Therefore, products are preserved.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I am using the notation from <a href="Chapter07F#Ex01">Problem F of
+	Chapter 7</a> for <span class="Set">D<sub>6</sub></span>. For
+	<span class="Set">S<sub>3</sub></span>, I am using the notation from
+	Chapter 7 of the text, as implied by Pinter's problem statement.
+	The diagonals, {1, 2, 3}, pass through the similarly-numbered vertices.
+      </p>
+      </div>
+
+      <p>
+	Each rotation of the hexagon results in a cycle of all three diagonals
+	or leaves all diagonals unchanged. Each flip is a transposition of
+	two diagonals. The following table defines f:
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">D<sub>6</sub></span></th>
+	  <th><span class="Set">S<sub>3</sub></span></th>
+	</tr>
+	<tr>
+	  <td>R<sub>0</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>1</sub></td>
+	  <td>&delta;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>2</sub></td>
+	  <td>&beta;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>3</sub></td>
+	  <td>&epsilon;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>4</sub></td>
+	  <td>&delta;</td>
+	</tr>
+	<tr>
+	  <td>R<sub>5</sub></td>
+	  <td>&beta;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>a</sub></td>
+	  <td>&gamma;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>b</sub></td>
+	  <td>&kappa;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>c</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>d</sub></td>
+	  <td>&gamma;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>e</sub></td>
+	  <td>&kappa;</td>
+	</tr>
+	<tr>
+	  <td>F<sub>f</sub></td>
+	  <td>&alpha;</td>
+	</tr>
+      </table>
+
+      <p>
+	Although it wasn't requested, ker(f) = {R<sub>0</sub>, R<sub>3</sub>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">B</span> &sub; <span class="Set">A</span>.
+	Let h:<span class="Set">P<sub>A</sub></span>
+	&rarr; <span class="Set">P<sub>B</sub></span> be defined by
+	h(<span class="Set">C</span>) = <span class="Set">C</span> &cap;
+	<span class="Set">B</span>. For <span class="Set">A</span> = {1, 2, 3}
+	and <span class="Set">B</span> = {1, 2}, give the function table of h.
+	For any <span class="Set">A</span> and <span class="Set">B</span> &sub;
+	<span class="Set">A</span>, prove that h is a homomorphism.
+      </p>
+
+      <table class="FuncTab">
+	<tr>
+	  <th><span class="Set">P<sub>A</sub></span></th>
+	  <th><span class="Set">P<sub>B</sub></span></th>
+	</tr>
+	<tr>
+	  <td>&empty;</td>
+	  <td>&empty;</td>
+	</tr>
+	<tr>
+	  <td>{1}</td>
+	  <td>{1}</td>
+	</tr>
+	<tr>
+	  <td>{2}</td>
+	  <td>{2}</td>
+	</tr>
+	<tr>
+	  <td>{3}</td>
+	  <td>&empty;</td>
+	</tr>
+	<tr>
+	  <td>{1, 2}</td>
+	  <td>{1, 2}</td>
+	</tr>
+	<tr>
+	  <td>{1, 3}</td>
+	  <td>{1}</td>
+	</tr>
+	<tr>
+	  <td>{2, 3}</td>
+	  <td>{2}</td>
+	</tr>
+	<tr>
+	  <td><span class="Set">A</span></td>
+	  <td><span class="Set">B</span></td>
+	</tr>
+      </table>
+
+      <p>
+	To prove that this is a homomorphism,
+	let x,y &isin; <span class="Set">P<sub>A</sub></span>.
+      </p>
+
+      <table class="Derive">
+        <tr>
+	  <td>h(x)+h(y)</td>
+	  <td>
+	    (x&cap;<span class="Set">B</span>) +
+	    (y&cap;<span class="Set">B</span>)
+	  </td>
+	  <td>definition of h</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>
+	    ((x&cap;<span class="Set">B</span>) &cup;
+	    (y&cap;<span class="Set">B</span>)) -
+	    ((x&cap;<span class="Set">B</span>) &cap;
+	    (y&cap;<span class="Set">B</span>))
+	  </td>
+	  <td>definition of symmetric difference</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>
+	    ((x&cup;y) &cap; <span class="Set">B</span>) -
+	    ((x&cap;<span class="Set">B</span>) &cap;
+	    (y&cap;<span class="Set">B</span>))
+	  </td>
+	  <td>distributivity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>
+	    ((x&cup;y) &cap; <span class="Set">B</span>) -
+	    ((x&cap;y) &cap; <span class="Set">B</span>)
+	  </td>
+	  <td>distributivity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>
+	    ((x&cup;y) - (x&cap;y)) &cap; <span class="Set">B</span>
+	  </td>
+	  <td>distributivity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>
+	    (x+y) &cap; <span class="Set">B</span>
+	  </td>
+	  <td>definition of symmetric difference</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>h(x+y)</td>
+	  <td>definition of h</td>
+	</tr>
+      </table>
+
+      <p>
+	Products are preserved, so h is a homomorphism.
+      </p>
+
+      <p>
+        Note that the assumption that <span class="Set">B</span> &sub;
+	<span class="Set">A</span> is superfluous, and was not used in
+	this proof.
+        If <span class="Set">B</span> &nsub;
+	<span class="Set">A</span>, then <span class="Set">P<sub>B</sub></span>
+	is not a homomorphic image of <span class="Set">P<sub>A</sub></span>.
+        If <span class="Set">B</span> &cap; <span class="Set">A</span> =
+	&empty; then ker(h) = <span class="Set">P<sub>A</sub></span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180526144355/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180526144355/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180526144355/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180526144355im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180526144355/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180526144355im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 14:43:55 May 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:04 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 758.447 (3)
+  PetaboxLoader3.resolve: 125.391
+  exclusion.robots: 0.212
+  PetaboxLoader3.datanode: 851.12 (4)
+  exclusion.robots.policy: 0.196
+  RedisCDXSource: 33.354
+  CDXLines.iter: 26.165 (3)
+  load_resource: 300.071
+  esindex: 0.017
+  captures_list: 822.835
+-->

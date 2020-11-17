@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140505
+  Modified:	20140513 - Finished Exercise 1, did 2 and 3
+		20140514 - Exercise 4
+		20140515 - Exercise 5
+		20140529 - Fixed some typos
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=1714;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08E","20180407030334","http://web.archive.org/","web","/_static/",
+	      "1523070214");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180407030334im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180407030334cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08D" rel="prev" rev="next">
+  <link href="Chapter08F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Conjugate Cycles</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    Prove each of the following in <span class="Set">S<sub>n</sub></span>:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+
+    <div class="SideBar">
+    <p>
+      If &alpha; is any cycle and &pi; any permutation,
+      &pi;&alpha;&pi;<sup>-1</sup> is called a <dfn>conjugate</dfn> of
+      &alpha;.
+    </p>
+    </div>
+
+      <p>
+	Let &alpha; = (a<sub>1</sub> ... a<sub>s</sub>) be a cycle and let
+	&pi; be a permutation in <span class="Set">S<sub>n</sub></span>.
+	Then &pi;&alpha;&pi;<sup>-1</sup> is the cycle
+	(&pi;(a<sub>1</sub>) ... &pi;(a<sub>s</sub>)).
+      </p>
+
+      <p>
+	First, let's handle the case where &pi;<sup>-1</sup>(b) &notin;
+	{a<sub>i</sub>|1&le;i&le;s}. In this case, we have
+	&pi;&alpha;&pi;<sup>-1</sup>(b) =
+	&pi;&pi;<sup>-1</sup>(b) = b. This means that
+	&pi;&alpha;&pi;<sup>-1</sup> does not change b.
+      </p>
+
+      <p>
+	Now, we can look at the case where &pi;<sup>-1</sup>(b) &isin;
+	{a<sub>i</sub>|1&le;i&le;s}. First, we observe that since
+	&pi;<sup>-1</sup> is a bijection, there are n elements in this case.
+      </p>
+
+      <p>
+	Let f = &pi;&alpha;&pi;<sup>-1</sup>. Then,
+	(... f(b), f(f(b)), ...) is part of a cyle in f. For some
+	a<sub>j</sub>, f(b) = &pi;(a<sub>j</sub>). Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(b)</td>
+	  <td>&pi;(a<sub>j</sub>)</td>
+	  <td>Given</td>
+	</tr>
+	<tr>
+	  <td>f(f(b))</td>
+	  <td>f(&pi;(a<sub>j</sub>))</td>
+	  <td>Apply f to both sides</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f&#8728;&pi;(a<sub>j</sub>)</td>
+	  <td>Definition of composition of functions</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>&pi;&#8728;&alpha;&#8728;&pi;<sup>-1</sup>&#8728;&pi;(a<sub>j</sub>)</td>
+	  <td>Definition of f</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>&pi;&#8728;&alpha;(a<sub>j</sub>)</td>
+	  <td>Inverses</td>
+	</tr>
+      </table>
+
+      <p>
+	Since (... a<sub>j</sub>, &alpha;(a<sub>j</sub>), ...) was any
+	arbitrary part of the cycle &alpha;, and (... &pi;(a<sub>j</sub>),
+	&pi;&alpha;(a<sub>j</sub>), ...) is part of a cycle in
+	&pi;&alpha;&pi;<sup>-1</sup>, the result is proved.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Conclude from Part 1 that any two cycles of the same length are
+	conjugates of each other.
+      </p>
+
+      <p>
+	Let &alpha; = (a<sub>1</sub>, ..., a<sub>k</sub>) and &beta; =
+	(b<sub>1</sub>, ..., b<sub>k</sub>) be two cycles in
+	<span class="Set">S<sub>n</sub></span>, both of length k.
+      </p>
+
+      <p>
+	Define &theta;(a<sub>i</sub>) = b<sub>i</sub> (1&le;i&le;k). Then, we
+	may rewrite &beta; as (&theta;(b<sub>1</sub>), ...,
+	&theta;(b<sub>k</sub>)). Part 1 shows that &beta; =
+	&theta;&alpha;&theta;<sup>-1</sup>, which means that
+	&beta; is a conjugate of &alpha;.
+      </p>
+
+      <p>
+        Since our choice of which function to label "&alpha;" and which to
+	label "&beta;" was arbitrary, this shows that each is a conjugate of
+	the other.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If &alpha; and &beta; are disjoint cycles, then
+	&pi;&alpha;&pi;<sup>-1</sup> and
+	&pi;&beta;&pi;<sup>-1</sup> are disjoint cycles.
+      </p>
+
+      <p>
+	If the elements of &alpha; are labeled as "a<sub>i</sub>", then by
+	Part 1, the elements of &pi;&alpha;&pi;<sup>-1</sup> are
+	&pi;(a<sub>i</sub>). Labeling the elements of &beta; as "b<sub>j</sub>"
+	gives the elements of &pi;&beta;&pi;<sup>-1</sup> as
+	&pi;(b<sub>j</sub>).
+      </p>
+
+      <p>
+	Since &alpha; and &beta; are disjoint, a<sub>i</sub> &ne; b<sub>j</sub>
+	for all i,j. Since &pi; is a permutation, it is one-to-one, which means
+	that for all i,j &pi;(a<sub>i</sub>) &ne; &pi;(b<sub>j</sub>). This
+	implies that &pi;&alpha;&pi;<sup>-1</sup> and
+	&pi;&beta;&pi;<sup>-1</sup> are disjoint cycles.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	Let &sigma; be a product &alpha;<sub>1</sub> ... &alpha;<sub>t</sub>
+	of t disjoint cycles of lengths l<sub>1</sub> ... l<sub>t</sub>,
+	respectively. Then &pi;&sigma;&pi;<sup>-1</sup> is also a product of
+	t disjoint cycles of lengths l<sub>1</sub> ... l<sub>t</sub>.
+      </p>
+
+      <p>
+	The first step will be to prove a lemma, stating that
+	&pi;&alpha;<sub>1</sub> ...
+	&alpha;<sub>t</sub>&pi;<sup>-1</sup> =
+	&pi;&alpha;<sub>1</sub>&pi;<sup>-1</sup> ...
+	&pi;&alpha;<sub>t</sub>&pi;<sup>-1</sup>.
+	The proof will be by induction on t.
+      </p>
+
+      <p><span class="Ind">Base</span>
+	For any &alpha;<sub>1</sub> and &alpha;<sub>2</sub>, we have:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>&pi;&alpha;<sub>1</sub>&alpha;<sub>2</sub>&pi;<sup>-1</sup></td>
+	  <td>&pi;&alpha;<sub>1</sub>e&alpha;<sub>2</sub>&pi;<sup>-1</sup></td>
+	  <td>Identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>&pi;&alpha;<sub>1</sub>&pi;<sup>-1</sup>&pi;&alpha;<sub>2</sub>&pi;<sup>-1</sup></td>
+	  <td>Inverses</td>
+	</tr>
+      </table>
+
+      <p><span class="Ind">Hypothesis</span>
+	Assume that &pi;&alpha;<sub>1</sub> ...
+	&alpha;<sub>t</sub>&pi;<sup>-1</sup> =
+	&pi;&alpha;<sub>1</sub>&pi;<sup>-1</sup> ...
+	&pi;&alpha;<sub>t</sub>&pi;<sup>-1</sup> for t=k.
+      </p>
+
+      <p><span class="Ind">Step</span>
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>&pi;(&alpha;<sub>1</sub> ... &alpha;<sub>k</sub>)&alpha;<sub>k+1</sub>&pi;<sup>-1</sup></td>
+	  <td>&pi;(&alpha;<sub>1</sub> ... &alpha;<sub>k</sub>)e&alpha;<sub>k+1</sub>&pi;<sup>-1</sup></td>
+	  <td>Identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>&pi;(&alpha;<sub>1</sub> ... &alpha;<sub>k</sub>)&pi;<sup>-1</sup>&pi;&alpha;<sub>k+1</sub>&pi;<sup>-1</sup></td>
+	  <td>Inverses</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(&pi;&alpha;<sub>1</sub>&pi;<sup>-1</sup>) ... (&pi;&alpha;<sub>k</sub>&pi;<sup>-1</sup>)(&pi;&alpha;<sub>k+1</sub>&pi;<sup>-1</sup>)</td>
+	  <td>By induction hypothesis</td>
+	</tr>
+      </table>
+
+      <p>
+	Since the lemma is true for two cycles, and its truth for k cycles
+	implies its truth for k+1 cycles, it is true for any finite number of
+	cycles greater than one.
+      </p>
+
+      <p>
+	By <a href="#Ex01">Exercise 1</a>, if &alpha;<sub>p</sub> is a cycle
+	of length l<sub>p</sub>, &pi;&alpha;<sub>p</sub>&pi;<sup>-1</sup> is
+	also a cycle of length l<sub>p</sub>.
+      </p>
+
+      <p>
+	Since &alpha;<sub>i</sub> and &alpha;<sub>j</sub> are disjoint when
+	i&ne;j, &pi;&alpha;<sub>i</sub>&pi;<sup>-1</sup> and
+	&pi;&alpha;<sub>j</sub>&pi;<sup>-1</sup> are, by
+	<a href="#Ex03">Exercise 3</a>. By the lemma,
+	&pi;&sigma;&pi;<sup>-1</sup> is therefore the product of t disjoint
+	cycles of lengths l<sub>1</sub> ... l<sub>t</sub>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let &alpha;<sub>1</sub> and &alpha;<sub>2</sub> be cycles of the same
+	length and let &beta;<sub>1</sub> and &beta;<sub>2</sub> be cycles
+	of the same length. Let &alpha;<sub>1</sub> and &beta;<sub>1</sub> be
+	disjoint and let &alpha;<sub>2</sub> and &beta;<sub>2</sub> be
+	disjoint. There is a permutation &pi; such that
+	&alpha;<sub>1</sub>&beta;<sub>1</sub> =
+	&pi;&alpha;<sub>2</sub>&beta;<sub>2</sub>&pi;<sup>-1</sup>.
+      </p>
+
+      <p>
+	We can rewrite
+	&pi;&alpha;<sub>2</sub>&beta;<sub>2</sub>&pi;<sup>-1</sup> as
+	&pi;&alpha;<sub>2</sub>&pi;<sup>-1</sup>&pi;&beta;<sub>2</sub>&pi;<sup>-1</sup>.
+	Since &alpha;<sub>1</sub> and &alpha;<sub>2</sub> have the same
+	lengths, there is at least one permutation that, when conjugated with
+	&alpha;<sub>2</sub> gives &alpha;<sub>1</sub>. A similar statement is
+	true for the &beta;s.
+      </p>
+
+      <p>
+	If we can find a single permutation &pi; such that both
+	&pi;&alpha;<sub>2</sub>&pi;<sup>-1</sup> = &alpha;<sub>1</sub> and
+	&pi;&beta;<sub>2</sub>&pi;<sup>-1</sup> = &beta;<sub>1</sub>, we are
+	done.
+      </p>
+
+      <p>
+	We can let &pi;<sub>&alpha;</sub> be a permutation such that
+	&pi;<sub>&alpha;</sub>&alpha;<sub>2</sub>&pi;<sub>&alpha;</sub><sup>-1</sup>
+	= &alpha;<sub>1</sub>, and any element that
+	&pi;<sub>&alpha;</sub><sup>-1</sup> does not map into
+	&alpha;<sub>2</sub> is mapped into itself. Similarly, let
+	&pi;<sub>&beta;</sub> be a permutation such that
+	&pi;<sub>&beta;</sub>&beta;<sub>2</sub>&pi;<sub>&beta;</sub><sup>-1</sup>
+	= &beta;<sub>1</sub>, and any element that
+	&pi;<sub>&beta;</sub><sup>-1</sup> does not map into
+	&beta;<sub>2</sub> is mapped into itself.
+      </p>
+
+      <p>
+	As shown in <a href="#Ex01">Exercise 1</a>, when a permutation is
+	conjugated with a cycle, only the elements that the inverse of the
+	permutation map into the cycle are changed by the conjugate.
+	Since &alpha;<sub>2</sub> and &beta;<sub>2</sub> are disjoint cycles,
+	&pi;<sub>&alpha;</sub> does not modify any elements that are changed
+	by &pi;<sub>&beta;</sub> and vice-versa. Therefore, &pi; =
+	&pi;<sub>&alpha;</sub>&#8728;&pi;<sub>&beta;</sub> has the desired
+	properties.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180407030334/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180407030334/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180407030334/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180407030334im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180407030334/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180407030334im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:03:34 Apr 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:42 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.015
+  exclusion.robots.policy: 0.186
+  CDXLines.iter: 22.692 (3)
+  LoadShardBlock: 1141.367 (3)
+  PetaboxLoader3.datanode: 1333.498 (4)
+  RedisCDXSource: 43.979
+  PetaboxLoader3.resolve: 165.283
+  load_resource: 478.258
+  exclusion.robots: 0.202
+  captures_list: 1212.716
+-->

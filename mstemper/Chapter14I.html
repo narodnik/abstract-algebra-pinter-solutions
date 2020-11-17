@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151006 - Exercise 1
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=229;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14I","20180326150947","http://web.archive.org/","web","/_static/",
+	      "1522076987");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem I
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180326150947im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180326150947cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14H" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem I &mdash; Conjugate Subgroups</h1>
+
+<div class="Section Problem" id="ProblemI">
+
+  <p>
+    Let <span class="Set">H</span> &lt; <span class="Set">G</span>. &forall; a
+    &isin; <span class="Set">G</span>, let
+    a<span class="Set">H</span>a<sup>-1</sup> = { aha<sup>-1</sup> : h &isin;
+    <span class="Set">H</span> }. a<span class="Set">H</span>a<sup>-1</sup> is
+    called a <dfn>conjugate</dfn> of <span class="Set">H</span>. Prove the
+    following.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	For each a &isin; <span class="Set">G</span>,
+	a<span class="Set">H</span>a<sup>-1</sup> &lt;
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let h<sub>1</sub>,h<sub>2</sub> &isin; <span class="Set">H</span>.
+	Then, ah<sub>1</sub>a<sup>-1</sup>,
+	ah<sub>2</sub>a<sup>-1</sup>, &isin;
+	a<span class="Set">H</span>a<sup>-1</sup>. Multiplying them gives:
+	ah<sub>1</sub>a<sup>-1</sup>ah<sub>2</sub>a<sup>-1</sup> =
+	ah<sub>1</sub>(a<sup>-1</sup>a)h<sub>2</sub>a<sup>-1</sup> =
+	ah<sub>1</sub>eh<sub>2</sub>a<sup>-1</sup> =
+	a(h<sub>1</sub>h<sub>2</sub>)a<sup>-1</sup>. Since
+	<span class="Set">H</span> is a group, (h<sub>1</sub>h<sub>2</sub>)
+	&isin; <span class="Set">H</span> and
+	a(h<sub>1</sub>h<sub>2</sub>)a<sup>-1</sup> &isin;
+	a<span class="Set">H</span>a<sup>-1</sup>. Therefore,
+	a<span class="Set">H</span>a<sup>-1</sup> is closed under
+	multiplication.
+      </p>
+
+      <p>
+	Let h &isin; <span class="Set">H</span>. Then, aha<sup>-1</sup> &isin;
+	a<span class="Set">H</span>a<sup>-1</sup>.
+	(aha<sup>-1</sup>)<sup>-1</sup> =
+	(a<sup>-1</sup>)<sup>-1</sup>h<sup>-1</sup>a<sup>-1</sup> =
+	ah<sup>-1</sup>a<sup>-1</sup>. Since <span class="Set">H</span> is a
+	group, h<sup>-1</sup> &isin; <span class="Set">H</span>, which means
+	that ah<sup>-1</sup>a<sup>-1</sup> &isin;
+	a<span class="Set">H</span>a<sup>-1</sup>, which is therefore closed
+	under inversion.
+      </p>
+
+      <p>
+	Since a<span class="Set">H</span>a<sup>-1</sup> is a subset of
+	<span class="Set">G</span> that is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	&forall; a &isin; <span class="Set">G</span>,
+	<span class="Set">H</span> &#8792;
+	a<span class="Set">H</span>a<sup>-1</sup>.
+      </p>
+
+      <p>
+	Let f<sub>a</sub>: <span class="Set">H</span> &rarr;
+	a<span class="Set">H</span>a<sup>-1</sup> be defined as
+	f<sub>a</sub>(h) = aha<sup>-1</sup>.
+      </p>
+
+      <p>
+	<span class="Case">f<sub>a</sub> preserves products</span>
+	Let x,y &isin; <span class="Set">H</span>. Then
+	f<sub>a</sub>(x)f<sub>a</sub>(y) =
+	(axa<sup>-1</sup>)(aya<sup>-1</sup>) =
+	ax(a<sup>-1</sup>a)ya<sup>-1</sup> =
+	axeya<sup>-1</sup> = axya<sup>-1</sup> = f(xy).
+      </p>
+
+      <p>
+	<span class="Case">f<sub>a</sub> is one-to-one</span>
+	Let x,y &isin; <span class="Set">H</span> with f<sub>a</sub>(x) =
+	f<sub>a</sub>(y). Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f<sub>a</sub>(x)</td>
+	  <td>f<sub>a</sub>(y)</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>axa<sup>-1</sup></td>
+	  <td>aya<sup>-1</sup></td>
+	  <td>definition of f<sub>a</sub></td>
+	</tr>
+	<tr>
+	  <td>ax</td>
+	  <td>ay</td>
+	  <td>Cancellation Law</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>y</td>
+	  <td>Cancellation Law</td>
+	</tr>
+      </table>
+
+      <p>
+	Since f<sub>a</sub>(x) = f<sub>a</sub>(y) implies x=y, f<sub>a</sub>
+	is one-to-one.
+      </p>
+
+      <p>
+	<span class="Case">f<sub>a</sub> is onto</span>
+	Let x &isin; a<span class="Set">H</span>a<sup>-1</sup>. Then &exist;
+	p &isin; <span class="Set">H</span> such that x = apa<sup>-1</sup>.
+	Therefore, f<sub>a</sub>(p) = x and f<sub>a</sub> is onto
+	a<span class="Set">H</span>a<sup>-1</sup>.
+      </p>
+
+      <p>
+	Since f<sub>a</sub> is a function between groups that preserves
+	products, it is a homomorphism. Since it is a one-to-one and onto
+	function, it is a bijection. A bijective homomorphism is an
+	isomorphism.
+      </p>
+
+      <p>
+	Since f<sub>a</sub> is an isomorphism between
+	<span class="Set">H</span> and
+	a<span class="Set">H</span>a<sup>-1</sup>, <span class="Set">H</span>
+	&#8792; a<span class="Set">H</span>a<sup>-1</sup>.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">H</span> &#8882; <span class="Set">G</span> iff
+	<span class="Set">H</span> = a<span class="Set">H</span>a<sup>-1</sup>
+	&forall; a &isin; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	In <a href="Chapter14D#Ex05">Chapter 14, Problem D, Exercise 5</a>, it
+	was shown that if <span class="Set">H</span> &lt;
+	<span class="Set">G</span>, <span class="Set">H</span> &#8882;
+	<span class="Set">G</span> iff a<span class="Set">H</span> =
+	<span class="Set">H</span>a &forall; a &isin;
+	<span class="Set">G</span>. However, the condition 
+	a<span class="Set">H</span> = <span class="Set">H</span>a is equivalent
+	to the condition
+	a<span class="Set">H</span>a<sup>-1</sup> = <span class="Set">H</span>.
+      </p>
+
+      <p>
+	Therefore, <span class="Set">H</span> &#8882;
+	<span class="Set">G</span> iff <span class="Set">H</span> =
+	a<span class="Set">H</span>a<sup>-1</sup> &forall; a &isin;
+	<span class="Set">G</span>.
+	&#8718;
+      </p>
+
+      <div class="SubTask">
+      <p>
+	In the remaining exercises, let <span class="Set">G</span> be
+	a <em>finite</em> group.
+      </p>
+
+      <p>
+	The <dfn>normalizer</dfn> of <span class="Set">H</span> is defined as
+	N(<span class="Set">H</span>) = { a &isin; <span class="Set">G</span> :
+	axa<sup>-1</sup> &isin; <span class="Set">H</span> &forall; x &isin;
+	<span class="Set">H</span> }.
+      </p>
+      </div>
+    </li>
+
+    <li>
+      <p>
+	If a &isin; N(<span class="Set">H</span>), then
+	a<span class="Set">H</span>a<sup>-1</sup> = <span class="Set">H</span>.
+      </p>
+
+      <p>
+	By the definition of the normalizer, if x &isin;
+	<span class="Set">H</span>, axa<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Therefore,
+	a<span class="Set">H</span>a<sup>-1</sup> &sube;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	As shown in <a href="#Ex02">Exercise 2</a>, f<sub>a</sub>(h) =
+	aha<sup>-1</sup> is one-to-one. Therefore |<span class="Set">H</span>|
+	&le; |a<span class="Set">H</span>a<sup>-1</sup>|. The only way that a
+	set can have cardinality less than or equal to that of a subset is if
+	they are equipollent. A finite set can only be equipollent with a
+	subset if they are the same set. Therefore,
+	a<span class="Set">H</span>a<sup>-1</sup> = <span class="Set">H</span>.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	N(<span class="Set">H</span>) &lt; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let p,q &isin; N(<span class="Set">H</span>). Then, &forall; x &isin;
+	<span class="Set">H</span>, qxq<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Therefore, pqxq<sup>-1</sup>p<sup>-1</sup>
+	&isin; <span class="Set">H</span>. Since (q<sup>-1</sup>p<sup>-1</sup>)
+	= (pq)<sup>-1</sup>, we have (pq)x(pq)<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Thus, (pq) &isin;
+	N(<span class="Set">H</span>), which is therefore closed under
+	multiplication.
+      </p>
+
+      <p>
+	Let z &isin; N(<span class="Set">H</span>). Then, since
+	z<span class="Set">H</span>z<sup>-1</sup> = <span class="Set">H</span>,
+	&forall; x &isin; <span class="Set">H</span>, &exist; y &isin;
+	<span class="Set">H</span> such that x = zyz<sup>-1</sup>. But,
+	z<sup>-1</sup>xz = z<sup>-1</sup>zyz<sup>-1</sup>z = eye = y &isin;
+	<span class="Set">H</span>. Thus, z<sup>-1</sup> &isin;
+	N(<span class="Set">H</span>), which is therefore closed under
+	inversion.
+      </p>
+
+      <p>
+	Since N(<span class="Set">H</span>) is a subset of
+	<span class="Set">G</span> that is closed under multiplication and
+	inversion, N(<span class="Set">H</span>) &lt;
+	<span class="Set">G</span>.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">H</span> &sube; N(<span class="Set">H</span>).
+	Furthermore, <span class="Set">H</span> &#8882;
+	N(<span class="Set">H</span>).
+      </p>
+
+      <p>
+	Since <span class="Set">H</span> is a subgroup, it is closed under
+	multiplication and inversion. Therefore, &forall; a,x &isin;
+	<span class="Set">H</span>, axa<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Thus, a &isin; <span class="Set">H</span>
+	implies that axa<sup>-1</sup> &isin; <span class="Set">H</span>
+	&forall; x &isin; <span class="Set">H</span>. This means that
+	&forall; a &isin; <span class="Set">H</span>, a &isin;
+	N(<span class="Set">H</span>), making <span class="Set">H</span>
+	&sube; N(<span class="Set">H</span>).
+      </p>
+
+      <p>
+	Since, by definition, &forall; a &isin;
+	N(<span class="Set">H</span>), aha<sup>-1</sup> &isin;
+	<span class="Set">H</span> &forall; h &isin;
+	<span class="Set">H</span>, <span class="Set">H</span> &#8882;
+	N(<span class="Set">H</span>).
+      </p>
+
+      <div class="SubTask">
+      <p>
+	For the remaining exercises, let <span class="Set">N</span> =
+	N(<span class="Set">H</span>).
+      </p>
+      </div>
+    </li>
+
+    <li>
+      <p>
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+    <li>
+      <p>
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+    <li>
+      <p>
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+    <li>
+      <p>
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemI -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180326150947/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180326150947/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180326150947/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180326150947im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180326150947/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180326150947im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 15:09:47 Mar 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:33 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 118.547 (3)
+  PetaboxLoader3.resolve: 20.038
+  exclusion.robots: 0.261
+  PetaboxLoader3.datanode: 112.463 (4)
+  exclusion.robots.policy: 0.244
+  RedisCDXSource: 2.098
+  CDXLines.iter: 26.253 (3)
+  load_resource: 58.294
+  esindex: 0.014
+  captures_list: 152.835
+-->

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151021
+  Modified:	20151022 - Exercises 1-4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=920;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter15G","20180419065638","http://web.archive.org/","web","/_static/",
+	      "1524120998");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 15, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180419065638im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180419065638cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter15" rel="parent" rev="child">
+  <link href="Chapter15F" rel="prev" rev="next">
+  <link href="Chapter15H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Using the Class Equation to
+  Determine the Size of the Center</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    Let <span class="Set">G</span> be a finite group. Elements a and b &isin;
+    <span class="Set">G</span> are called <dfn>conjugates</dfn> of one
+    another (a~b) iff a = xbx<sup>-1</sup> for some x &isin;
+    <span class="Set">G</span>.
+  </p>
+
+  <p>
+    Let |<span class="Set">G</span>| = p<sup>k</sup>, where p is prime. Let
+    <span class="Set">C</span> be the center of <span class="Set">G</span>.
+    Let S<sub>1</sub>, &hellip; S<sub>t</sub> be the conjugacy classes of
+    <span class="Set">G</span>, and k<sub>1</sub>, &hellip; k<sub>t</sub> be
+    thier sizes.
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	Prove that the conjugacy class of a contains a (and no other element)
+	iff a &isin; <span class="Set">C</span>.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Let a &isin; <span class="Set">C</span>. If a~b, then a =
+	xbx<sup>-1</sup> for some x &isin; <span class="Set">G</span>. This is
+	equivalent to b = x<sup>-1</sup>ax. Since a &isin;
+	<span class="Set">C</span>, a commutes with x, giving b =
+	x<sup>-1</sup>xa = ea = a. Therefore, if a &isin;
+	<span class="Set">C</span>, a~b &rArr; a=b.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If a &notin; <span class="Set">C</span>, then &exist; y &isin;
+	<span class="Set">G</span> such that ay &ne; ya. Let b =
+	y<sup>-1</sup>ay. Then, yb = ay &ne; ya. Since yb &ne; ya, b &ne; a,
+	by Cancellation. From the definition of b, a = yby<sup>-1</sup>, giving
+	a~b, where a&ne;b. Therefore, if a &notin; <span class="Set">C</span>,
+	&exist; b such that a~b and a&ne;b.
+      </p>
+
+      <p>
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let |<span class="Set">C</span>| = c. Prove that
+	|<span class="Set">G</span>| = c + k<sub>s</sub> + &hellip; +
+	k<sub>t</sub>, where k<sub>s</sub>, &hellip;, k<sub>t</sub> are the
+	sizes of the distinct conjugacy classes of elements <em>not</em> in
+	<span class="Set">C</span>.
+      </p>
+
+      <p>
+	Since ~ is an equivalence relation on <span class="Set">G</span>, it
+	partitions <span class="Set">G</span>. Since every element of
+	<span class="Set">G</span> is in exactly one class of the partition
+	(conjugacy classes), |<span class="Set">G</span>| = k<sub>1</sub> +
+	&hellip; + k<sub>t</sub>, where the k<sub>i</sub> are the sizes of all
+	of the classes.
+      </p>
+
+      <p>
+	The conjugacy classes of the elements of <span class="Set">C</span>
+	are all singletons, as shown in <a href="#Exer01">Exercise 1</a>.
+	Therefore, there are c of them. If we remove the sizes of those c
+	singletons from the sum, and replace them with c, the total is
+	unchanged, since |<span class="Set">G</span>| - c&middot;1 + c =
+	|<span class="Set">G</span>|.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that &forall; i &isin; {s, s+1, &hellip;, t}, k<sub>i</sub> is a
+	power of p.
+      </p>
+
+      <p>
+	The size, k<sub>i</sub>, of conjugacy class i is equal to the number
+	of distinct conjugates of any element of class i. In
+	<a href="Chapter13I#Ex06">Chapter 13, Problem I, Exercise 6</a>, it
+	was shown that if a &isin; <span class="Set">G</span>, the number of
+	distinct conjugates of a is (<span class="Set">G</span> :
+	<span class="Set">C<sub>a</sub></span>), where
+	<span class="Set">C<sub>a</sub></span> is the centralizer of a.
+      </p>
+
+      <p>
+	The important fact is that (<span class="Set">G</span> :
+	<span class="Set">C<sub>a</sub></span>) |
+	<span class="Set">G</span>. Therefore, k<sub>i</sub> |
+	<span class="Set">G</span>. Since |<span class="Set">G</span>| is a
+	power of a prime, k<sub>i</sub> must be a power of that prime (not a
+	larger power).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Solving |<span class="Set">G</span>| = c + k<sub>s</sub> + &hellip; +
+	k<sub>t</sub> for c, explain why c must be a multiple of p.
+      </p>
+
+      <p>
+	|<span class="Set">G</span>| - k<sub>s</sub> - &hellip; -
+	k<sub>t</sub> = c. Since all of the terms on the left are multiples of
+	p (powers, actually, but that's more than we need), this may be
+	rewritten as gp - x<sub>s</sub>p - &hellip; - x<sub>t</sub>p = c,
+	or (g -x<sub>s</sub> - &hellip; - x<sub>t</sub>)p = c.
+      </p>
+
+      <p>
+	Therefore, c is a multiple of p.
+      </p>
+    </li>
+
+    <li id="Ex05">
+      <p>
+	Prove that if |<span class="Set">G</span>| = p<sup>2</sup>,
+	<span class="Set">G</span> is Abelian.
+      </p>
+
+      <p>
+	The previous exercise showed that the order of the center of
+	<span class="Set">G</span> must be a multiple of p. By Lagrange's
+	Theorem, it must divide p<sup>2</sup>. Since p is prime, the only
+	multiples of p that divide p<sup>2</sup> are p or p<sup>2</sup>.
+      </p>
+
+      <p>
+	<span class="Case">|<span class="Set">C</span>| = p</span>
+	In this case, |<span class="Set">G</span>/<span class="Set">C</span>| =
+	|<span class="Set">G</span>| / |<span class="Set">C</span>| = p.
+	Since |<span class="Set">G</span>/<span class="Set">C</span>| is prime,
+	<span class="Set">G</span>/<span class="Set">C</span> is cyclic.
+      </p>
+
+      <p>
+	By <a href="Chapter15F">Exercise F of this chapter,</a> if
+	<span class="Set">G</span>/<span class="Set">C</span> is cyclic, then
+	<span class="Set">G</span> is Abelian.
+      </p>
+
+      <p>
+	<span class="Case">|<span class="Set">C</span>| = p<sup>2</sup></span>
+	In this case |<span class="Set">C</span>| =
+	|<span class="Set">G</span>|, which makes the center the entire
+	group, which is therefore Abelian.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if |<span class="Set">G</span>| = p<sup>2</sup>, either
+	<span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>p<sup>2</sup></sub></span> or
+	<span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>p</sub></span> &times;
+	<span class="Set">Z<sub>p</sub></span>.
+      </p>
+
+      <p>
+	If <span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>p<sup>2</sup></sub></span>, we are done.
+      </p>
+
+      <p>
+	Assume that <span class="Set">G</span> &#8775;
+	<span class="Set">Z<sub>p<sup>2</sup></sub></span>. Then, no element
+	of <span class="Set">G</span> has order p<sup>2</sup>. By Lagrange's
+	Theorem, every element must have order 1 or order p, since p is prime.
+	Therefore, aside from the identity, every element must have order p.
+      </p>
+
+      <p>
+	Let a &isin; <span class="Set">G</span>-{e}. |&lang;a&rang;| = p.
+	Let b &isin; <span class="Set">G</span>-&lang;a&rang;. Again,
+	|&lang;b&rang;| = p.
+      </p>
+
+      <p>
+	Then, <span class="Set">G</span> = &lang;a,b&rang;.<br>PROVE IT
+      </p>
+
+      <p>
+	Set up a mapping with a&rarr;(0,1) and b&rarr;(1,0). ???
+	Fine if I know that &lang;a,b&rang; = <span class="Set">G</span>, but
+	that's what I'm trying to prove.
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter15">Chapter 15</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180419065638/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180419065638/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180419065638/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180419065638im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180419065638/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180419065638im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:56:38 Apr 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:57 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 18.594 (3)
+  LoadShardBlock: 573.512 (3)
+  esindex: 0.01
+  exclusion.robots.policy: 0.18
+  PetaboxLoader3.datanode: 755.225 (4)
+  captures_list: 660.238
+  load_resource: 246.324
+  PetaboxLoader3.resolve: 26.811
+  exclusion.robots: 0.194
+  RedisCDXSource: 64.787
+-->

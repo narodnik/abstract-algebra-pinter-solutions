@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140913 - Exercises 1 and 2
+  Modified:	20140914 - Exercises 3-6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=1312;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter12A","20180503123416","http://web.archive.org/","web","/_static/",
+	      "1525350856");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 12, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180503123416im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180503123416cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter12" rel="parent" rev="child">
+  <link href="Chapter12B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Examples of Partitions</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <p>
+    Prove that each of the following is a partition of the indicated set.
+    Then describe the equivalence relation associated with that partition.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	For each integer r &isin; {0, 1, 2, 3, 4}, let
+	<span class="Set">A<sub>r</sub></span> be the set of all integers
+	that leave a remainder of r when divided by 5. Prove that
+	{<span class="Set">A<sub>0</sub></span>,
+	<span class="Set">A<sub>1</sub></span>,
+	<span class="Set">A<sub>2</sub></span>,
+	<span class="Set">A<sub>3</sub></span>,
+	<span class="Set">A<sub>4</sub></span>} is a partition of
+	<span class="Set">Z</span>.
+      </p>
+
+      <p>
+	That every integer leaves a remainder in {0, 1, 2, 3, 4} when
+	divided by 5 follows from the Division Algorithm, as does the fact
+	that the remainder for any integer is unique. Therefore, every integer
+	is in exactly one of these sets.
+      </p>
+
+      <p>
+	Since {0, 1, 2, 3, 4} each is its own remainder when divided by 5,
+	every element of
+	{<span class="Set">A<sub>r</sub></span> : r &isin; {0, 1, 2, 3, 4}}
+	has at least one element.
+      </p>
+
+      <p>
+	Since every one of these sets has at least one element and every
+	integer is in exactly one of these sets, it is a partition.
+      </p>
+
+      <p>
+	The equivalence relation is p~q iff p &cong; q (mod 5).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For each integer n, let <span class="Set">A<sub>n</sub></span> =
+	{x&isin;<span class="Set">Q</span> : n&le;x&lt;n+1}. Prove
+	{<span class="Set">A<sub>n</sub></span> : n &isin;
+	<span class="Set">Z</span>} is a partition of
+	<span class="Set">Q</span>.
+      </p>
+
+      <p>
+	Let q &isin; <span class="Set">Q</span>. We have two possibilities:
+	q &isin; <span class="Set">Z</span> or q &notin;
+	<span class="Set">Z</span>.
+      </p>
+
+      <p>
+	If q &isin; <span class="Set">Z</span>, then there is exactly one
+	n such that n&le;q&lt;n+1, n=q. We know this because the integers
+	are distinct and n&lt;n+1.
+      </p>
+
+      <p>
+	Furthermore, for every integer j,
+	<span class="Set">A<sub>j</sub></span> contains j. Therefore, every
+	member of {<span class="Set">A<sub>n</sub></span> : n &isin;
+	<span class="Set">Z</span>} has at least one element.
+      </p>
+
+      <p>
+	If q &notin; <span class="Set">Z</span>, then for each integer i,
+	it is either true that i&lt;q or q&lt;i, by trichotomy. Let p be
+	the least integer greater than q. This must exist, and be unique, by
+	the Well-Ordering Principle. Let n+1 = p, which gives us a unique n
+	such that n&le;q&lt;n+1.
+      </p>
+
+      <p>
+	So for every rational x, there is a unique n such that
+	x &isin; <span class="Set">A<sub>n</sub></span>, and
+	{<span class="Set">A<sub>n</sub></span> : n &isin;
+	<span class="Set">Z</span>} is a partition.
+      </p>
+
+      <p>
+	The equivalence relation is defined by the floor function:
+	p~q iff floor(p)=floor(q).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For each rational number r, let <span class="Set">A<sub>r</sub></span>
+	= {(m,n) &isin;
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	: m/n=r}. Prove that {<span class="Set">A<sub>r</sub></span> :
+	r&isin;<span class="Set">Q</span>} is a partition of
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>.
+      </p>
+
+      <p>
+	Every rational number may be represented as an element of {(m,n) &isin;
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	: m/n=r}, by the definition of "rational number". Therefore, every
+	member of {<span class="Set">A<sub>r</sub></span> :
+	r&isin;<span class="Set">Q</span>} has at least one element.
+      </p>
+
+      <p>
+	Any ordered pair of integers (the second one being non-zero) may be
+	divided, giving a rational number. Therefore, every element of
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	is an element of some member of
+	{<span class="Set">A<sub>r</sub></span> :
+	r&isin;<span class="Set">Q</span>}.
+      </p>
+
+      <p>
+	Let (m,n) &isin;
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	and let q=m/n. If it is also true that p=m/n, then p=q. Therefore, if
+	m/n &isin; <span class="Set">A<sub>p</sub></span> and m/n &isin;
+	<span class="Set">A<sub>q</sub></span>, then p=q and
+	<span class="Set">A<sub>p</sub></span> =
+	<span class="Set">A<sub>q</sub></span>.
+	This means that no element of
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	is an element of two members of {<span class="Set">A<sub>r</sub></span>
+	: r&isin;<span class="Set">Q</span>}.
+      </p>
+
+      <p>
+	Since every element of
+	<span class="Set">Z</span>&times;<span class="Set">Z<sup>*</sup></span>
+	is an element of exactly one member of
+	{<span class="Set">A<sub>r</sub></span> :
+	r&isin;<span class="Set">Q</span>}, it is a partition.
+      </p>
+
+      <p>
+	The equivalence relation is x~y iff x and y are fractional
+	representations of the same rational number.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For r &isin; {0, 1, ..., 9} let <span class="Set">A<sub>r</sub></span>
+	be the set of all integers with units digit (in decimal representation)
+	equals r. Prove that {<span class="Set">A<sub>r</sub></span> :
+	r &isin; {0, 1, ..., 9} } is a partition of
+	<span class="Set">Z</span>.
+      </p>
+
+      <p>
+	Each member of {<span class="Set">A<sub>r</sub></span> :
+	r &isin; {0, 1, ..., 9} } contains r, so none of these sets is empty.
+      </p>
+
+      <p>
+	Since every integer has exactly one decimal representation, with
+	exactly one units digit, every integer is an element of exactly one
+	member of {<span class="Set">A<sub>r</sub></span> :
+	r &isin; {0, 1, ..., 9} }.
+      </p>
+
+      <p>
+	Therefore, {<span class="Set">A<sub>r</sub></span> :
+	r &isin; {0, 1, ..., 9} } partitions <span class="Set">Z</span>.
+      </p>
+
+      <p>
+	The equivalence relation is p~q iff p &cong; q (mod 10).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Each rational number x can be written as x = q + n/m where
+	0&le;n/m&lt;1. For each rational r &isin; {x : 0&le;x&lt;1} let
+	<span class="Set">A<sub>r</sub></span> = {x &isin;
+	<span class="Set">Q</span> : r is the fractional part of x}. Prove that
+	{<span class="Set">A<sub>r</sub></span> : r &isin; {x : 0&le;x&lt;1} }
+	partitions <span class="Set">Q</span>.
+      </p>
+
+      <p>
+	Each member of {<span class="Set">A<sub>r</sub></span> : r &isin;
+	{x : 0&le;x&lt;1} } contains r, so none of these sets is empty.
+      </p>
+
+      <p>
+	The fractional part of a rational, x, may also be expressed as
+	m/n = x - floor(x). Since "floor(x)" is a function, it has a single
+	value, which makes m/n unique for each rational. Therefore every
+	rational is in exactly one member of
+	{<span class="Set">A<sub>r</sub></span> : r &isin; {x : 0&le;x&lt;1} }.
+      </p>
+
+      <p>
+	Therefore,
+	{<span class="Set">A<sub>r</sub></span> : r &isin; {x : 0&le;x&lt;1} }
+	partitions <span class="Set">Q</span>.
+      </p>
+
+      <p>
+	The equivalence relation is p~q iff (p-q) &isin;
+	<span class="Set">Z</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For each r in <span class="Set">R</span>, let
+	<span class="Set">A<sub>r</sub></span> = {(x,y) &isin;
+	<span class="Set">R</span>&times;<span class="Set">R</span> : x-y=r}.
+	Prove that {<span class="Set">A<sub>r</sub></span> : r &isin;
+	<span class="Set">R</span>} partitions
+	<span class="Set">R</span>&times;<span class="Set">R</span>.
+      </p>
+
+      <p>
+	Each member of {<span class="Set">A<sub>r</sub></span> : r &isin;
+	<span class="Set">R</span>} contains (r,0), so none of these sets is
+	empty.
+      </p>
+
+      <p>
+	x-y has a unique value, so each ordered pair (x,y) is in exactly one
+	of these sets.
+      </p>
+
+      <p>
+	Therefore, {<span class="Set">A<sub>r</sub></span> : r &isin;
+	<span class="Set">R</span>} partitions
+	<span class="Set">R</span>&times;<span class="Set">R</span>.
+      </p>
+
+      <p>
+	The equivalence relation is (a,b)~(c,d) iff a-b = c-d.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter12">Chapter 12</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180503123416/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180503123416/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180503123416/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180503123416im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180503123416/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180503123416im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:34:16 May 03, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:30 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 243.287
+  exclusion.robots: 0.157
+  exclusion.robots.policy: 0.145
+  RedisCDXSource: 6.173
+  esindex: 0.011
+  LoadShardBlock: 207.802 (3)
+  PetaboxLoader3.resolve: 217.145 (3)
+  PetaboxLoader3.datanode: 1011.076 (4)
+  CDXLines.iter: 25.46 (3)
+  load_resource: 1062.107
+-->

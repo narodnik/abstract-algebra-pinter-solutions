@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141120 - Exercises 1-3
+  Modified:	20141121 - Exercises 4-6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=982;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14B","20180607160658","http://web.archive.org/","web","/_static/",
+	      "1528387618");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607160658im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607160658cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.Matrix TR TD + TD {padding-left: 10px;}
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14A" rel="prev" rev="next">
+  <link href="Chapter14C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Examples of Homomorphisms of
+    Infinite Groups</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    Prove that each of the following is a homomorphism, and describe its
+    kernel.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	The function &phi;:F(<span class="Set">R</span>) &rarr;
+	<span class="Set">R</span> given by &phi;(f) = f(0).
+      </p>
+
+      <p>
+	The group operation on F(<span class="Set">R</span>) was not
+	specified. I will assume that it is addition, not composition.
+      </p>
+
+      <p>
+	To prove that &phi; is a homomorphism, let a,b &isin;
+	F(<span class="Set">R</span>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>&phi;(a) + &phi;(b)</td>
+	  <td>a(0) + b(0)</td>
+	  <td>definition of &phi;</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a+b)(0)</td>
+	  <td>definition of addition of functions</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>&phi;(a+b)</td>
+	  <td>definition of &phi;</td>
+	</tr>
+      </table>
+
+      <p>
+	Since &phi; preserves "products" (which are sums in this case), it
+	is a homomorphism.
+      </p>
+
+      <p>
+	ker(&phi;) = {c &isin; F(<span class="Set">R</span>) : c(0)=0}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The function &phi;:D(<span class="Set">R</span>) &rarr;
+	F(<span class="Set">R</span>) given by &phi;(f) = f'.
+      </p>
+
+      <p>
+	To prove that &phi; is a homomorphism, let a,b &isin;
+	D(<span class="Set">R</span>).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>&phi;(a) + &phi;(b)</td>
+	  <td>a' + b'</td>
+	  <td>definition of &phi;</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a+b)'</td>
+	  <td>sum of derivatives is derivative of sum</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>&phi;(a+b)</td>
+	  <td>definition of &phi;</td>
+	</tr>
+      </table>
+
+      <p>
+	Since &phi; preserves "products", it is a homomorphism.
+      </p>
+
+      <p>
+	ker(&phi;) = {c &isin; D(<span class="Set">R</span>) : c'=0}. In
+	other words, all constant functions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The function f:<span class="Set">R</span> &times;
+	<span class="Set">R</span> &rarr; <span class="Set">R</span> given by
+	f(x, y) = x + y.
+      </p>
+
+      <p>
+	Pinter did not specify the operation on <span class="Set">R</span>
+	&times; <span class="Set">R</span>. I am assuming that it is
+	(p,r) + (q,s) = (p+q, r+s).
+      </p>
+
+      <p>
+	To prove that f is a homomorphism, let (p,r), (q,s) &isin;
+	<span class="Set">R</span> &times; <span class="Set">R</span>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(p,r) + f(q,s)</td>
+	  <td>(p+r) + (q+s)</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(p+q) + (r+s)</td>
+	  <td>associativity and commutativity of addition</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(p+q, r+s)</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f((p,r) + (q,s))</td>
+	  <td>definition of addition in domain of f</td>
+	</tr>
+      </table>
+
+      <p>
+	Since f preserves "products", it is a homomorphism.
+      </p>
+
+      <p>
+	ker(f) = {(x,-x) : x &isin; <span class="Set">R</span>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The function f:<span class="Set">R<sup>*</sup></span> &rarr;
+	<span class="Set">R<sup>+</sup></span> given by f(x) = |x|.
+      </p>
+
+      <p>
+	I am assuming that the group operations are multiplication in both
+	the domain and the range of f.
+      </p>
+
+      <p>
+	To prove that f is a homomorphism, let x,y &isin;
+	<span class="Set">R<sup>*</sup></span>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(x) &middot; f(y)</td>
+	  <td>|x| &middot; |y|</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>|x&middot;y|</td>
+	  <td>property of absolute value</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(x&middot;y)</td>
+	  <td>definition of f</td>
+	</tr>
+      </table>
+
+      <p>
+	Since f preserves products, it is a homomorphism.
+      </p>
+
+      <p>
+	ker(f) = {-1, 1}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The function f:<span class="Set">C<sup>*</sup></span> &rarr;
+	<span class="Set">R<sup>+</sup></span> given by f(a+bi) =
+	sqrt(a<sup>2</sup> + b<sup>2</sup>).
+      </p>
+
+      <p>
+	I am assuming that the group operations are multiplication in both
+	the domain and the range of f.
+      </p>
+
+      <p>
+	To prove that f is a homomorphism, let x=a<sub>1</sub>+b<sub>1</sub>i,
+	y=a<sub>2</sub>+b<sub>2</sub>i.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(x) &middot; f(y)</td>
+	  <td>sqrt(a<sub>1</sub><sup>2</sup> + b<sub>1</sub><sup>2</sup>)
+	    &middot;
+	    sqrt(a<sub>2</sub><sup>2</sup> + b<sub>2</sub><sup>2</sup>)</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>sqrt( (a<sub>1</sub><sup>2</sup> + b<sub>1</sub><sup>2</sup>)
+	    &middot;
+	    (a<sub>2</sub><sup>2</sup> + b<sub>2</sub><sup>2</sup>) )</td>
+	  <td>property of square root</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>sqrt(
+	    a<sub>1</sub><sup>2</sup>a<sub>2</sub><sup>2</sup> +
+	    a<sub>1</sub><sup>2</sup>b<sub>2</sub><sup>2</sup> +
+	    b<sub>1</sub><sup>2</sup>a<sub>2</sub><sup>2</sup> +
+	    b<sub>1</sub><sup>2</sup>b<sub>2</sub><sup>2</sup>
+	    )</td>
+	  <td>distributivity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>sqrt(
+	    (a<sub>1</sub><sup>2</sup>a<sub>2</sub><sup>2</sup> -
+	    2a<sub>1</sub>a<sub>2</sub>b<sub>1</sub>b<sub>2</sub> +
+	    b<sub>1</sub><sup>2</sup>b<sub>2</sub><sup>2</sup>) +
+	    (b<sub>1</sub><sup>2</sup>a<sub>2</sub><sup>2</sup> +
+	    2a<sub>1</sub>a<sub>2</sub>b<sub>1</sub>b<sub>2</sub> +
+	    a<sub>1</sub><sup>2</sup>b<sub>2</sub><sup>2</sup>)
+	    )</td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>sqrt(
+	    (a<sub>1</sub>a<sub>2</sub> -
+	    b<sub>1</sub>b<sub>2</sub>)<sup>2</sup> +
+	    (b<sub>1</sub>a<sub>2</sub> +
+	    a<sub>1</sub>b<sub>2</sub>)<sup>2</sup>
+	    )</td>
+	  <td>factor</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(
+	    (a<sub>1</sub>a<sub>2</sub> -
+	    b<sub>1</sub>b<sub>2</sub>) +
+	    (b<sub>1</sub>a<sub>2</sub> +
+	    a<sub>1</sub>b<sub>2</sub>)i
+	    )</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(
+	    (a<sub>1</sub> + b<sub>1</sub>i) &middot;
+	    (a<sub>2</sub> + b<sub>2</sub>i)
+	    )</td>
+	  <td>multiplication in <span class="Set">C</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f(x &middot; y)</td>
+	  <td>definitions of x,y</td>
+	</tr>
+      </table>
+
+      <p>
+	Since f preserves products, it is a homomorphism.
+      </p>
+
+      <p>
+	ker(f) = {(a+bi) : sqrt(a<sup>2</sup> + b<sup>2</sup>) = 1}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> be the set of all 2x2 matrices
+      </p>
+
+      <table class="Matrix">
+      <caption><span class="Matrix">A</span>&nbsp;=&nbsp;</caption>
+	<tr><td>a</td><td>b</td></tr>
+	<tr><td>c</td><td>d</td></tr>
+      </table>
+
+      <p>
+	satisfying ad-bc &ne; 0. Let f:<span class="Set">G</span> &rarr;
+	<span class="Set">R<sup>*</sup></span> be given by
+	f(<span class="Matrix">A</span>) = det(<span class="Matrix">A</span>) =
+	ad-bc.
+      </p>
+
+      <p>
+	I am assuming that the group operation in <span class="Set">G</span>
+	is matrix multiplication and that the group operation in
+	<span class="Set">R<sup>*</sup></span> is multiplication. I am also
+	assuming that <span class="Set">G</span> is the set of all 2x2
+	<em>real</em> matrices.
+      </p>
+
+      <p>
+	To prove that f is a homomorphism, let
+      </p>
+
+      <table class="Matrix">
+      <caption><span class="Matrix">X</span>&nbsp;=&nbsp;</caption>
+	<tr><td>x<sub>1,1</sub></td><td>x<sub>1,2</sub></td></tr>
+	<tr><td>x<sub>2,1</sub></td><td>x<sub>2,2</sub></td></tr>
+      </table>
+
+      <p>
+	and
+      </p>
+
+      <table class="Matrix">
+      <caption><span class="Matrix">Y</span>&nbsp;=&nbsp;</caption>
+	<tr><td>y<sub>1,1</sub></td><td>y<sub>1,2</sub></td></tr>
+	<tr><td>y<sub>2,1</sub></td><td>y<sub>2,2</sub></td></tr>
+      </table>
+
+      <p>
+	det(<span class="Matrix">X</span>) = x<sub>1,1</sub>x<sub>2,2</sub> -
+	x<sub>1,2</sub>x<sub>2,1</sub>. det(<span class="Matrix">Y</span>) =
+	y<sub>1,1</sub>y<sub>2,2</sub> - y<sub>1,2</sub>y<sub>2,1</sub>.
+      </p>
+
+      <p>
+	det(<span class="Matrix">X</span>)det(<span class="Matrix">Y</span>) =
+	(x<sub>1,1</sub>x<sub>2,2</sub>y<sub>1,1</sub>y<sub>2,2</sub> +
+	x<sub>1,2</sub>x<sub>2,1</sub>y<sub>1,2</sub>y<sub>2,1</sub>) -
+	(x<sub>1,1</sub>x<sub>2,2</sub>y<sub>1,2</sub>y<sub>2,1</sub> +
+	x<sub>1,2</sub>x<sub>2,1</sub>y<sub>1,1</sub>y<sub>2,2</sub>).
+      </p>
+
+      <p>
+	Multiplying <span class="Matrix">X</span> and
+	<span class="Matrix">Y</span> gives:
+      </p>
+
+      <table class="Matrix">
+      <caption><span class="Matrix">XY</span>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>x<sub>1,1</sub>y<sub>1,1</sub> +
+	      x<sub>1,2</sub>y<sub>2,1</sub></td>
+	  <td>x<sub>1,1</sub>y<sub>1,2</sub> +
+	      x<sub>1,2</sub>y<sub>2,2</sub></td>
+	</tr>
+	<tr>
+	  <td>x<sub>2,1</sub>y<sub>1,1</sub> +
+	      x<sub>2,2</sub>y<sub>2,1</sub></td>
+	  <td>x<sub>2,1</sub>y<sub>1,2</sub> +
+	      x<sub>2,2</sub>y<sub>2,2</sub></td>
+	</tr>
+      </table>
+
+      <table class="Derive">
+	<tr>
+	  <td>det(<span class="Matrix">XY</span>)</td>
+	  <td>
+	    (x<sub>1,1</sub>y<sub>1,1</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>)(x<sub>2,1</sub>y<sub>1,2</sub> +
+	    x<sub>2,2</sub>y<sub>2,2</sub>) -
+	    (x<sub>1,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,2</sub>)(x<sub>2,1</sub>y<sub>1,1</sub> +
+	    x<sub>2,2</sub>y<sub>2,1</sub>)
+	  <td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>
+	    (x<sub>1,1</sub>y<sub>1,1</sub>x<sub>2,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,1</sub>y<sub>1,1</sub>x<sub>2,2</sub>y<sub>2,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>x<sub>2,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>x<sub>2,2</sub>y<sub>2,2</sub>) -
+	    (x<sub>1,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,2</sub>)(x<sub>2,1</sub>y<sub>1,1</sub> +
+	    x<sub>2,2</sub>y<sub>2,1</sub>)
+	  <td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>
+	    (x<sub>1,1</sub>y<sub>1,1</sub>x<sub>2,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,1</sub>y<sub>1,1</sub>x<sub>2,2</sub>y<sub>2,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>x<sub>2,1</sub>y<sub>1,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>x<sub>2,2</sub>y<sub>2,2</sub>) -<br>
+	    (x<sub>1,1</sub>y<sub>1,2</sub>x<sub>2,1</sub>y<sub>1,1</sub> +
+	    x<sub>1,1</sub>y<sub>1,2</sub>x<sub>2,2</sub>y<sub>2,1</sub> +
+	    x<sub>1,2</sub>y<sub>2,2</sub>x<sub>2,1</sub>y<sub>1,1</sub> +
+	    x<sub>1,2</sub>y<sub>2,2</sub>x<sub>2,2</sub>y<sub>2,1</sub>)
+	  <td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>
+	    (x<sub>1,1</sub>y<sub>1,1</sub>x<sub>2,2</sub>y<sub>2,2</sub> +
+	    x<sub>1,2</sub>y<sub>2,1</sub>x<sub>2,1</sub>y<sub>1,2</sub>) -
+	    (x<sub>1,1</sub>y<sub>1,2</sub>x<sub>2,2</sub>y<sub>2,1</sub> +
+	    x<sub>1,2</sub>y<sub>2,2</sub>x<sub>2,1</sub>y<sub>1,1</sub>)
+	  <td>
+	</tr>
+      </table>
+
+      <p>
+	det(<span class="Matrix">X</span>)det(<span class="Matrix">Y</span>) =
+	det(<span class="Matrix">XY</span>). Since f preserves products,
+	it is a homomorphism.
+      </p>
+
+      <p>
+	ker(f) = {<span class="Matrix">A</span> &isin;
+	<span class="Set">G</span> : det(<span class="Matrix">A</span>) = 1}.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607160658/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607160658/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607160658/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607160658im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607160658/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607160658im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 16:06:58 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:06 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 631.426 (4)
+  load_resource: 278.171
+  captures_list: 682.54
+  exclusion.robots: 0.205
+  LoadShardBlock: 622.163 (3)
+  esindex: 0.014
+  CDXLines.iter: 26.522 (3)
+  RedisCDXSource: 27.736
+  PetaboxLoader3.resolve: 155.172
+  exclusion.robots.policy: 0.189
+-->

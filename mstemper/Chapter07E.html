@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130608
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=1332;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter07E","20180531110546","http://web.archive.org/","web","/_static/",
+	      "1527764746");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 7, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180531110546im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180531110546cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter07" rel="parent" rev="child">
+  <link href="Chapter07D" rel="prev" rev="next">
+  <link href="Chapter07F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash;
+    A Subgroup of <span class="Set">S<sub>R</sub></span></h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    For any real numbers a,b (a&ne;0), define f<sub>a,b</sub>(x) = ax+b.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that f<sub>a,b</sub> is a permutation of
+	<span class="Set">R</span>.
+      </p>
+
+      <p>
+	Let f<sub>a,b</sub>(p) = f<sub>a,b</sub>(q). Then, ap+b=aq+b,
+	ap=aq, and p=q. (We can divide both sides by a because it is non-zero).
+	Therefore, f<sub>a,b</sub> is one-to-one.
+      </p>
+
+      <p>
+	For any z&isin;<span class="Set">R</span>, f<sub>a,b</sub>((z-b)/a) = z.
+	Therefore, f<sub>a,b</sub> is onto <span class="Set">R</span>.
+      </p>
+
+      <p>
+	Since f<sub>a,b</sub> is one-to-on and onto <span class="Set">R</span>,
+	it is a permutation of <span class="Set">R</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that f<sub>a,b</sub>&#8728;f<sub>c,d</sub> =
+	f<sub>ac,ad+b</sub>.
+      </p>
+
+      <p>
+	[f<sub>a,b</sub>&#8728;f<sub>c,d</sub>](x) =
+	f<sub>a,b</sub>(f<sub>c,d</sub>(x)) =
+	f<sub>a,b</sub>(cx+d) = acx + (ad+b) =
+	f<sub>ac,ad+b</sub>(x).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that f<sup>-1</sup><sub>a,b</sub> = f<sub>1/a,-b/a</sub>.
+      </p>
+
+      <p>
+	First, we must find the identity. For all
+	x&isin;<span class="Set">R</span>, f<sub>1,0</sub>(x)=x, so
+	f<sub>1,0</sub> is the identity element.
+      </p>
+
+      <p>
+	By Exercise 2 of this problem,
+	f<sub>a,b</sub>&#8728;f<sub>1/a,-b/a</sub> =
+	f<sub>(a(1/a),(a(-b/a)+b)</sub> = f<sub>1,0</sub>, which is the
+	identity. Therfore,
+	f<sup>-1</sup><sub>a,b</sub> = f<sub>1/a,-b/a</sub>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> = {f<sub>a,b</sub> :
+	a&isin;<span class="Set">R</span>-{0},
+	b&isin;<span class="Set">R</span>}.
+	Prove that <span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>R</sub></span>.
+      </p>
+
+      <ol>
+        <li>By Exercise 1, <span class="Set">G</span> &sub;
+	    <span class="Set">S<sub>R</sub></span>.</li>
+        <li>By Exercise 2, <span class="Set">G</span> is closed under
+	    composition.</li>
+        <li>By Exercise 3, <span class="Set">G</span> is closed under
+	    inversion.</li>
+      </ol>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter07">Chapter 7</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180531110546/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180531110546/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180531110546/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180531110546im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180531110546/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180531110546im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:05:46 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:00:47 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 933.924
+  RedisCDXSource: 4.004
+  exclusion.robots: 0.212
+  PetaboxLoader3.resolve: 625.623 (3)
+  exclusion.robots.policy: 0.197
+  LoadShardBlock: 902.434 (3)
+  esindex: 0.016
+  CDXLines.iter: 23.214 (3)
+  PetaboxLoader3.datanode: 566.025 (4)
+  load_resource: 387.559
+-->

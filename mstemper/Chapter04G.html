@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121028
+  Modified:	20121029 - Deleted border="on", now Cayley tables styled such
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=518;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04G","20180402122813","http://web.archive.org/","web","/_static/",
+	      "1522672093");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180402122813im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180402122813cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04F" rel="prev" rev="next">
+  <link href="Chapter04H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Direct Products of Groups</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    The direct product of two groups <span class="Set">G</span> and
+    <span class="Set">H</span> is defined as 
+    <span class="Set">G</span>&times;<span class="Set">H</span> =
+    {(x,y): x&isin;<span class="Set">G</span> and
+    y&isin;<span class="Set">H</span>}. If x, x' &isin;
+    <span class="Set">G</span> and y, y' &isin; <span class="Set">H</span>,
+    then (x,y)(x',y') = (xx',yy').
+  </p>
+
+  <ol>
+    <li>
+      <p>Show that <span class="Set">G</span>&times;<span class="Set">H</span>
+	 is a group.</p>
+      <p>Previously done <a href="/web/20180402122813/http://www.math.wisc.edu/~mstemper2/Math/MisGroup#CrossProd">elsewhere</a>.</p>
+    </li>
+
+    <li>
+      <p>List the elements of <span class="Set">Z</span><sub>2</sub>&times;<span class="Set">Z</span><sub>3</sub> and give its Cayley table.</p>
+      <p>I will list the elements only as the heading of the Cayley table.</p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th>(0,0)</th>
+	  <th>(1,0)</th>
+	  <th>(0,1)</th>
+	  <th>(1,1)</th>
+	  <th>(0,2)</th>
+	  <th>(1,2)</th>
+	</tr>
+	<tr>
+	  <th>(0,0)</th>
+	  <td>(0,0)</td>
+	  <td>(1,0)</td>
+	  <td>(0,1)</td>
+	  <td>(1,1)</td>
+	  <td>(0,2)</td>
+	  <td>(1,2)</td>
+	</tr>
+	<tr>
+	  <th>(1,0)</th>
+	  <td>(1,0)</td>
+	  <td>(0,0)</td>
+	  <td>(1,1)</td>
+	  <td>(0,1)</td>
+	  <td>(1,2)</td>
+	  <td>(0,2)</td>
+	</tr>
+	<tr>
+	  <th>(0,1)</th>
+	  <td>(0,1)</td>
+	  <td>(1,1)</td>
+	  <td>(0,2)</td>
+	  <td>(1,2)</td>
+	  <td>(0,0)</td>
+	  <td>(1,0)</td>
+	</tr>
+	<tr>
+	  <th>(1,1)</th>
+	  <td>(1,1)</td>
+	  <td>(0,1)</td>
+	  <td>(1,2)</td>
+	  <td>(0,2)</td>
+	  <td>(1,0)</td>
+	  <td>(0,0)</td>
+	</tr>
+	<tr>
+	  <th>(0,2)</th>
+	  <td>(0,2)</td>
+	  <td>(1,2)</td>
+	  <td>(0,0)</td>
+	  <td>(1,0)</td>
+	  <td>(0,1)</td>
+	  <td>(1,1)</td>
+	</tr>
+	<tr>
+	  <th>(1,2)</th>
+	  <td>(1,2)</td>
+	  <td>(0,2)</td>
+	  <td>(1,0)</td>
+	  <td>(0,0)</td>
+	  <td>(1,1)</td>
+	  <td>(0,1)</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Show that if <span class="Set">G</span> and <span class="Set">H</span>
+	 are Abelian groups, then
+	 <span class="Set">G</span>&times;<span class="Set">H</span> is
+	 Abelian.</p>
+      <p>Let a,b &isin; <span class="Set">G</span> and c,d &isin;
+	 <span class="Set">H</span>.</p>
+      <table class="Derive">
+	<tr>
+	  <td>(a,c)+(b,d)</td>
+	  <td>(a+b,c+d)</td>
+	  <td>definition of addition in
+	      <span class="Set">G</span>&times;<span class="Set">H</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(b+a,c+d)</td>
+	  <td><span class="Set">G</span> is Abelian</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(b+a,d+c)</td>
+	  <td><span class="Set">H</span> is Abelian</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(b,d)+(a,c)</td>
+	  <td>definition of addition in
+	      <span class="Set">G</span>&times;<span class="Set">H</span></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Show that if every element of <span class="Set">G</span> and
+	 <span class="Set">H</span> is its own inverse, then every element of
+	 <span class="Set">G</span>&times;<span class="Set">H</span> is its
+	 own inverse.</p>
+      <p>Let a &isin; <span class="Set">G</span> and c &isin;
+	 <span class="Set">H</span>.</p>
+      <table class="Derive">
+	<tr>
+	  <td>(a,c)+(a,c)</td>
+	  <td>(a+a,c+c)</td>
+	  <td>definition of addition in
+	      <span class="Set">G</span>&times;<span class="Set">H</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(e,c+c)</td>
+	  <td>a&isin;<span class="Set">G</span> is its own inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(e,e)</td>
+	  <td>c&isin;<span class="Set">H</span> is its own inverse</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180402122813/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180402122813/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180402122813/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180402122813im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180402122813/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180402122813im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:28:13 Apr 02, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:12 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 237.799
+  exclusion.robots: 0.089
+  exclusion.robots.policy: 0.081
+  RedisCDXSource: 3.315
+  esindex: 0.009
+  LoadShardBlock: 212.389 (3)
+  PetaboxLoader3.datanode: 275.76 (4)
+  CDXLines.iter: 19.089 (3)
+  load_resource: 270.989
+  PetaboxLoader3.resolve: 118.141
+-->

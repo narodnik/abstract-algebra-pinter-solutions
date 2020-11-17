@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121027
+  Modified:	20121029 - Deleted border="on", now Cayley tables styled such
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=481;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04C","20180605023941","http://web.archive.org/","web","/_static/",
+	      "1528166381");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605023941im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605023941cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04B" rel="prev" rev="next">
+  <link href="Chapter04D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Elements That Commute</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Assuming that a&isin;<span class="Set">G</span> and b&isin;<span class="Set">G</span> commute (that is, ab=ba), prove
+    each of the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>a<sup>-1</sup> and b<sup>-1</sup> commute</p>
+      <table class="Derive">
+	<tr>
+	  <td>a<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>(ba)<sup>-1</sup></td>
+	  <td>property of inverses</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(ab)<sup>-1</sup></td>
+	  <td>a and b commute</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>property of inverses</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>a and b<sup>-1</sup> commute</p>
+      <table class="Derive">
+	<tr>
+	  <td>ab<sup>-1</sup></td>
+	  <td>ab<sup>-1</sup>e</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>ab<sup>-1</sup>a<sup>-1</sup>a</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>aa<sup>-1</sup>b<sup>-1</sup>a</td>
+	  <td>a<sup>-1</sup> and b<sup>-1</sup> commute</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>eb<sup>-1</sup>a</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>a commutes with ab</p>
+      <table class="Derive">
+        <tr>
+	  <td>a(ab)</td>
+	  <td>a(ba)</td>
+	  <td>a commutes with b</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>(ab)a</td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>a<sup>2</sup> commutes with b<sup>2</sup></p>
+      <table class="Derive">
+        <tr>
+	  <td>a<sup>2</sup>b<sup>2</sup></td>
+	  <td>(aa)(bb)</td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>a(ab)b</td>
+	  <td>associativity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>(ab)ab</td>
+	  <td>a commutes with ab</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>(ba)ab</td>
+	  <td>a commutes with b</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>ba(ab)</td>
+	  <td>associativity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>b(ab)a</td>
+	  <td>a commutes with ab</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>b(ba)a</td>
+	  <td>a commutes with b</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>(bb)(aa)</td>
+	  <td>associativity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>b<sup>2</sup>a<sup>2</sup></td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>&forall; x&isin;<span class="Set">G</span>, xax<sup>-1</sup>
+	 commutes with xbx<sup>-1</sup></p>
+      <table class="Derive">
+        <tr>
+	  <td>xax<sup>-1</sup>xbx<sup>-1</sup></td>
+	  <td>xaebx<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xabx<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xbax<sup>-1</sup></td>
+	  <td>a commutes with b</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xbeax<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xbx<sup>-1</sup>xax<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>ab = ba iff aba<sup>-1</sup> = b</p>
+      <p>If:</p>
+      <table class="Derive">
+        <tr>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>given</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>baa<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>be</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+      <p>Only if:</p>
+      <table class="Derive">
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>b</td>
+	  <td>given</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>a</td>
+	  <td>ba</td>
+	  <td>post-multiply by a</td>
+	</tr>
+        <tr>
+	  <td>abe</td>
+	  <td>ba</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>ab = ba iff aba<sup>-1</sup>b<sup>-1</sup> = e</p>
+      <p>If:</p>
+      <table class="Derive">
+        <tr>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>given</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>baa<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>be</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>bb<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+      <p>Only if:</p>
+      <table class="Derive">
+        <tr>
+	  <td>aba<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>b<sup>-1</sup>b</td>
+	  <td>eb</td>
+	  <td>post-multiply by b</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>e</td>
+	  <td>eb</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup></td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td>aba<sup>-1</sup>a</td>
+	  <td>ba</td>
+	  <td>post-multiply by a</td>
+	</tr>
+        <tr>
+	  <td>abe</td>
+	  <td>ba</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605023941/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605023941/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605023941/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605023941im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605023941/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605023941im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 02:39:41 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:56 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 290.979
+  exclusion.robots: 0.326
+  exclusion.robots.policy: 0.306
+  RedisCDXSource: 2.594
+  esindex: 0.012
+  LoadShardBlock: 262.583 (3)
+  PetaboxLoader3.resolve: 158.708 (3)
+  PetaboxLoader3.datanode: 159.587 (4)
+  CDXLines.iter: 21.899 (3)
+  load_resource: 180.366
+-->

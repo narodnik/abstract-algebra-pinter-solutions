@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141209 - Exercises 1, 2
+  Modified:	20141215 - Exercise 3
+		20150113 - Exercise 4
+		20151003 - Exercise 5, multiplication part of 6
+		20151004 - Finished 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=305;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14E","20180527044112","http://web.archive.org/","web","/_static/",
+	      "1527396072");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180527044112im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180527044112cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14D" rel="prev" rev="next">
+  <link href="Chapter14F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Further Properties of Normal Subgroups</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    Let <span class="Set">G</span> denote a group, and
+    <span class="Set">H</span> a subgroup of <span class="Set">G</span>.
+    Prove the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If (<span class="Set">G</span> : <span class="Set">H</span>) = 2,
+	then <span class="Set">H</span> is normal.
+      </p>
+
+      <p>
+	Let a &isin; <span class="Set">G</span>. Then either
+	a &isin; <span class="Set">H</span> or a &notin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	If a &isin; <span class="Set">H</span>, then
+	a<span class="Set">H</span> = <span class="Set">H</span> =
+	<span class="Set">H</span>a.
+      </p>
+
+      <p>
+	If a &notin; <span class="Set">H</span>, then
+	a<span class="Set">H</span> &ne; <span class="Set">H</span> &ne;
+	<span class="Set">H</span>a. Since <span class="Set">H</span> only
+	has one coset in <span class="Set">G</span>, it must be true that
+	a<span class="Set">H</span> = <span class="Set">H</span>a.
+      </p>
+
+      <p>
+	Since in all cases, we have a<span class="Set">H</span> =
+	<span class="Set">H</span>a, by
+	<a href="Chapter14D#Ex05">Problem D, Exercise 5</a>,
+	<span class="Set">H</span> is normal.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Suppose a &isin; <span class="Set">G</span> and ord(a) = 2. Then
+	&lang;a&rang; is a normal subgroup of <span class="Set">G</span> iff
+	a is in the center of <span class="Set">G</span>.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	If a is in the center of <span class="Set">G</span>, then xa = ax for
+	all x &isin; <span class="Set">G</span>. Then, the conjugate of a
+	with respect to x is xax<sup>-1</sup> = axx<sup>-1</sup> = ae = a
+	&isin; &lang;a&rang;. Therefore, &lang;a&rang; is normal.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	Since ord(a) = 2, &lang;a&rang; = {e,a}.
+	If &lang;a&rang; is normal, then xax<sup>-1</sup> &isin; {e,a}. If
+	xax<sup>-1</sup> = e, then xa = x, or a = e, which contradicts the
+	condition that ord(a) = 2. Therefore, if &lang;a&rang; is normal,
+	xax<sup>-1</sup> = a &forall; x &isin; <span class="Set">G</span>.
+	If xax<sup>-1</sup> = a, then xa = ax. Since xe = ex, all elements of
+	&lang;a&rang; commute with all elements of <span class="Set">G</span>.
+	Therefore &lang;a&rang; is in the center of
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	If a is any element of <span class="Set">G</span>, &lang;a&rang; is a
+	normal subgroup of <span class="Set">G</span> iff a has the following
+	property: &forall; x &isin; <span class="Set">G</span>, &exist; k &isin;
+	<span class="Set">Z<sup>+</sup></span> such that xa = a<sup>k</sup>x.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	If xa = a<sup>k</sup>x, then a = x<sup>-1</sup>a<sup>k</sup>x =
+	(x<sup>-1</sup>)a<sup>k</sup>(x<sup>-1</sup>)<sup>-1</sup>. Therefore,
+	every conjugate of every power of a (every element of &lang;a&rang;) is
+	a, and &lang;a&rang; is normal.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If &lang;a&rang; is normal, then xax<sup>-1</sup> = b &isin;
+	&lang;a&rang;. If b &isin; &lang;a&rang;, then b = a<sup>k</sup> for
+	some k &isin; <span class="Set">Z<sup>+</sup></span>. Therefore,
+	xax<sup>-1</sup> = a<sup>k</sup>, which is equivalent to
+	xa = a<sup>k</sup>x.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	In a group <span class="Set">G</span>, a <dfn>commutator</dfn> is any
+	product of the form aba<sup>-1</sup>b<sup>-1</sup> (a,b &isin;
+	<span class="Set">G</span>). If a subgroup <span class="Set">H</span>
+	of <span class="Set">G</span> contains <em>all</em> of the commutators
+	of <span class="Set">G</span>, then <span class="Set">H</span> is
+	normal.
+      </p>
+
+      <p>
+	I will prove the contrapositive. That is, if <span class="Set">H</span>
+	is <em>not</em> normal, then <span class="Set">H</span> does not
+	contain all of the commutators of <span class="Set">G</span>.
+      </p>
+
+      <div class="SubTask">
+      <p>
+	First, a lemma. If <span class="Set">H</span> is a subgroup of
+	<span class="Set">G</span>, with b &isin; <span class="Set">H</span>
+	and a &isin; (<span class="Set">G</span>-<span class="Set">H</span>),
+	then ba &notin; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	If ba &isin; <span class="Set">H</span>, then b<sup>-1</sup>ba &isin;
+	<span class="Set">H</span>. But, b<sup>-1</sup>ba = ea = a &notin;
+	<span class="Set">H</span>.
+      </p>
+      </div>
+
+      <p>
+	If <span class="Set">H</span> is not normal, then for some h &isin;
+	<span class="Set">H</span> and some x &isin;
+	<span class="Set">G</span>, x<sup>-1</sup>hx &notin;
+	<span class="Set">H</span>. If x<sup>-1</sup>hx &notin;
+	<span class="Set">H</span>, then h<sup>-1</sup>x<sup>-1</sup>hx
+	&notin; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	Since h<sup>-1</sup>x<sup>-1</sup>hx is a commutator of
+	<span class="Set">G</span>, the contrapositive has been shown. Since
+	the contrapositive of a statement is logically equivalent to the
+	statement itself, the original statement has been proved.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">H</span> and <span class="Set">K</span> are
+	subgroups of <span class="Set">G</span>, and <span class="Set">K</span>
+	is normal, then <span class="Set">H</span><span class="Set">K</span>
+	is a subgroup of <span class="Set">G</span>.
+      </p>
+
+      <div class="SubTask">
+      <p>
+	First, a lemma. If <span class="Set">H</span> &lt;
+	<span class="Set">G</span> and <span class="Set">K</span> &#8882;
+	<span class="Set">G</span>, then
+	<span class="Set">K</span><span class="Set">H</span> &sube;
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+
+      <p>
+	Let h &isin; <span class="Set">H</span> and k &isin;
+	<span class="Set">K</span>. Since <span class="Set">H</span> &sube;
+	<span class="Set">G</span>, h &isin; <span class="Set">G</span>.
+	Since <span class="Set">K</span> is normal, h<sup>-1</sup>kh &isin;
+	<span class="Set">K</span>.
+      </p>
+
+      <p>
+	Since h<sup>-1</sup>kh &isin; <span class="Set">K</span>,
+	h(h<sup>-1</sup>kh) = (hh<sup>-1</sup>)kh = ekh = kh &isin;
+	<span class="Set">H</span><span class="Set">K</span>. Since the choices
+	of h and k were arbitrary, 
+	<span class="Set">K</span><span class="Set">H</span> &sube;
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+      </div>
+
+      <p>
+	To show that a subset of a group is a subgroup, all that is necessary
+	is to show that it is closed under inversion and multiplication.
+      </p>
+
+      <p>
+	<span class="Label">Inversion</span>
+	Let h &isin; <span class="Set">H</span> and k &isin;
+	<span class="Set">K</span>. Then hk &isin;
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+
+      <p>
+	Since <span class="Set">K</span> is a subgroup, it is closed under
+	inversion and k<sup>-1</sup> &isin; <span class="Set">K</span>. Since
+	<span class="Set">H</span> is a subgroup, it is closed under inversion
+	and h<sup>-1</sup> &isin; <span class="Set">H</span>. Therefore,
+	(hk)<sup>-1</sup> = k<sup>-1</sup>h<sup>-1</sup> &isin;
+	<span class="Set">K</span><span class="Set">H</span> &sube;
+	<span class="Set">H</span><span class="Set">K</span> (by the lemma),
+	and <span class="Set">H</span><span class="Set">K</span> is closed
+	under inversion.
+      </p>
+
+      <p>
+	<span class="Label">Multiplication</span>
+	Let h<sub>1</sub>, h<sub>2</sub> &isin; <span class="Set">H</span> and
+	k<sub>1</sub>, k<sub>2</sub> &isin; <span class="Set">K</span>. Then
+	h<sub>1</sub>k<sub>1</sub>, h<sub>2</sub>k<sub>2</sub> &isin;
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+
+      <p>
+	Multiplying these elements of
+	<span class="Set">H</span><span class="Set">K</span> gives
+	h<sub>1</sub>k<sub>1</sub>h<sub>2</sub>k<sub>2</sub> =
+	h<sub>1</sub>(k<sub>1</sub>h<sub>2</sub>)k<sub>2</sub>. By the lemma,
+	(k<sub>1</sub>h<sub>2</sub>) &isin;
+	<span class="Set">K</span><span class="Set">H</span> &sube;
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+
+      <p>
+	Thus, &exist; h<sub>3</sub> &isin; <span class="Set">H</span> and
+	k<sub>3</sub> &isin; <span class="Set">K</span> such that
+	h<sub>3</sub>k<sub>3</sub> = k<sub>1</sub>h<sub>2</sub>. This gives
+	h<sub>1</sub>(k<sub>1</sub>h<sub>2</sub>)k<sub>2</sub> =
+	h<sub>1</sub>(h<sub>3</sub>k<sub>3</sub>)k<sub>2</sub> =
+	(h<sub>1</sub>h<sub>3</sub>)(k<sub>3</sub>k<sub>2</sub>) &isin;
+	<span class="Set">H</span><span class="Set">K</span>, and
+	<span class="Set">H</span><span class="Set">K</span> is closed under
+	multiplication.
+      </p>
+
+      <p>
+	Since <span class="Set">H</span><span class="Set">K</span> is closed
+	under inversion and multiplication, it is a subgroup of
+	<span class="Set">G</span>.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">S</span> be the union of all cosets
+	<span class="Set">H</span>a such that a<span class="Set">H</span> =
+	<span class="Set">H</span>a. Then <span class="Set">S</span> &lt;
+	<span class="Set">G</span> and <span class="Set">H</span> &#8882;
+	<span class="Set">S</span>.
+      </p>
+
+      <p>
+	To show that <span class="Set">S</span> &lt;
+	<span class="Set">G</span>, it is necessary (and sufficient) to show
+	that it is closed under multiplication and inversion.
+      </p>
+
+      <p>
+	<span class="Label">Multiplication</span>
+	Let x, y &isin; <span class="Set">G</span> such that
+	x<span class="Set">H</span> = <span class="Set">H</span>x and
+	y<span class="Set">H</span> = <span class="Set">H</span>y. Then, x, y
+	&isin; <span class="Set">S</span>, since x = ex &isin;
+	<span class="Set">H</span>x and y = ey &isin;
+	<span class="Set">H</span>y.
+      </p>
+
+      <p>
+	Since y<span class="Set">H</span> = <span class="Set">H</span>y and
+	x<span class="Set">H</span> = <span class="Set">H</span>x,
+	(xy)(<span class="Set">H</span>) = x(y<span class="Set">H</span>) =
+	x(<span class="Set">H</span>y) = (x<span class="Set">H</span>)y =
+	(<span class="Set">H</span>x)y = <span class="Set">H</span>(xy).
+      </p>
+
+      <p>
+	Therefore, if x,y &isin; <span class="Set">S</span> then xy &isin;
+	<span class="Set">S</span> and <span class="Set">S</span> is closed
+	under multiplication.
+      </p>
+
+      <p>
+	<span class="Label">Inversion</span>
+	Let x &isin; <span class="Set">G</span> such that
+	x<span class="Set">H</span> = <span class="Set">H</span>x. Then,
+	x<sup>-1</sup><span class="Set">H</span> =
+	x<sup>-1</sup><span class="Set">H</span>e =
+	x<sup>-1</sup><span class="Set">H</span>(xx<sup>-1</sup>) =
+	x<sup>-1</sup>(<span class="Set">H</span>x)x<sup>-1</sup> =
+	x<sup>-1</sup>(x<span class="Set">H</span>)x<sup>-1</sup> =
+	(x<sup>-1</sup>x)<span class="Set">H</span>x<sup>-1</sup> =
+	e<span class="Set">H</span>x<sup>-1</sup> =
+	<span class="Set">H</span>x<sup>-1</sup>.
+      </p>
+
+      <p>
+	Therefore, if x &isin; <span class="Set">S</span> then x<sup>-1</sup>
+	&isin; <span class="Set">S</span>, and <span class="Set">S</span> is
+	closed under inversion.
+      </p>
+
+      <p>
+	Since <span class="Set">S</span> is a subset of
+	<span class="Set">G</span> that is closed under multiplication and
+	inversion, <span class="Set">S</span> &lt; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Since <span class="Set">H</span> and <span class="Set">S</span> are
+	groups, and <span class="Set">H</span> &sube;
+	<span class="Set">S</span>, <span class="Set">H</span> &lt;
+	<span class="Set">S</span>. By <a href="Chapter14D#Ex05">Problem D,
+	Exercise 5</a>, <span class="Set">H</span> &#8882;
+	<span class="Set">S</span>.
+	&#8718;
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180527044112/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180527044112/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180527044112/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180527044112im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180527044112/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180527044112im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:41:12 May 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:16 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 216.488
+  exclusion.robots: 0.092
+  exclusion.robots.policy: 0.083
+  RedisCDXSource: 2.098
+  esindex: 0.009
+  LoadShardBlock: 193.706 (3)
+  PetaboxLoader3.resolve: 62.679 (2)
+  PetaboxLoader3.datanode: 153.172 (4)
+  CDXLines.iter: 17.808 (3)
+  load_resource: 79.847
+-->

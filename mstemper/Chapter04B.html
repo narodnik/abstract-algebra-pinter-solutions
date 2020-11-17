@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121026
+  Modified:	20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=808;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04B","20180529130019","http://web.archive.org/","web","/_static/",
+	      "1527598819");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180529130019im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180529130019cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04A" rel="prev" rev="next">
+  <link href="Chapter04C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Rules of Algebra in Groups</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    Prove or disprove each of the following. Counter-examples may be taken
+    from the six-element group of matrices in Chapter 3.
+  </p>
+
+  <ol>
+    <li>
+      <p>x<sup>2</sup> = e &rarr; x = e</p>
+      <p>
+	In a two element group, the element that is not the identity
+	element must be its own inverse. Calling that element "x"
+	gives x<sup>2</sup> = e.
+      </p>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup> = a<sup>2</sup> &rarr; x = a.</p>
+      <p>
+	From the previous example, the square of the non-identity element in
+	a two-element group is e, and e = e<sup>2</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>(ab)<sup>2</sup> = a<sup>2</sup>b<sup>2</sup></p>
+      <p>
+	Since (ab)<sup>2</sup> = abab, and a<sup>2</sup>b<sup>2</sup> = aabb,
+	this can only be true if abab = aabb.
+      </p>
+      <table class="Derive">
+	<tr>
+	  <td>abab</td>
+	  <td>aabb</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>ababb<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>aabbb<sup>-1</sup></td>
+	  <td>pre-multiply by a<sup>-1</sup> and post-multiply
+	      by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ebae</td>
+	  <td>eabe</td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td>ba</td>
+	  <td>ab</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+      <p>
+	Therefore abab = aabb requires that ba =ab (that is, a and b
+	commute). In the six-element group from Chapter 3, AB = C
+	while BA = K.
+      </p>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup> =x &rarr; x = e</p>
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>2</sup></td>
+	  <td>x</td>
+	</tr>
+	<tr>
+	  <td>xx</td>
+	  <td>x</td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>xxx<sup>-1</sup></td>
+	  <td>xx<sup>-1</sup></td>
+	  <td>pre-multiply by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xe</td>
+	  <td>e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>x&isin;<span class="Set">G</span> &rarr; &exist; y&isin;<span class="Set">G</span> such that y<sup>2</sup> = x</p>
+      <p>
+	In the six-element group from Chapter 3, this is not true for
+	elements A, C, or K.
+      </p>
+    </li>
+
+    <li>
+      <p>&forall; x&isin; <span class="Set">G</span> and y&isin;<span class="Set">G</span>, &exist; z&isin;<span class="Set">G</span>
+	 such that y = xz.</p>
+      <p>Let z = x<sup>-1</sup>y. Then xz = xx<sup>-1</sup>y = ey =y.</p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180529130019/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180529130019/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180529130019/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180529130019im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180529130019/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180529130019im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 13:00:19 May 29, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:53 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 295.216 (3)
+  PetaboxLoader3.resolve: 112.344
+  exclusion.robots: 0.205
+  PetaboxLoader3.datanode: 516.825 (4)
+  exclusion.robots.policy: 0.19
+  RedisCDXSource: 55.848
+  CDXLines.iter: 24.551 (3)
+  load_resource: 418.131
+  esindex: 0.017
+  captures_list: 380.602
+-->

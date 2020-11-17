@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20120930
+  Modified:	20121028 - Moved Cayley and sub-list styles to external sheet
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=365;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter03C","20180608071442","http://web.archive.org/","web","/_static/",
+	      "1528442082");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 3, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608071442im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608071442cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter03" rel="parent" rev="child">
+  <link href="Chapter03B" rel="prev" rev="next">
+  <link href="Chapter03D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Groups of Subsets of a Set</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Let <span class="Set">A</span> + <span class="Set">B</span> be the
+    symmetric difference of sets <span class="Set">A</span> and
+    <span class="Set">B</span>. The author shows that this operation is
+    commutative and associative. Using P(<span class="Set">D</span>) (for
+    an arbitrary set <span class="Set">D</span>) as the domain, examine
+    the operation as described.
+  </p>
+
+  <ol>
+    <li>
+      <p>Does this operation have an identity element?</p>
+      <p><span class="Set">A</span> + &empty; =
+	 (<span class="Set">A</span> - &empty;) &cup;
+	 (&empty; - <span class="Set">A</span>) =
+	 <span class="Set">A</span> &cup; &empty; =
+	 <span class="Set">A</span>.<br>
+	 &empty; + <span class="Set">B</span> =
+	 (&empty; - <span class="Set">B</span>) &cup;
+	 (<span class="Set">B</span> - &empty;) =
+	 &empty; &cup; <span class="Set">B</span> =
+	 <span class="Set">B</span>.<br>
+	 The empty set is the identity element for this operation.</p>
+    </li>
+
+    <li>
+      <p>Does each element of P(<span class="Set">D</span>) have an inverse
+	 with respect to this operation?</p>
+      <p>Let <span class="Set">Q</span> be an element of
+	 P(<span class="Set">D</span>). Then
+	 <span class="Set">Q</span> + <span class="Set">Q</span> =
+	 (<span class="Set">Q</span> - <span class="Set">Q</span>) &cup;
+	 (<span class="Set">Q</span> - <span class="Set">Q</span>) =
+	 &empty; &cup; &empty; = &empty;.<br>
+	 Each set is its own inverse.</p> 
+    </li>
+
+    <li>
+      <p>Let <span class="Set">D</span> = {a, b, c}. Write the operation
+	 table for &lt;P(<span class="Set">D</span>), +&gt;. (I will use
+	 the more compact Cayley table format, rather than the author's
+	 preferred format.)
+      <table class="Cayley" border="on">
+	<tr>
+	  <td>+</td>
+	  <th>&empty;</th>
+	  <th>{c}</th>
+	  <th>{b}</th>
+	  <th>{b,c}</th>
+	  <th>{a}</th>
+	  <th>{a,c}</th>
+	  <th>{a,b}</th>
+	  <th>{a,b,c}</th>
+	</tr>
+	<tr>
+	  <th>&empty;</th>
+	  <td>&empty;</td>
+	  <td>{c}</td>
+	  <td>{b}</td>
+	  <td>{b,c}</td>
+	  <td>{a}</td>
+	  <td>{a,c}</td>
+	  <td>{a,b}</td>
+	  <td>{a,b,c}</td>
+	</tr>
+	<tr>
+	  <th>{c}</th>
+	  <td>{c}</td>
+	  <td>&empty;</td>
+	  <td>{b,c}</td>
+	  <td>{b}</td>
+	  <td>{a,c}</td>
+	  <td>{a}</td>
+	  <td>{a,b,c}</td>
+	  <td>{a,b}</td>
+	</tr>
+	<tr>
+	  <th>{b}</th>
+	  <td>{b}</td>
+	  <td>{b,c}</td>
+	  <td>&empty;</td>
+	  <td>{c}</td>
+	  <td>{a,b}</td>
+	  <td>{a,b,c}</td>
+	  <td>{a}</td>
+	  <td>{a,c}</td>
+	</tr>
+	<tr>
+	  <th>{b,c}</th>
+	  <td>{b,c}</td>
+	  <td>{b}</td>
+	  <td>{c}</td>
+	  <td>&empty;</td>
+	  <td>{a,b,c}</td>
+	  <td>{a,b}</td>
+	  <td>{a,c}</td>
+	  <td>{a}</td>
+	</tr>
+	<tr>
+	  <th>{a}</th>
+	  <td>{a}</td>
+	  <td>{a,c}</td>
+	  <td>{a,b}</td>
+	  <td>{a,b,c}</td>
+	  <td>&empty;</td>
+	  <td>{c}</td>
+	  <td>{b}</td>
+	  <td>{b,c}</td>
+	</tr>
+	<tr>
+	  <th>{a,c}</th>
+	  <td>{a,c}</td>
+	  <td>{a}</td>
+	  <td>{a,b,c}</td>
+	  <td>{a,b}</td>
+	  <td>{c}</td>
+	  <td>&empty;</td>
+	  <td>{b,c}</td>
+	  <td>{b}</td>
+	</tr>
+	<tr>
+	  <th>{a,b}</th>
+	  <td>{a,b}</td>
+	  <td>{a,b,c}</td>
+	  <td>{a}</td>
+	  <td>{a,c}</td>
+	  <td>{b}</td>
+	  <td>{b,c}</td>
+	  <td>&empty;</td>
+	  <td>{c}</td>
+	</tr>
+	<tr>
+	  <th>{a,b,c}</th>
+	  <td>{a,b,c}</td>
+	  <td>{a,b}</td>
+	  <td>{a,c}</td>
+	  <td>{a}</td>
+	  <td>{b,c}</td>
+	  <td>{b}</td>
+	  <td>{c}</td>
+	  <td>&empty;</td>
+	</tr>
+      </table>
+    </li>
+         
+  </ol>
+</div> <!-- ProblemC -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter03">Chapter 3</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608071442/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608071442/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608071442/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608071442im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608071442/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608071442im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 07:14:42 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:33 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 119.411 (3)
+  exclusion.robots.policy: 0.218
+  esindex: 0.017
+  captures_list: 198.617
+  RedisCDXSource: 50.104
+  exclusion.robots: 0.236
+  PetaboxLoader3.resolve: 70.357
+  PetaboxLoader3.datanode: 162.716 (4)
+  CDXLines.iter: 23.457 (3)
+  load_resource: 152.419
+-->

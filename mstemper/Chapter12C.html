@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140930 - Framework only
+  Modified:	20141001 - Did all problems
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=2380;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter12C","20171213122548","http://web.archive.org/","web","/_static/",
+	      "1513167948");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 12, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20171213122548im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20171213122548cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter12" rel="parent" rev="child">
+  <link href="Chapter12B" rel="prev" rev="next">
+  <link href="Chapter12D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Equivalence Relations and Partitions of
+    <span class="Set">R</span> &times; <span class="Set">R</span></h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Prove that each of the following is a partition or equivalence
+    relation, describe it geometrically and give the corresponding
+    equivalence relation or partition.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	For each r &isin; <span class="Set">R</span>,
+	<span class="Set">A<sub>r</sub></span> = {(x,y) : y = 2x + r}.
+      </p>
+
+      <p>
+	Let (a,b) &isin; <span class="Set">R</span> &times;
+	<span class="Set">R</span>. Let c = b - 2a. Then, b = 2a + c, and
+	(a,b) &isin; <span class="Set">A<sub>c</sub></span>. Therefore,
+	any element of <span class="Set">R</span> &times;
+	<span class="Set">R</span> is in 
+	<span class="Set">A<sub>r</sub></span> for some r in
+	<span class="Set">R</span>.
+      </p>
+
+      <p>
+	Assume that (a,b) &isin; <span class="Set">A<sub>d</sub></span>.
+	Then, b = 2a + d, or d = b - 2a = c. Thus, every element of
+	<span class="Set">R</span> &times; <span class="Set">R</span> is in
+	only one <span class="Set">A<sub>r</sub></span>.
+      </p>
+
+      <p>
+	Therefore, {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R</span>} is a partition of
+	<span class="Set">R</span> &times; <span class="Set">R</span>.
+      </p>
+
+      <p>
+	The partition is the set of all lines in the Cartesian plane that
+	have a slope of 2. They are distinguished by their y-intercepts.
+      </p>
+
+      <p>
+	The equivalence relation is
+	(x<sub>1</sub>,y<sub>1</sub>)~(x<sub>2</sub>,y<sub>2</sub>) iff
+	(y<sub>1</sub>-y<sub>2</sub>) = 2(x<sub>1</sub>-x<sub>2</sub>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For each r &isin; <span class="Set">R</span>,
+	<span class="Set">A<sub>r</sub></span> = {(x,y) :
+	x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup>}.
+      </p>
+
+      <p>
+	Let (a,b) &isin; <span class="Set">R</span> &times;
+	<span class="Set">R</span>. Let c = sqrt(a<sup>2</sup> +
+	b<sup>2</sup>). Then, a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>,
+	and (a,b) &isin; <span class="Set">A<sub>c</sub></span>. Therefore,
+	any element of <span class="Set">R</span> &times;
+	<span class="Set">R</span> is in <span class="Set">A<sub>r</sub></span>
+	for some r in <span class="Set">R<sup>+</sup></span> &cup; {0}.
+      </p>
+
+      <p>
+      	Since (-r)<sup>2</sup> = r<sup>2</sup>,
+	<span class="Set">A<sub>-r</sub></span> =
+	<span class="Set">A<sub>r</sub></span>.
+      </p>
+
+      <p>
+	Assume that (a,b) &isin; <span class="Set">A<sub>d</sub></span>. Then
+	d<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>, or
+	d<sup>2</sup> = c<sup>2</sup>. In <span class="Set">R</span>, this is
+	only true when d = &plusmn;c. Thus, every element of
+	<span class="Set">R</span> &times; <span class="Set">R</span> is in
+	only one <span class="Set">A<sub>r</sub></span>.
+      </p>
+
+      <p>
+	Therefore, {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R</span>} is a partition of
+	<span class="Set">R</span> &times; <span class="Set">R</span>.
+      </p>
+
+      <p>
+	The partition is the set of all circles in the Cartesian plane centered
+	on the origin. They are distinguished by their radii.
+      </p>
+
+      <p>
+	The equivalence relation is
+	(x<sub>1</sub>,y<sub>1</sub>)~(x<sub>2</sub>,y<sub>2</sub>) iff
+	x<sub>1</sub><sup>2</sup> + y<sub>1</sub><sup>2</sup> =
+	x<sub>2</sub><sup>2</sup> + y<sub>2</sub><sup>2</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For each r &isin; <span class="Set">R</span>,
+	<span class="Set">A<sub>r</sub></span> = {(x,y) : y = |x| + r}.
+      </p>
+
+      <p>
+	Let (a,b) &isin; <span class="Set">R</span> &times;
+	<span class="Set">R</span>. Let c = b - |a|. Then, b = |a| + c, and
+	(a,b) &isin; <span class="Set">A<sub>c</sub></span>. Therefore,
+	any element of <span class="Set">R</span> &times;
+	<span class="Set">R</span> is in <span class="Set">A<sub>r</sub></span>
+	for some r in <span class="Set">R</span>.
+      </p>
+
+      <p>
+	Assume that (a,b) &isin; <span class="Set">A<sub>d</sub></span>.
+	Then, b = |a| + d, or d = b - |a| = c. Thus, every element of
+	<span class="Set">R</span> &times; <span class="Set">R</span> is in
+	only one <span class="Set">A<sub>r</sub></span>.
+      </p>
+
+      <p>
+	Therefore, {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R</span>} is a partition of
+	<span class="Set">R</span> &times; <span class="Set">R</span>.
+      </p>
+
+      <p>
+	The partition is the set of all vee-shapes in the Cartesian plane that
+	have their minima at the y-axis and slopes of &#8723;1. They are
+	distinguished by their minima (which are also their y-intercepts).
+      </p>
+
+      <p>
+	The equivalence relation is
+	(x<sub>1</sub>,y<sub>1</sub>)~(x<sub>2</sub>,y<sub>2</sub>) iff
+	(y<sub>1</sub>-y<sub>2</sub>) = (|x<sub>1</sub>|-|x<sub>2</sub>|).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	(x,y)~(u,v) iff ax<sup>2</sup> + by<sup>2</sup> =
+	au<sup>2</sup> + bv<sup>2</sup>. (a,b&gt;0)
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since ax<sup>2</sup> + by<sup>2</sup> =
+	ax<sup>2</sup> + by<sup>2</sup>, this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If ax<sup>2</sup> + by<sup>2</sup> = au<sup>2</sup> + bv<sup>2</sup>,
+	then au<sup>2</sup> + bv<sup>2</sup> =
+	ax<sup>2</sup> + by<sup>2</sup>, so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If ax<sup>2</sup> + by<sup>2</sup> = au<sup>2</sup> + bv<sup>2</sup>
+	and au<sup>2</sup> + bv<sup>2</sup> = ap<sup>2</sup> + bq<sup>2</sup>,
+	then ax<sup>2</sup> + by<sup>2</sup> = ap<sup>2</sup> + bq<sup>2</sup>,
+	so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	The partition is the set of all ellipses in the Cartesian plane with
+	the same ratio of major to minor axis, centered on the origin, with
+	the major axis coincident with one of the coordinate axes (the same
+	axis for all of the ellipses). They are distinguished by the length
+	of their major axis (or their minor axis).
+      </p>
+
+      <p>
+	For each r &isin; <span class="Set">R<sup>+</sup></span> &cup; {0},
+	<span class="Set">A<sub>r</sub></span> = {(x,y) :
+	ax<sup>2</sup> + by<sup>2</sup> = r<sup>2</sup>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	(x,y)~(u,v) iff x+y = u+v.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since x+y = x+y, this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If x+y = u+v then u+v = x+y, so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If x+y = u+v and u+v = p+q then x+y = p+q, so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	The partition is the set of all lines in the Cartesian plane with a
+	slope of -1. They are distinguished by their y-intercepts.
+      </p>
+
+      <p>
+	For each r &isin; <span class="Set">R</span>,
+	<span class="Set">A<sub>r</sub></span> = {(x,y) : x+y = r}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	(x,y)~(u,v) iff x<sup>2</sup> - y = u<sup>2</sup> - v.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since x<sup>2</sup> - y = x<sup>2</sup> - y, this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If x<sup>2</sup> - y = u<sup>2</sup> - v,
+	then u<sup>2</sup> - v = x<sup>2</sup> - y, so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If x<sup>2</sup> - y = u<sup>2</sup> - v
+	and u<sup>2</sup> - v = p<sup>2</sup> - q,
+	then x<sup>2</sup> - y = p<sup>2</sup> - q,
+	so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	The partition is the set of all parabolas similar to y = x<sup>2</sup>,
+	centered on the y-axis. They are distinguished by their y-intercepts.
+      </p>
+
+      <p>
+	For each r &isin; <span class="Set">R</span>,
+	<span class="Set">A<sub>r</sub></span> = {(x,y) :
+	y = x<sup>2</sup> - r}.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter12">Chapter 12</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20171213122548/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20171213122548/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20171213122548/http://validator.w3.org/" class="HiddenLink"><img src="/web/20171213122548im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20171213122548/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20171213122548im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:25:48 Dec 13, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:41 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 23.575 (3)
+  LoadShardBlock: 1020.896 (3)
+  esindex: 0.013
+  exclusion.robots.policy: 0.185
+  PetaboxLoader3.datanode: 2193.909 (4)
+  captures_list: 1087.683
+  load_resource: 1276.649
+  PetaboxLoader3.resolve: 87.117
+  exclusion.robots: 0.201
+  RedisCDXSource: 38.168
+-->

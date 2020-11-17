@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121105 - Problem B1-3
+  Modified:	20121110 - Problems B4-6
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=452;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05B","20180608063926","http://web.archive.org/","web","/_static/",
+	      "1528439966");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608063926im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608063926cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05A" rel="prev" rev="next">
+  <link href="Chapter05C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Subgroups of Functions</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    For each of the following, show that
+    <span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;F(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;F(<span class="Set">R</span>):
+	f(x)=0 &forall;x&isin;[0,1]}.
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then &forall;x&isin;[0,1],
+	[p+q](x)=0, so <span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then &forall;x&isin;[0,1],
+	-p(x)=0, so <span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;F(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;F(<span class="Set">R</span>):
+	f(-x)=-f(x)}.
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then [p+q](-x)=[p+q](-x), so
+	<span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then q(x)=p(-x)=-f(x) is,
+	so <span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;F(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;F(<span class="Set">R</span>):
+	f is periodic with a period of &pi;}.
+      </p>
+      <p>
+	Note that "f is periodic with a period of &pi;" means that
+	&forall;x f(x)=f(x+&pi;).
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then [p+q](x)=[p+q](x+&pi;), so
+	<span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then -f(x)=-f(x+&pi;) is,
+	so <span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;C(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;C(<span class="Set">R</span>):
+	&int;(0:1) f(x) dx = 0}.
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then &int;(0:1) p(x) dx = 0
+	and &int;(0:1) q(x) dx = 0. Since the integral of the sum of two
+	functions equals the sum of their integrals,
+	&int;(0:1) [p+q](x) dx = 0, and [p+q]&isin;<span class="Set">H</span>,
+	and <span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then &int;(0:1) p(x) dx = 0.
+	Since the integral of a constant times a function is equal to the
+	constant times the integral of the function, &int;(0:1) -p(x) dx =
+	-1 * &int;(0:1) p(x) dx = -1 * 0 = 0, and <span class="Set">H</span>
+	is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;D(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;D(<span class="Set">R</span>):
+	df/dx is a constant}.
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then dp/dx=a and dq/dx=b,
+	where a and b are constants. Since the derivative of the sum of two
+	functions is equal to the sum of their derivatives, d[p+q]/dx=a+b,
+	which is a constant, and [p+q]&isin;<span class="Set">H</span>,
+	and <span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then dp/dx=a, where a is a
+	constant. Since the derivative of a constant times a function is
+	the constant times the derivative of the function, d[-p]/dx =
+	d[-1*p]/dx = -1*(dp/dx) = -a, which is a constant and
+	<span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;F(<span class="Set">R</span>), +&gt;,
+	<span class="Set">H</span> = {f&isin;F(<span class="Set">R</span>):
+	f(x)&isin;<span class="Set">Z</span>
+	&forall;x&isin;<span class="Set">R</span>}.
+      </p>
+      <p>
+	If p,q&isin;<span class="Set">H</span>, then for any
+	y&isin;<span class="Set">R</span>, p(y)&isin;<span class="Set">Z</span>
+	and q(y)&isin;<span class="Set">Z</span>. Therefore, [p+q](y) =
+	p(y)+q(y)&isin;<span class="Set">Z</span>, since
+	<span class="Set">Z</span> is closed under addition. Therefore,
+	[p+q]&isin;<span class="Set">H</span> and <span class="Set">H</span>
+	is closed under addition.
+      </p>
+      <p>
+	If p&isin;<span class="Set">H</span>, then for any
+	y&isin;<span class="Set">R</span>,
+	p(y)&isin;<span class="Set">Z</span>. If
+	p(y)&isin;<span class="Set">Z</span>. If
+	p(y)&isin;<span class="Set">Z</span>, then
+	-p(y)&isin;<span class="Set">Z</span>, since <span class="Set">Z</span>
+	is closed under multiplication. Therefore,
+	-p&isin;<span class="Set">H</span> and <span class="Set">H</span>
+	is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	<span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608063926/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608063926/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608063926/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608063926im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608063926/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608063926im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:39:26 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:20 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 90.82 (3)
+  exclusion.robots.policy: 0.184
+  esindex: 0.016
+  captures_list: 127.627
+  RedisCDXSource: 9.278
+  exclusion.robots: 0.199
+  PetaboxLoader3.resolve: 46.714
+  PetaboxLoader3.datanode: 318.296 (4)
+  CDXLines.iter: 23.093 (3)
+  load_resource: 310.773
+-->

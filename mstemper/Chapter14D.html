@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141124 - Exercise 1
+  Modified:	20141125 - Exercises 2-3
+		20141209 - Exercises 4-6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app43.us.archive.org';v.server_ms=3030;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14D","20180527044852","http://web.archive.org/","web","/_static/",
+	      "1527396532");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180527044852im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180527044852cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.NormalSubgroups TH {text-align: left;}
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14C" rel="prev" rev="next">
+  <link href="Chapter14E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Basic Properties of Normal Subgroups</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    In the following, let <span class="Set">G</span> be an arbitrary group.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Find all the normal subgroups of:
+      </p>
+
+      <ol>
+	<li>
+	  <p>
+	    <span class="Set">S<sub>3</sub></span>
+	  </p>
+
+	  <p>
+	    Using the notation from Chapter Seven:
+	  </p>
+
+	  <table class="NormalSubgroups">
+	    <tr>
+	      <th>Subgroup</th>
+	      <th>Normal?</th>
+	      <th>Comments</th>
+	    </tr>
+	    <tr>
+	      <td>{&epsilon;}</td>
+	      <td>Yes</td>
+	      <td>See below</td>
+	    </tr>
+	    <tr>
+	      <td>{&epsilon;, &alpha;}</td>
+	      <td>No</td>
+	      <td>&beta;&alpha;&beta;<sup>-1</sup> =
+		  &kappa;&beta;<sup>-1</sup> =
+		  &kappa;&delta; = &gamma; &notin;
+		  {&epsilon;, &alpha;}</td>
+	    </tr>
+	    <tr>
+	      <td>{&epsilon;, &gamma;}</td>
+	      <td>No</td>
+	      <td>&alpha;&gamma;&alpha;<sup>-1</sup> =
+		  &beta;&alpha;<sup>-1</sup> =
+		  &beta;&alpha; = &kappa; &notin;
+		  {&epsilon;, &gamma;}</td>
+	    </tr>
+	    <tr>
+	      <td>{&epsilon;, &kappa;}</td>
+	      <td>No</td>
+	      <td>&alpha;&kappa;&alpha;<sup>-1</sup> =
+		  &delta;&alpha;<sup>-1</sup> =
+		  &delta;&alpha; = &gamma; &notin;
+		  {&epsilon;, &kappa;}</td>
+	    </tr>
+	    <tr>
+	      <td>{&epsilon;, &beta;, &delta;}</td>
+	      <td>Yes</td>
+	      <td>By exhaustion (18 cases)</td>
+	    </tr>
+	    <tr>
+	      <td><span class="Set">S<sub>3</sub></span></td>
+	      <td>Yes</td>
+	      <td>See below</td>
+	    </tr>
+	  </table>
+
+	  <p>
+	    The trivial subgroups of <em>any</em> group
+	    <span class="Set">G</span>, {e} and <span class="Set">G</span>,
+	    are normal subgroups of <span class="Set">G</span>. For
+	    <span class="Set">G</span> itself, this follows from the fact that
+	    a group is closed under its operation. For {e}, let x &isin;
+	    <span class="Set">G</span>. Then, xex<sup>-1</sup> =
+	    xx<sup>-1</sup> = e &isin; {e}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">D<sub>4</sub></span>
+	  </p>
+
+	  <p>
+	    Using the notation from Chapter Seven:
+	  </p>
+
+	  <table class="NormalSubgroups">
+	    <tr>
+	      <th>Subgroup</th>
+	      <th>Normal?</th>
+	      <th>Comments</th>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>}</td>
+	      <td>Yes</td>
+	      <td>See above</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>2</sub>}</td>
+	      <td>Yes</td>
+	      <td>R<sub>2</sub> is its own conjugate for all elements
+		  of <span class="Set">D<sub>4</sub></span>.</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>1</sub>,
+		  R<sub>2</sub>, R<sub>3</sub>}</td>
+	      <td>Yes</td>
+	      <td>By exhaustion (21 cases, not counting the identity)</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>4</sub>}</td>
+	      <td>No</td>
+	      <td>R<sub>1</sub>R<sub>4</sub>R<sub>1</sub><sup>-1</sup> =
+		  R<sub>1</sub>R<sub>4</sub>R<sub>3</sub> =
+		  R<sub>5</sub> &notin; {R<sub>0</sub>, R<sub>4</sub>}</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>5</sub>}</td>
+	      <td>No</td>
+	      <td>R<sub>1</sub>R<sub>5</sub>R<sub>1</sub><sup>-1</sup> =
+		  R<sub>1</sub>R<sub>5</sub>R<sub>3</sub> =
+		  R<sub>4</sub> &notin; {R<sub>0</sub>, R<sub>5</sub>}</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>6</sub>}</td>
+	      <td>No</td>
+	      <td>R<sub>1</sub>R<sub>6</sub>R<sub>1</sub><sup>-1</sup> =
+		  R<sub>1</sub>R<sub>6</sub>R<sub>3</sub> =
+		  R<sub>7</sub> &notin; {R<sub>0</sub>, R<sub>6</sub>}</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>7</sub>}</td>
+	      <td>No</td>
+	      <td>R<sub>1</sub>R<sub>7</sub>R<sub>1</sub><sup>-1</sup> =
+		  R<sub>1</sub>R<sub>7</sub>R<sub>3</sub> =
+		  R<sub>6</sub> &notin; {R<sub>0</sub>, R<sub>7</sub>}</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>2</sub>,
+		  R<sub>4</sub>, R<sub>5</sub>}</td>
+	      <td>Yes</td>
+	      <td>By exhaustion (21 cases, not counting the identity)</td>
+	    </tr>
+	    <tr>
+	      <td>{R<sub>0</sub>, R<sub>2</sub>,
+		  R<sub>6</sub>, R<sub>7</sub>}</td>
+	      <td>Yes</td>
+	      <td>By exhaustion (21 cases, not counting the identity)</td>
+	    </tr>
+	    <tr>
+	      <td><span class="Set">D<sub>4</sub></span></td>
+	      <td>Yes</td>
+	      <td>See above</td>
+	    </tr>
+	  </table>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove that every subgroup of an Abelian group is normal.
+      </p>
+
+      <p>
+	Let <span class="Set">G</span> be an Abelian group, with x &isin;
+	<span class="Set">G</span>. Let <span class="Set">H</span> be a
+	subgroup of <span class="Set">G</span>, with a &isin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is Abelian, xax<sup>-1</sup> =
+	axx<sup>-1</sup> = ae = a &isin; <span class="Set">H</span>. Since
+	the conjugate of any element of <span class="Set">H</span> with any
+	element of <span class="Set">G</span> is in <span class="Set">H</span>,
+	<span class="Set">H</span> is normal with respect to
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that the center of any group <span class="Set">G</span> is a
+	normal subgroup of <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">G</span>. Let <span class="Set">C</span>
+	be the center of <span class="Set">G</span>, with a &isin;
+	<span class="Set">C</span>.
+      </p>
+
+      <p>
+	Since the elements of the center of a group commute with every member
+	of the group, xax<sup>-1</sup> = axx<sup>-1</sup> = ae = a &isin;
+	<span class="Set">C</span>. Since the conjugate of any element of
+	<span class="Set">C</span> with any element of
+	<span class="Set">G</span> is in <span class="Set">C</span>,
+	<span class="Set">C</span> is normal with respect to
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	With <span class="Set">H</span> a subgroup of
+	<span class="Set">G</span>, prove that <span class="Set">H</span> is
+	normal iff &forall; a,b &isin; <span class="Set">G</span>, ab &isin;
+	<span class="Set">H</span> iff ba &isin; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Let x,y &isin; <span class="Set">G</span>. Then, xy &isin;
+	<span class="Set">G</span> and x<sup>-1</sup> &isin;
+	<span class="Set">G</span>. Then, (xy)x<sup>-1</sup> &isin;
+	<span class="Set">H</span> iff x<sup>-1</sup>(xy) &isin;
+	<span class="Set">H</span>; in other words, the conjugate of y &isin;
+	<span class="Set">H</span> iff y &isin; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	Therefore, if &forall; a,b &isin; <span class="Set">G</span>, ab
+	&isin; <span class="Set">H</span> iff ba &isin;
+	<span class="Set">H</span>, then <span class="Set">H</span> is
+	normal.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	With <span class="Set">H</span> normal, let xy &isin;
+	<span class="Set">H</span>. Then y(xy)y<sup>-1</sup> &isin;
+	<span class="Set">H</span> because <span class="Set">H</span> is
+	normal. Since y(xy)y<sup>-1</sup> = yx, yx &isin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Similarly, let yx &isin; <span class="Set">H</span>. Then
+	x(yx)x<sup>-1</sup> &isin; <span class="Set">H</span> because
+	<span class="Set">H</span> is normal. This gives xy &isin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Therefore, <span class="Set">H</span> is normal leads to
+	xy &isin; <span class="Set">H</span> iff yx &isin;
+	<span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li id="Ex05">
+      <p>
+	Let <span class="Set">H</span> be a subgroup of
+	<span class="Set">G</span>. Prove that <span class="Set">H</span> is
+	normal iff a<span class="Set">H</span> = <span class="Set">H</span>a
+	&forall; a &isin; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	If &forall; a &isin; <span class="Set">G</span>,
+	a<span class="Set">H</span> = <span class="Set">H</span>a, then
+	a<span class="Set">H</span>a<sup>-1</sup> =
+	<span class="Set">H</span>aa<sup>-1</sup> =
+	<span class="Set">H</span>. Since
+	a<span class="Set">H</span>a<sup>-1</sup> is the set of all
+	conjugates of elements of <span class="Set">H</span>,
+	<span class="Set">H</span> is normal.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If <span class="Set">H</span> is normal, then axa<sup>-1</sup> &isin;
+	<span class="Set">H</span> &forall; x &isin; <span class="Set">H</span>.
+	Then axa<sup>-1</sup>a = ax &isin; <span class="Set">H</span>a. Since
+	it is also true that ax &isin; a<span class="Set">H</span>, we have
+	a<span class="Set">H</span> = <span class="Set">H</span>a.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that any intersection of normal subgroups of
+	<span class="Set">G</span> is a normal subgroup of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Every subgroup of <span class="Set">G</span> contains e, so any
+	intersection of subgroups of <span class="Set">G</span> contains it
+	and is non-empty.
+      </p>
+
+      <p>
+	If x,y are in two subgroups of <span class="Set">G</span>, then
+	xy and yx are in those subgroups, and hence in their intersection.
+	Therefore, any intersection of subgroups of <span class="Set">G</span>
+	is closed under multiplication.
+      </p>
+
+      <p>
+	If z is in two subgroups of <span class="Set">G</span>, then
+	z<sup>-1</sup> is in them, and hence in their intersection. Therefore,
+	any intersection of subgroups of <span class="Set">G</span> is
+	closed under inversion.
+      </p>
+
+      <p>
+	If a is in two normal subgroups of <span class="Set">G</span>, then all
+	of its conjugates must be in them, and hence in their intersection.
+	Therefore, any intersection of normal subgroups of
+	<span class="Set">G</span> is closed under conjugation.
+      </p>
+
+      <p>
+	Since the intersection of any two normal subgroups of
+	<span class="Set">G</span> is closed under multiplication,
+	inversion, and conjugation, and is non-empty, it is a normal
+	subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180527044852/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180527044852/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180527044852/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180527044852im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180527044852/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180527044852im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:48:52 May 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:14 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots: 0.308
+  PetaboxLoader3.resolve: 41.071
+  exclusion.robots.policy: 0.289
+  PetaboxLoader3.datanode: 2920.091 (4)
+  LoadShardBlock: 101.757 (3)
+  captures_list: 142.917
+  CDXLines.iter: 32.362 (3)
+  RedisCDXSource: 3.518
+  load_resource: 2867.071
+  esindex: 0.013
+-->

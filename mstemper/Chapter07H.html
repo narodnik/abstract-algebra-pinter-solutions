@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130608 - Exercises 1 and 2
+  Modified:	20130609 - Exercises 3 and 4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=1350;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter07H","20180531104016","http://web.archive.org/","web","/_static/",
+	      "1527763216");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 7, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180531104016im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180531104016cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter07" rel="parent" rev="child">
+  <link href="Chapter07G" rel="prev" rev="next">
+  <link href="Chapter07I" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Properties of Permutations of a
+    Set <span class="Set">A</span></h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <ol>
+    <li>
+      <p>
+	Let <span class="Set">A</span> be a set, with
+	a&isin;<span class="Set">A</span>. Let
+	<span class="Set">G</span> =
+	{f&isin;<span class="Set">S<sub>A</sub></span> : f(a)=a}. Prove that
+	<span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Let p,q&isin;<span class="Set">G</span>. Then, [p&#8728;q](a) =
+	p(q(a)) = p(a) = a, so p&#8728;q&isin;<span class="Set">G</span>,
+	and <span class="Set">G</span> is closed under composition.
+      </p>
+
+      <p>
+	Let h&isin;<span class="Set">G</span>. Then,
+	[h<sup>-1</sup>&#8728;h](a) = h<sup>-1</sup>(h(a)) =
+	h<sup>-1</sup>(a). However, for any x,
+	[h<sup>-1</sup>&#8728;h](x) = x, by the definition of inverse.
+	Therefore h<sup>-1</sup>(a) = a, and
+	h<sup>-1</sup>&isin;<span class="Set">G</span>,
+	and <span class="Set">G</span> is closed under inversion.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is closed under composition and
+	inversion, it is a subgroup of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f is a permutation on <span class="Set">A</span> and
+	a&isin;<span class="Set">A</span>, then f <dfn>moves</dfn> a if and
+	only if f(a)&ne;a. Let
+	<span class="Set">G</span>&sub;<span class="Set">S<sub>A</sub></span>
+	where f&isin;<span class="Set">G</span> if and only if f moves a
+	<em>finite</em> number of elements of <span class="Set">A</span>.
+	Prove that <span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Let r,s&isin;<span class="Set">G</span>. Then, r moves a finite
+	number of elements, m, and s moves a finite number of elements, n.
+	Then, r&#8728;s can not move any more than m+n elements. Since m and
+	n are finite, m+n is, and r&#8728;s&isin;<span class="Set">G</span>.
+	Therefore, <span class="Set">G</span> is closed under composition.
+      </p>
+
+      <p>
+	Let t&isin;<span class="Set">G</span>. Then, t moves a finite number
+	of elements. Since t<sup>-1</sup> must move the same elements back
+	to their original positions, t<sup>-1</sup> must also move a finite
+	number of elements, and t<sup>-1</sup>&isin;<span class="Set">G</span>.
+	Therefore, <span class="Set">G</span> is closed under inversion.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is closed under composition and
+	inversion, it is a subgroup of <span class="Set">S<sub>A</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">A</span> be a finite set, and let
+	<span class="Set">B</span>&sub;<span class="Set">A</span> be non-empty.
+	Let <span class="Set">G</span> =
+	{f&isin;<span class="Set">S<sub>A</sub></span> :
+	x&isin;<span class="Set">B</span> &rArr;
+	f(x)&isin;<span class="Set">B</span>}. Show that
+	<span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Let f,g&isin;<span class="Set">G</span>. Select any
+	x&isin;<span class="Set">B</span>. Then
+	g(x)&isin;<span class="Set">B</span>, and so is f(g(x)). Therefore,
+	[f&#8728;g](x)&isin;<span class="Set">B</span>. This shows that
+	<span class="Set">G</span> is closed under composition.
+      </p>
+
+      <p>
+	Permutations are one-to-one, so for any
+	h&isin;<span class="Set">G</span>, |h(<span class="Set">B</span>)| =
+	|<span class="Set">B</span>|. Since <span class="Set">A</span> is
+	finite, <span class="Set">B</span> is, and so is
+	h(<span class="Set">B</span>). Therefore, the pre-image of any
+	x&isin;<span class="Set">B</span> is also in <span class="Set">B</span>.
+	This shows that <span class="Set">G</span> is closed under inversion.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is closed under composition and
+	inversion, it is a subgroup of <span class="Set">S<sub>A</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Give an example to show that the conclusion of Exercise 3 does not
+	apply if <span class="Set">A</span> is an infinite set.
+      </p>
+
+      <p>
+	Let <span class="Set">A</span> = <span class="Set">Z</span>, and
+	let <span class="Set">B</span> = {2i :
+	i&isin;<span class="Set">Z<sup>+</sup></span>&cup;{0}}.
+	Define:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(x)</td>
+	  <td>x+2</td>
+	  <td>x&isin;<span class="Set">B</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x+1</td>
+	  <td>x&lt;0</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x</td>
+	  <td>otherwise</td>
+	</tr>
+      </table>
+
+      <p>
+	This is a permutation on <span class="Set">A</span>, and
+	x&isin;<span class="Set">B</span>&rArr;f(x)&isin;<span class="Set">B</span>. However, the pre-image of 0 under f is -1,
+	which is not in <span class="Set">B</span>, so
+	f<sup>-1</sup>&notin;<span class="Set">G</span>. Since
+	<span class="Set">G</span> is not closed under inversion, it is
+	not a group.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemH -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter07">Chapter 7</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180531104016/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180531104016/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180531104016/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180531104016im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180531104016/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180531104016im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:40:16 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:01:03 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1143.653
+  exclusion.robots: 0.145
+  exclusion.robots.policy: 0.133
+  RedisCDXSource: 20.059
+  esindex: 0.01
+  LoadShardBlock: 1097.037 (3)
+  PetaboxLoader3.datanode: 1182.837 (4)
+  CDXLines.iter: 23.189 (3)
+  load_resource: 199.305
+  PetaboxLoader3.resolve: 34.94
+-->

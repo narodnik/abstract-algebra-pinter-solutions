@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20120921 - Problems C1-2
+  Modified:	20120922 - Problems C3-5
+		20121120 - Split off problems into individual pages
+		20140516 - Unicode for "not equal" in css content
+			   Cleared floats after each exercise
+			   Changed OpTab's so that only first row is header
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=2046;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter02C","20180419231547","http://web.archive.org/","web","/_static/",
+	      "1524179747");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 2, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180419231547im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180419231547cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.OpTab
+      {float: left;
+       margin-left: 20px;}
+    TABLE.OpTab TD {text-align: right;}
+    TABLE.BadOps TD:first-child + TD:after {content: " \2260";}
+    LI {clear: both;}
+  </style>
+
+  <link href="./Chapter02" rel="parent" rev="child">
+  <link href="Chapter02D" rel="next" rev="prev">
+  <link href="Chapter02B" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Operations on a Two-Element Set</h1>
+
+<div class="Section Problem">
+  <p>
+    Let <span class="Set">A</span> = {a,b}.
+  </p>
+
+  <ol>
+    <li>
+    <p>
+      List all 16 operations on <span class="Set">A</span> = {a,b}.
+      Label them O<sub>0</sub> through O<sub>15</sub>.
+      (The text says "1 through 16", but that's dumb.)
+    </p>
+    <table class="OpTab">
+      <caption>O<sub>0</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>1</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>2</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>3</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>4</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>5</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>6</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>7</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>8</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>9</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>10</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>11</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>12</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>13</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>a</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>14</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>a</td>
+      </tr>
+    </table>
+    <table class="OpTab">
+      <caption>O<sub>15</sub></caption>
+      <tr>
+        <th>(x,y)</th>
+	<th>x*y</th>
+      </tr>
+      <tr>
+        <td>(a,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(a,b)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,a)</td>
+	<td>b</td>
+      </tr>
+      <tr>
+        <td>(b,b)</td>
+	<td>b</td>
+      </tr>
+    </table>
+    </li>
+
+    <li>
+    <p>Which of O<sub>0</sub> through O<sub>15</sub> are commutative?</p>
+    <p>O<sub>0</sub>, O<sub>1</sub>, O<sub>6</sub>, O<sub>7</sub>,
+       O<sub>8</sub>, O<sub>9</sub>, O<sub>14</sub>, and O<sub>15</sub>
+       are commutative operations. For each of the others, ab&ne;ba.</p>
+    </li>
+
+    <li>
+    <p>Which of O<sub>0</sub> through O<sub>15</sub> are associative?</p>
+    <p>O<sub>0</sub>, O<sub>1</sub>, O<sub>3</sub>, O<sub>5</sub>,
+       O<sub>6</sub>, O<sub>7</sub>, O<sub>9</sub>, and O<sub>15</sub>
+       are associative operations. The others are not, because:</p>
+    <table class="BadOps">
+      <tr><td>O<sub>2</sub></td><td>(ba)b</td><td>b(ab)</td></tr>
+      <tr><td>O<sub>4</sub></td><td>(ba)b</td><td>b(ab)</td></tr>
+      <tr><td>O<sub>8</sub></td><td>(aa)b</td><td>a(ab)</td></tr>
+      <tr><td>O<sub>10</sub></td><td>(aa)b</td><td>a(ab)</td></tr>
+      <tr><td>O<sub>11</sub></td><td>(ab)a</td><td>a(ba)</td></tr>
+      <tr><td>O<sub>12</sub></td><td>(aa)b</td><td>a(ab)</td></tr>
+      <tr><td>O<sub>13</sub></td><td>(ab)a</td><td>a(ba)</td></tr>
+      <tr><td>O<sub>14</sub></td><td>(aa)b</td><td>a(ab)</td></tr>
+    </table>
+    </li>
+
+    <li>
+    <p>Which of O<sub>0</sub> through O<sub>15</sub> have an identity
+       element?</p>
+    <table>
+      <tr><th>Oper</th><th>Left</th><th>Right</th></tr>
+      <tr><td>O<sub>0</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>1</sub></td><td>b</td><td>b</td></tr>
+      <tr><td>O<sub>2</sub></td><td>&mdash;</td><td>a</td></tr>
+      <tr><td>O<sub>3</sub></td><td>&mdash;</td><td>a or b</td></tr>
+      <tr><td>O<sub>4</sub></td><td>a</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>5</sub></td><td>a or b</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>6</sub></td><td>a</td><td>a</td></tr>
+      <tr><td>O<sub>7</sub></td><td>a</td><td>a</td></tr>
+      <tr><td>O<sub>8</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>9</sub></td><td>b</td><td>b</td></tr>
+      <tr><td>O<sub>10</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>11</sub></td><td>&mdash;</td><td>b</td></tr>
+      <tr><td>O<sub>12</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>13</sub></td><td>b</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>14</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>O<sub>15</sub></td><td>&mdash;</td><td>&mdash;</td></tr>
+    </table>
+    <p>Of these, O<sub>1</sub>, O<sub>6</sub>, O<sub>7</sub>, and
+       O<sub>9</sub> have a two-sided identity element.</p>
+    </li>
+
+    <li>
+    <p>In which of O<sub>0</sub> through O<sub>15</sub> does each element
+       have an inverse?</p>
+    <p>We will only examine O<sub>1</sub>, O<sub>6</sub>, O<sub>7</sub>, and
+       O<sub>9</sub>, since only they have two-sided identity elements.</p>
+    <ul>
+      <li>In O<sub>1</sub>, there is not an inverse for a.</li>
+      <li>In O<sub>6</sub>, each element is its own inverse.</li>
+      <li>In O<sub>7</sub>, there is not an inverse for b.</li>
+      <li>In O<sub>9</sub>, each element is its own inverse.</li>
+    </ul>
+    </li>
+  </ol>
+</div>
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter02">Chapter 2</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180419231547/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180419231547/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180419231547/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180419231547im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180419231547/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180419231547im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:15:47 Apr 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:19 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 336.418 (3)
+  exclusion.robots.policy: 0.209
+  esindex: 0.016
+  captures_list: 391.504
+  RedisCDXSource: 26.607
+  exclusion.robots: 0.222
+  PetaboxLoader3.resolve: 1457.992
+  PetaboxLoader3.datanode: 247.221 (4)
+  CDXLines.iter: 23.617 (3)
+  load_resource: 1633.658
+-->

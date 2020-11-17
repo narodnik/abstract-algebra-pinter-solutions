@@ -1,0 +1,424 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140719
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app101.us.archive.org';v.server_ms=755;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09I","20180605185406","http://web.archive.org/","web","/_static/",
+	      "1528224846");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem I
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605185406im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605185406cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09H" rel="prev" rev="next">
+  <link href="Chapter09J" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem I &mdash; Group Automorphisms</h1>
+
+<div class="Section Problem" id="ProblemI">
+
+  <p>
+    An <dfn>automorphism</dfn> is an isomorphism from a group to itself.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Verify that
+      </p>
+
+      <table class="Matrix">
+      <caption>f&nbsp;=&nbsp;</caption>
+        <tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>5</td>
+	</tr>
+        <tr>
+	  <td>0</td>
+	  <td>5</td>
+	  <td>4</td>
+	  <td>3</td>
+	  <td>2</td>
+	  <td>1</td>
+	</tr>
+      </table>
+
+      <p>
+	is an automorphism of <span class="Set">Z<sub>6</sub></span>.
+      </p>
+
+      <p>
+	Since <span class="Set">Z<sub>6</sub></span> is an Abelian group and
+	f(x) = x<sup>-1</sup>, <a href="Chapter09H#Ex03">Exercise 3 of Problem
+	H</a> shows that this is an automorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Verify that
+      </p>
+
+      <table class="Matrix">
+      <caption>f<sub>1</sub>&nbsp;=&nbsp;</caption>
+        <tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	</tr>
+        <tr>
+	  <td>0</td>
+	  <td>2</td>
+	  <td>4</td>
+	  <td>1</td>
+	  <td>3</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>f<sub>2</sub>&nbsp;=&nbsp;</caption>
+        <tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	</tr>
+        <tr>
+	  <td>0</td>
+	  <td>3</td>
+	  <td>1</td>
+	  <td>4</td>
+	  <td>2</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>f<sub>3</sub>&nbsp;=&nbsp;</caption>
+        <tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	</tr>
+        <tr>
+	  <td>0</td>
+	  <td>4</td>
+	  <td>3</td>
+	  <td>2</td>
+	  <td>1</td>
+	</tr>
+      </table>
+
+      <p>
+	are automorphisms of <span class="Set">Z<sub>5</sub></span>.
+      </p>
+
+      <p>
+	f<sub>1</sub> may also be expressed as f<sub>1</sub>(x) = x+x. Moving
+	outside the system, this may be called "2x". Since 2 does not divide
+	5, this is a bijection, as may be seen from inspection of the
+	tabular description.
+      </p>
+
+      <p>
+	f<sub>1</sub>(p+q) = (p+q)+(p+q) = (p+p)+(q+q) = f(p)+f(q), so
+	f<sub>1</sub> preserves products. Since it's also a bijection, it
+	is an automorphism.
+      </p>
+
+      <p>
+	f<sub>2</sub> may also be expressed as f<sub>2</sub>(x) = x+x+x. Moving
+	outside the system, this may be called "3x". Since 3 does not divide
+	5, this is a bijection, as may be seen from inspection of the
+	tabular description.
+      </p>
+
+      <p>
+	f<sub>2</sub>(p+q) = (p+q)+(p+q)+(p+q) = (p+p+p)+(q+q+q) = f(p)+f(q),
+	so f<sub>2</sub> preserves products. Since it's also a bijection, it
+	is an automorphism.
+      </p>
+
+      <p>
+	f<sub>3</sub> may also be expressed as f<sub>3</sub>(x) = -x. Since
+	<span class="Set">Z<sub>5</sub></span> is Abelian,
+	<a href="Chapter09H#Ex03">Exercise 3 of Problem H</a> shows that
+	it is an automorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> is any group, and a is any element of
+	<span class="Set">G</span>, prove that f(x) = axa<sup>-1</sup> is
+	an automorphism of <span class="Set">G</span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	This is a generalization of what was proved for conjugate cycles in
+	<a href="Chapter08E">Chapter 8, Problem E</a>.
+      </p>
+      </div>
+
+      <p>
+      	First, we will prove that f is one-to-one:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(x)</td>
+	  <td>f(y)</td>
+	  <td>assumption</td>
+	</tr>
+	<tr>
+	  <td>axa<sup>-1</sup></td>
+	  <td>aya<sup>-1</sup></td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td>axa<sup>-1</sup>a</td>
+	  <td>aya<sup>-1</sup>a</td>
+	  <td>post-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>axe</td>
+	  <td>aye</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ax</td>
+	  <td>ay</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>ax</td>
+	  <td>a<sup>-1</sup>ay</td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ex</td>
+	  <td>ey</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>y</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Since f(x)=f(y) implies x=y, f is one-to-one. Next, we will prove that
+	f is onto <span class="Set">G</span>:
+      </p>
+
+      <p>
+	Let p&isin;<span class="Set">G</span>. Since <span class="Set">G</span>
+	is a group, it is closed, and
+	(a<sup>-1</sup>pa)&isin;<span class="Set">G</span>.
+	f(a<sup>-1</sup>pa) = a(a<sup>-1</sup>pa)a<sup>-1</sup> = p. Therefore,
+	f is onto <span class="Set">G</span>, and a bijection.
+      </p>
+
+      <p>
+	Let q,r&isin;<span class="Set">G</span>.
+	f(qr) = aqra<sup>-1</sup> = aqera<sup>-1</sup> =
+	(aqa<sup>-1</sup>)(ara<sup>-1</sup>) = f(q)f(r).
+	Therefore, f preserves products.
+      </p>
+
+      <p>
+	Since f is a bijection from <span class="Set">G</span> to itself that
+	preserves products, it is an automorphism of
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Since an automorphism on <span class="Set">G</span> is a bijection
+	from <span class="Set">G</span> to <span class="Set">G</span>, it is
+	a permutation of <span class="Set">G</span>. Prove that the set
+	Aut(<span class="Set">G</span>) of all automorphisms of
+	<span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>G</sub></span>.
+      </p>
+
+      <p>
+	For a subset of a group to be a (sub-)group, it must be closed under
+	the group operation (which is in this case is composition of functions)
+	and under inversion.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I'm proving the more general case of isomorphisms, since it looks
+	like it will be a useful result.
+      </p>
+      </div>
+
+      <p>
+	First we prove that the composite of two isomorphisms is an
+	isomorphism. Let f:<span class="Set">A</span> &rarr;
+	<span class="Set">B</span> and g:<span class="Set">B</span> &rarr;
+	<span class="Set">C</span> be isomorphisms.
+      </p>
+
+      <p>
+	Since they are isomorphisms, f and g are bijections. By their
+	definitions, Range(f) = Domain(g). It is <a href="/web/20180605185406/http://www.math.wisc.edu/~mstemper2/Math/SmalCard#Compo">a
+	basic result of set theory</a> that if f and g are bijections and
+	Range(f) = Domain(g), g&#8728;f is a bijection.
+      </p>
+
+      <p>
+	Since f is an isomorphism, it preserves products, and f(pq) = f(p)f(q).
+	By the definition of f, f(p) and f(q) are in the domain of g.
+	Since g is an isomorphism, it preserves products, and g(f(p)f(q)) =
+	[g&#8728;f](p)[g&#8728;f](q). Combining these, we see that
+	[g&#8728;f](pq) = g(f(p)f(q)) = [g&#8728;f](p)[g&#8728;f](q). Therefore,
+	g&#8728;f preserves products.
+      </p>
+
+      <p>
+	Since g&#8728;f is a bijection that preserves products, it is an
+	isomorphism.
+      </p>
+
+      <p>
+	In the case that <span class="Set">A</span> =
+	<span class="Set">B</span> = <span class="Set">C</span>, g&#8728;f is
+	an automorphism on <span class="Set">A</span>. Therefore,
+	Aut(<span class="Set">G</span>) is closed under the group operation
+	of <span class="Set">S<sub>G</sub></span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Again, I'm proving the more general result because it looks like it
+	will be useful in the future.
+      </p>
+      </div>
+
+      <p>
+	Next, we prove that the inverse of an isomorphism is an isomorphism.
+      </p>
+
+      <p>
+	Let p:<span class="Set">U</span> &rarr;
+	<span class="Set">V</span> be an isomorphism.
+	Since p is an isomorphism, it is a bijection. As shown in Chapter 6,
+	this implies that p<sup>-1</sup>:<span class="Set">V</span> &rarr;
+	<span class="Set">U</span> exists and is a bijection.
+      </p>
+
+      <p>
+	Since p is an isomorphism, it preserves products, giving
+	p(xy) = p(x)p(y). Applying p<sup>-1</sup> gives us
+	p<sup>-1</sup>(p(xy)) = p<sup>-1</sup>(p(x)p(y)). Since
+	p<sup>-1</sup>(p(xy)) = xy = p<sup>-1</sup>(p(x))p<sup>-1</sup>(p(y)),
+	this gives us
+	p<sup>-1</sup>(p(x)p(y)) = p<sup>-1</sup>(p(x))p<sup>-1</sup>(p(y)),
+	showing that p<sup>-1</sup> preserves products.
+      </p>
+
+      <p>
+	Since p<sup>-1</sup> is a bijection that preserves products, it is an
+	isomporphism.
+      </p>
+
+      <p>
+	In the case where <span class="Set">U</span> =
+	<span class="Set">V</span>, p is then an automorphism on
+	<span class="Set">U</span>. Therefore, Aut(<span class="Set">G</span>)
+	is closed under inversion.
+      </p>
+
+      <p>
+	Since Aut(<span class="Set">G</span>) is a subset of
+	<span class="Set">S<sub>G</sub></span> that is closed under the group
+	operation and inversion, Aut(<span class="Set">G</span>) is a subgroup
+	of <span class="Set">S<sub>G</sub></span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemI -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605185406/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605185406/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605185406/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605185406im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605185406/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605185406im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 18:54:06 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:27 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.015
+  load_resource: 273.133
+  captures_list: 465.831
+  LoadShardBlock: 362.036 (3)
+  PetaboxLoader3.datanode: 432.121 (4)
+  exclusion.robots: 0.205
+  CDXLines.iter: 33.534 (3)
+  RedisCDXSource: 65.667
+  exclusion.robots.policy: 0.19
+  PetaboxLoader3.resolve: 166.509
+-->

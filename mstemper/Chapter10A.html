@@ -1,0 +1,447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140722 - Exercise 1, parts a and b
+  Modified:	20140723 - 1c through 2c
+		20140725 - 2d through 3b
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app102.us.archive.org';v.server_ms=4707;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter10A","20180605202716","http://web.archive.org/","web","/_static/",
+	      "1528230436");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 10, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605202716im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605202716cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter10" rel="parent" rev="child">
+  <link href="Chapter10B" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Laws of Exponents</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <p>
+    Let <span class="Set">G</span> be a group, and
+    a&isin;<span class="Set">G</span>.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that a<sup>m</sup>a<sup>n</sup> = a<sup>m+n</sup> in the
+	following cases:
+      </p>
+
+      <ol>
+	<li>
+	  <p>
+	    m=0
+	  </p>
+
+	  <p>
+	    a<sup>0</sup> = e, so we have:
+	    a<sup>m</sup>a<sup>n</sup> = a<sup>0</sup>a<sup>n</sup> =
+	    ea<sup>n</sup> = a<sup>n</sup> = a<sup>0+n</sup> =
+	    a<sup>m+n</sup>.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    m&lt;0 and n&gt;0
+	  </p>
+
+	  <div class="SideBar">
+	  <p>
+	    I'm less than pleased with my proof of this.
+	  </p>
+	  </div>
+
+	  <p>
+	    If m&lt;0, let -p = m (thus p&gt;0), giving
+	    a<sup>m</sup>a<sup>n</sup> = a<sup>-p</sup>a<sup>n</sup>.
+	    By definition, a<sup>-p</sup> = (a<sup>-1</sup>)<sup>p</sup>.
+	    This gives a<sup>m</sup>a<sup>n</sup> =
+	    (a<sup>-1</sup>)<sup>p</sup>a<sup>n</sup>.
+	    We now need to look at three cases:
+	  </p>
+
+	  <ul>
+	    <li><p>
+	      <span class="Case">p&lt;n</span>
+	      In this case, p instances of a<sup>-1</sup> cancel p instances
+	      of a, and we are left with a<sup>n-p</sup>, or a<sup>n+m</sup>.
+	    </p></li>
+	    <li><p>
+	      <span class="Case">p=n</span>
+	      In this case, p instances of a<sup>-1</sup> cancel p=n
+	      instances of a, and we are left with
+	      a<sup>0</sup> = a<sup>n+m</sup>.
+	    </p></li>
+	    <li><p>
+	      <span class="Case">p&gt;n</span>
+	      In this case, n instances of a<sup>-1</sup> cancel n instances
+	      of a, and we are left with (a<sup>-1</sup>)<sup>p-n</sup> =
+	      (a<sup>-1</sup>)<sup>-m-n</sup> =
+	      (a<sup>-1</sup>)<sup>-(m+n)</sup> =
+	      a<sup>m+n</sup>.
+	    </p></li>
+	  </ul>
+	</li>
+
+	<li>
+	  <p>
+	    m&lt;0 and n&lt;0
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>a<sup>m</sup>a<sup>n</sup></td>
+	      <td>(a<sup>-1</sup>)<sup>-m</sup>(a<sup>-1</sup>)<sup>-n</sup></td>
+	      <td>a<sup>x</sup> = (a<sup>-1</sup>)<sup>-x</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-1</sup>)<sup>(-m)+(-n)</sup></td>
+	      <td>-m and -n are positive</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-1</sup>)<sup>-(m+n)</sup></td>
+	      <td>(-m)+(-n) = -(m+n)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>m+n</sup></td>
+	      <td>a<sup>x</sup> = (a<sup>-1</sup>)<sup>-x</sup>
+		  (See 3b)</td>
+	    </tr>
+	  </table>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove that (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup> in the
+	following cases:
+      </p>
+
+      <ol>
+	<li>
+	  <p>
+	    m=0
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>m</sup>)<sup>n</sup></td>
+	      <td>(a<sup>0</sup>)<sup>n</sup></td>
+	      <td>m=0</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(e)<sup>n</sup></td>
+	      <td>p<sup>0</sup>=e</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>e<sup>0</sup></td>
+	      <td>p<sup>0</sup>=e</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>0</sup></td>
+	      <td>p<sup>0</sup>=e</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>0n</sup></td>
+	      <td>0q=0</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>mn</sup></td>
+	      <td>m=0</td>
+	    </tr>
+	  </table>
+	</li>
+
+	<li>
+	  <p>
+	    n=0
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>m</sup>)<sup>n</sup></td>
+	      <td>(a<sup>m</sup>)<sup>0</sup></td>
+	      <td>n=0</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>e</td>
+	      <td>p<sup>0</sup>=e</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>0</sup></td>
+	      <td>p<sup>0</sup>=e</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>m0</sup></td>
+	      <td>q0=0</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>mn</sup></td>
+	      <td>n=0</td>
+	    </tr>
+	  </table>
+	</li>
+
+	<li>
+	  <p>
+	    m&lt;0 and n&gt;0
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>m</sup>)<sup>n</sup></td>
+	      <td>((a<sup>-1</sup>)<sup>-m</sup>)<sup>n</sup></td>
+	      <td>p<sup>x</sup> = (p<sup>-1</sup>)<sup>-x</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-1</sup>)<sup>-mn</sup></td>
+	      <td>(x<sup>p</sup>)<sup>q</sup>=x<sup>pq</sup> when p,q&gt;0</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>((a<sup>-1</sup>)<sup>-1</sup>)<sup>-(-mn)</sup></td>
+	      <td>p<sup>x</sup> = (p<sup>-1</sup>)<sup>-x</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>((a<sup>-1</sup>)<sup>-1</sup>)<sup>mn</sup></td>
+	      <td>-(-mn) = mn</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>mn</sup></td>
+	      <td>(a<sup>-1</sup>)<sup>-1</sup> = a</td>
+	    </tr>
+	  </table>
+	</li>
+
+	<li>
+	  <p>
+	    m&gt;0 and n&lt;0
+	  </p>
+
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>m</sup>)<sup>n</sup></td>
+	      <td>((a<sup>m</sup>)<sup>-1</sup>)<sup>-n</sup></td>
+	      <td>p<sup>x</sup> = (p<sup>-1</sup>)<sup>-x</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-m</sup>)<sup>-n</sup></td>
+	      <td>(p<sup>x</sup>)<sup>-1</sup> = p<sup>-x</sup>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>(-m)(-n)</sup></td>
+	      <td>-m&lt;0 and -n&gt;0, allowing us to apply 2c</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>mn</sup></td>
+	      <td>(-m)(-n) = mn</td>
+	    </tr>
+	  </table>
+	</li>
+
+	<li>
+	  <p>
+	    m&lt;0 and n&lt;0
+	  </p>
+
+	  <p>
+	    Let p=-m and q-n. Then, p&gt;0 and q&gt;0.
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>m</sup>)<sup>n</sup></td>
+	      <td>(a<sup>-p</sup>)<sup>-q</sup></td>
+	      <td>p=-m and q=-n</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>((a<sup>-1</sup>)<sup>p</sup>)<sup>-q</sup></td>
+	      <td>x<sup>k</sup> = (x<sup>-1</sup>)<sup>-k</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-1</sup>)<sup>p(-q)</sup></td>
+	      <td>p&gt;0 and -q&lt;0, allowing us to apply 2d</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>(a<sup>-1</sup>)<sup>-(pq)</sup></td>
+	      <td>p(-q) = -(pq)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>pq</sup></td>
+	      <td>x<sup>k</sup> = (x<sup>-1</sup>)<sup>-k</sup>
+		  (See 3b)</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>(-m)(-n)</sup></td>
+	      <td>p=-m and q=-n</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>mn</sup></td>
+	      <td>(-m)(-n) = mn</td>
+	    </tr>
+	  </table>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+
+      <p>
+	Prove that (a<sup>n</sup>)<sup>-1</sup> = a<sup>-n</sup> in the
+	following cases:
+      </p>
+
+      <ol>
+	<li>
+	  <p>
+	    n=0
+	  </p>
+
+	  <p>
+	    Since -0 = 0, a<sup>-n</sup> = a<sup>n</sup> = a<sup>0</sup> = e
+	    when n=0. Since e = e<sup>-1</sup>, (a<sup>0</sup>)<sup>-1</sup> =
+	    a<sup>-0</sup>.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    n&lt;0
+	  </p>
+
+	  <p>
+	    Let q = -n. Then q&gt;0.
+	  </p>
+
+	  <table class="Derive">
+	    <tr>
+	      <td>(a<sup>n</sup>)<sup>-1</sup></td>
+	      <td>(a<sup>-q</sup>)<sup>-1</sup></td>
+	      <td>If q = -n then n = -q</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>((a<sup>q</sup>)<sup>-1</sup>)<sup>-1</sup></td>
+	      <td>Since q&gt;0, a<sup>-q</sup> =
+		  (a<sup>q</sup>)<sup>-1</sup></td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>q</sup></td>
+	      <td>(x<sup>-1</sup>)<sup>-1</sup> = x</td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>a<sup>-n</sup></td>
+	      <td>q = -n</td>
+	    </tr>
+	  </table>
+	</li>
+      </ol>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter10">Chapter 10</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605202716/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605202716/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605202716/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605202716im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605202716/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605202716im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:27:16 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:38 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 1660.329 (4)
+  captures_list: 3423.323
+  LoadShardBlock: 3181.21 (3)
+  exclusion.robots: 0.176
+  exclusion.robots.policy: 0.164
+  load_resource: 1266.322
+  RedisCDXSource: 215.893
+  CDXLines.iter: 22.105 (3)
+  esindex: 0.039
+  PetaboxLoader3.resolve: 101.079
+-->

@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140522 - The whole thing in under two hours!
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app101.us.archive.org';v.server_ms=2588;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08F","20180628234752","http://web.archive.org/","web","/_static/",
+	      "1530229672");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180628234752im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180628234752cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08E" rel="prev" rev="next">
+  <link href="Chapter08G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Order of Cycles</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove in <span class="Set">S<sub>n</sub></span>: If &alpha; =
+	(a<sub>1</sub> ... a<sub>s</sub>) is a cycle of length s, then
+	&alpha;<sup>s</sup> = e, &alpha;<sup>2s</sup> = e, and
+	&alpha;<sup>3s</sup> = e. Is &alpha;<sup>k</sup> = e for any positive
+	integer k&lt;s? (Explain.)
+      </p>
+
+      <div class="SideBar">
+      <p>
+	This would be a lot simpler if he'd number elements starting with
+	zero instead of one!
+      </p>
+      </div>
+
+      <p>
+	By the definition of &alpha;, &alpha;(a<sub>j</sub>) = a<sub>j+1</sub>
+	when j+1&le;s and &alpha;(a<sub>j</sub>) =
+	a<sub>j+1-s</sub> when j+1&gt;s. This may be generalized to
+	&alpha;<sup>k</sup>(a<sub>j</sub>) = a<sub>j+k</sub> when
+	j+k&le;s and &alpha;<sup>k</sup>(a<sub>j</sub>) = a<sub>j+k-s</sub>
+	when s&lt;j+k&le;2s.
+      </p>
+
+      <p>
+	Specifically, in the case where k=s, we have
+	&alpha;<sup>k</sup>(a<sub>j</sub>) = a<sub>j+k-s</sub> = a<sub>j</sub>.
+	Since &alpha;<sup>s</sup>(a<sub>j</sub>) = a<sub>j</sub> for all j,
+	&alpha;<sup>s</sup> = e.
+      </p>
+
+      <p>
+	&alpha;<sup>2s</sup> =
+	&alpha;<sup>s</sup>&#8728;&alpha;<sup>s</sup> = e&#8728;e = e.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	If &alpha; is any permutation, the least positive integer n such that
+	&alpha;<sup>n</sup> = e is called the <dfn>order</dfn> of &alpha;.
+      </p>
+      </div>
+
+      <p>
+	&alpha;<sup>3s</sup> =
+	&alpha;<sup>s</sup>&#8728;&alpha;<sup>2s</sup> = e&#8728;e = e.
+      </p>
+
+      <p>
+	If 0&lt;k&lt;s, then &alpha;<sup>k</sup>(a<sub>j</sub>) =
+	a<sub>j+k</sub> when j+k&le;s and &alpha;<sup>k</sup>(a<sub>j</sub>) =
+	a<sub>j+k-s</sub> when j+k&gt;s (as above). In the first case,
+	j+k&gt;j, which means that &alpha;<sup>k</sup>(a<sub>j</sub>) &ne;
+	a<sub>j</sub>. In the second case, since k&lt;s, j+k-s&lt;j and again
+	&alpha;<sup>k</sup>(a<sub>j</sub>) &ne; a<sub>j</sub>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove in <span class="Set">S<sub>n</sub></span>: If &alpha; =
+	(a<sub>1</sub> ... a<sub>s</sub>) is any cycle of length s, then
+	the order of &alpha; is s.
+      </p>
+
+      <p>
+	This follows immediately from the first and last parts of Exercise 1.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find the order of each of the following permutations:
+      </p>
+
+      <ol>
+	<li>
+	  <p>(12)(345)</p>
+	  <p>The order is 6.</p>
+	</li>
+
+	<li>
+	  <p>(12)(3456)</p>
+	  <p>The order is 4.</p>
+	</li>
+
+	<li>
+	  <p>(1234)(56789)</p>
+	  <p>The order is 20.</p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	What is the order of &alpha;&beta;, if &alpha; and &beta; are disjoint
+	cycles of 4 and 6, respectively? (Explain why. Use the fact that
+	disjoint cycles commute.)
+      </p>
+
+      <p>
+	First, since &alpha; and &beta; are disjoint,
+	&alpha;<sup>m</sup>&beta;<sup>n</sup> = e only when
+	&alpha;<sup>m</sup> = e <em>and</em> &beta;<sup>n</sup> = e.
+      </p>
+
+      <p>
+	Next, since &alpha; and &beta; are disjoint cycles, they commute,
+	hence (&alpha;&beta;)<sup>p</sup> =
+	&alpha;<sup>p</sup>&beta;<sup>p</sup>.
+      </p>
+
+      <p>
+	Since the order of &alpha; is 4, &alpha;<sup>4</sup> =
+	&alpha;<sup>8</sup> = &alpha;<sup>12</sup> = e (by Exercise 1).
+	Since the order of &beta; is 6, &beta;<sup>6</sup> = &beta;<sup>12</sup>
+	= e (by Exercise 1).
+      </p>
+
+      <p>
+	(&alpha;&beta;)<sup>12</sup> = &alpha;<sup>12</sup>&beta;<sup>12</sup>
+	= e&#8728;e = e, so the order of &alpha;&beta; is 12.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	What is the order of &alpha;&beta; if &alpha; and &beta; are disjoint
+	cycles of lengths r and s, respectively?
+      </p>
+
+      <p>
+	The order of &alpha;&beta; must be a multiple of r in order for the
+	product of the &alpha;s to be the identity. Similarly, it must be a
+	multiple of s in order for the product of the &beta;s to be the
+	identity. Therefore, the order of &alpha;&beta; must be a multiple of
+	both r and s.
+      </p>
+
+      <p>
+	Since the order of a permutation, &pi;, is defined as the <em>least</em>
+	positive integer n such that &pi;<sup>n</sup> = e, the order of
+	&alpha;&beta; is therefore lcm(r,s).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180628234752/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180628234752/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180628234752/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180628234752im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180628234752/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180628234752im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:47:52 Jun 28, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:47 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.018
+  load_resource: 1077.615
+  captures_list: 1499.291
+  LoadShardBlock: 341.366 (3)
+  PetaboxLoader3.datanode: 1250.427 (4)
+  exclusion.robots: 0.407
+  CDXLines.iter: 17.961 (3)
+  RedisCDXSource: 1120.474
+  exclusion.robots.policy: 0.383
+  PetaboxLoader3.resolve: 157.478 (2)
+-->

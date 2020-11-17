@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121222 - Exercises 1-4
+  Modified:	20121223 - Exercises 5-7
+		20121230 - Moved matrix styling to style sheet
+		20121231 - Exercise 8
+		20141029 - ID for Exercise 2
+		20141107 - ID for Exercise 8
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=686;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05H","20180608071452","http://web.archive.org/","web","/_static/",
+	      "1528442092");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608071452im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608071452cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05G" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Coding Theory: Generator Matrix and
+	       Parity-Check Matrix of a Code</h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+    The exercises in this problem refer back to those in
+    <a href="Chapter03G">Chapter 3, Problem G.</a>
+  </p>
+
+  <ol>
+    <li>
+      <p>For the code C<sub>2</sub> in Exercise 2:
+      <ol>
+      <li>
+	<p>
+	  Find the generator matrix, <span class="Set">G<sub>2</sub></span>.
+	</p>
+	<table class="Matrix">
+	  <tr>
+	    <td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td>
+	  </tr>
+	  <tr>
+	    <td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td>
+	  </tr>
+	  <tr>
+	    <td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+	  </tr>
+	</table>
+      </li>
+      <li>
+	<p>
+	  Find the parity-check matrix, <span class="Set">H<sub>2</sub></span>.
+	</p>
+	<table class="Matrix">
+	  <tr>
+	    <td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td>
+	  </tr>
+	  <tr>
+	    <td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td>
+	  </tr>
+	  <tr>
+	    <td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+	  </tr>
+	</table>
+      </li>
+      </ol>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	Let C<sub>3</sub> be a code in <span class="Set">B<sup>7</sup></span>
+	in which a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, and a<sub>4</sub>
+	are information bits and the parity equations are:
+      </p>
+      <ul>
+	<li>a<sub>5</sub> = a<sub>2</sub>+a<sub>3</sub>+a<sub>4</sub></li>
+	<li>a<sub>6</sub> = a<sub>1</sub>+a<sub>3</sub>+a<sub>4</sub></li>
+	<li>a<sub>7</sub> = a<sub>1</sub>+a<sub>2</sub>+a<sub>4</sub></li>
+      </ul>
+      <ol>
+      <li>
+	<p>
+	  Find the generator matrix, <span class="Set">G<sub>3</sub></span>.
+	</p>
+	<table class="Matrix">
+	 <tr>
+	 <td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td>
+	 </tr>
+	 <tr>
+	 <td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td>
+	 </tr>
+	 <tr>
+	 <td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td>
+	 </tr>
+	 <tr>
+	 <td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td>
+	 </tr>
+	</table>
+      </li>
+      <li>
+	<p>
+	  Find the parity-check matrix, <span class="Set">H<sub>3</sub></span>.
+	</p>
+	<table class="Matrix">
+	 <tr>
+	 <td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td>
+	 </tr>
+	 <tr>
+	 <td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td>
+	 </tr>
+	 <tr>
+	 <td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+	 </tr>
+	</table>
+      </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	With the <dfn>weight</dfn> of a word, w(a), defined as the number of
+	one bits, and the distance between two words, d(a,b) as in
+	<a href="Chapter03G">Problem G</a>, prove that d(x,y) = w(x+y).
+      </p>
+      <p>
+	By the definition of addition, (x+y) has a one bit only in the
+	positions where x<sub>i</sub>&ne;y<sub>i</sub>, so the weight of the
+	sum is the number of positions where they differ. This is the
+	definition of their distance, so d(x,y) = w(x+y).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that d(x,<span class="Vector">0</span>) = w(x).
+      </p>
+      <p>
+	The bits of x and <span class="Vector">0</span> differ only where
+	x<sub>i</sub>=1, so d(x,<span class="Vector">0</span>) is the number
+	of one bits in x, which is the definition of w(x).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that the minimum distance of a group code
+	<span class="Set">C</span> is equal to the minimum weight of
+	<span class="Set">C</span>.
+      </p>
+      <div class="SideBar">
+      <p>
+	This only works for groups with order of at least three. But, there
+	is only one distance defined for smaller groups, and that is the weight
+	of the non-zero element (by the previous exercise).
+      </p>
+      </div>
+      <p>
+	Let m be the minimum distance of <span class="Set">C</span>. Then,
+	there are a,b (a&ne;b and a&ne;<span class="Vector">0</span>&ne;b)
+	such that d(a,b)=m. Since <span class="Set">C</span> is a group,
+	(a+b)&isin;<span class="Set">C</span>. By the previous exercise,
+	w(a+b)=m.
+      </p>
+      <p>
+	Let x&isin;<span class="Set">C</span> such that
+	x&ne;<span class="Vector">0</span>. By the laws of groups, for
+	any c&isin;<span class="Set">C</span>
+	(x&ne;c&ne;<span class="Vector">0</span>),
+	&exist;d&isin;<span class="Set">C</span>
+	(x&ne;d&ne;<span class="Vector">0</span>) such that c+d=x.
+	Then, w(x)=w(c+d)=d(c,d)&ge;m. So, any (non-zero) element must have
+	a weight at least that of the minimum distance, and the minimum
+	distance is therefore the minimum weight.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that ...
+      </p>
+      <ol>
+      <li>
+	<p>
+	If x and y have even weight, so does x+y.
+	</p>
+	<p>
+	Let k be the number of positions where both x and y have a one.
+	These positions will have a zero in x+y. So,
+	w(x+y) = (w(x)-k) + (w(y)-k) = (w(x)+w(y)) - 2k. Since w(x) and
+	w(y) are even, this is also even.
+	</p>
+      </li>
+      <li>
+	<p>
+	If x and y have odd weight, x+y has even weight.
+	</p>
+	<p>
+	Let k be the number of positions where both x and y have a one.
+	These positions will have a zero in x+y. So,
+	w(x+y) = (w(x)-k) + (w(y)-k) = (w(x)+w(y)) - 2k. Since w(x) and
+	w(y) are odd, this is even.
+	</p>
+      </li>
+      <li>
+	<p>
+	If x has odd weight and y has even weight, x+y has odd weight.
+	</p>
+	<p>
+	As before, w(x+y) = (w(x)+w(y)) - 2k. Since w(x) is odd and
+	w(y) is even, this is odd.
+	</p>
+      </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove that in any group code, either all of the words have even weight
+	or half have even weight and half have odd weight.
+      </p>
+      <p>
+	For a group code <span class="Set">C</span>, assume that there are
+	n&gt;0 elements with odd weight. Let <span class="Set">O</span> be the
+	set of all elements with odd weight. Select one element
+	x&isin;<span class="Set">O</span> and form the sums
+	<span class="Set">E</span>={x+y | y&isin;<span class="Set">O</span>}.
+	By Exercise 6b, all elements of <span class="Set">E</span> have even
+	weight. In a group, x+a=x+b iff a=b, so <span class="Set">E</span>
+	contains n distinct elements. The set
+	<span class="Set">P</span>={x+y | y&isin;<span class="Set">E</span>}
+	only contains elements with odd weight, by Exercise 6c, so
+	<span class="Set">P</span>=<span class="Set">O</span>, and
+	<span class="Set">C</span> =
+	<span class="Set">O</span>&cup;<span class="Set">E</span>. Since
+	<span class="Set">O</span> and <span class="Set">E</span> are
+	disjoint sets, |<span class="Set">C</span>|=2n, and half the elements
+	have odd weight and half have even weight.
+      </p>
+      <p>
+	If there are not n&gt;0 elements with odd weight, then all of
+	the elements have even weight.
+      </p>
+    </li>
+
+    <li id="Ex08">
+      <p>
+	Prove that <span class="Matrix">H</span>(x+y)=<span class="Vector">0</span> iff
+	<span class="Matrix">H</span>x=<span class="Matrix">H</span>y
+	(where <span class="Matrix">H</span> is the parity-check matrix).
+      </p>
+
+      <table class="Derive">
+	<caption>If</caption>
+	<tr>
+	  <td><span class="Matrix">H</span>x</td>
+	  <td><span class="Matrix">H</span>y</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td><span class="Matrix">H</span>x +
+	      <span class="Matrix">H</span>y</td>
+	  <td><span class="Vector">0</span></td>
+	  <td>elements in this group are their own inverses</td>
+	</tr>
+	<tr>
+	  <td><span class="Matrix">H</span>(x+y)</td>
+	  <td><span class="Vector">0</span></td>
+	  <td>distributive property</td>
+	</tr>
+      </table>
+
+      <br>
+      <table class="Derive">
+	<caption>Only if</caption>
+	<tr>
+	  <td><span class="Matrix">H</span>(x+y)</td>
+	  <td><span class="Vector">0</span></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td><span class="Matrix">H</span>x +
+	      <span class="Matrix">H</span>y</td>
+	  <td><span class="Vector">0</span></td>
+	  <td>distributive property</td>
+	</tr>
+	<tr>
+	  <td><span class="Matrix">H</span>x</td>
+	  <td><span class="Matrix">H</span>y</td>
+	  <td>elements in this group are their own inverses</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608071452/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608071452/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608071452/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608071452im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608071452/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608071452im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 07:14:52 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:41 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 21.279 (3)
+  LoadShardBlock: 453.673 (3)
+  esindex: 0.015
+  exclusion.robots.policy: 0.195
+  PetaboxLoader3.datanode: 179.339 (4)
+  captures_list: 563.451
+  load_resource: 107.02
+  PetaboxLoader3.resolve: 51.109
+  exclusion.robots: 0.211
+  RedisCDXSource: 83.491
+-->

@@ -1,0 +1,575 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141013 - Exercises 1-5
+  Modified:	20141014 - Exercise 6
+		20141017 - Added ID to 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=520;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13G","20180421020439","http://web.archive.org/","web","/_static/",
+	      "1524276279");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180421020439im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180421020439cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13F" rel="prev" rev="next">
+  <link href="Chapter13H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Survey of all Ten-Element Groups</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    Let <span class="Set">G</span> be any group of order ten.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Reason as in <a href="Chapter13F">Problem F</a> to show that
+	<span class="Set">G</span> = {e, a, b, ab, b<sup>2</sup>,
+	ab<sup>2</sup>, b<sup>3</sup>, ab<sup>3</sup>, b<sup>4</sup>,
+	ab<sup>4</sup>} where ord(a) = 2 and ord(b) = 5.
+      </p>
+
+      <p>
+	As shown in <a href="Chapter10E#Ex03">Chapter 10, Problem E3</a>,
+	since 2 and 5 are relatively prime, the products
+	a<sup>i</sup>b<sup>j</sup> (0&le;i&lt;2, 0&le;j&lt;5) are all distinct.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that ba &notin; {e, a, b, b<sup>2</sup>, b<sup>3</sup>,
+	b<sup>4</sup>}.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; e</span>
+	If ba=e, then a = b<sup>-1</sup>. However, the order of an element
+        is the same as the order of its inverse. Since ord(a) = 2 and ord(b) =
+        5, this cannot be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; a</span>
+	If ba=a, then b=e. Since ord(b) = 5 and ord(e) = 1, this cannot
+	be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b</span>
+	If ba=b, then a=e. Since ord(a) = 2 and ord(e) = 1, this cannot
+	be true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b<sup>2</sup></span>
+	If ba=b<sup>2</sup>, then a=b. By Chapter 10, Problem E3, this is
+	not true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b<sup>3</sup></span>
+	If ba=b<sup>3</sup>, then a=b<sup>2</sup>. By Chapter 10, Problem E3,
+	this is not true.
+      </p>
+
+      <p>
+	<span class="Case">ba &ne; b<sup>4</sup></span>
+	If ba=b<sup>4</sup>, then a=b<sup>3</sup>. By Chapter 10, Problem E3,
+	this is not true.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if ba=ab, then <span class="Set">G</span> &#8792;
+        <span class="Set">Z<sub>10</sub></span>.
+      </p>
+
+      <p>
+	One possible isomorphism is:
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">Z<sub>10</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>1</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <td>2</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>4</td>
+	  <td>b<sup>4</sup></td>
+	</tr>
+	<tr>
+	  <td>5</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>6</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>7</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>8</td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>9</td>
+	  <td>ab<sup>4</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	Prove that if ba = ab<sup>2</sup> then ba<sup>2</sup> =
+	a<sup>2</sup>b<sup>4</sup>, and that this implies b = b<sup>4</sup>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ba</td>
+	  <td>ab<sup>2</sup></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>ab<sup>2</sup>a</td>
+	  <td>post-multiply both sides by a</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>(ab)(ba)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>(ab)(ab<sup>2</sup>)</td>
+	  <td>ba = ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a(ba)b<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a(ab<sup>2</sup>)b<sup>2</sup></td>
+	  <td>ba = ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>(aa)b<sup>4</sup></td>
+	  <td>ba = ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>be</td>
+	  <td>(e)b<sup>4</sup></td>
+	  <td>ord(a) = 2, so aa=e</td>
+	</tr>
+	<tr>
+	  <td>b</td>
+	  <td>b<sup>4</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>b<sup>3</sup></td>
+	  <td>pre-multiply both sides by b<sup>-1</sup> and simplify</td>
+	</tr>
+      </table>
+
+      <p>
+	b<sup>3</sup> = e is equivalent to ord(b) = 3. However, ord(b) was
+	given as 5. Therefore, the assumption that ba = ab<sup>2</sup> is
+	false.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if ba = ab<sup>3</sup> then ba<sup>2</sup> =
+	a<sup>2</sup>b<sup>9</sup> = a<sup>2</sup>b<sup>4</sup>,
+	and that this implies b = b<sup>4</sup>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ba</td>
+	  <td>ab<sup>3</sup></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>ab<sup>3</sup>a</td>
+	  <td>post-multiply both sides by a</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>abb(ba)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>abb(ab<sup>3</sup>)</td>
+	  <td>ba = ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>ab(ba)b<sup>3</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>ab(ab<sup>3</sup>)b<sup>3</sup></td>
+	  <td>ba = ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a(ba)b<sup>6</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a(ab<sup>3</sup>)b<sup>6</sup></td>
+	  <td>ba = ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a<sup>2</sup>b<sup>9</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a<sup>2</sup>b<sup>4</sup>b<sup>5</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>2</sup></td>
+	  <td>a<sup>2</sup>b<sup>4</sup></td>
+	  <td>ord(b) = 5</td>
+	</tr>
+	<tr>
+	  <td>b</td>
+	  <td>b<sup>4</sup></td>
+	  <td>ord(a) = 2</td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>b<sup>3</sup></td>
+	  <td>pre-multiply both sides by b<sup>-1</sup> and simplify</td>
+	</tr>
+      </table>
+
+      <p>
+	b<sup>3</sup> = e is equivalent to ord(b) = 3. However, ord(b) was
+	given as 5. Therefore, the assumption that ba = ab<sup>3</sup> is
+	false.
+      </p>
+    </li>
+
+    <li id="Ex06">
+      <p>
+	Prove that if ba = ab<sup>4</sup> then <span class="Set">G</span>
+	&#8792; <span class="Set">D<sub>5</sub></span>.
+      </p>
+
+      <p>
+	First, we must develop <span class="Set">D<sub>5</sub></span>:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>()</th>
+	  <th>(12345)</th>
+	  <th>(13524)</th>
+	  <th>(14253)</th>
+	  <th>(15432)</th>
+	  <th>(15)(24)</th>
+	  <th>(25)(34)</th>
+	  <th>(12)(35)</th>
+	  <th>(13)(45)</th>
+	  <th>(14)(23)</th>
+	</tr>
+	<tr>
+	  <th>()</th>
+	  <td>()</td>
+	  <td>(12345)</td>
+	  <td>(13524)</td>
+	  <td>(14253)</td>
+	  <td>(15432)</td>
+	  <td>(15)(24)</td>
+	  <td>(25)(34)</td>
+	  <td>(12)(35)</td>
+	  <td>(13)(45)</td>
+	  <td>(14)(23)</td>
+	</tr>
+	<tr>
+	  <th>(12345)</th>
+	  <td>(12345)</td>
+	  <td>(13524)</td>
+	  <td>(14253)</td>
+	  <td>(15432)</td>
+	  <td>()</td>
+	  <td>(25)(34)</td>
+	  <td>(12)(35)</td>
+	  <td>(13)(45)</td>
+	  <td>(14)(23)</td>
+	  <td>(15)(24)</td>
+	</tr>
+	<tr>
+	  <th>(13524)</th>
+	  <td>(13524)</td>
+	  <td>(14253)</td>
+	  <td>(15432)</td>
+	  <td>()</td>
+	  <td>(12345)</td>
+	  <td>(12)(35)</td>
+	  <td>(13)(45)</td>
+	  <td>(14)(23)</td>
+	  <td>(15)(24)</td>
+	  <td>(25)(34)</td>
+	</tr>
+	<tr>
+	  <th>(14253)</th>
+	  <td>(14253)</td>
+	  <td>(15432)</td>
+	  <td>()</td>
+	  <td>(12345)</td>
+	  <td>(13524)</td>
+	  <td>(13)(45)</td>
+	  <td>(14)(23)</td>
+	  <td>(15)(24)</td>
+	  <td>(25)(34)</td>
+	  <td>(12)(35)</td>
+	</tr>
+	<tr>
+	  <th>(15432)</th>
+	  <td>(15432)</td>
+	  <td>()</td>
+	  <td>(12345)</td>
+	  <td>(13524)</td>
+	  <td>(14253)</td>
+	  <td>(14)(23)</td>
+	  <td>(15)(24)</td>
+	  <td>(25)(34)</td>
+	  <td>(12)(35)</td>
+	  <td>(13)(45)</td>
+	</tr>
+	<tr>
+	  <th>(15)(24)</th>
+	  <td>(15)(24)</td>
+	  <td>(14)(23)</td>
+	  <td>(13)(45)</td>
+	  <td>(12)(35)</td>
+	  <td>(25)(34)</td>
+	  <td>()</td>
+	  <td>(15432)</td>
+	  <td>(14253)</td>
+	  <td>(13524)</td>
+	  <td>(12345)</td>
+	</tr>
+	<tr>
+	  <th>(25)(34)</th>
+	  <td>(25)(34)</td>
+	  <td>(15)(24)</td>
+	  <td>(14)(23)</td>
+	  <td>(13)(45)</td>
+	  <td>(12)(35)</td>
+	  <td>(12345)</td>
+	  <td>()</td>
+	  <td>(15432)</td>
+	  <td>(14253)</td>
+	  <td>(13524)</td>
+	</tr>
+	<tr>
+	  <th>(12)(35)</th>
+	  <td>(12)(35)</td>
+	  <td>(25)(34)</td>
+	  <td>(15)(24)</td>
+	  <td>(14)(23)</td>
+	  <td>(13)(45)</td>
+	  <td>(13524)</td>
+	  <td>(12345)</td>
+	  <td>()</td>
+	  <td>(15432)</td>
+	  <td>(14253)</td>
+	</tr>
+	<tr>
+	  <th>(13)(45)</th>
+	  <td>(13)(45)</td>
+	  <td>(12)(35)</td>
+	  <td>(25)(34)</td>
+	  <td>(15)(24)</td>
+	  <td>(14)(23)</td>
+	  <td>(14253)</td>
+	  <td>(13524)</td>
+	  <td>(12345)</td>
+	  <td>()</td>
+	  <td>(15432)</td>
+	</tr>
+	<tr>
+	  <th>(14)(23)</th>
+	  <td>(14)(23)</td>
+	  <td>(13)(45)</td>
+	  <td>(12)(35)</td>
+	  <td>(25)(34)</td>
+	  <td>(15)(24)</td>
+	  <td>(15432)</td>
+	  <td>(14253)</td>
+	  <td>(13524)</td>
+	  <td>(12345)</td>
+	  <td>()</td>
+	</tr>
+      </table>
+
+      <p>
+	Since ord( (15)(24) ) = 2 and ord( (12345) ) = 5, we will try
+	a &#8792; (15)(24) and b &#8792; (12345).
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">D<sub>5</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>()</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>(14)(23)</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <td>(13524)</td>
+	  <td>b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>(12)(35)</td>
+	  <td>ab<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>(15432)</td>
+	  <td>b<sup>4</sup></td>
+	</tr>
+	<tr>
+	  <td>(15)(24)</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>(12345)</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>(13)(45)</td>
+	  <td>ab<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>(14253)</td>
+	  <td>b<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>(25)(34)</td>
+	  <td>ab<sup>4</sup></td>
+	</tr>
+      </table>
+
+      <p>
+	This mapping is consistent between the two groups. Additionally,
+	ba = (12345)(15)(24) = (25)(34) = ab<sup>4</sup>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180421020439/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180421020439/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180421020439/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180421020439im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180421020439/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180421020439im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 02:04:39 Apr 21, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:48 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 22.721 (3)
+  LoadShardBlock: 103.631 (3)
+  esindex: 0.016
+  exclusion.robots.policy: 0.195
+  PetaboxLoader3.datanode: 286.717 (4)
+  captures_list: 133.232
+  load_resource: 365.344
+  PetaboxLoader3.resolve: 58.82
+  exclusion.robots: 0.21
+  RedisCDXSource: 2.325
+-->

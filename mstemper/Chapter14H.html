@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151005 - The whole enchilada in an hour!
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=1418;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14H","20180326150942","http://web.archive.org/","web","/_static/",
+	      "1522076982");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180326150942im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180326150942cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14X" rel="prev" rev="next">
+  <link href="Chapter14Z" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Inner Direct Products</h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+    If <span class="Set">G</span> is any group, let <span class="Set">H</span>
+    and <span class="Set">K</span> be normal subgroups of
+    <span class="Set">G</span> such that <span class="Set">H</span> &cap;
+    <span class="Set">K</span> = {e}. Prove the following:
+  </p>
+
+  <ol>
+    <li id="Exer01">
+      <p>
+	Let {h<sub>1</sub>,h<sub>2</sub>} &sube; <span class="Set">H</span>
+	and {k<sub>1</sub>,k<sub>2</sub>} &sube; <span class="Set">K</span>.
+	Then, h<sub>1</sub>k<sub>1</sub> = h<sub>2</sub>k<sub>2</sub> implies
+	h<sub>1</sub> = h<sub>2</sub> and k<sub>1</sub> = k<sub>2</sub>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>h<sub>1</sub>k<sub>1</sub></td>
+	  <td>h<sub>2</sub>k<sub>2</sub></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>1</sub>k<sub>1</sub></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub>k<sub>2</sub></td>
+	  <td>premultiply both sides by h<sub>1</sub><sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ek<sub>1</sub></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub>k<sub>2</sub></td>
+	  <td>multiplicative inverse</td>
+	</tr>
+	<tr>
+	  <td>k<sub>1</sub></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub>k<sub>2</sub></td>
+	  <td>multiplicative identity</td>
+	</tr>
+	<tr>
+	  <td>k<sub>1</sub>k<sub>2</sub><sup>-1</sup></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub>k<sub>2</sub>k<sub>2</sub><sup>-1</sup></td>
+	  <td>postmultiply both sides by k<sub>2</sub><sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>k<sub>1</sub>k<sub>2</sub><sup>-1</sup></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub>e</td>
+	  <td>multiplicative inverse</td>
+	</tr>
+	<tr>
+	  <td>k<sub>1</sub>k<sub>2</sub><sup>-1</sup></td>
+	  <td>h<sub>1</sub><sup>-1</sup>h<sub>2</sub></td>
+	  <td>multiplicative identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Since <span class="Set">K</span> is a subgroup, it is closed under
+	multiplication and inversion, so
+	k<sub>1</sub>k<sub>2</sub><sup>-1</sup> &isin;
+	<span class="Set">K</span>. Similarly,
+	h<sub>1</sub>h<sub>2</sub><sup>-1</sup> &isin;
+	<span class="Set">H</span>. Since both quantities are equal, they must
+	both be in <span class="Set">H</span> &cap;
+	<span class="Set">K</span>. Since <span class="Set">H</span> &cap;
+	<span class="Set">K</span> = {e}, we have
+	k<sub>1</sub>k<sub>2</sub><sup>-1</sup> = e =
+	h<sub>1</sub><sup>-1</sup>h<sub>2</sub>.
+      </p>
+
+      <p>
+	Since k<sub>1</sub>k<sub>2</sub><sup>-1</sup> = e,
+	k<sub>1</sub> = k<sub>2</sub>. Similarly, since
+	h<sub>1</sub><sup>-1</sup>h<sub>2</sub> = e,
+	h<sub>2</sub> = h<sub>1</sub>.
+	&#8718;
+      </p>
+    </li>
+
+    <li id="Exer02">
+      <p>
+	&forall; h &isin; <span class="Set">H</span> and &forall; k &isin;
+	<span class="Set">K</span>, hk = kh.
+      </p>
+
+      <p>
+	Since <span class="Set">H</span> is normal,
+	k<sup>-1</sup>h<sup>-1</sup>k &isin; <span class="Set">H</span>. Since
+	<span class="Set">H</span> is closed, (k<sup>-1</sup>h<sup>-1</sup>k)h
+	&isin; <span class="Set">H</span>. Since <span class="Set">K</span> is
+	normal, h<sup>-1</sup>kh &isin; <span class="Set">K</span>. Since
+	<span class="Set">K</span> is closed, k<sup>-1</sup>(h<sup>-1</sup>kh)
+	&isin; <span class="Set">K</span>.
+      </p>
+
+      <p>
+	Due to associativity,
+	(k<sup>-1</sup>h<sup>-1</sup>k)h = k<sup>-1</sup>(h<sup>-1</sup>kh).
+	Thus, it/they &isin; <span class="Set">H</span> &cap;
+	<span class="Set">K</span> = {e}.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>e</td>
+	  <td>k<sup>-1</sup>(h<sup>-1</sup>kh)</td>
+	  <td>shown above</td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>(k<sup>-1</sup>h<sup>-1</sup>)(kh)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>(hk)<sup>-1</sup>(kh)</td>
+	  <td>(a<sup>-1</sup>b<sup>-1</sup>) = (ba)<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>(hk)e</td>
+	  <td>(hk)(hk)<sup>-1</sup>(kh)</td>
+	  <td>pre-multiply both sides by (hk)</td>
+	</tr>
+	<tr>
+	  <td>hk</td>
+	  <td>(hk)(hk)<sup>-1</sup>(kh)</td>
+	  <td>multiplicative identity</td>
+	</tr>
+	<tr>
+	  <td>hk</td>
+	  <td>e(kh)</td>
+	  <td>multiplicative inverse</td>
+	</tr>
+	<tr>
+	  <td>hk</td>
+	  <td>kh</td>
+	  <td>multiplicative identity</td>
+	</tr>
+      </table>
+
+      <p>
+	&#8718;
+      </p>
+    </li>
+
+    <li id="Exer03">
+      <p>
+	With the additional assumption that <span class="Set">G</span> =
+	<span class="Set">H</span><span class="Set">K</span>, show that
+	&phi;(h,k) = hk is an isomorphism &phi;: <span class="Set">H</span>
+	&times; <span class="Set">K</span> &rarr; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	That the domain of &phi; is <span class="Set">H</span> &times;
+	<span class="Set">K</span> is obvious. That its codomain is
+	<span class="Set">G</span> is likewise obvious. That it is
+	<em>onto</em> <span class="Set">H</span> follows from the assumption
+	that that <span class="Set">G</span> =
+	<span class="Set">H</span><span class="Set">K</span>.
+      </p>
+
+      <p>
+	To see that &phi; is a homomorphism, all that is necessary is to show
+	that it preserves products. Let {h<sub>1</sub>,h<sub>2</sub>} &sube;
+	<span class="Set">H</span> and {k<sub>1</sub>,k<sub>2</sub>} &sube;
+	<span class="Set">K</span>. Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>
+	    &phi;(h<sub>1</sub>,k<sub>1</sub>)
+	    &phi;(h<sub>2</sub>,k<sub>2</sub>)
+	  </td>
+	  <td>(h<sub>1</sub>k<sub>1</sub>)(h<sub>2</sub>k<sub>2</sub>)</td>
+	  <td>definition of &phi;</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>h<sub>1</sub>(k<sub>1</sub>h<sub>2</sub>)k<sub>2</sub></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>h<sub>1</sub>(h<sub>2</sub>k<sub>1</sub>)k<sub>2</sub></td>
+	  <td><a href="#Exer02">exercise 2</a></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(h<sub>1</sub>h<sub>2</sub>)(k<sub>1</sub>k<sub>2</sub></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>&phi;(h<sub>1</sub>h<sub>2</sub>,k<sub>1</sub>k<sub>2</sub>)</td>
+	  <td>definition of &phi;</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, &phi; preserves products and is a homomorphism. By
+	<a href="#Exer01">Exercise 1</a> it is one-to-one, making is a
+	bijection.
+      </p>
+
+      <p>
+	Since &phi; is a bijective homomorphism, it is an isomorphism.
+	&#8718;
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemH -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180326150942/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180326150942/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180326150942/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180326150942im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180326150942/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180326150942im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 15:09:42 Mar 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:31 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1184.705
+  RedisCDXSource: 295.567
+  exclusion.robots: 0.199
+  PetaboxLoader3.resolve: 256.696 (2)
+  exclusion.robots.policy: 0.185
+  LoadShardBlock: 861.667 (3)
+  esindex: 0.015
+  CDXLines.iter: 22.995 (3)
+  PetaboxLoader3.datanode: 708.29 (4)
+  load_resource: 216.857
+-->

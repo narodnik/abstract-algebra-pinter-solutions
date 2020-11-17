@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140628 - Whole thing
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=541;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09E","20180608201146","http://web.archive.org/","web","/_static/",
+	      "1528488706");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608201146im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608201146cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09D" rel="prev" rev="next">
+  <link href="Chapter09F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Isomrphism of Infinite Groups</h1>
+
+<div class="Section Problem" id="ProblemY">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Let <span class="Set">E</span> designate the group of all even
+	integers, with respect to addition. Prove that
+	<span class="Set">Z</span> &#x2258; <span class="Set">E</span>.
+      </p>
+
+      <p>
+	Let f:<span class="Set">Z</span> &rarr; <span class="Set">E</span> be
+	f(p) = 2p.
+      </p>
+
+      <p>
+	This function is injective. Assume that f(a) = f(b) for some a,b &isin;
+	<span class="Set">Z</span>. Then 2a = 2b, and a = b. This function is
+	surjective. Let t &isin; <span class="Set">E</span>. Since t is even,
+	t/2 &isin; <span class="Set">Z</span>, and f(t/2) = 2t/2 = t.
+	Since this function is injective and surjective, it is a bijection.
+      </p>
+
+      <p>
+	Let x,y &isin; <span class="Set">Z</span>. Then f(x)f(y) = 2x + 2y =
+	2(x+y) = f(x+y). This function preserves "products".
+      </p>
+
+      <p>
+	Since this is a bijection that preserves products, it is an isomorphism
+	between <span class="Set">Z</span> and <span class="Set">E</span>.
+	Therefore <span class="Set">Z</span> and <span class="Set">E</span>
+	are isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> be the group {10<sup>n</sup> : n &isin;
+	<span class="Set">Z</span>} with respect to multiplication. Prove that
+	<span class="Set">G</span> &#x2258; <span class="Set">Z</span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I don't have to <em>prove</em> this, do I?
+      </p>
+      </div>
+
+      <p>
+	f:<span class="Set">Z</span> &rarr; <span class="Set">G</span> such
+	that f(v) = 10<sup>v</sup> is obviously an injection from
+	<span class="Set">Z</span> to <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let p,q &isin; <span class="Set">Z</span>. Then f(p)f(q) =
+	10<sup>p</sup>10<sup>q</sup> = 10<sup>p+q</sup> = f(p+q). Therefore,
+	f preserves products.
+      </p>
+
+      <p>
+	Since there is a bijection from <span class="Set">Z</span> to
+	<span class="Set">G</span> that preserves products,
+	<span class="Set">Z</span> and <span class="Set">G</span> are
+	isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">C</span> &#x2258;
+	<span class="Set">R</span>&times;<span class="Set">R</span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I'm going to assume that he's using "<span class="Set">C</span>" to
+	refer to the group of complex numbers with respect to addition.
+      </p>
+      </div>
+
+      <p>
+	f:<span class="Set">R</span>&times;<span class="Set">R</span> &rarr;
+	<span class="Set">C</span> such that f(a,b) = a + ib is a bijection.
+      </p>
+
+      <p>
+	Let (p,q) and (r,s) &isin;
+	<span class="Set">R</span>&times;<span class="Set">R</span>. Then
+	f(p,q)f(r,s) = (p+iq) + (r+is) = (p+r) + i(q+s) = f((p+r),(q+s)), and
+	f preserves products.
+      </p>
+
+      <p>
+	<span class="Set">R</span>&times;<span class="Set">R</span> is
+	therefore isomorphic with <span class="Set">C</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">R</span> is <em>not</em> isomorphic to
+	<span class="Set">R<sup>*</sup></span> (the multiplicative group of
+	non-zero reals).
+      </p>
+
+      <p>
+	In <span class="Set">R<sup>*</sup></span>, -1&times;-1 = 1. This is an
+	element other than the identity that is its own inverse.
+      </p>
+
+      <p>
+	In <span class="Set">R</span>, an element that is not the identity is
+	either positive or negative. Adding a positive number to itself gives
+	another positive number. Adding a negative number to itself gives
+	another negative number. Therefore, there cannot be any element of
+	<span class="Set">R</span> (other than the identity) that is its own
+	inverse.
+      </p>
+
+      <p>
+	Therefore,
+	<span class="Set">R</span> and <span class="Set">R<sup>*</sup></span>
+	are not isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">Z</span> is not isomorphic to
+	<span class="Set">Q</span>.
+      </p>
+
+      <p>
+	Let f:<span class="Set">Z</span> &rarr; <span class="Set">Q</span> such
+	that f(x) + f(y) = f(x+y). Since 1 &isin; <span class="Set">Z</span>,
+	f(1) &isin; <span class="Set">Q</span>.
+      </p>
+
+      <p>
+	Let f(1) = b. Since b &isin; <span class="Set">Q</span>, b/2
+	&isin; <span class="Set">Q</span>.
+	f(1) = b = b/2 + b/2. Assume that there is a &isin;
+	<span class="Set">Z</span> such that f(a) = b/2. This gives us
+	f(a) + f(a) = b/2 + b/2 = b = f(1).
+      </p>
+
+      <p>
+	Since f was specified to preserve products, this means that
+	f(a+a) = f(a) + f(a) =f(1), which means that a+a = 1. Since there
+	is no element of <span class="Set">Z</span> that gives 1 when added to
+	itself, a &notin; <span class="Set">Z</span>, which means that f
+	is not surjective, not bijective, not an isomorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">Q</span> is <em>not</em> isomorphic to
+	<span class="Set">Q<sup>pos</sup></span> (the multiplicative group of
+	positive rationals).
+      </p>
+
+      <p>
+	Let f:<span class="Set">Q</span> &rarr;
+	<span class="Set">Q<sup>pos</sup></span> preserve products. That is,
+	if p,q &isin; <span class="Set">Q</span>, f(p+q) = f(p)f(q).
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">Q</span> such that f(x) = 2. Since
+	x &isin; <span class="Set">Q</span>, x/2 &isin;
+	<span class="Set">Q</span>. f(x/2)f(x/2) = f(x/2 + x/2) = f(x) = 2.
+	If f(x/2)f(x/2) = 2, then f(x/2) = &radic;2.
+      </p>
+
+      <p>
+	Since <span class="Set">Q<sup>pos</sup></span> &sub;
+	<span class="Set">Q</span>, and &radic;2 &notin;
+	<span class="Set">Q</span>, &radic;2 &notin;
+	<span class="Set">Q<sup>pos</sup></span>.
+	Therefore, there is no x &isin; <span class="Set">Q</span> such that
+	f(x) = 2, and f is not surjective, not bijective, not an isomorphism.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608201146/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608201146/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608201146/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608201146im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608201146/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608201146im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:11:46 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:15 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 339.367 (3)
+  exclusion.robots.policy: 0.16
+  esindex: 0.011
+  captures_list: 383.401
+  RedisCDXSource: 14.335
+  exclusion.robots: 0.171
+  PetaboxLoader3.resolve: 177.802 (2)
+  PetaboxLoader3.datanode: 253.88 (4)
+  CDXLines.iter: 25.243 (3)
+  load_resource: 125.394
+-->

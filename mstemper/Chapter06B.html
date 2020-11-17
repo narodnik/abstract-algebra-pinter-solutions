@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130101
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=438;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter06B","20180605171036","http://web.archive.org/","web","/_static/",
+	      "1528218636");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 6, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605171036im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605171036cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter06" rel="parent" rev="child">
+  <link href="Chapter06A" rel="prev" rev="next">
+  <link href="Chapter06C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Functions on <span class="Set">R</span>
+	       and <span class="Set">Z</span></h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    For each of the functions in exercises 1-4, determine whether it is
+    injective or surjective.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	f:<span class="Set">R</span>&rarr;(0,&infin;), defined by
+	f(x) = e<sup>x</sup>.
+      </p>
+
+      <p>
+	This function is injective. Let f(a)=f(b) for some a, b. Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(a)</td>
+	  <td>f(b)</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>e<sup>a</sup></td>
+	  <td>e<sup>b</sup></td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td>log(e<sup>a</sup>)</td>
+	  <td>log(e<sup>b</sup>)</td>
+	  <td>take log of both sides</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>log is inverse of exponential</td>
+	</tr>
+      </table>
+
+      <p>
+	This function is surjective. Let y&isin;(0,&infin;). Then,
+	log(y)&isin;<span class="Set">R</span> and e<sup>log(y)</sup>=y.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:(0,1)&rarr;<span class="Set">R</span>, defined by f(x) = tan(x).
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I find my answers to the first two exercises unsatisfying, since they
+	rely on claiming that these functions have inverses. This is only
+	possible when they're injective.
+      </p>
+      </div>
+
+      <p>
+	This function is injective. Let f(a)=f(b) for some a,b. Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(a)</td>
+	  <td>f(b)</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>tan(a)</td>
+	  <td>tan(b)</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td>arctan(tan(a))</td>
+	  <td>arctan(tan(b))</td>
+	  <td>take arctan of both sides</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>arctan is inverse of tangent</td>
+	</tr>
+      </table>
+
+      <p>
+	This function is not surjective. Its domain is roughly (0,1.5574...).
+	It does not map to any number outside of this range.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:<span class="Set">R</span>&rarr;<span class="Set">Z</span>, defined
+	as the least integer greater than or equal to x.
+      </p>
+
+      <p>
+	This function is not injective, since any element of [1,2) maps to 1.
+      </p>
+
+      <p>
+	This function is surjective. Let y&isin;<span class="Set">Z</span>.
+	Then, f maps any element of [y,y+1) to y.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:<span class="Set">R</span>&rarr;<span class="Set">Z</span>, defined
+	by
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(n)</td>
+	  <td>n+1</td>
+	  <td>n is even</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>n-1</td>
+	  <td>n is odd</td>
+	</tr>
+      </table>
+
+      <p>
+	First, we note that f maps even integers to odd integers and it maps
+	odd integers to even ones.
+      </p>
+
+      <p>
+	This function is injective. If f(p)=f(q) is odd, p=f(p)-1=f(q)-1=q.
+	If f(p)=f(q) is even, p=f(p)-1=f(q)-1=q.
+      </p>
+
+      <p>
+	This function is surjective. If k is odd, f(k-1)=k. If k is even,
+	f(k+1)=k.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find a bijective function
+	f:<span class="Set">Z</span>&rarr;<span class="Set">E</span>.
+      </p>
+
+      <p>
+	f(n) = 2n will do nicely.
+      </p>
+
+      <p>
+	If f(p)=f(q), then p=f(p)/2=f(q)/2=q, so f is injective.
+      </p>
+
+      <p>
+	If q&isin;<span class="Set">E</span>, then
+	(q/2)&isin;<span class="Set">Z</span> and f(q/2)=q, so f is surjective.
+      </p>
+
+      <p>
+	Since f is both injective and surjective, it is bijective.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter06">Chapter 6</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605171036/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605171036/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605171036/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605171036im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605171036/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605171036im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:10:36 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:51 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 232.05
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.077
+  RedisCDXSource: 2.819
+  esindex: 0.007
+  LoadShardBlock: 206.264 (3)
+  PetaboxLoader3.datanode: 260.641 (4)
+  CDXLines.iter: 20.435 (3)
+  load_resource: 200.721
+  PetaboxLoader3.resolve: 42.69
+-->

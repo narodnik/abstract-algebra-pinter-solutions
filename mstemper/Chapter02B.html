@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20120916 - B1-B6
+  Modified:	20120921 - B7
+		20120922 - C3 through D3
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=1096;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter02B","20180422094057","http://web.archive.org/","web","/_static/",
+	      "1524390057");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 2, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180422094057im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180422094057cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter02" rel="parent" rev="child">
+  <link href="Chapter02C" rel="next" rev="prev">
+  <link href="Chapter02A" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Properties of Operations</h1>
+
+<div class="Section Problem">
+  <p>
+    For each of the following operations (on <span class="Set">R</span>),
+    determine whether it is commutative, associative, has an identity
+    element, has an inverse.
+  </p>
+
+  <ol>
+    <li>
+      <p>x*y = x + 2y + 4</p>
+      <p>It is not commutative, since (x + 2y + 4) does not generally
+	 equal (y + 2x + 4).</p>
+      <p>(x*y)*z = (x + 2y + 4)*z = x + 2y + 4 + 2z + 4 = x + 2y + 2z + 8.<br>
+	 x*(y*z) = x*(y + 2z + 4) = x + 2y + 4z + 8 + 4 = x + 2y + 4z +12.<br>
+	 Since these are not generally equal, this is not associative.</p>
+      <p>Solving e*y = y for e gives: e + 2y + 4 = y; e = -(y+4) as a
+	 left identity. Since this is a function of y, this operation does
+	 not have a identity.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = x + 2y - xy</p>
+      <p>It is not commutative, since (x + 2y - xy) does not generally
+	 equal (y + 2x - yx).</p>
+      <p>(x*y)*z = (x + 2y - xy)*z = (x + 2y - xy + 2z - z(x + 2y - xy)) =
+	 (x + 2y - xy + 2z - xz - 2yz + xyz).<br>
+	 x*(y*z) = x*(y + 2z - yz) = (x + 2(y + 2z - yz) - x(y + 2z - yz)) =
+	 (x + 2y + 4z - 2yz - xy - 2xz + xyz).<br>
+	 Since these are not generally equal, this is not associative.</p>
+      <p>Solving e*y = y for e gives: e + 2y - ey = y; e = -y/(1-y).
+	 Since this is a function of y, this operation does not
+	 have a identity.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = |x + y|</p>
+      <p>Since x+y = y+x, |x + y| = |y + x|, so this is commutative.</p>
+      <p>Let x=1, y=-2, and z=3.<br>
+	 Then (x*y)*z = ||1 + -2| + 3| = ||-1| + 3| = |1 + 3| = 4.<br>
+	 x*(y*z) = |1 + |-2 + 3|| = |1 + |1|| = |1 + 1| = 2.<br>
+	 This operation is not associative.
+      <p>Since the operation always returns a non-negative number, it
+	 can not have an identity element.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = |x - y|</p>
+      <p>Since (x-y) = -(y-x), |x - y| = |y - x|, and this is commutative.</p>
+      <p>Let x=1, y=2, and z=3.<br>
+	 Then (x*y)*z = ||1 - 2| - 3| = ||-1| - 3| = |1 - 3| = 2.<br>
+	 x*(y*z) = |1 - |2 - 3|| = |1 - |-1|| = |1 - 1| = 0.<br>
+	 This operation is not associative.
+      <p>Since the operation always returns a non-negative number, it
+	 can not have an identity element.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = xy + 1</p>
+      <p>Since xy=yx, xy + 1 = yx + 1, and this is commutative.</p>
+      <p>(x*y)*z = (xy + 1)*z = xyz + z + 1.<br>
+	 x*(y*z) = x*(yz + 1) = xyz + x + 1.<br>
+	 Since these are not generally equal, this is not associative.</p>
+      <p>Solving e*y=y for e gives: ey + 1 = y; e = 1 - 1/y.
+	 Since this is a function of y, this operation does not
+	 have a identity.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = <span class="Function">max</span>(x,y)</p>
+      <p>Since the maximum of two numbers is not affected by their order,
+	 this is a commutative operation.</p>
+      <p>Since the maximum of three numbers is not affected by their order,
+	 this is an associative operation.</p>
+      <p>Let e be a proposed identity element for this operation. Let
+	 y = e-1. Then, <span class="Function">max</span>(e,y) = e
+	 rather than y, so e is not an identity element.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+
+    <li>
+      <p>x*y = (xy)/(x+y+1), on <span class="Set">R<sup>+</sup></span></p>
+      <p>Since xy=yx and (x+y+1)=(y+x+1), this is commutative.</p>
+      <p>(x*y)*z = (xy/(x+y+1))*z = xyz/(xy+xz+yz+x+y+z+1)<br>
+	 x*(y*z) = x*((yz)/(y+z+1)) = xyz/(xy+xz+yz+x+y+z+1)<br>
+	 Surprisingly (to me), this operation is associative.</p>
+      <p>Solving e*y=y for e gives ey/(e+y+1)=y &rarr; e/(e+y+1)=1 &rarr;
+	 e=e+y+1 &rarr; y=-1. Since e drops out, this operation has no
+	 identity element.</p>
+      <p>Since the operation does not have an identity, it is not meaningful
+	 to ask if it has an inverse.</p>
+    </li>
+  </ol>
+</div>
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter02">Chapter 2</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180422094057/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180422094057/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180422094057/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180422094057im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180422094057/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180422094057im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 09:40:57 Apr 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:16 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 643.737 (4)
+  PetaboxLoader3.resolve: 154.757
+  exclusion.robots: 0.127
+  CDXLines.iter: 17.359 (3)
+  LoadShardBlock: 567.526 (3)
+  RedisCDXSource: 4.51
+  esindex: 0.009
+  captures_list: 592.273
+  exclusion.robots.policy: 0.118
+  load_resource: 494.263
+-->

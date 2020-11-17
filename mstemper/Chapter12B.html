@@ -1,0 +1,496 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140914 - Exercises 1-4
+  Modified:	20140930 - Finished 5 (with Tony's help), did 6-10
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=3682;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter12B","20180527062402","http://web.archive.org/","web","/_static/",
+	      "1527402242");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 12, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180527062402im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180527062402cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter12" rel="parent" rev="child">
+  <link href="Chapter12A" rel="prev" rev="next">
+  <link href="Chapter12C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Examples of Equivalence Relations</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    Prove that each of the following is an equivalence relation on the
+    indicated set. Then describe the partition associated with that
+    equivalence relation.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	In <span class="Set">Z</span>, m~n iff |m|=|n|.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	|a|=|a|, so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If |a|=|b| then |b|=|a|, so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If |a|=|b| and |b|=|c| then |a|=|c|, so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>j</sub></span> = {j, -j}. Then the
+	partition is {<span class="Set">A<sub>j</sub></span> : j &isin;
+	<span class="Set">Z</span>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">Q</span>, r~s iff (r-s) &isin;
+	<span class="Set">Z</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	r-r = 0 &isin; <span class="Set">Z</span>, so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Since (a-b) = -(b-a), if (a-b) &isin; <span class="Set">Z</span>
+	then (b-a) is. Therefore, this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let (a-b) = x and (b-c) = y. Then we have (a-c) = (x+y).
+	If a~b, then x &isin; <span class="Set">Z</span>
+	and if b~c, then y &isin; <span class="Set">Z</span>. If a~b and
+	b~c, then (x+y) &isin; <span class="Set">Z</span> by the closure of
+	the integers under addition. Therefore, if a~b and b~c, then a~c and
+	this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>r</sub></span> =
+	{x &isin; <span class="Set">Q</span> : x - floor(x) = r}.
+	Then the partition is {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">Q</span> &and; 0&le;r&lt;1}.
+      </p>
+    </li>
+
+    <li>
+
+      <div class="SideBar">
+      <p>
+	I don't know how to make the symbol that Pinter uses. Since his
+	symbol for "floor" is what Knuth, Mathworld, and Iverson use for
+	"ceiling", it's just as well.
+      </p>
+      </div>
+
+      <p>
+	In <span class="Set">R</span>, a~b iff floor(a) = floor(b).
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	floor(x) = floor(x), so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If floor(x) = floor(y) then floor(y) = floor(x), so this is
+	symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If x~y and y~z, then floor(x) = floor(y) and floor(y) = floor(z). By
+	the transitivity of equality, this means that floor(x) = floor(z), and
+	this is a transitive relation.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>n</sub></span> =
+	{x&isin;<span class="Set">R</span> : n&le;x&lt;n+1}. Then the
+	partition is {<span class="Set">A<sub>n</sub></span> : n &isin;
+	<span class="Set">Z</span>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">Z</span>, m~n iff m-n is a multiple of 10.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	(p-p) = 0, which is a multiple of ten, so p~p, and this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If p~q, then p-q is a multiple of 10, say 10t. Then q-p = -10t, which
+	is also a multiple of 10, so q~p, and this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If p~q, then p-q is a multiple of 10, say p-q = 10t. If q~r, then q-r
+	is a multiple of 10, say q-r = 10u. If both p~q and q~r, then p-r =
+	10t + 10u = 10(t+u), and p~r, making this transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>n</sub></span> =
+	{j&isin;<span class="Set">Z</span> : j&cong;n (mod 10)}. Then the
+	partition is {<span class="Set">A<sub>n</sub></span> : n &isin;
+	{0, 1, 2, 3, 4, 5, 6, 7, 8, 9} }.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">R</span>, a~b iff (a-b) &isin;
+	<span class="Set">Q</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	x-x = 0 &isin; <span class="Set">Q</span>, so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Since (x-y) = -(y-x), if (x-y) &isin; <span class="Set">Q</span>
+	then (y-x) is. Therefore, this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let (x-y) = p and (y-z) = q. Then we have (x-z) = (p+q).
+	If z~y, then p &isin; <span class="Set">Q</span>
+	and if y~z, then q &isin; <span class="Set">Q</span>. If x~y and
+	y~z, then (p+q) &isin; <span class="Set">Q</span> by the closure of
+	the rationals under addition. Therefore, if x~y and y~z, then x~z and
+	this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>r</sub></span> =
+	{x &isin; <span class="Set">R</span> : x-r &isin;
+	<span class="Set">Q</span>}.
+	Then the partition is {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R</span> &and; 0&le;r&lt;1}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">F</span>(<span class="Set">R</span>),
+	f~g iff f(0) = g(0).
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	f(0) = f(0), so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If f(0) = g(0), then g(0) = f(0), so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If f(0) = g(0) and g(0) = h(0), then f(0) = h(0), so this is
+	transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>r</sub></span> =
+	{f &isin; <span class="Set">F</span>(<span class="Set">R</span>) :
+	f(0) = r}.
+	Then the partition is {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R</span>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">F</span>(<span class="Set">R</span>),
+	f~g iff f(x) = g(x) &forall; x&gt;c.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	f(x) = f(x) &forall; x, so this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If f(x) = g(x) &forall; x&gt;c, then g(x) = f(x) &forall; x&gt;c, so
+	this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If f(x) = g(x) &forall; x&gt;c and g(x) = h(x) &forall; x&gt;c,
+	then f(x) = h(x) &forall; x&gt;c, so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>&lambda;</sub></span> =
+	{f &isin; <span class="Set">F</span>(<span class="Set">R</span>) :
+	f(x) = &lambda;(x) &forall; x&gt;c}.
+	Then the partition is {<span class="Set">A<sub>&lambda;</sub></span> :
+	r &isin; <span class="Set">F</span>(<span class="Set">R</span>)}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">C</span> is any set,
+	<span class="Set">P<sub>C</sub></span> is the set of all subsets of
+	<span class="Set">C</span>. Let <span class="Set">D</span> &sube;
+	<span class="Set">C</span>. In <span class="Set">P<sub>C</sub></span>
+	let <span class="Set">A</span>~<span class="Set">B</span> iff
+	<span class="Set">A</span>&cap;<span class="Set">D</span> =
+	<span class="Set">B</span>&cap;<span class="Set">D</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	<span class="Set">A</span>&cap;<span class="Set">D</span> =
+	<span class="Set">A</span>&cap;<span class="Set">D</span>, so this is
+	reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If <span class="Set">A</span>&cap;<span class="Set">D</span> =
+	<span class="Set">B</span>&cap;<span class="Set">D</span>, then
+	<span class="Set">B</span>&cap;<span class="Set">D</span> =
+	<span class="Set">A</span>&cap;<span class="Set">D</span>, so this is
+	symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If <span class="Set">A</span>&cap;<span class="Set">D</span> =
+	<span class="Set">B</span>&cap;<span class="Set">D</span> and
+	<span class="Set">B</span>&cap;<span class="Set">D</span> =
+	<span class="Set">E</span>&cap;<span class="Set">D</span>,
+	then <span class="Set">A</span>&cap;<span class="Set">D</span> =
+	<span class="Set">E</span>&cap;<span class="Set">D</span>, so this
+	is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>X</sub></span> =
+	{<span class="Set">Y</span> &sub; <span class="Set">C</span> :
+	<span class="Set">Y</span>&cap;<span class="Set">D</span> =
+	<span class="Set">X</span>&cap;<span class="Set">D</span>}.
+	Then the partition is {<span class="Set">A<sub>X</sub></span> :
+	<span class="Set">X</span> &sub; <span class="Set">C</span>}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">R</span> &times; <span class="Set">R</span>,
+	(a,b)~(c,d) iff a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> +
+	d<sup>2</sup>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	a<sup>2</sup> + b<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>, so
+	this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> + d<sup>2</sup>,
+	then c<sup>2</sup> + d<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>,
+	so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> + d<sup>2</sup>, and
+	c<sup>2</sup> + d<sup>2</sup> = e<sup>2</sup> + f<sup>2</sup>, then
+	a<sup>2</sup> + b<sup>2</sup> = e<sup>2</sup> + f<sup>2</sup>, so
+	this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>r</sub></span> =
+	{(a,b) &isin; <span class="Set">R</span> &times;
+	<span class="Set">R</span> : a<sup>2</sup> + b<sup>2</sup> = r}.
+	Then the partition is {<span class="Set">A<sub>r</sub></span> :
+	r &isin; <span class="Set">R<sup>+</sup></span> &cup; {0} }.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	In <span class="Set">R<sup>*</sup></span>, a~b iff
+	a/b &isin; <span class="Set">Q</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since a/a = 1 &isin; <span class="Set">Q</span>, this is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If a/b &isin; <span class="Set">Q</span> then b/a &isin;
+	<span class="Set">Q</span>, so this is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	By the closure of the rationals under multiplication,
+	a/b &isin; <span class="Set">Q</span> and
+	b/c &isin; <span class="Set">Q</span> implies that
+	a/c &isin; <span class="Set">Q</span>, so this is transitive.
+      </p>
+
+      <p>
+	Since it is reflexive, symmetric, and transitive, it is an
+	equivalance relation.
+      </p>
+
+      <p>
+	Let <span class="Set">A<sub>q</sub></span> = {(x,y) | x/y = q}. Then
+	the partition is {<span class="Set">A<sub>q</sub></span> : q &isin;
+	<span class="Set">Q</span>}.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter12">Chapter 12</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180527062402/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180527062402/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180527062402/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180527062402im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180527062402/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180527062402im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:24:02 May 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:37 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 3561.673
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.077
+  RedisCDXSource: 4.057
+  esindex: 0.011
+  LoadShardBlock: 3536.0 (3)
+  PetaboxLoader3.resolve: 136.454 (3)
+  PetaboxLoader3.datanode: 3120.25 (4)
+  CDXLines.iter: 18.682 (3)
+  load_resource: 113.739
+-->

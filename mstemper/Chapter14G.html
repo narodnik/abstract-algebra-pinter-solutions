@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151004 - The whole thing
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=1662;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14G","20180622150523","http://web.archive.org/","web","/_static/",
+	      "1529679923");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180622150523im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180622150523cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14F" rel="prev" rev="next">
+  <link href="Chapter14H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Properties Preserved Under Homomorphism</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    If f:<span class="Set">G</span>&rarr;<span class="Set">H</span> is a
+    homomorphism <em>onto</em> <span class="Set">H</span>,
+    prove each of the following.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If <span class="Set">G</span> is Abelian, then
+	<span class="Set">H</span> is Abelian.
+      </p>
+
+      <p>
+	Let x,y &isin; <span class="Set">G</span>. Since f is a homomorphism,
+	it preserves products. Since <span class="Set">G</span> is Abelian,
+	xy = yx. Therefore, f(x)f(y) = f(xy) = f(yx) = f(y)f(x). Thus, every
+	element in the image of <span class="Set">G</span>  commutes with
+	every other element in the image of <span class="Set">G</span>. Since
+	f is onto <span class="Set">H</span>, the image of
+	<span class="Set">G</span> <em>is</em> <span class="Set">H</span>,
+	and <span class="Set">H</span> is Abelian.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> is cyclic, then
+	<span class="Set">H</span> is cyclic.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">H</span>. Since f is onto, &exist; x
+	&isin; <span class="Set">G</span> such that f(x) = y.
+      </p>
+
+      <p>
+	Let a be a generator of <span class="Set">G</span>. Since a is a
+	generator, &exist; n &isin; &#8469;<sup>+</sup> such that
+	a<sup>n</sup> = x. Since f is a homomorphism, it preserves products,
+	which means that (f(a))<sup>n</sup> = f(x) = y.
+      </p>
+
+      <p>
+	Since the choice of y was arbitrary, f(a) generates all elements of
+	<span class="Set">H</span>, making <span class="Set">H</span> cyclic.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If every element of <span class="Set">G</span> has finite order,
+	every element of <span class="Set">H</span> has finite order.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">H</span>. Since f is onto, &exist; x
+	&isin; <span class="Set">G</span> such that f(x) = y.
+      </p>
+
+      <p>
+	Let |x| = n. Then, x<sup>n</sup> = e. Since f is a homomorphism, it
+	preserves products, which means that y<sup>n</sup> =
+	(f(x))<sup>n</sup> = f(x<sup>n</sup>) = f(e) = e. Therefore, |y|
+	&#8739; n and |y| is finite.
+      </p>
+
+      <p>
+	Since the choice of y was arbitrary, every element of
+	<span class="Set">H</span> has finite order.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If every element in <span class="Set">G</span> is its own inverse,
+	every element in <span class="Set">H</span> is its own inverse.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">H</span>. Since f is onto, &exist; x
+	&isin; <span class="Set">G</span> such that f(x) = y.
+      </p>
+
+      <p>
+	Since every element of <span class="Set">G</span> is its own inverse,
+	xx = e. Since f is a homomorphism, it preserves products and the
+	identity. Therefore, yy = f(x)f(x) f(xx) = f(e) = e, and y is its own
+	inverse.
+      </p>
+
+      <p>
+	Since the choice of y was arbitrary, every element of
+	<span class="Set">H</span> is its own inverse.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If every element of <span class="Set">G</span> has a square root,
+	every element of <span class="Set">H</span> has a square root.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">H</span>. Since f is onto, &exist; x
+	&isin; <span class="Set">G</span> such that f(x) = y.
+      </p>
+
+      <p>
+	Since x has a square root, let aa = a<sup>2</sup> = x. Since f is a
+	homomorphism, it preserves products. Therefore,
+	(f(a))<sup>2</sup> = f(a)f(a) = f(aa) = f(x) = y. Thus, f(a) is the
+	square root of a.
+      </p>
+
+      <p>
+	Since the choice of y was arbitrary, every element of
+	<span class="Set">H</span> has a square root.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> is finitely generated,
+	<span class="Set">G</span> is finitely generated.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">H</span>. Since f is onto, &exist; x
+	&isin; <span class="Set">G</span> such that f(x) = y.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is finitely generated, let the number
+	of its generators be n &isin; &#8469;<sup>+</sup> and call them
+	g<sub>1</sub>, &hellip;, g<sub>n</sub>.
+      </p>
+
+      <p>
+	Let x =
+	g<sub>1</sub><sup>p<sub>1</sub></sup>&hellip;g<sub>n</sub><sup>p<sub>n</sub></sup>,
+	where the p<sub>i</sub> &isin; &#8469;. Then, y = f(x) =
+	f(g<sub>1</sub><sup>p<sub>1</sub></sup>&hellip;g<sub>n</sub><sup>p<sub>n</sub></sup>) =
+	f(g<sub>1</sub><sup>p<sub>1</sub></sup>)&hellip;f(g<sub>n</sub><sup>p<sub>n</sub></sup>) =
+	(f(g<sub>1</sub>)<sup>p<sub>1</sub></sup>)&hellip;(f(g<sub>n</sub>)<sup>p<sub>n</sub></sup>).
+      </p>
+
+      <p>
+	Therefore, y is finitely generated by the f(g<sub>i</sub>)s. Since
+	the choice of y was arbitrary, every element of
+	<span class="Set">H</span> is finitely generated.
+	&#8718;
+      </p>
+
+      <p>
+	Note that f(g<sub>1</sub>), &hellip;, f(g<sub>n</sub>) might not be
+	the smallest possible generating set for <span class="Set">H</span>.
+	It is, however sufficient to do so.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180622150523/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180622150523/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180622150523/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180622150523im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180622150523/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180622150523im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 15:05:23 Jun 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:27 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 1046.647 (4)
+  load_resource: 250.725
+  captures_list: 1397.419
+  exclusion.robots: 0.205
+  LoadShardBlock: 1296.474 (3)
+  esindex: 0.013
+  CDXLines.iter: 43.151 (3)
+  RedisCDXSource: 53.333
+  PetaboxLoader3.resolve: 424.397 (3)
+  exclusion.robots.policy: 0.191
+-->

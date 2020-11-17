@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141007 - Exercises 1-4
+  Modified:	20141008 - Exercise 5
+		20141010 - Exercise 6 (finally!)
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=531;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13D","20180608063023","http://web.archive.org/","web","/_static/",
+	      "1528439423");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608063023im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608063023cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13C" rel="prev" rev="next">
+  <link href="Chapter13E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Further Elementary Consequences of
+    Lagrange's Theorem</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Let <span class="Set">G</span> be a finite group, and let
+    <span class="Set">H</span> and <span class="Set">K</span> be subgroups of
+    <span class="Set">G</span>. Prove the following:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	Suppose <span class="Set">H</span> &sube; <span class="Set">K</span>.
+	Then, (<span class="Set">G</span> : <span class="Set">H</span>) =
+	(<span class="Set">G</span> :
+	<span class="Set">K</span>)&middot;(<span class="Set">K</span> :
+	<span class="Set">H</span>).
+      </p>
+
+      <p>
+	As shown at the very end of the chapter,
+	|<span class="Set">G</span>| =
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;|<span class="Set">H</span>|
+	and
+	|<span class="Set">H</span>| =
+	(<span class="Set">H</span> :
+	<span class="Set">K</span>)&middot;|<span class="Set">K</span>|.
+      </p>
+
+      <p>
+	Substituting the second into the first gives:
+	|<span class="Set">G</span>| =
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;(<span class="Set">H</span> :
+	<span class="Set">K</span>)&middot;|<span class="Set">K</span>|.
+      </p>
+
+      <p>
+	Dividing both sides by |<span class="Set">K</span>| gives:
+	|<span class="Set">G</span>|/|<span class="Set">K</span>| =
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;(<span class="Set">H</span> :
+	<span class="Set">K</span>).
+      </p>
+
+      <p>
+	Since
+	|<span class="Set">G</span>|/|<span class="Set">K</span>| =
+	(<span class="Set">G</span> : <span class="Set">K</span>), we have
+	(<span class="Set">G</span> : <span class="Set">K</span>) =
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;(<span class="Set">H</span> :
+	<span class="Set">K</span>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The order of <span class="Set">H</span> &cap;
+	<span class="Set">K</span> is a common divisor of both
+	|<span class="Set">H</span>| and |<span class="Set">K</span>|.
+      </p>
+
+      <p>
+	Since <span class="Set">H</span> &cap; <span class="Set">K</span> is a
+	group, it is a subgroup of both <span class="Set">H</span> and
+	<span class="Set">K</span>. Therefore, by Lagrange's Theorem,
+	|<span class="Set">H</span> &cap; <span class="Set">K</span>| divides
+	both |<span class="Set">H</span>| and |<span class="Set">K</span>|.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> have order m and
+	<span class="Set">K</span> have order n, where m and n are relatively
+	prime. Then <span class="Set">H</span> &cap;
+	<span class="Set">K</span> = {e}.
+      </p>
+
+      <p>
+	As shown in the previous exercise,
+	|<span class="Set">H</span> &cap; <span class="Set">K</span>| divides
+	both |<span class="Set">H</span>| and |<span class="Set">K</span>|.
+	Since m and n are relatively prime, gcd(m,n) = 1. Therefore,
+	|<span class="Set">H</span> &cap; <span class="Set">K</span>| = 1, and
+	<span class="Set">H</span> &cap; <span class="Set">K</span> = {e}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Suppose <span class="Set">H</span> &ne; <span class="Set">K</span>,
+	and they both have the same order, p, which is prime. Then
+	<span class="Set">H</span> &cap; <span class="Set">K</span> = {e}.
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">H</span> &cap;
+	<span class="Set">K</span>. Since |<span class="Set">H</span>| = p,
+	which is prime, ord(x) = p unless x=e. Therefore, if x&ne;e,
+	<span class="Set">H</span> = &lang;x&rang;. Since
+	Since |<span class="Set">K</span>| = p, which is prime, ord(x) = p
+	unless x=e. Therefore, if x&ne;e, <span class="Set">K</span> =
+	&lang;x&rang;.
+      </p>
+
+      <p>
+	Therefore, if x&ne;e then <span class="Set">H</span> =
+	<span class="Set">K</span>. Since it was stated that this is not true,
+	we must have x=e as the only element of the intersection.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Suppose <span class="Set">H</span> has index p and
+	<span class="Set">K</span> has index q, where p and q are distinct
+	primes. Then the index of <span class="Set">H</span> &cap;
+	<span class="Set">K</span> is a multiple of pq.
+      </p>
+
+      <p>
+	<span class="Set">H</span> &cap; <span class="Set">K</span> &sub;
+	<span class="Set">H</span>. By <a href="#Ex01">Exercise 1</a>,
+	(<span class="Set">G</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>) =
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;(<span class="Set">H</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>) =
+	p&middot;(<span class="Set">H</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>).
+      </p>
+
+      <p>
+	Similarly,
+	<span class="Set">H</span> &cap; <span class="Set">K</span> &sub;
+	<span class="Set">K</span>, which means that
+	(<span class="Set">G</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>) =
+	(<span class="Set">G</span> :
+	<span class="Set">K</span>)&middot;(<span class="Set">K</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>) =
+	q&middot;(<span class="Set">K</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>).
+      </p>
+
+      <p>
+	Therefore, (<span class="Set">G</span> :
+	<span class="Set">H</span> &cap; <span class="Set">K</span>) is a
+	multiple of both p and q, or a multiple of lcm(p,q). Since p and q
+	are distinct primes, lcm(p,q) = pq, so it must be a multiple of
+	their product.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> is an Abelian group of order n, and
+	m and n are relatively prime, then f(x) = x<sup>m</sup> is an
+	automorphism of <span class="Set">G</span>.
+      </p>
+
+      <p>
+	(f(x<sup>-1</sup>))<sup>m</sup> = x<sup>-1&middot;m</sup> =
+	x<sup>m&middot;-1</sup> = (x<sup>m</sup>)<sup>-1</sup> =
+	(f(x))<sup>-1</sup>, so f preserves inverses.
+      </p>
+
+      <p>
+	Since <span class="Set">G</span> is Abelian, f(xy) = (xy)<sup>m</sup> =
+	x<sup>m</sup>y<sup>m</sup> = f(x)f(y), so f preserves products.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">G</span>, y&ne;e, and let ord(y) = p.
+	Since y&ne;e, p &gt; 1.
+	Since &lang;y&rang; is a subgroup of <span class="Set">G</span>,
+	|&lang;y&rang;| = ord(y) = p, and p|n. Since gcd(m,n) = 1, p does not
+	divide m, so y<sup>m</sup>&ne;e.
+      </p>
+
+      <p>
+	Assume that for some a,b &isin; <span class="Set">G</span>, a,b &ne; e,
+	f(a) = f(b). Since b &isin; <span class="Set">G</span>, b = ax for some
+	x &isin; <span class="Set">G</span>, so
+	f(a) = f(ax), or a<sup>m</sup> = (ax)<sup>m</sup> = 
+	a<sup>m</sup>x<sup>m</sup>. Pre-multiplying both sides by
+	a<sup>-m</sup> gives e = x<sup>m</sup>. As shown above, if
+	x&ne;e then x<sup>m</sup>&ne;e. Therefore, x=e, giving a=b.
+      </p>
+
+      <p>
+	Therefore, f(a) = f(b) implies a=b. This means that
+	<span class="Set">G</span> is one-to-one. Any one-to-one function
+	between finite sets with the same cardinality is a bijection,
+	so f is an automorphism on <span class="Set">G</span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608063023/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608063023/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608063023/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608063023im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608063023/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608063023im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:30:23 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:34 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 287.476 (3)
+  exclusion.robots.policy: 0.377
+  esindex: 0.027
+  captures_list: 328.147
+  RedisCDXSource: 11.796
+  exclusion.robots: 0.406
+  PetaboxLoader3.resolve: 51.54
+  PetaboxLoader3.datanode: 366.816 (4)
+  CDXLines.iter: 23.234 (3)
+  load_resource: 187.621
+-->

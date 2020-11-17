@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140324 - Exercises 1, 2, and 3
+  Modified:	20140326 - Replaced reliance on text with proof for 3
+		20140421 - Exercise 4; Change to styling of SPAN.Ind
+		20140516 - Added missing answer to 1a.
+		20140523 - Added ids to Exercise 2
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=823;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08C","20180605173724","http://web.archive.org/","web","/_static/",
+	      "1528220244");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605173724im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605173724cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08B" rel="prev" rev="next">
+  <link href="Chapter08D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Even and Odd Permutations</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Determine which of the following permutations is even, and which
+	is odd:
+      </p>
+      <ol>
+	<li>
+	<table class="Matrix">
+	<caption>&pi;&nbsp;=&nbsp;</caption>
+	  <tr>
+	    <td>1</td>
+	    <td>2</td>
+	    <td>3</td>
+	    <td>4</td>
+	    <td>5</td>
+	    <td>6</td>
+	    <td>7</td>
+	    <td>8</td>
+	  </tr>
+	  <tr>
+	    <td>7</td>
+	    <td>4</td>
+	    <td>1</td>
+	    <td>5</td>
+	    <td>6</td>
+	    <td>2</td>
+	    <td>3</td>
+	    <td>8</td>
+	  </tr>
+	</table>
+	<p>
+	  &pi; = (173)(2456). By <a href="#Ex04">Exercise 4a</a>, this is odd.
+	</p>
+	</li>
+	<li>
+	<p>
+	  (71864)
+	</p>
+	<p>
+	  (71864) = (46)(48)(41)(47), which is even.
+	</p>
+	</li>
+	<li>
+	<p>
+	  (12)(76)(345)
+	</p>
+	<p>
+	  (12)(76)(345) = (12)(76)(34)(45), which is even.
+	</p>
+	</li>
+	<li>
+	<p>
+	  (1276)(3241)(7812)
+	</p>
+	<p>
+	  (1276)(3241)(7812) = (1426)(378) =
+	  (62)(64)(61)(87)(83), which is odd.
+	</p>
+	</li>
+	<li>
+	<p>
+	  (123)(2345)(1357)
+	</p>
+	<p>
+	  (123)(2345)(1357) = (14752) =
+	  (27)(25)(24)(21), which is even.
+	</p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove each of the following:
+      </p>
+      <ol>
+	<li id="Ex02a">
+	<p>
+	  The product of two even permutations is even.
+	</p>
+	<p>
+	  Let &pi;<sub>1</sub> and &pi;<sub>2</sub> be two even permutations.
+	  Choose one way of writing each as the product of transpositions.
+	  Then, &pi;<sub>1</sub> has 2i transpositions and &pi;<sub>2</sub>
+	  has 2j transpositions. Their product has a total of 2(i+j)
+	  transpositions, and is therefore even.
+	</p>
+	</li>
+	<li id="Ex02b">
+	<p>
+	  The product of two odd permutations is even.
+	</p>
+	<p>
+	  Let &pi;<sub>1</sub> and &pi;<sub>2</sub> be two odd permutations.
+	  Choose one way of writing each as the product of transpositions.
+	  Then, &pi;<sub>1</sub> has 2i+1 transpositions and &pi;<sub>2</sub>
+	  has 2j+1 transpositions. Their product has a total of 2i+1+2j+1 =
+	  2(i+j+1) transpositions, and is therefore even.
+	</p>
+	</li>
+	<li id="Ex02c">
+	<p>
+	  The product of an even permutation and an odd permutation is odd.
+	</p>
+	<p>
+	  Without loss of generality, let &pi;<sub>1</sub> be odd and let
+	  &pi;<sub>2</sub> be even. Choose one way of writing each as the
+	  product of transpositions. Then, &pi;<sub>1</sub> has 2i+1
+	  transpositions and &pi;<sub>2</sub> has 2j transpositions. Their
+	  product has a total of 2i+1+2j = 2(i+j)+1 transpositions, and is
+	  therefore odd.
+	</p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove each of the following:
+      </p>
+      <ol>
+	<li>
+	<p>
+	  A cycle of length l is even if l is odd.
+	</p>
+	</li>
+	<li>
+	<p>
+	  A cycle of length l is odd if l is even.
+	</p>
+	</li>
+      </ol>
+      <p><span class="Ind">Base</span>
+	The cycle (&alpha;<sub>0</sub>&alpha;<sub>1</sub>) has length two,
+	which is even, and it can be written as one transposition, which
+	makes it odd.
+      </p>
+      <p><span class="Ind">Hypothesis</span>
+	Assume that, for any cycle of length l, if l is even, the cycle is
+	odd, while if l is odd, the cycle is even.
+      </p>
+      <p><span class="Ind">Step</span>
+	Let &alpha; =
+	(&alpha;<sub>0</sub>&alpha;<sub>1</sub>...&alpha;<sub>l</sub>) be
+	a cycle of length l+1. Then, define &alpha;<sup>-</sup> =
+	(&alpha;<sub>1</sub>...&alpha;<sub>l</sub>) is a cycle of length l.
+	By the Induction Hypothesis, if l is even, &alpha;<sup>-</sup> is
+	odd, and if l is odd, &alpha;<sup>-</sup> is even.
+      </p>
+      <p>
+	&alpha; = (&alpha;<sub>1</sub>&alpha;<sub>0</sub>)&alpha;<sup>-</sup>.
+	Since &alpha; has one more transposition than &alpha;<sup>-</sup>,
+	if &alpha;<sup>-</sup> is odd, &alpha; is even, while if
+	&alpha;<sup>-</sup> is even, &alpha; is odd. At the same time, if l
+	is even, l+1 is odd, while if l is odd, l+1 is even.
+      </p>
+      <p>
+	In anticipation of the next exercise, these can be re-stated as:
+	"A cycle of length l is even or odd depending on whether l-1 is even
+	or odd."
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Prove each of the following:
+      </p>
+      <ol>
+	<li>
+	<p>
+	  If &alpha; and &beta; are cycles of length l and m, respectively,
+	  then &alpha;&beta; is even or odd depending on whether (l+m-2) is
+	  even or odd.
+	</p>
+
+	<p>
+	  This may be re-written as "&alpha;&beta; is even or odd depending on
+	  whether (l-1)+(m-1) is even or odd."
+	</p>
+
+	<p>
+	  By the previous exercise, a cycle is even or odd when its length
+	  less one is even or odd. By Exercise 2, the product of any two
+	  permutations (whether or not they are cycles) is odd if and only if
+	  exactly one of them is odd. By the laws of integer arithmetic, the
+	  sum of two integers (such as (l-1) and (m-1)) is odd if and only if
+	  exactly one of them is odd.
+	</p>
+	</li>
+
+	<li>
+	<p>
+	  If &pi; = &beta;<sub>1</sub>...&beta;<sub>r</sub>, where each
+	  &beta;<sub>i</sub> is a cycle of length l<sub>i</sub>, then &pi; is
+	  even or odd depending on whether l<sub>1</sub> + ... + l<sub>r</sub>
+	  - r is even or odd.
+	</p>
+
+	<p>
+	  Re-write l<sub>1</sub> + ... + l<sub>r</sub> -r as (l<sub>1</sub>-1)
+	  + ... (l<sub>r</sub>-1), and proceed by induction.
+	</p>
+
+	<p><span class="Ind">Base</span>
+	   The case for r=2 was proved in Exercise 3.
+	</p>
+
+	<div class="SideBar">
+	<p>
+	  By "parity", I mean "whether it is even or odd".
+	</p>
+	</div>
+
+	<p><span class="Ind">Hypothesis</span>
+	   Assume that the product &beta;<sub>1</sub>...&beta;<sub>k</sub> has
+	   the same parity as (l<sub>1</sub>-1) + ... + (l<sub>k</sub>-1).
+	</p>
+
+	<p><span class="Ind">Step</span>
+	   By Exercise 2, the parity of
+	   &beta;<sub>1</sub>...&beta;<sub>k</sub>&beta;<sub>k+1</sub> will
+	   differ from that of &beta;<sub>1</sub>...&beta;<sub>k</sub> only
+	   when &beta;<sub>k+1</sub> is odd. By the laws of integer arithmetic,
+	   the parity of (l<sub>1</sub>-1) + ... + (l<sub>k</sub>-1) +
+	   (l<sub>k+1</sub>-1) will differ from that of (l<sub>1</sub>-1) +
+	   ... + (l<sub>k</sub>-1) only when (l<sub>k+1</sub>-1) is odd.
+	</p>
+	</li>
+      </ol>
+      <p>
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605173724/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605173724/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605173724/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605173724im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605173724/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605173724im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:37:24 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:34 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 345.0 (4)
+  PetaboxLoader3.resolve: 253.902 (3)
+  exclusion.robots: 0.138
+  CDXLines.iter: 26.5 (3)
+  LoadShardBlock: 495.388 (3)
+  RedisCDXSource: 18.708
+  esindex: 0.011
+  captures_list: 544.894
+  exclusion.robots.policy: 0.128
+  load_resource: 266.255
+-->

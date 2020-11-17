@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141010 - Exercises 1 and 2
+  Modified:	20141011 - Cleaner proof of 2; do 3-5
+		20141012 - Exercises 6 and 7
+		20141019 - Added ID to Exercise 1
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=2075;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13E","20180608063028","http://web.archive.org/","web","/_static/",
+	      "1528439428");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608063028im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608063028cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13D" rel="prev" rev="next">
+  <link href="Chapter13F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Elementary Properties of Cosets</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    Let <span class="Set">G</span> be a group, and <span class="Set">H</span>
+    a subgroup of <span class="Set">G</span>. Let a and b denote elements of
+    <span class="Set">G</span>. Prove the following:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	<span class="Set">H</span>a = <span class="Set">H</span>b iff
+	ab<sup>-1</sup> &isin; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Assume that ab<sup>-1</sup> &isin; <span class="Set">H</span>.
+	Then a &isin; <span class="Set">H</span>b. Since cosets partition a
+	group, this means that <span class="Set">H</span>a =
+	<span class="Set">H</span>b.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	Assume that
+	<span class="Set">H</span>a = <span class="Set">H</span>b. Let
+	x &isin; <span class="Set">H</span>. Then, xa &isin;
+	<span class="Set">H</span>b and xab<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Since x &isin;
+	<span class="Set">H</span>, this means that ab<sup>-1</sup> &isin;
+	<span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">H</span>a = <span class="Set">H</span> iff a &isin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Let b=e, in which case <span class="Set">H</span> =
+	<span class="Set">H</span>e = <span class="Set">H</span>b, and
+	b<sup>-1</sup>=e. Then the result just proved is applicable.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a<span class="Set">H</span> = <span class="Set">H</span>a and
+	b<span class="Set">H</span> = <span class="Set">H</span>b, then
+	(ab)<span class="Set">H</span> = <span class="Set">H</span>(ab).
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Note that neither a nor b is necessarily in <span class="Set">H</span>
+	so we cannot say that (ab)<span class="Set">H</span> =
+	<span class="Set">H</span>(ba).
+      </p>
+      </div>
+
+      <p>
+	Since a commutes with every element of <span class="Set">H</span>,
+	and b commutes with every element of <span class="Set">H</span>, (ab)
+	commutes with every element of <span class="Set">H</span>.
+	For instance, if x &isin; <span class="Set">H</span>, abx = axb = xab.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a<span class="Set">H</span> = <span class="Set">H</span>a, then
+	a<sup>-1</sup><span class="Set">H</span> =
+	<span class="Set">H</span>a<sup>-1</sup>.
+      </p>
+
+      <p>
+	Since a commutes with every element of <span class="Set">H</span>,
+	a<sup>-1</sup> does. Let x &isin; <span class="Set">H</span>:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ax</td>
+	  <td>xa</td>
+	  <td>a commutes with every element of <span class="Set">H</span></td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>ax</td>
+	  <td>a<sup>-1</sup>xa</td>
+	  <td>pre-multiply both sides by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>axa<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>xaa<sup>-1</sup></td>
+	  <td>post-multiply both sides by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>exa<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>xe</td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td>xa<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>x</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	If (ab)<span class="Set">H</span> = (ac)<span class="Set">H</span>,
+	then b<span class="Set">H</span> = c<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">H</span>:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>(ab)x</td>
+	  <td>(ac)x</td>
+	  <td>from hypothesis</td>
+	</tr>
+	<tr>
+	  <td>a(bx)</td>
+	  <td>a(cx)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>a(bx)</td>
+	  <td>a<sup>-1</sup>a(cx)</td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e(bx)</td>
+	  <td>e(cx)</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>(bx)</td>
+	  <td>(cx)</td>
+	  <td>inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	Since (ab)x = (ac)x &rArr; (bx) = (cx) &forall; x &isin;
+	<span class="Set">H</span>, (ab)<span class="Set">H</span> =
+	(ac)<span class="Set">H</span> &rArr; b<span class="Set">H</span> =
+	c<span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The number of right cosets of <span class="Set">H</span> is equal to
+	the number of left cosets of <span class="Set">H</span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	<span class="Set">G</span> must be a <em>finite</em>
+	group. Otherwise, |<span class="Set">G</span>| /
+	|<span class="Set">H</span>| is not defined.
+      </p>
+      </div>
+
+      <p>
+	First, we'll prove that the left cosets of <span class="Set">H</span>
+	are a partition of <span class="Set">G</span>. Then, we'll prove that
+	there is a bijection between <span class="Set">H</span> and any left
+	coset of <span class="Set">H</span>.
+      </p>
+
+      <p>
+	The combination of these facts implies that the number of cosets of
+	<span class="Set">H</span> is equal to |<span class="Set">G</span>| /
+	|<span class="Set">H</span>|, which is the same as the number of
+	right cosets.
+      </p>
+
+      <p>
+	<span class="Case">Theorem i</span>
+	The family of all left cosets a<span class="Set">H</span>, as a
+	ranges over <span class="Set">G</span>, is a partition of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	First, we must show that any two left cosets, say
+	b<span class="Set">H</span> and c<span class="Set">H</span>, are
+	either disjoint or equal.
+      </p>
+
+      <p>
+	If they're disjoint, we're done.
+      </p>
+
+      <p>
+	If not, let x &isin; b<span class="Set">H</span> &cap;
+	c<span class="Set">H</span>. Since x &isin;
+	b<span class="Set">H</span>, x = bh<sub>1</sub> for some
+	b<sub>1</sub> in <span class="Set">H</span>. Similarly, x =
+	ch<sub>2</sub> for some h<sub>2</sub> in <span class="Set">H</span>.
+	Thus, bh<sub>1</sub> = ch<sub>2</sub>. Solving for b gives b =
+	ch<sub>2</sub>h<sub>1</sub><sup>-1</sup>. Therefore, c &isin;
+	b<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Next, we must show that every element d &isin;
+	<span class="Set">G</span> is in some left coset of
+	<span class="Set">H</span>. Since d = de and e &isin;
+	<span class="Set">H</span>, d &isin; d<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Since the left cosets are disjoint sets and every element of
+	<span class="Set">G</span> is in one of them, they form a partition
+	of <span class="Set">H</span>.
+      </p>
+
+      <p>
+	<span class="Case">Theorem 2i</span>
+	If a<span class="Set">H</span> is any left coset of
+	<span class="Set">H</span>, there is a bijection between
+	<span class="Set">H</span> and a<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Let f:<span class="Set">H</span> &rarr;
+	a<span class="Set">H</span> be defined as f(x) = ax.
+      </p>
+
+      <p>
+	For any y,z &isin; <span class="Set">H</span>, let f(y) = f(z). Then
+	ay = az, a<sup>-1</sup>ay = a<sup>-1</sup>az, ey = ez, and y =z.
+	Therefore f is one-to-one.
+      </p>
+
+      <p>
+	Let p &isin; a<span class="Set">H</span>. Then, p = aq for some
+	q &isin; <span class="Set">H</span>. Thus, p = f(q), and f is onto.
+      </p>
+
+      <p>
+	Since f is one-to-one and onto, it is a bijection. Since there is a
+	bijection between <span class="Set">H</span> and any left coset of
+	<span class="Set">H</span>, <span class="Set">H</span> and its left
+	cosets are all of the same cardinality.
+      </p>
+
+      <p>
+	If <span class="Set">G</span> is a finite group, then the number of
+	left cosets of <span class="Set">H</span> is
+	|<span class="Set">G</span>| / |<span class="Set">H</span>|. This is
+	the same as the number of right cosets of a finite group.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">J</span> and <span class="Set">K</span> are
+	subgroups of <span class="Set">G</span> such that
+	<span class="Set">J</span> = <span class="Set">H</span> &cap;
+	<span class="Set">K</span>, then for any a &isin;
+	<span class="Set">G</span>, <span class="Set">J</span>a =
+	<span class="Set">H</span>a &cap; <span class="Set">K</span>a.
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">J</span>a. Then, &exist; y &isin;
+	<span class="Set">J</span> such that x = ya. If y &isin;
+	<span class="Set">J</span>, then y &isin; <span class="Set">H</span>
+	and y &isin; <span class="Set">K</span>. Then, ya &isin;
+	<span class="Set">H</span>a and ya &isin; <span class="Set">K</span>a.
+	Hence, x = ya &isin; <span class="Set">H</span>a &cap;
+	<span class="Set">K</span>a, and <span class="Set">J</span>a &sub;
+	<span class="Set">H</span>a &cap; <span class="Set">K</span>a.
+      </p>
+
+      <p>
+	Let x &isin; <span class="Set">H</span>a &cap;
+	<span class="Set">K</span>a. Then, x &isin;
+	<span class="Set">H</span>a, which means that for some y &isin;
+	<span class="Set">H</span>, x = ya. It is also true that x &isin;
+	<span class="Set">K</span>a, which means that for some z &isin;
+	<span class="Set">K</span>, x = za. However, ya = x = za iff y=z. So
+	y &isin; <span class="Set">H</span> and y &isin;
+	<span class="Set">K</span>, implying that y &isin;
+	<span class="Set">H</span> &cap; <span class="Set">K</span> =
+	<span class="Set">J</span>.
+	Since y &isin; <span class="Set">J</span>, ya &isin;
+	<span class="Set">J</span>a, which means that
+	<span class="Set">H</span>a &cap; <span class="Set">K</span>a &sub;
+	<span class="Set">J</span>a.
+      </p>
+
+      <p>
+	Since each is a subset of the other, <span class="Set">J</span>a =
+	<span class="Set">H</span>a &cap; <span class="Set">K</span>a.
+      </p>
+
+      <p>
+	If (<span class="Set">G</span> : <span class="Set">H</span>) and
+	(<span class="Set">G</span> : <span class="Set">K</span>) are
+	finite, then (by <a href="Chapter13D#Ex01">Problem D, Part 1</a>)
+	(<span class="Set">G</span> :
+	<span class="Set">H</span>)&middot;(<span class="Set">H</span> :
+	<span class="Set">J</span>) =
+	(<span class="Set">G</span> : <span class="Set">J</span>) =
+	(<span class="Set">G</span> :
+	<span class="Set">K</span>)&middot;(<span class="Set">K</span> :
+	<span class="Set">J</span>).
+	Therefore,
+	(<span class="Set">G</span> : <span class="Set">J</span>) is finite.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608063028/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608063028/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608063028/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608063028im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608063028/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608063028im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:30:28 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:38 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1771.942
+  RedisCDXSource: 100.231
+  exclusion.robots: 0.22
+  exclusion.robots.policy: 0.203
+  LoadShardBlock: 1643.305 (3)
+  esindex: 0.015
+  load_resource: 278.733
+  CDXLines.iter: 23.51 (3)
+  PetaboxLoader3.datanode: 1571.219 (4)
+  PetaboxLoader3.resolve: 164.602
+-->

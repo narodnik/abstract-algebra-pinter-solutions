@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20120922 - Problems A1-2
+  Modified:	20120923 - Problems A3-4
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=373;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter03A","20180605030051","http://web.archive.org/","web","/_static/",
+	      "1528167651");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 3, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605030051im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605030051cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./" rel="parent" rev="child">
+  <link href="Chapter03B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Examples of Abelian Groups</h1>
+
+<div class="Section Problem">
+  <p>
+    For each of the following operations (on <span class="Set">R</span>),
+    determine whether or not it is an Abelian group.
+  </p>
+
+  <ol>
+    <li>
+      <p>x*y = x+y+k, on the set <span class="Set">R</span></p>
+      <p>The operation is commutative, by the commutativity of addition.</p>
+      <p>(x*y)*z = (x+y+k)*z = x+y+z+2k<br>
+         x*(y*z) = x*(y+z+k) = x+y+z+2k<br>
+	 The operation is associative.</p>
+      <p>Solving e*y = y gives: e+y+k = y; e = -k<br>
+         Solving x*e = x gives: x+e+k = x; e = -k<br>
+	 Therefore, -k is the identity element.</p>
+      <p>Solving y'*y = -k gives: y'+y+k = -k; y' = -(y+2k)<br>
+         Solving x*x' = -k gives: x+x'+k = -k; x' = -(x+2k)<br>
+	 Therefore, each element x has an inverse -(x+2k)</p>
+      <p>This set and operation form an Abelian group.</p>
+    </li>
+
+    <li>
+      <p> x*y = xy/2, on the set <span class="Set">R</span>-{0}</p>
+      <p>The operation is commutative, by the commutativity of
+         multiplication.</p>
+      <p>(x*y)*z = (xy/2)*z = xyz/4<br>
+         x*(y*z) = x*(yz/2) = xyz/4<br>
+	 The operation is associative.</p>
+      <p>Solving e*y = y gives:
+	 <span title="We can divide by y because 0 is not in the set.">ye/2 = y;
+	 e = 2</span><br>
+         Solving x*e = x gives:
+	 <span title="We can divide by x because 0 is not in the set.">xe/2 = x;
+	 e = 2</span><br>
+	 Therefore, 2 is the identity element.</p>
+      <p>Solving y'*y = 2 gives: y'y/2 = 2; y' = 4/y<br>
+         Solving x*x' = 2 gives: xx'/2 = 2; x' = 4/x<br>
+	 Therefore, each element x has an inverse 4/x.</p>
+      <p>This set and operation form an Abelian group.</p>
+    </li>
+
+    <li>
+      <p>x*y = x+y+xy, on the set <span class="Set">R</span>-{-1}</p>
+      <p>The operation is commutative, by the commutativity of addition and
+         multiplication.</p>
+      <p>(x*y)*z = (x+y+xy)*z = x+y+z+xy+xz+yz+xyz<br>
+         x*(y*z) = x*(y+z+yz) = x+y+z+yz+xy+xz+xyz<br>
+	 The operation is associative.</p>
+      <p>Solving e*y = y gives:
+	 <span title="We can divide by 1+y because -1 is not in the set.">e+y+ey = y;
+	 e+ey = 0; e(1+y)=0; e = 0</span><br>
+         Solving x*e = x gives:
+	 <span title="We can divide by 1+x because -1 is not in the set.">x+e+xe = x;
+	 e+xe = 0; e(1+x) = 0; e = 0</span><br>
+	 Therefore, 0 is the identity element.</p>
+      <p>Solving y'*y = 0 gives: y'+y+y'y = 0; y'(1+y) = -y; y' = -y/(1+y)<br>
+         Solving x*x' = 0 gives: x+x'+xx' = 0; x'(1+x) = -x; x' = -x/(1+x)<br>
+	 Therefore, each element x has an inverse -(x+2k).</p>
+      <p>This set and operation form an Abelian group.</p>
+    </li>
+
+    <li>
+      <p>x*y = (x+y)/(xy+1) on the open interval (-1,1)</p>
+      <p>The operation is commutative, by the commutativity of addition and
+         multiplication.</p>
+      <p>(x*y)*z = ((x+y)/(xy+1))*z = ((x+y)+z)/((x+y)z/(xy+1)+1) =
+         (x+y+xyz+z)/(xz+yz+xy+1)<br>
+	 x*(y*z) = x*((y+z)/(yz+1)) = (x+(y+z)/(yz+1))/(x(y+z)/(yz+1)+1) =
+	 (xyz+x+y+z)/(xy+xz+yz+1)<br>
+	 The operation is associative.</p>
+      <p>Solving e*y = y gives: (e+y)/(ey+1) = y;
+	 e+y = ey<sup>2</sup>+y; e(1-y<sup>2</sup>) = 0; e = 0<br>
+         Solving x*e = x gives: (x+e)/(xe+1) = x;
+	 x+e = x<sup>2</sup>e+x; e(1-x<sup>2</sup>) = 0; e = 0<br>
+	 Therefore, 0 is the identity element.</p>
+      <p>Solving y'*y = 0 gives: (y'+y)/(y'y+1) = 0; y'+y=0; y'=-y<br>
+         Solving x*x' = 0 gives: (x+x')/(xx'+1) = 0; x+x'=0; x'=-y<br>
+	 Therefore, each element x has an inverse -x.</p>
+      <p>This set and operation form an Abelian group.</p>
+    </li>
+
+  </ol>
+</div>
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter03">Chapter 3</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605030051/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605030051/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605030051/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605030051im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605030051/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605030051im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:00:51 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:27 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 15.884 (3)
+  LoadShardBlock: 171.471 (3)
+  esindex: 0.01
+  exclusion.robots.policy: 0.162
+  PetaboxLoader3.datanode: 195.722 (4)
+  captures_list: 221.234
+  load_resource: 146.743
+  PetaboxLoader3.resolve: 75.398 (2)
+  exclusion.robots: 0.174
+  RedisCDXSource: 31.161
+-->

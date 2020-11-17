@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121027 - Problems E1-E3
+  Modified:	20121028 - Problems E4-E6
+		20121029 - Deleted border="on", now Cayley tables styled such
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=975;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04E","20180608211818","http://web.archive.org/","web","/_static/",
+	      "1528492698");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608211818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608211818cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04D" rel="prev" rev="next">
+  <link href="Chapter04F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Counting Elements and Their Inverses</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>Let <span class="Set">G</span> be a group and let <span class="Set">S</span> = {x&isin;<span class="Set">G</span> :
+     x&ne;x<sup>-1</sup>}. Prove the following:</p>
+
+  <ol>
+    <li>
+      <p>The number of elements of a finite group <span class="Set">G</span>
+	 that are not their own inverse is even.</p>
+      <p>Choose an element of <span class="Set">G</span> that is not its
+	 own inverse. Call it "a". Let b&ne;a be a<sup>-1</sup>. Then,
+	 since the inverse of the inverse of an element is the element
+	 itself, b<sup>-1</sup>=a.</p>
+      <p>If <span class="Set">G</span> has another element, c, that is not
+	 its own inverse, d=c<sup>-1</sup>&notin;{a,b,c}. Therefore, we
+	 have added <em>two</em> elements to <span class="Set">S</span>.</p>
+      <p>Since elements come into <span class="Set">S</span> in pairs,
+	 |<span class="Set">S</span>| must be even.</p>
+    </li>
+
+    <li>
+      <div class="SideBar">
+	Since we're discussing whether sets are even or odd, it is safe
+	to assume that these are all <em>finite</em> sets.
+      </div>
+      <p>|<span class="Set">G</span>-<span class="Set">S</span>| is even
+	 or odd, depending upon whether |<span class="Set">G</span>| is even
+	 or odd.</p>
+      <p>Since <span class="Set">S</span>&sub;<span class="Set">G</span>,
+	 |<span class="Set">G</span>-<span class="Set">S</span>| =
+	 |<span class="Set">G</span>|-|<span class="Set">S</span>|.</p>
+      <p>Since |<span class="Set">S</span>| is even,
+	 |<span class="Set">G</span>|-|<span class="Set">S</span>| will be
+	 even or odd, depending upon whether |<span class="Set">G</span>|
+	 is even or odd.</p>
+    </li>
+
+    <li>
+      <p>If |<span class="Set">G</span>| is even,
+	 &exist;a&isin;<span class="Set">G</span> such that a&ne;e and
+	 a=a<sup>-1</sup>.</p>
+      <p>Since |<span class="Set">S</span>| is even,
+	 |<span class="Set">G</span>-<span class="Set">S</span>| is even.
+	 Since e=e<sup>-1</sup>, e&notin;<span class="Set">S</span>, and
+	 |(<span class="Set">G</span>-<span class="Set">S</span>)-{e}| is odd.
+	 Therefore,
+	 |(<span class="Set">G</span>-<span class="Set">S</span>)-{e}| has at
+	 least one element.</p>
+    </li>
+
+    <li>
+      <p>With <span class="Set">G</span> a finite Abelian group,
+	 <span class="Set">G</span> = {e, a<sub>1</sub>, a<sub>2</sub>,
+	 ... a<sub>n</sub>}, prove
+	 (a<sub>1</sub>a<sub>2</sub>...a<sub>n</sub>)<sup>2</sup> = e.</p>
+      <p>First, we will split <span class="Set">G</span>-{e} into two
+	 subsets, <span class="Set">S</span>, which contains all of the
+	 elements of <span class="Set">G</span> that are not their own
+	 inverses, and <span class="Set">T</span> =
+	 (<span class="Set">G</span>-{e})-<span class="Set">S</span>,
+	 which contains all of the elements (other than the identity)
+	 that are their own inverses.</p>
+      <div class="SideBar">
+	Redo 4-6 using induction on the sizes of
+	<span class="Set">S</span> and <span class="Set">T</span>.
+      </div>
+      <p>Since <span class="Set">G</span> is an Abelian group, we can
+	 take the products of these sets independently and then multiply
+	 those products.</p>
+      <p>Every element of <span class="Set">S</span> is paired with its
+	 inverse, so the product of the elements of S is e. This means that
+	 the product of all of the non-identity elements in G is the same
+	 as the product of all of the elements of <span class="Set">T</span>.
+	 In turn, (<span class="Set">G</span>-{e})<sup>2</sup> =
+	 <span class="Set">T</span><sup>2</sup>.<p>
+      <p>Again, we can arbitrarily reorder the elements of
+	 <span class="Set">T</span><sup>2</sup> so that each element is
+	 multiplied by itself &mdash; which is its inverse. This reduces
+	 the product to 3.</p>
+    </li>
+
+    <li>
+      <p>With <span class="Set">G</span> a finite Abelian group
+	 <span class="Set">G</span> = {e, a<sub>1</sub>, a<sub>2</sub>,
+	 ... a<sub>n</sub>}, and containing no elements (other than the
+	 identity) that are their own inverses, prove
+	 (a<sub>1</sub>a<sub>2</sub>...a<sub>n</sub>) = e.</p>
+      <p>Since each element of <span class="Set">G</span> (other than the
+	 identity element) is paired with its inverse, the product of its
+	 elements is e.</p>
+    </li>
+
+    <li>
+      <p>With <span class="Set">G</span> a finite Abelian group
+	 <span class="Set">G</span> = {e, a<sub>1</sub>, a<sub>2</sub>,
+	 ... a<sub>n</sub>}, and containing exactly one element, x, (other
+	 than the identity) that is its own inverse, prove
+	 (a<sub>1</sub>a<sub>2</sub>...a<sub>n</sub>) = x.</p>
+      <p>Examining <span class="Set">G</span>-{e,x}, we see that every
+	 element of it is paired with its inverse. Therefore, the product of
+	 the elements of <span class="Set">G</span>-{e,x} is e. Multiplying
+	 that by x gives x.</p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608211818/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608211818/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608211818/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608211818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608211818/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608211818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:18:18 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:02 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 454.716 (4)
+  load_resource: 365.574
+  captures_list: 598.812
+  exclusion.robots: 0.173
+  LoadShardBlock: 429.165 (3)
+  esindex: 0.016
+  CDXLines.iter: 22.875 (3)
+  RedisCDXSource: 142.247
+  PetaboxLoader3.resolve: 182.047
+  exclusion.robots.policy: 0.159
+-->

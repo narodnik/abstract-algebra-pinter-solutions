@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121006
+  Modified:	20121028 - Moved Cayley and sub-list styles to external sheet
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=895;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter03D","20180607050913","http://web.archive.org/","web","/_static/",
+	      "1528348153");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 3, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607050913im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607050913cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter03" rel="parent" rev="child">
+  <link href="Chapter03C" rel="prev" rev="next">
+  <link href="Chapter03E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; A Checkerboard Game</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    On a two-by-two square, define the following movements:
+  </p>
+
+  <ul>
+    <li>V &mdash; move vertically</li>
+    <li>H &mdash; move horizontally</li>
+    <li>D &mdash; move diagonally</li>
+    <li>I &mdash; stay put</li>
+  </ul>
+
+  <p>Let <span class="Set">G</span> = {V, H, D, I}. Define X*Y as "make
+     move X followed by move Y."</p>
+
+  <ol>
+    <li>
+      <p>Show the operation table for &lt;<span class="Set">G</span>, *&gt;.</p>
+
+      <table class="Cayley" border="on">
+	<tr>
+	  <td>*</td>
+	  <th>I</th>
+	  <th>V</th>
+	  <th>H</th>
+	  <th>D</th>
+	</tr>
+	<tr>
+	  <th>I</th>
+	  <td>I</td>
+	  <td>V</td>
+	  <td>H</td>
+	  <td>D</td>
+	</tr>
+	<tr>
+	  <th>V</th>
+	  <td>V</td>
+	  <td>I</td>
+	  <td>D</td>
+	  <td>H</td>
+	</tr>
+	<tr>
+	  <th>H</th>
+	  <td>H</td>
+	  <td>D</td>
+	  <td>I</td>
+	  <td>V</td>
+	</tr>
+	<tr>
+	  <th>D</th>
+	  <td>D</td>
+	  <td>H</td>
+	  <td>V</td>
+	  <td>I</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Assuming associativity, show that this is a group.</p>
+      <p>I (staying put) is obviously the identity.</p> 
+      <p>Each element is its own inverse.</p> 
+      <p>In all cases, X*Y = Y*X, so it is also an Abelian group.</p>
+      <p>(If we define <span class="Set">T</span> = {M,S} as "move" and
+	 "stay" on a one-by-two board, we can then view
+	 <span class="Set">G</span> as the cross-product of
+	 <span class="Set">T</span> with itself.
+	 <span class="Set">G</span> =
+	 <span class="Set">T</span>&times;<span class="Set">T</span>.
+	 Then, since <span class="Set">T</span> is a group,
+	 <a href="http://web.archive.org/web/20180607050913/http://coelurosaur/~mstemper/Math/MisGroup#CrossProd"><span class="Set">G</span> is a group.</a>)</p>
+    </li>
+         
+  </ol>
+</div> <!-- ProblemD -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter03">Chapter 3</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607050913/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607050913/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607050913/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607050913im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607050913/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607050913im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:09:13 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:37 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 221.719
+  exclusion.robots: 0.082
+  exclusion.robots.policy: 0.075
+  RedisCDXSource: 2.456
+  esindex: 0.008
+  LoadShardBlock: 194.882 (3)
+  PetaboxLoader3.datanode: 592.778 (4)
+  CDXLines.iter: 21.085 (3)
+  load_resource: 668.318
+  PetaboxLoader3.resolve: 146.863
+-->

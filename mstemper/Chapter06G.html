@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130127
+  Modified:	20130224 - Replaced "o" with charent 8728 for compostion
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=2387;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter06G","20180608201136","http://web.archive.org/","web","/_static/",
+	      "1528488696");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 6, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608201136im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608201136cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter06" rel="parent" rev="child">
+  <link href="Chapter06F" rel="prev" rev="next">
+  <link href="Chapter06H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Some General Properties of Functions</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    For Exercises 1-3,
+    let f:<span class="Set">A</span>&rarr;<span class="Set">B</span> and
+    g:<span class="Set">B</span>&rarr;<span class="Set">C</span> be functions.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that if g&#8728;f is injective, f is injective.
+      </p>
+
+      <p>
+	The proof is by contradiction. If f is not injective, then
+	&exist; p,q&isin;<span class="Set">A</span> such that f(p)=f(q). In
+	that case, g(f(p))=g(f(q)), which would mean that g&#8728;f is not
+	injective. Therefore, since g&#8728;f <em>is</em> injective, f must
+	be as well.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if g&#8728;f is surjective, g is surjective.
+      </p>
+
+      <p>
+	The proof is by contradiction. If g is not surjective, then
+	&exist;r&isin;<span class="Set">C</span> such that for no
+	s&isin;<span class="Set">B</span> is it true that g(s)=r. In that case,
+	there cannot be any t&isin;<span class="Set">A</span> such that
+	g(f(t))=r, which means that g&#8728;f is not surjective. Therefore,
+	since g&#8728;f <em>is</em> surjective, g must be as well.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f is injective and g is surjective, does that imply that g&#8728;f
+	is bijective?
+      </p>
+
+      <p>
+	No, it does not.
+	Let f:<span class="Set">N</span>&rarr;<span class="Set">N</span> be
+	the injection f(x)=2x.
+	Let g:<span class="Set">N</span>&rarr;<span class="Set">N</span> be
+	the surjection g(x)=x.
+	[g&#8728;f](x)=2x, which is not a surjection on
+	<span class="Set">N</span>, and therefore not a bijection.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let f:<span class="Set">A</span>&rarr;<span class="Set">B</span> and
+	g:<span class="Set">B</span>&rarr;<span class="Set">A</span> be
+	functions, with y=f(x) iff x=g(y). Prove that f is bijective and
+	that g=f<sup>-1</sup>.
+      </p>
+
+      <p>
+	The proof that f is injective is by contradiction. Assume that f is not
+	injective. Then, &exist;a,b&isin;<span class="Set">A</span> such that
+	f(a)=f(b)=q. By the problem statement, this would mean that both
+	g(q)=a and g(q)=b, which cannot be true. Therefore, f must be an
+	injection.
+      </p>
+
+      <p>
+	The proof that f is surjective is direct.
+	For any c&isin;<span class="Set">B</span>,
+	g(c)=y&isin;<span class="Set">A</span>, and we must then have
+	f(y)=c.
+      </p>
+
+      <p>
+	Since f is both injective and surjective, it is bijective.
+      </p>
+
+      <p>
+	Since g(f(x))=x, g=f<sup>-1</sup>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter06">Chapter 6</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608201136/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608201136/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608201136/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608201136im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608201136/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608201136im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:11:36 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:57:00 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.016
+  exclusion.robots.policy: 0.211
+  CDXLines.iter: 25.096 (3)
+  LoadShardBlock: 2096.417 (3)
+  PetaboxLoader3.datanode: 2238.458 (4)
+  RedisCDXSource: 22.841
+  PetaboxLoader3.resolve: 36.294
+  load_resource: 226.046
+  exclusion.robots: 0.227
+  captures_list: 2151.001
+-->

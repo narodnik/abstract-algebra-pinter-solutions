@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140819
+  Modified:	20140821 - Added ID to Exercise 5
+		20140822 - Added ID to Exercise 2
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=1850;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter10G","20180501064943","http://web.archive.org/","web","/_static/",
+	      "1525157383");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 10, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180501064943im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180501064943cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter10" rel="parent" rev="child">
+  <link href="Chapter10F" rel="prev" rev="next">
+  <link href="Chapter10H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Relationship Between ord(a) and
+    ord(a<sup>k</sup>)</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    Let a be a element of order n in a group <span class="Set">G</span>.
+    Use elementary results from number theory.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that, if m and n are relatively prime, ord(a<sup>m</sup>) = n.
+      </p>
+
+      <p>
+	Let ord(a<sup>m</sup>) = k. Then, e = (a<sup>m</sup>)<sup>k</sup> =
+	a<sup>mk</sup>.
+      </p>
+
+      <p>
+	By Theorem 5, n | mk. Since m and n are relatively prime, n | k, and
+	there is a q (1&le;q) such that k = nq.
+      </p>
+
+      <p>
+	(a<sup>m</sup>)<sup>k</sup> = (a<sup>m</sup>)<sup>nq</sup> =
+	a<sup>mnq</sup> = (a<sup>n</sup>)<sup>mq</sup> = e<sup>mq</sup> = e
+	is true regardless of the value of q, which means that it is true
+	for q=1. This gives us ord(a<sup>m</sup>) = k = nq = n.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	Prove that if ord(a<sup>m</sup>) = n, then m and n are relatively
+	prime.
+      </p>
+
+      <p>
+	Let gcd(m,n) = q. Then we can write m = m'q and n = n'q.
+	(a<sup>m</sup>)<sup>n'</sup> = (a<sup>m'q</sup>)<sup>n'</sup> =
+	a<sup>m'qn'</sup> = (a<sup>qn'</sup>)<sup>m'</sup> =
+	(a<sup>n</sup>)<sup>m'</sup> = e<sup>m'</sup> = e.
+      </p>
+
+      <p>
+	Since ord(a<sup>m</sup>) = n, n is the <em>smallest</em> positive
+	integer for which (a<sup>m</sup>)<sup>n</sup> = e. Since
+	(a<sup>m</sup>)<sup>n'</sup> = e, n' is a multiple of n, by Theorem 5.
+      </p>
+
+      <p>
+	The gcd of two integers is a positive integer, by definition.
+	Given the assumption that n = qn', the only possible value for q is
+	q=1, giving n = n'.
+      </p>
+
+      <p>
+	Therefore, gcd(m,n) = 1. In other words, that m and n are relatively
+	prime.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let l = lcm(m,n) and let l/m = k. Explain why
+	(a<sup>m</sup>)<sup>k</sup> = e.
+      </p>
+
+      <p>
+	(a<sup>m</sup>)<sup>k</sup> = (a<sup>m</sup>)<sup>l/m</sup> =
+	(a<sup>m</sup>)<sup>lcm(m,n)/m</sup> =
+	a<sup>m lcm(m,n)/m</sup> =
+	a<sup>lcm(m,n)</sup> = e, since lcm(m,n) is, by definition, a
+	multiple of n and ord(a) = n.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if (a<sup>m</sup>)<sup>t</sup> = e, then n | mt.
+      </p>
+
+      <p>
+	e = (a<sup>m</sup>)<sup>t</sup> = a<sup>mt</sup>. Since n = ord(a), by
+	<span title="The by now infamous">Theorem 5</span>, n | mt.
+	Therefore, mt is a multiple of both m and n.
+      </p>
+
+      <p>
+	This means that lcm(m,n) &le; mt.
+      </p>
+    </li>
+
+    <li id="Ex05">
+      <p>
+	Use the results of the two previous exercises to prove that
+	ord(a<sup>m</sup>) = lcm(m,n)/m.
+      </p>
+
+      <p>
+	By Exercise 3, (a<sup>m</sup>)<sup>lcm(m,n)/m</sup> = e.
+      </p>
+
+      <p>
+	By Exercise 4, if (a<sup>m</sup>)<sup>t</sup> = e, then
+	lcm(m,n)/m &le; t.
+      </p>
+
+      <p>
+	Combining these results shows that lcm(m,n)/m = ord(a<sup>m</sup>).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter10">Chapter 10</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180501064943/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180501064943/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180501064943/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180501064943im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180501064943/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180501064943im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:49:43 May 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:59 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 557.041 (4)
+  PetaboxLoader3.resolve: 884.074 (4)
+  exclusion.robots: 0.185
+  CDXLines.iter: 26.427 (3)
+  LoadShardBlock: 1194.903 (3)
+  RedisCDXSource: 191.942
+  esindex: 0.013
+  captures_list: 1417.744
+  exclusion.robots.policy: 0.172
+  load_resource: 423.063
+-->

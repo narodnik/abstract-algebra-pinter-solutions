@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141020 - Exercise 1
+  Modified:	20141022 - Exercises 2,3
+		20141023 - Exercise 4
+		20141029 - Exercises 5 and 6
+		20150922 - Typos in Exercises 1 and 2
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app105.us.archive.org';v.server_ms=1006;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13J","20180623024412","http://web.archive.org/","web","/_static/",
+	      "1529721852");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem J
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180623024412im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180623024412cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13I" rel="prev" rev="next">
+  <link href="Chapter13K" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem J &mdash; Group Acting on a Set</h1>
+
+<div class="Section Problem" id="ProblemJ">
+
+  <p>
+    Let <span class="Set">A</span> be a set and let
+    <span class="Set">G</span> be any subgroup of
+    <span class="Set">S<sub>A</sub></span>.
+    <span class="Set">G</span> is a group of permutations of
+    <span class="Set">A</span>; we say it is a <dfn>group acting on
+    the set <span class="Set">A</span></dfn>. Assume here that
+    <span class="Set">G</span> is a finite group. If u &isin;
+    <span class="Set">A</span>, the <dfn>orbit of u</dfn> (with respect to
+    <span class="Set">G</span>) is the set
+    <span class="Set">O</span>(u) = {g(u) : g &isin;
+    <span class="Set">G</span>}.
+  </p>
+
+  <p>
+    If u &isin; <span class="Set">A</span>, the <dfn>stabilizer</dfn> of u
+    is the set <span class="Set">G<sub>u</sub></span> =
+    {g &isin; <span class="Set">G</span> : g(u) = u}.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Define a relation ~ on <span class="Set">A</span> by u~v iff g(u) = v
+	for some g &isin; <span class="Set">G</span>. Prove that ~ is an
+	equivalence relation on <span class="Set">A</span> and that the
+	orbits are its equivalence classes.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since <span class="Set">G</span> is a subgroup, it contains the
+	identity permutation, (). Thus, a~a and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Let a~b. Then, for some g &isin; <span class="Set">G</span>, g(a) = b.
+	Since <span class="Set">G</span> is a subgroup, g<sup>-1</sup> &isin;
+	<span class="Set">G</span>. g<sup>-1</sup>(b) = a. Thus, b~a and this
+	relation is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let a~b and b~c. Then, for some g,h &isin; <span class="Set">G</span>,
+	g(a) = b and h(b) = c. Since <span class="Set">G</span> is a subgroup,
+	it is closed under composition, h&#8728;g &isin;
+	<span class="Set">G</span>. (h&#8728;g)(a) = h(g(a)) = c. Thus, this
+	relation is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive,
+	it is an equivalence relation.
+      </p>
+
+      <p>
+	Since two elements are in the same orbit iff they are equivalent under
+	this relation, the orbits are the equivalence classes.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">G<sub>u</sub></span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let h &isin; <span class="Set">G<sub>u</sub></span>. Since
+	<span class="Set">G</span> is a group, h<sup>-1</sup> &isin;
+	<span class="Set">G</span>. Since h(u) = u, it must also be true that
+	h<sup>-1</sup>(u) = u. Therefore, h<sup>-1</sup> &isin;
+	<span class="Set">G<sub>u</sub></span>, and
+	<span class="Set">G<sub>u</sub></span> is closed under inversion.
+      </p>
+
+      <p>
+	Let p,q &isin; <span class="Set">G<sub>u</sub></span>. Then,
+	(p&#8728;q)(u) = p(q(u)) = p(u) = u. Therefore, p&#8728;q &isin;
+	<span class="Set">G<sub>u</sub></span>, and
+	<span class="Set">G<sub>u</sub></span> is closed under multiplication.
+      </p>
+
+      <p>
+	Since <span class="Set">G<sub>u</sub></span> is closed under
+	inversion and multiplication, it is a subgroup.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let &alpha; = (12)(34)(56) and &beta; = (23) in
+	<span class="Set">S<sub>6</sub></span>. Let
+	<span class="Set">G</span> = {&epsilon;, &alpha;, &beta;,
+	&alpha;&beta;, &beta;&alpha;, &alpha;&beta;&alpha;,
+	&beta;&alpha;&beta;, (&alpha;&beta;)<sup>2</sup>} &lt;
+	<span class="Set">S<sub>6</sub></span>. Find the following:
+      </p>
+
+      <ul>
+	<li>
+	  <p>
+	    <span class="Set">O</span>(1):
+	  </p>
+
+	  <p>
+	    &epsilon;(1) = 1, &alpha;(1) = 2, &beta;(1) = 1,
+	    &alpha;&beta;(1) = 2, &beta;&alpha;(1) = 3, &alpha;&beta;&alpha;(1)
+	    = 4, &beta;&alpha;&beta;(1) = 3, (&alpha;&beta;)<sup>2</sup>(1) =
+	    4. Therefore, <span class="Set">O</span>(1) = {1, 2, 3, 4}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">O</span>(2):
+	  </p>
+
+	  <p>
+	    &epsilon;(2) = 2, &alpha;(2) = 1, &beta;(2) = 3,
+	    &alpha;&beta;(2) = 4, &beta;&alpha;(2) = 1, &alpha;&beta;&alpha;(2)
+	    = 2, &beta;&alpha;&beta;(2) = 4, (&alpha;&beta;)<sup>2</sup>(2) =
+	    3. Therefore, <span class="Set">O</span>(2) = {1, 2, 3, 4}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">O</span>(5):
+	  </p>
+
+	  <p>
+	    Since (56) is the only transposition that includes 5, and it is
+	    disjoint from all other transpositions in
+	    <span class="Set">G</span>, <span class="Set">O</span>(5) = {5, 6}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">G<sub>1</sub></span>:
+	  </p>
+
+	  <p>
+	    <span class="Set">G<sub>1</sub></span> = {&epsilon;, &beta;}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">G<sub>2</sub></span>:
+	  </p>
+
+	  <p>
+	    <span class="Set">G<sub>2</sub></span> = {&epsilon;,
+	    &alpha;&beta;&alpha;}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">G<sub>4</sub></span>:
+	  </p>
+
+	  <p>
+	    <span class="Set">G<sub>4</sub></span> = {&epsilon;, &beta;}.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    <span class="Set">G<sub>5</sub></span>:
+	  </p>
+
+	  <p>
+	    <span class="Set">G<sub>5</sub></span> = {&epsilon;, &beta;}.
+	  </p>
+	</li>
+      </ul>
+    </li>
+
+    <li>
+      <p>
+	Let f,g &isin; <span class="Set">G</span>. Prove that f and g are in
+	the same left coset of <span class="Set">G<sub>u</sub></span> iff
+	f(u) = g(u).
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Assume that f(u) = g(u). Let f = p&#8728;f', where f' &isin;
+	<span class="Set">G</span>. Then, f &isin;
+	p<span class="Set">G<sub>u</sub></span>.
+      </p>
+
+      <p>
+	Since f' &isin; <span class="Set">G<sub>u</sub></span>, f'(u) = u.
+	f(u) = (p&#8728;f')(u) = p(f'(u)) = p(u).
+      </p>
+
+      <p>
+	Let g' = p<sup>-1</sup>&#8728;g. Then, g'(u) =
+	(p<sup>-1</sup>&#8728;g)(u) = p<sup>-1</sup>(g(u)) =
+	p<sup>-1</sup>(f(u)) = u. Therefore, g'(u) = u, and g' &isin;
+	<span class="Set">G<sub>u</sub></span>. Since g' =
+	p<sup>-1</sup>&#8728;g, p&#8728;g' = g. Therefore, g &isin;
+	p<span class="Set">G<sub>u</sub></span>, the same coset as f.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	Assume f,g &isin; q<span class="Set">G<sub>u</sub></span>. Then,
+	&exist; f',g' &isin; <span class="Set">G<sub>u</sub></span> such that
+	q&#8728;f' = f and q&#8728;g' = g. Since f',g' &isin; 
+	<span class="Set">G<sub>u</sub></span> f'(u) = u = g'(u).
+      </p>
+
+      <p>
+	f(u) = (q&#8728;f')(u) = q(f'(u)) = q(u).
+	g(u) = (q&#8728;g')(u) = q(g'(u)) = q(u).
+	Therefore, f(u) = g(u).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Using Exercise 4, show that |<span class="Set">O</span>(u)| =
+	(<span class="Set">G</span> : <span class="Set">G<sub>u</sub></span>).
+      </p>
+
+      <p>
+	Let &alpha; &isin; <span class="Set">G</span>. The left coset of
+	<span class="Set">G<sub>u</sub></span> that contains &alpha; is
+	determined by &alpha;(u), as shown in Exercise 4. The possible values
+	of &alpha;(u) are exactly the elements of
+	<span class="Set">O</span>(u), by the definition of
+	<span class="Set">O</span>(u).
+      </p>
+
+      <p>
+	Therefore, <span class="Set">G<sub>u</sub></span> has as many left
+	cosets as <span class="Set">O</span>(u) has elements.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Conclude from Exercise 5 that the size of every orbit (with respect to
+	<span class="Set">G</span>) is a factor of
+	|<span class="Set">G</span>|. In particular, if f &isin;
+	<span class="Set">S<sub>a</sub></span>, the length of each cycle of f
+	is a factor of the order of f in
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Since |<span class="Set">O</span>(u)| =
+	(<span class="Set">G</span> : <span class="Set">G<sub>u</sub></span>)
+	= |<span class="Set">G</span>| /
+	|<span class="Set">G<sub>u</sub></span>|,
+	|<span class="Set">G</span>| =
+	|<span class="Set">G<sub>u</sub></span>| &times;
+	|<span class="Set">O</span>(u)|.
+      </p>
+
+      <p>
+	If <span class="Set">S<sub>A</sub></span> is finite, the set of powers
+	of f is a subgroup of <span class="Set">S<sub>A</sub></span>. It is
+	closed under multiplication by its definition. If ord(f) = n, then
+	f<sup>-1</sup> = f<sup>n-1</sup> &isin;
+	<span class="Set">S<sub>A</sub></span>, so it is also closed under
+	inversion.
+      </p>
+
+      <p>
+	Each disjoint cycle that is a factor of f is the orbit of any of its
+	elements. Therefore, as shown above, its order is a factor of the
+	order of f.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemJ -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180623024412/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180623024412/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180623024412/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180623024412im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180623024412/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180623024412im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 02:44:12 Jun 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:58 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  load_resource: 456.084
+  exclusion.robots: 0.165
+  PetaboxLoader3.datanode: 512.373 (4)
+  captures_list: 535.127
+  exclusion.robots.policy: 0.153
+  PetaboxLoader3.resolve: 301.927
+  CDXLines.iter: 39.159 (3)
+  LoadShardBlock: 448.138 (3)
+  esindex: 0.016
+  RedisCDXSource: 42.81
+-->

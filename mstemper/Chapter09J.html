@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140719 - Exercises 1 and 2
+  Modified:	20140721 - Exercise 3
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app105.us.archive.org';v.server_ms=413;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09J","20180623013047","http://web.archive.org/","web","/_static/",
+	      "1529717447");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem J
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180623013047im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180623013047cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09I" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem J &mdash; Regular Representation of Groups</h1>
+
+<div class="Section Problem" id="ProblemJ">
+
+  <p>
+    Find the right and left regular representation (or the regular
+    representation for Abelian groups) and compute their tables (or its table):
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	The group <span class="Set">P<sub>2</sub></span> of subsets of a
+	two-element set (as described in <a href="Chapter03C">Chapter 3,
+	Problem C</a>).
+      </p>
+
+      <p>
+	The operation (symmetric difference) was previously shown to be
+	commutative, so this is an Abelian group, and only has one regular
+	representation.
+      </p>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>0</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	</tr>
+	<tr>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>1</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	</tr>
+	<tr>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>2</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	</tr>
+	<tr>
+	  <td>{a}</td>
+	  <td>&empty;</td>
+	  <td>{a,b}</td>
+	  <td>{b}</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>3</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>&empty;</td>
+	  <td>{a}</td>
+	  <td>{b}</td>
+	  <td>{a,b}</td>
+	</tr>
+	<tr>
+	  <td>{a,b}</td>
+	  <td>{b}</td>
+	  <td>{a}</td>
+	  <td>&empty;</td>
+	</tr>
+      </table>
+
+      <table class="Cayley" border="on">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>&pi;<sub>0</sub></th>
+	  <th>&pi;<sub>1</sub></th>
+	  <th>&pi;<sub>2</sub></th>
+	  <th>&pi;<sub>3</sub></th>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>0</sub></th>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>1</sub></th>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>2</sub></th>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>3</sub></th>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>0</sub></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">Z<sub>4</sub></span>
+      </p>
+
+      <p>
+	Since addition is commutative, this is an Abelian group and only has
+	one regular representation.
+      </p>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>0</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>1</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+	<tr>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>0</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>2</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+	<tr>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>3</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	</tr>
+	<tr>
+	  <td>3</td>
+	  <td>0</td>
+	  <td>1</td>
+	  <td>2</td>
+	</tr>
+      </table>
+
+      <table class="Cayley" border="on">
+	<tr>
+	  <th>+</th>
+	  <th>&pi;<sub>0</sub></th>
+	  <th>&pi;<sub>1</sub></th>
+	  <th>&pi;<sub>2</sub></th>
+	  <th>&pi;<sub>3</sub></th>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>0</sub></th>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>1</sub></th>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>4</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>2</sub></th>
+	  <td>&pi;<sub>2</sub></td>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>3</sub></th>
+	  <td>&pi;<sub>3</sub></td>
+	  <td>&pi;<sub>0</sub></td>
+	  <td>&pi;<sub>1</sub></td>
+	  <td>&pi;<sub>2</sub></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	The group <span class="Set">G</span> of matrices described on pages
+	28 and 29 of the text.
+      </p>
+
+      <p>
+	As shown in the text, this group is non-Abelian, so both a left
+	regular representation (<span class="Set">G<sup>*</sup></span>) and
+	a right regular representation
+	(<span class="Set">G<sup>&rho;</sup></span>) will be needed.
+      </p>
+
+      <p>
+	The left regular representation
+	(<span class="Set">G<sup>*</sup></span>) is:
+      </p>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>I</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>A</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>A</td>
+	  <td>I</td>
+	  <td>C</td>
+	  <td>B</td>
+	  <td>K</td>
+	  <td>D</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>B</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>B</td>
+	  <td>K</td>
+	  <td>D</td>
+	  <td>A</td>
+	  <td>I</td>
+	  <td>C</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>C</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>D</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>D</td>
+	  <td>C</td>
+	  <td>I</td>
+	  <td>K</td>
+	  <td>B</td>
+	  <td>A</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>K</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>K</td>
+	  <td>B</td>
+	  <td>A</td>
+	  <td>D</td>
+	  <td>C</td>
+	  <td>I</td>
+	</tr>
+      </table>
+
+      <p>
+	The Cayley table for the left regular representation is:
+      </p>
+
+      <table class="Cayley" border="on">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>&pi;<sub>I</sub></th>
+	  <th>&pi;<sub>A</sub></th>
+	  <th>&pi;<sub>B</sub></th>
+	  <th>&pi;<sub>C</sub></th>
+	  <th>&pi;<sub>D</sub></th>
+	  <th>&pi;<sub>K</sub></th>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>I</sub></th>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>A</sub></th>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>B</sub></th>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>C</sub></th>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>D</sub></th>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>K</sub></th>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	</tr>
+      </table>
+
+      <p>
+      </p>
+
+      <p>
+	The right regular representation
+	(<span class="Set">G<sup>&rho;</sup></span>) is:
+      </p>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>I</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>A</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>A</td>
+	  <td>I</td>
+	  <td>K</td>
+	  <td>D</td>
+	  <td>C</td>
+	  <td>B</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>B</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	  <td>I</td>
+	  <td>A</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>C</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>C</td>
+	  <td>B</td>
+	  <td>A</td>
+	  <td>I</td>
+	  <td>K</td>
+	  <td>D</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>D</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>D</td>
+	  <td>K</td>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	</tr>
+      </table>
+
+      <table class="Matrix">
+      <caption>&pi;<sub>K</sub>&nbsp;=&nbsp;</caption>
+	<tr>
+	  <td>I</td>
+	  <td>A</td>
+	  <td>B</td>
+	  <td>C</td>
+	  <td>D</td>
+	  <td>K</td>
+	</tr>
+	<tr>
+	  <td>K</td>
+	  <td>D</td>
+	  <td>C</td>
+	  <td>B</td>
+	  <td>A</td>
+	  <td>I</td>
+	</tr>
+      </table>
+
+      <p>
+	The Cayley table for the right regular representation is:
+      </p>
+
+      <table class="Cayley" border="on">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>&pi;<sub>I</sub></th>
+	  <th>&pi;<sub>A</sub></th>
+	  <th>&pi;<sub>B</sub></th>
+	  <th>&pi;<sub>C</sub></th>
+	  <th>&pi;<sub>D</sub></th>
+	  <th>&pi;<sub>K</sub></th>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>I</sub></th>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>A</sub></th>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>B</sub></th>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>C</sub></th>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>D</sub></th>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	</tr>
+	<tr>
+	  <th>&pi;<sub>K</sub></th>
+	  <td>&pi;<sub>K</sub></td>
+	  <td>&pi;<sub>D</sub></td>
+	  <td>&pi;<sub>C</sub></td>
+	  <td>&pi;<sub>B</sub></td>
+	  <td>&pi;<sub>A</sub></td>
+	  <td>&pi;<sub>I</sub></td>
+	</tr>
+      </table>
+
+      <p>
+	Unsurprisingly, the two Cayley tables are transposes of each other.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemJ -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180623013047/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180623013047/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180623013047/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180623013047im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180623013047/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180623013047im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 01:30:47 Jun 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:31 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  load_resource: 248.033
+  exclusion.robots: 0.339
+  PetaboxLoader3.datanode: 172.852 (4)
+  captures_list: 139.979
+  exclusion.robots.policy: 0.319
+  PetaboxLoader3.resolve: 94.7
+  CDXLines.iter: 22.246 (3)
+  LoadShardBlock: 88.74 (3)
+  esindex: 0.01
+  RedisCDXSource: 24.78
+-->

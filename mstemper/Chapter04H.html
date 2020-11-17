@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121031 - Problems H1-6
+  Modified:	20121103 - Added lemma to H6, did H7, H8
+		20121120 - Split off problems into individual pages
+		20140421 - Change to styling of SPAN.Ind
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app12.us.archive.org';v.server_ms=1533;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04H","20180422094102","http://web.archive.org/","web","/_static/",
+	      "1524390062");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180422094102im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180422094102cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04G" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Powers and Roots of Group Elements</h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+    Let a,b &isin;<span class="Set">G</span>. Prove the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>(bab<sup>-1</sup>)<sup>n</sup> = ba<sup>n</sup>b<sup>-1</sup>
+	 &forall; n&isin; <span class="Set">Z</span><sup>+</sup></p>
+      <p><span class="Ind">Base</span> For n=1,
+	 (bab<sup>-1</sup>)<sup>1</sup> = ba<sup>1</sup>b<sup>-1</sup>.</p>
+      <p><span class="Ind">Hypothesis</span> Assume that for
+	 some positive k, (bab<sup>-1</sup>)<sup>k</sup> =
+	 ba<sup>k</sup>b<sup>-1</sup></p>
+      <p><span class="Ind">Step</span>
+	 (bab<sup>-1</sup>)<sup>k+1</sup> =
+	 (bab<sup>-1</sup>)<sup>k</sup>(bab<sup>-1</sup>) =
+	 ba<sup>k</sup>b<sup>-1</sup>bab<sup>-1</sup> =
+	 ba<sup>k</sup>eab<sup>-1</sup> =
+	 ba<sup>k</sup>ab<sup>-1</sup> =
+	 ba<sup>k+1</sup>b<sup>-1</sup>.</p>
+    </li>
+
+    <li>
+      <p>If ab=ba, then (ab)<sup>n</sup>=a<sup>n</sup>b<sup>n</sup>
+	 &forall; n&isin; <span class="Set">Z</span><sup>+</sup></p>
+      <p><span class="Ind">Base</span> For n=1,
+	 (ab)<sup>1</sup> = ab = a<sup>1</sup>b<sup>1</sup>.</p>
+      <p><span class="Ind">Hypothesis</span> Assume that for some
+	 positive k, (ab)<sup>k</sup>=a<sup>k</sup>b<sup>k</sup></p>
+      <p><span class="Ind">Step</span> (ab)<sup>k+1</sup> =
+	 (ab)<sup>k</sup>(ab) = (a<sup>k</sup>b<sup>k</sup>)(ab) =
+	 a<sup>k</sup>b<sup>k</sup>ab =
+	 a<sup>k</sup>ab<sup>k</sup>b =
+	 a<sup>k+1</sup>b<sup>k+1</sup>.</p>
+    </li>
+
+    <li>
+      <p>If xax=e, then (xa)<sup>2n</sup>=a<sup>n</sup>
+	 &forall; n&isin; <span class="Set">Z</span><sup>+</sup></p>
+      <p><span class="Ind">Base</span> For n=1,
+	 (xa)<sup>2n</sup> = (xa)<sup>2</sup> = xaxa = ea = a =
+	 a<sup>1</sup>.</p>
+      <p><span class="Ind">Hypothesis</span> Assume that for some
+	 positive k, (xa)<sup>2k</sup>=a<sup>k</sup>.</p>
+      <p><span class="Ind">Step</span> (xa)<sup>2(k+1)</sup> = 
+	 (xa)<sup>2k+2</sup> = (xa)<sup>2k</sup>(xa)<sup>2</sup> =
+	 a<sup>k</sup>xaxa = a<sup>k</sup>ea = a<sup>k</sup>a =
+	 a<sup>k+1</sup>.</p>
+    </li>
+
+    <li>
+      <p>If a<sup>3</sup>=e, then &exist;b such that b<sup>2</sup>=a.</p>
+      <table class="Derive">
+	<tr>
+	  <td>a<sup>3</sup></td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>a<sup>3</sup>a<sup>-1</sup></td>
+	  <td>ea<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup></td>
+	  <td>a<sup>-1</sup></td>
+	  <td>inverse, identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-2</sup></td>
+	  <td>a</td>
+	  <td>inverse of inverse</td>
+	</tr>
+	<tr>
+	  <td>(a<sup>-1</sup>)<sup>2</sup></td>
+	  <td>a</td>
+	  <td>square of inverse</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>If a<sup>2</sup>=e, then &exist;b such that b<sup>3</sup>=a.</p>
+      <table class="Derive">
+	<tr>
+	  <td>a<sup>2</sup></td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a</td>
+	  <td>ea</td>
+	  <td>post-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>a<sup>3</sup></td>
+	  <td>a</td>
+	  <td>definition of a<sup>3</sup></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>If a<sup>-1</sup> has a cube root, so does a.</p>
+      <p>First we prove a lemma: (x<sup>n</sup>)<sup>-1</sup> =
+	 (x<sup>-1</sup>)<sup>n</sup>. The proof is by induction.</p>
+      <p><span class="Ind">Base</span> For n=1,
+	 (x<sup>1</sup>)<sup>-1</sup> = (x)<sup>-1</sup> = x<sup>-1</sup> =
+	 (x<sup>-1</sup>)<sup>1</sup>.</p>
+      <p><span class="Ind">Hypothesis</span> Assume that for some
+	 k, (x<sup>k</sup>)<sup>-1</sup> = (x<sup>-1</sup>)<sup>k</sup>.</p>
+      <p><span class="Ind">Step</span>
+	 (b<sup>k+1</sup>)<sup>-1</sup> =
+	 (b<sup>k</sup>b<sup>1</sup>)<sup>-1</sup> =
+	 (b<sup>k</sup>b)<sup>-1</sup> =
+	 b<sup>-1</sup>(b<sup>k</sup>)<sup>-1</sup> =
+	 (b<sup>-1</sup>)<sup>1</sup>(b<sup>-1</sup>)<sup>k</sup> =
+	 (b<sup>-1</sup>)<sup>1+k</sup> =
+	 (b<sup>-1</sup>)<sup>k+1</sup>.</p>
+      <table class="Derive">
+	<tr>
+	  <td>b<sup>3</sup></td>
+	  <td>a<sup>-1</sup></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>b<sup>3</sup>(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>post-multiply by (b<sup>3</sup>)<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>a<sup>-1</sup>(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ae</td>
+	  <td>aa<sup>-1</sup>(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>pre-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>ae</td>
+	  <td>e(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>(b<sup>3</sup>)<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>(b<sup>-1</sup>)<sup>3</sup></td>
+	  <td>lemma</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup>ax=a<sup>-1</sup> &rarr; &exist;b such that
+	 b<sup>3</sup>=a.</p>
+      <table class="Derive">
+        <tr>
+	  <td>(xax)<sup>3</sup></td>
+	  <td>xaxxaxxax</td>
+	  <td>definition of n<sup>3</sup></td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xax<sup>2</sup>axxax</td>
+	  <td>definition of n<sup>2</sup></td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xa(x<sup>2</sup>ax)xax</td>
+	  <td>associativity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xa(a<sup>-1</sup>)xax</td>
+	  <td>x<sup>2</sup>ax=a<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>x(aa<sup>-1</sup>)xax</td>
+	  <td>associativity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xexax</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>xxax</td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>x<sup>2</sup>ax</td>
+	  <td>definition of n<sup>2</sup></td>
+	</tr>
+        <tr>
+	  <td></td>
+	  <td>a<sup>-1</sup></td>
+	  <td>x<sup>2</sup>ax=a<sup>-1</sup></td>
+	</tr>
+      </table>
+      <p>By the lemma from exercise 6, ((xax)<sup>-1</sup>)<sup>3</sup> = a.</p>
+    </li>
+
+    <li>
+      <p>xax=b &rarr; &exist;c such that c<sup>2</sup>=ab.</p>
+      <table class="Derive">
+	<tr>
+	  <td>xax</td>
+	  <td>b</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>axax</td>
+	  <td>ab</td>
+	  <td>pre-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>(ax)<sup>2</sup></td>
+	  <td>ab</td>
+	  <td>definition of n<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemH -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180422094102/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180422094102/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180422094102/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180422094102im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180422094102/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180422094102im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 09:41:02 Apr 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:16 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots.policy: 0.182
+  captures_list: 1170.118
+  RedisCDXSource: 111.513
+  PetaboxLoader3.resolve: 159.271
+  exclusion.robots: 0.196
+  PetaboxLoader3.datanode: 1117.08 (4)
+  esindex: 0.016
+  LoadShardBlock: 1032.331 (3)
+  load_resource: 345.701
+  CDXLines.iter: 21.852 (3)
+-->

@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141006
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=738;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13C","20180605220207","http://web.archive.org/","web","/_static/",
+	      "1528236127");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605220207im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605220207cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13B" rel="prev" rev="next">
+  <link href="Chapter13D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Elementary Consequences of
+    Lagrange's Theorem</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Let <span class="Set">G</span> be a finite group. Prove or disprove
+    each of the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If |<span class="Set">G</span>| = n, then x<sup>n</sup> = e &forall;
+	x &isin; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let |&lang;x&rang;| = m. By Lagrange's Theorem, m = |&lang;x&rang;| |
+	|<span class="Set">G</span>| = n. Let km = n. By Theorem 5 of Chapter
+	10, x<sup>km</sup> = x<sup>n</sup> = e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let |<span class="Set">G</span>| = pq, where p and q are primes. Then
+	either <span class="Set">G</span> is cyclic or every element x &isin;
+	<span class="Set">G</span>, x&ne;e has order p or q.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	I'm less than clear on why Pinter phrased this in a way that implies
+	that these are mutually exclusive. In fact,
+	<a href="/web/20180605220207/http://www.math.wisc.edu/~mstemper2/Math/Z3xZ5"><span class="Set">Z<sub>3</sub></span> &times;
+	<span class="Set">Z<sub>5</sub></span> &#8792;
+	<span class="Set">Z<sub>15</sub></span></a>.
+      </p>
+      </div>
+
+      <p>
+	Let x &isin; <span class="Set">G</span>. Then, by the previous
+	exercise, x<sup>pq</sup> = e. Therefore, ord(x) &isin; {1, p, q, pq}.
+	Discarding x=e, we have ord(x) &isin; {p, q, pq}.
+      </p>
+
+      <p>
+	If &exist; y &isin; <span class="Set">G</span> such that ord(y) = pq,
+	then <span class="Set">G</span> = &lang;y&rang; and is therefore
+	cyclic. If &#8708; y &isin; <span class="Set">G</span> such that
+	ord(y) = pq, then ord(y) &isin; {p, q} &forall; y&ne;e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let |<span class="Set">G</span>| = 4. Either <span class="Set">G</span>
+	is cyclic, or every member of <span class="Set">G</span> is its own
+	inverse. Conclude from this that every group of order 4 is Abelian.
+      </p>
+
+      <p>
+	By the previous exercise, either <span class="Set">G</span> is
+	cyclic, or every element other than the identity has order 2. In
+	other words, either the group is cyclic or every element is its own
+	inverse, since aa=e implies a = a<sup>-1</sup>.
+      </p>
+
+      <p>
+	All cyclic groups are Abelian. On the other hand, if every element is
+	its own inverse:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>b</td>
+	  <td>ac</td>
+	  <td>pre-multiply by a, which is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>bc</td>
+	  <td>a</td>
+	  <td>post-multiply by c, which is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>c</td>
+	  <td>ba</td>
+	  <td>pre-multiply by b, which is its own inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, ab=ba, and the group is Abelian.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> has an element of order p and an
+	element of order q, where p and q are distinct primes, then the
+	order of <span class="Set">G</span> is a multiple of pq.
+      </p>
+
+      <p>
+	Let ord(a) = p and let ord(b) = q. Since p&ne;q, we know a&ne;b.
+	|&lang;a&rang;| = p and |&lang;b&rang;| = q. Since
+	&lang;a&rang; and &lang;b&rang; are subgroups of
+	<span class="Set">G</span>, p and q both divide
+	|<span class="Set">G</span>|. Therefore, |<span class="Set">G</span>|
+	is a multiple of both p and q. Since they're prime, they're relatively
+	prime, which means that a mulitple of p and q is a multiple of pq.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G</span> has an element of order k and an
+	element of order m, then the order of <span class="Set">G</span> is
+	a multiple of lcm(k,m).
+      </p>
+
+      <p>
+	Let ord(a) = k and let ord(b) = m. |&lang;a&rang;| = k and
+	|&lang;b&rang;| = m. Since &lang;a&rang; and &lang;b&rang; are
+	subgroups of <span class="Set">G</span>, k and m both divide
+	|<span class="Set">G</span>|. Therefore, |<span class="Set">G</span>|
+	is a multiple of both p and q, which makes it a mulitple of lcm(p,q).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let p be a prime number. In any finite group, the number of elements
+	of order p is a multiple of p-1.
+      </p>
+
+      <p>
+	If an element is of order p, then it's a member of a cyclic subgroup
+	of order p. That subgroup has p elements, one of which is the identity
+	element. Discarding the identity, which has order 1, leaves p-1
+	elements of that subgroup having order p.
+      </p>
+
+      <p>
+	If there are multiple subgroups of order p, they are disjoint except
+	for the identity element. Therefore, if there are m subgroups of
+	order p, there are m&middot;(p-1) elements of order p.
+      </p>
+
+      <p>
+	If no elements have order p, then there are 0&middot;(p-1) elements
+	of order p.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605220207/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605220207/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605220207/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605220207im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605220207/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605220207im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 22:02:07 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:32 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 299.985 (3)
+  exclusion.robots.policy: 0.183
+  esindex: 0.017
+  PetaboxLoader3.resolve: 413.94 (4)
+  RedisCDXSource: 11.772
+  exclusion.robots: 0.198
+  captures_list: 338.073
+  PetaboxLoader3.datanode: 185.737 (4)
+  CDXLines.iter: 21.972 (3)
+  load_resource: 389.515
+-->

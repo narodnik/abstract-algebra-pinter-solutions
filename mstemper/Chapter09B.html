@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140601 - Barely forty minutes!
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=34894;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09B","20180608201141","http://web.archive.org/","web","/_static/",
+	      "1528488701");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608201141im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608201141cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09A" rel="prev" rev="next">
+  <link href="Chapter09C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Elements Which Correspond Under an
+    Isomorphism</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    Let <span class="Set">G<sub>1</sub></span> and
+    <span class="Set">G<sub>2</sub></span> be groups, and let
+    f:<span class="Set">G<sub>1</sub></span> &rarr;
+    <span class="Set">G<sub>2</sub></span> be an isomorphism.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If e<sub>1</sub> denotes the neutral element of
+	<span class="Set">G<sub>1</sub></span> and e<sub>2</sub> denotes
+	the neutral element of <span class="Set">G<sub>2</sub></span>, prove
+	that f(e<sub>1</sub>) = e<sub>2</sub>.
+      </p>
+
+      <p>
+	Let a &isin; <span class="Set">G<sub>1</sub></span>. Since f is an
+	isomorphism, f(a) = f(e<sub>1</sub>a) = f(e<sub>1</sub>)f(a).
+	Since f(a) = f(e<sub>1</sub>)f(a) and a group (such as
+	<span class="Set">G<sub>2</sub></span>) only has one identity element,
+	f(e<sub>1</sub>) = e<sub>2</sub>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that for each element a &isin;
+	<span class="Set">G<sub>1</sub></span>,
+	f(a<sup>-1</sup>) = [f(a)]<sup>-1</sup>.
+      </p>
+
+      <p>
+	As in the previous exercise, e<sub>1</sub> is the identity element
+	of <span class="Set">G<sub>1</sub></span> and e<sub>2</sub> is the
+	identity element of <span class="Set">G<sub>2</sub></span>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>aa<sup>-1</sup></td>
+	  <td>e<sub>1</sub></td>
+	  <td>inverses and identity</td>
+	</tr>
+	<tr>
+	  <td>f(a)f(a<sup>-1</sup>)</td>
+	  <td>f(e<sub>1</sub>)</td>
+	  <td>f is an isomorphism</td>
+	</tr>
+	<tr>
+	  <td>f(a)f(a<sup>-1</sup>)</td>
+	  <td>e<sub>2</sub></td>
+	  <td>previous exercise</td>
+	</tr>
+	<tr>
+	  <td>[f(a)]<sup>-1</sup>f(a)f(a<sup>-1</sup>)</td>
+	  <td>[f(a)]<sup>-1</sup>e<sub>2</sub></td>
+	  <td>pre-multiply by [f(a)]<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e<sub>2</sub>f(a<sup>-1</sup>)</td>
+	  <td>[f(a)]<sup>-1</sup>e<sub>2</sub></td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td>f(a<sup>-1</sup>)</td>
+	  <td>[f(a)]<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G<sub>1</sub></span> is a cyclic group with
+	generator a, <span class="Set">G<sub>2</sub></span> is a cyclic group
+	with generator f(a).
+      </p>
+
+      <p>
+	The proof will be by induction on the powers of a.
+      </p>
+
+      <p><span class="Ind">Base</span>
+	Since f is an isomorphism,
+	f(a<sup>2</sup>) = f(aa) = f(a)f(a) = [f(a)]<sup>2</sup>.
+      </p>
+
+      <p><span class="Ind">Hypothesis</span>
+	Assume that f(a<sup>k</sup>) = [f(a)]<sup>k</sup>.
+      </p>
+
+      <p><span class="Ind">Step</span>
+	f(a<sup>k+1</sup>) = f(a<sup>k</sup>a) = f(a<sup>k</sup>)f(a) =
+	[f(a)]<sup>k</sup>f(a) = [f(a)]<sup>k+1</sup>.
+      </p>
+
+      <p>
+	Therefore, all powers of a in <span class="Set">G<sub>1</sub></span>
+	correspond to powers of f(a) in <span class="Set">G<sub>2</sub></span>.
+	Since f is a bijection, there are no other elements in
+	<span class="Set">G<sub>2</sub></span>.
+      </p>
+
+      <p>
+	This means that <span class="Set">G<sub>2</sub></span> is a cyclic
+	group, generated by f(a), and with the same order as
+	<span class="Set">G<sub>1</sub></span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608201141/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608201141/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608201141/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608201141im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608201141/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608201141im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:11:41 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:03:41 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 34671.31 (5)
+  load_resource: 174.048
+  captures_list: 34708.565
+  exclusion.robots: 0.196
+  LoadShardBlock: 34637.661 (3)
+  esindex: 0.016
+  CDXLines.iter: 23.94 (3)
+  RedisCDXSource: 42.164
+  PetaboxLoader3.resolve: 119.472
+  exclusion.robots.policy: 0.181
+-->

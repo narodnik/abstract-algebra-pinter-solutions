@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121022 - Problems A1-A3
+  Modified:	20121023 - Problems A4-A5
+		20121024 - Problem A6
+		20121029 - Deleted border="on", now Cayley tables styled such
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=403;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04A","20180419231552","http://web.archive.org/","web","/_static/",
+	      "1524179752");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180419231552im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180419231552cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Solving Equations in Groups</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <p>
+    Solve each of the following equations for x in terms of a, b, c.
+  </p>
+
+  <ol>
+    <li>
+      <p>axb = c</p>
+
+      <table class="Derive">
+	<tr>
+	  <td>axb</td>
+	  <td>c</td>
+	</tr>
+	<tr>
+	  <td>axbb<sup>-1</sup></td>
+	  <td>cb<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>axe</td>
+	  <td>cb<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ax</td>
+	  <td>cb<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>ax</td>
+	  <td>a<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ex</td>
+	  <td>a<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>a<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup>b = xa<sup>-1</sup>c</p>
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>2</sup>b</td>
+	  <td>xa<sup>-1</sup>c</td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>bb<sup>-1</sup></td>
+	  <td>xa<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>e</td>
+	  <td>xa<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup></td>
+	  <td>xa<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>x<sup>2</sup></td>
+	  <td>x<sup>-1</sup>xa<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>pre-multiply by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>xx</td>
+	  <td>x<sup>-1</sup>xa<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>ex</td>
+	  <td>ea<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>a<sup>-1</sup>cb<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup>a = bxc<sup>-1</sup> and acx = xac</p>
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>2</sup>a</td>
+	  <td>bxc<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>ac</td>
+	  <td>bxc<sup>-1</sup>c</td>
+	  <td>post-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>ac</td>
+	  <td>bxe</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>ac</td>
+	  <td>bx</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>xxac</td>
+	  <td>bx</td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>xacx</td>
+	  <td>bx</td>
+	  <td>acx = xac</td>
+	</tr>
+	<tr>
+	  <td>xacxx<sup>-1</sup></td>
+	  <td>bxx<sup>-1</sup></td>
+	  <td>post-multiply by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xace</td>
+	  <td>be</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>xac</td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>xacc<sup>-1</sup></td>
+	  <td>bc<sup>-1</sup></td>
+	  <td>post-multiply by c<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xae</td>
+	  <td>bc<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>xa</td>
+	  <td>bc<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>xaa<sup>-1</sup></td>
+	  <td>bc<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xe</td>
+	  <td>bc<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>x</td>
+	  <td>bc<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>ax<sup>2</sup> = b and x<sup>3</sup> = e</p>
+      <table class="Derive">
+        <tr>
+	  <td>ax<sup>2</sup></td>
+	  <td>b</td>
+	</tr>
+        <tr>
+	  <td>a<sup>-1</sup>ax<sup>2</sup></td>
+	  <td>a<sup>-1</sup>b</td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td>ex<sup>2</sup></td>
+	  <td>a<sup>-1</sup>b</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>x<sup>2</sup></td>
+	  <td>a<sup>-1</sup>b</td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td>xx<sup>2</sup></td>
+	  <td>xa<sup>-1</sup>b</td>
+	  <td>pre-multiply by x</td>
+	</tr>
+        <tr>
+	  <td>x<sup>3</sup></td>
+	  <td>xa<sup>-1</sup>b</td>
+	  <td>definition of x<sup>3</sup></td>
+	</tr>
+        <tr>
+	  <td>e</td>
+	  <td>xa<sup>-1</sup>b</td>
+	  <td>x<sup>3</sup> = e</td>
+	</tr>
+        <tr>
+	  <td>eb<sup>-1</sup></td>
+	  <td>xa<sup>-1</sup>bb<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+        <tr>
+	  <td>eb<sup>-1</sup></td>
+	  <td>xa<sup>-1</sup>e</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>b<sup>-1</sup></td>
+	  <td>xa<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>xa<sup>-1</sup>a</td>
+	  <td>post-multiply by a</td>
+	</tr>
+        <tr>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>xe</td>
+	  <td>inverse</td>
+	</tr>
+        <tr>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>x</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>x<sup>2</sup> = a<sup>2</sup> and x<sup>5</sup> = e</p>
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>5</sup></td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>xxxxx</td>
+	  <td>e</td>
+	  <td>definition of x<sup>5</sup></td>
+	</tr>
+	<tr>
+	  <td>x<sup>2</sup>x<sup>2</sup>x</td>
+	  <td>e</td>
+	  <td>definition of x<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a<sup>2</sup>x</td>
+	  <td>e</td>
+	  <td>x<sup>2</sup> = a<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a<sup>2</sup>xx<sup>-1</sup></td>
+	  <td>ex<sup>-1</sup></td>
+	  <td>post-multiply by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a<sup>2</sup>xx<sup>-1</sup></td>
+	  <td>x<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a<sup>2</sup>e</td>
+	  <td>x<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup>a<sup>2</sup></td>
+	  <td>x<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>aaaa</td>
+	  <td>x<sup>-1</sup></td>
+	  <td>definition of a<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>4</sup></td>
+	  <td>x<sup>-1</sup></td>
+	  <td>definition of a<sup>4</sup></td>
+	</tr>
+	<tr>
+	  <td>a<sup>-4</sup></td>
+	  <td>x</td>
+	  <td>property of inverses</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>(xax)<sup>3</sup> = bx and
+	 x<sup>2</sup>a = (xa)<sup>-1</sup></p>
+      <table class="Derive">
+	<tr>
+	  <td>(xax)<sup>3</sup></td>
+	  <td>bx</td>
+	</tr>
+	<tr>
+	  <td>xaxxaxxax</td>
+	  <td>bx</td>
+	  <td>definition of (xax)<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>xax<sup>2</sup>ax<sup>2</sup>ax</td>
+	  <td>bx</td>
+	  <td>definition of (xax)<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>xa(xa)<sup>-1</sup>(xa)<sup>-1</sup>x</td>
+	  <td>bx</td>
+	  <td>x<sup>2</sup>a = (xa)<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xaa<sup>-1</sup>x<sup>-1</sup>a<sup>-1</sup>x<sup>-1</sup>x</td>
+	  <td>bx</td>
+	  <td>(xa)<sup>-1</sup> = a<sup>-1</sup>x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xex<sup>-1</sup>a<sup>-1</sup>e</td>
+	  <td>bx</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>xx<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>bx</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>ea<sup>-1</sup></td>
+	  <td>bx</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup></td>
+	  <td>bx</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>b<sup>-1</sup>bx</td>
+	  <td>premultiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>ex</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>x</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>(ab)<sup>-1</sup></td>
+	  <td>x</td>
+	  <td>(ab)<sup>-1</sup> = b<sup>-1</sup>a<sup>-1</sup></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180419231552/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180419231552/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180419231552/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180419231552im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180419231552/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180419231552im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:15:52 Apr 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:50 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 306.595
+  exclusion.robots: 0.088
+  exclusion.robots.policy: 0.081
+  RedisCDXSource: 1.715
+  esindex: 0.007
+  LoadShardBlock: 284.51 (3)
+  PetaboxLoader3.datanode: 236.329 (4)
+  CDXLines.iter: 17.948 (3)
+  load_resource: 83.921
+  PetaboxLoader3.resolve: 43.181
+-->

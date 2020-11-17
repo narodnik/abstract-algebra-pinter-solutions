@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121104 - Problem A
+  Modified:	20121120 - Split off problems into individual pages
+		20140717 - Fixed wording in inversion part of Exercise 4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=1122;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05A","20180607163807","http://web.archive.org/","web","/_static/",
+	      "1528389487");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607163807im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607163807cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Recognizing Subgroups</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <p>
+    For each of the following, determine whether or not
+    <span class="Set">H</span> is a subgroup of <span class="Set">G</span>.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;<span class="Set">R</span>,+&gt;,
+	<span class="Set">H</span> = {log(a): a&isin;<span class="Set">Q</span>,
+	a&ge;0}.
+      </p>
+      <p>
+	Let x=log(a) and y= log(b), where
+	a,b&isin;<span class="Set">Q</span><sup>+</sup>.
+	Then, x,y&isin;<span class="Set">H</span>.
+	x+y = log(a)+log(b) = log(ab). Since
+	ab&isin;<span class="Set">Q</span><sup>+</sup>
+	when a and b are, (x+y)&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	Let x=log(a), where a&isin;<span class="Set">Q</span><sup>+</sup>. Then
+	-x=log(1/a). Since (1/a)&isin;<span class="Set">Q</span><sup>+</sup>
+	when a is, -x&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;<span class="Set">R</span>,+&gt;,
+	<span class="Set">H</span> = {log(n): n&isin;<span class="Set">Z</span>,
+	n&ge;0}.
+      </p>
+      <p>
+	Let x=log(n), where n&isin;<span class="Set">Z</span><sup>+</sup>. Then
+	-x=log(1/n). Since (1/n)&notin;<span class="Set">Z</span><sup>+</sup>,
+	<span class="Set">H</span> is not closed under negation and hence not
+	a subgroup of <span class="Set">G</span> (or a group at all).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = &lt;<span class="Set">R</span>,+&gt;,
+	<span class="Set">H</span> = {x&isin;<span class="Set">R</span>:
+	tan(x)&isin;<span class="Set">Q</span>}.
+      </p>
+      <p>
+	Let x=&pi;/4. Since tan(&pi;/4)=1&isin;<span class="Set">Q</span>,
+	x&isin;<span class="Set">H</span>.
+	x+x=&pi;/2 and tan(&pi;/2) is undefined, and therefore
+	not in <span class="Set">Q</span>. So <span class="Set">H</span>
+	is not closed under addition and not a group.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> =
+	&lt;<span class="Set">R</span><sup>*</sup>,&times;&gt;,
+	<span class="Set">H</span> = {2<sup>m</sup>3<sup>n</sup>:
+	m,n&isin;<span class="Set">Z</span>}.
+      </p>
+      <p>
+	Let p=2<sup>i</sup>3<sup>j</sup> and q=2<sup>k</sup>3<sup>l</sup>
+	with {i,j,k,l}&sub;<span class="Set">Z</span>. Then pq =
+	2<sup>i+k</sup>3<sup>j+l</sup>. Since <span class="Set">Z</span>
+	is closed under addition,
+	2<sup>i+k</sup>3<sup>j+l</sup>&isin;<span class="Set">H</span> and
+	<span class="Set">H</span> is closed under multiplication.
+      </p>
+      <p>
+	Let p=2<sup>i</sup>3<sup>j</sup> (i,j&isin;<span class="Set">Z</span>).
+	Then (1/p)=2<sup>-i</sup>3<sup>-j</sup>. Since
+	<span class="Set">Z</span> is closed under negation,
+	<span class="Set">H</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> =
+	&lt;<span class="Set">R</span>&times;<span class="Set">R</span>,+&gt;,
+	<span class="Set">H</span> =
+	{(x,y)&isin;<span class="Set">R</span>&times;<span class="Set">R</span>:
+	y=2x}.
+      </p>
+      <p>
+	An equivalent defintion of <span class="Set">H</span> is
+	{(x,2x): x&isin;<span class="Set">R</span>}.
+	With p,q&isin;<span class="Set">R</span>,
+	(p,2p)&isin;<span class="Set">H</span> and
+	(q,2q)&isin;<span class="Set">H</span>.
+	(p,2p)+(q,2q) = (p+q,2(p+q)). Since <span class="Set">R</span> is
+	closed under addition and multiplication,
+	(p+q,2(p+q))&isin;<span class="Set">H</span>, and
+	<span class="Set">H</span> is closed under addition.
+      </p>
+      <p>
+	The additive inverse of (p,2p) is (-p,-2p) =
+	(-p,2(-p))&isin;<span class="Set">H</span>, so
+	<span class="Set">H</span> is closed under negation.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is closed under addition and negation,
+	it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> =
+	&lt;<span class="Set">R</span>&times;<span class="Set">R</span>,+&gt;,
+	<span class="Set">H</span> =
+	{(x,y): x<sup>2</sup>+y<sup>2</sup>&gt;0}.
+      </p>
+      <p>
+	Let a=-b and c=-d. If either a or c is non-zero, then
+	a<sup>2</sup>+c<sup>2</sup>&gt;0 and b<sup>2</sup>+d<sup>2</sup>&gt;0,
+	so (a,c) and (b,d) are both in <span class="Set">H</span>.
+	(a,c)+(b,d)=(0,0)&notin;<span class="Set">H</span>, and
+	<span class="Set">H</span> is not closed under addition and therefore
+	not a group.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	With <span class="Set">C</span>&sub;<span class="Set">D</span>,
+	show that P(<span class="Set">C</span>) is a subgroup of
+	P(<span class="Set">D</span>) with the group operation from <a href="Chapter03#ProblemC">Chapter 3, Problem C</a>.
+      </p>
+      <p>
+	Let <span class="Set">A</span>&isin;P(<span class="Set">C</span>)
+	and <span class="Set">B</span>&isin;P(<span class="Set">C</span>).
+	Since (<span class="Set">A</span>+<span class="Set">B</span>)&sub;<span class="Set">B</span>&sub;<span class="Set">C</span>,
+	(<span class="Set">A</span>+<span class="Set">B</span>)&isin;P(<span class="Set">C</span>). Therefore, P(<span class="Set">C</span>) is
+	closed under addition.
+      </p>
+      <p>
+	Since each set is its own inverse with respect to this operation,
+	P(<span class="Set">C</span>) is closed under negation.
+      </p>
+      <p>
+	Since P(<span class="Set">C</span>) is closed under addition and
+	negation, it is a subgroup of P(<span class="Set">D</span>).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607163807/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607163807/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607163807/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607163807im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607163807/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607163807im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 16:38:07 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:18 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 737.383 (4)
+  PetaboxLoader3.resolve: 172.246
+  exclusion.robots: 0.207
+  CDXLines.iter: 23.935 (3)
+  LoadShardBlock: 643.818 (3)
+  RedisCDXSource: 72.37
+  esindex: 0.013
+  captures_list: 744.676
+  exclusion.robots.policy: 0.191
+  load_resource: 365.335
+-->

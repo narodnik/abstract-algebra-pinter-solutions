@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151019 - Exercises 1,2
+  Modified:	20151020 - Exercises 3-5
+		20151021 - Exercise 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=2675;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter15A","20180605225726","http://web.archive.org/","web","/_static/",
+	      "1528239446");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 15, Problem A
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605225726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605225726cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.Cayley TH {text-align: center;}
+  </style>
+
+  <link href="Chapter15" rel="parent" rev="child">
+  <link href="Chapter15B" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem A &mdash; Examples of Finite Quotient Groups</h1>
+
+<div class="Section Problem" id="ProblemA">
+
+  <p>
+    In each of the following, <span class="Set">G</span> is a group and
+    <span class="Set">H</span> &#8882; <span class="Set">G</span>. List the
+    elements of <span class="Set">G</span>/<span class="Set">H</span> and
+    then write the Cayley table of
+    <span class="Set">G</span>/<span class="Set">H</span>.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">G</span> = Z<sub>10</sub>,
+	<span class="Set">H</span> = {0, 5}.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>, <span class="Set">H</span>+1,
+	<span class="Set">H</span>+2, <span class="Set">H</span>+3,
+	<span class="Set">H</span>+5}
+      </p>
+
+      <p>
+	Its Cayley table is:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>+1</th>
+	  <th><span class="Set">H</span>+2</th>
+	  <th><span class="Set">H</span>+3</th>
+	  <th><span class="Set">H</span>+4</th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+1</td>
+	  <td><span class="Set">H</span>+2</td>
+	  <td><span class="Set">H</span>+3</td>
+	  <td><span class="Set">H</span>+4</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+1</th>
+	  <td><span class="Set">H</span>+1</td>
+	  <td><span class="Set">H</span>+2</td>
+	  <td><span class="Set">H</span>+3</td>
+	  <td><span class="Set">H</span>+4</td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+2</th>
+	  <td><span class="Set">H</span>+2</td>
+	  <td><span class="Set">H</span>+3</td>
+	  <td><span class="Set">H</span>+4</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+1</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+3</th>
+	  <td><span class="Set">H</span>+3</td>
+	  <td><span class="Set">H</span>+4</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+1</td>
+	  <td><span class="Set">H</span>+2</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+4</th>
+	  <td><span class="Set">H</span>+4</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+1</td>
+	  <td><span class="Set">H</span>+2</td>
+	  <td><span class="Set">H</span>+3</td>
+	</tr>
+      </table>
+
+      <p>
+	Explain why <span class="Set">G</span>/<span class="Set">H</span>
+	&#8792; Z/5Z.
+      </p>
+
+      <p>
+	Because |<span class="Set">H</span>| = 2 and 10/2 = 5. Since
+	Z/10Z only has one subgroup of order 5, any quotient
+	group of Z/10Z with order 5 must be isomorphic to
+	that subgroup.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = <span class="Set">S<sub>3</sub></span> and
+	<span class="Set">H</span> = {&epsilon;, &beta;, &delta;}.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>, <span class="Set">H</span>+&alpha;}.
+      </p>
+
+      <p>
+	Its Cayley table is:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>+&alpha;</th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+&alpha;</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+&alpha;</th>
+	  <td><span class="Set">H</span>+&alpha;</td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = <span class="Set">D<sub>4</sub></span>,
+	<span class="Set">H</span> = {R<sub>0</sub>, R<sub>2</sub>}.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>,
+	<span class="Set">H</span>&#8728;R<sub>1</sub>,
+	<span class="Set">H</span>&#8728;R<sub>5</sub>,
+	<span class="Set">H</span>&#8728;R<sub>6</sub>}
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>&#8728;R<sub>1</sub></th>
+	  <th><span class="Set">H</span>&#8728;R<sub>5</sub></th>
+	  <th><span class="Set">H</span>&#8728;R<sub>6</sub></th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>5</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>6</sub></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>&#8728;R<sub>1</sub></th>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>6</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>5</sub></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>&#8728;R<sub>5</sub></th>
+	  <td><span class="Set">H</span>&#8728;R<sub>5</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>6</sub></td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>&#8728;R<sub>6</sub></th>
+	  <td><span class="Set">H</span>&#8728;R<sub>6</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>5</sub></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = <span class="Set">D<sub>4</sub></span>,
+	<span class="Set">H</span> = {R<sub>0</sub>, R<sub>2</sub>,
+	R<sub>4</sub>, R<sub>5</sub>}.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>,
+	<span class="Set">H</span>&#8728;R<sub>1</sub>}.
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>&#8728;R<sub>1</sub></th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>&#8728;R<sub>1</sub></th>
+	  <td><span class="Set">H</span>&#8728;R<sub>1</sub></td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> =
+	<span class="Set">Z<sub>4</sub></span>&times;<span class="Set">Z<sub>2</sub></span>,
+	<span class="Set">H</span> = &lang;(0,1)&rang;.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>, <span class="Set">H</span>+(1,0),
+	<span class="Set">H</span>+(2,0), <span class="Set">H</span>+(3,0)}.
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>+(1,0)</th>
+	  <th><span class="Set">H</span>+(2,0)</th>
+	  <th><span class="Set">H</span>+(3,0)</th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+(1,0)</td>
+	  <td><span class="Set">H</span>+(2,0)</td>
+	  <td><span class="Set">H</span>+(3,0)</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+(1,0)</th>
+	  <td><span class="Set">H</span>+(1,0)</td>
+	  <td><span class="Set">H</span>+(2,0)</td>
+	  <td><span class="Set">H</span>+(3,0)</td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+(2,0)</th>
+	  <td><span class="Set">H</span>+(2,0)</td>
+	  <td><span class="Set">H</span>+(3,0)</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+(1,0)</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span>+(3,0)</th>
+	  <td><span class="Set">H</span>+(3,0)</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+(1,0)</td>
+	  <td><span class="Set">H</span>+(2,0)</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> = <span class="Set">P<sub>3</sub></span>,
+	<span class="Set">H</span> = {&empty;, {1}}.
+      </p>
+
+      <p>
+	<span class="Set">G</span>/<span class="Set">H</span> =
+	{<span class="Set">H</span>,
+	<span class="Set">H</span>+{2},
+	<span class="Set">H</span>+{3},
+	<span class="Set">H</span>+{2,3},
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>+</th>
+	  <th><span class="Set">H</span></th>
+	  <th><span class="Set">H</span>+{2}</th>
+	  <th><span class="Set">H</span>+{3}</th>
+	  <th><span class="Set">H</span>+{2,3}</th>
+	</tr>
+	<tr>
+	  <th><span class="Set">H</span></th>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+{2}</td>
+	  <td><span class="Set">H</span>+{3}</td>
+	  <td><span class="Set">H</span>+{2,3}</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H+{2}</span></th>
+	  <td><span class="Set">H</span>+{2}</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+{2,3}</td>
+	  <td><span class="Set">H</span>+{3}</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H{3}</span></th>
+	  <td><span class="Set">H</span>+{3}</td>
+	  <td><span class="Set">H</span>+{2,3}</td>
+	  <td><span class="Set">H</span></td>
+	  <td><span class="Set">H</span>+{2}</td>
+	</tr>
+	<tr>
+	  <th><span class="Set">H+{2,3}</span></th>
+	  <td><span class="Set">H</span>+{2,3}</td>
+	  <td><span class="Set">H</span>+{3}</td>
+	  <td><span class="Set">H</span>+{2}</td>
+	  <td><span class="Set">H</span></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemA -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter15">Chapter 15</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605225726/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605225726/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605225726/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605225726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605225726/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605225726im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 22:57:26 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:39 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 1300.055 (4)
+  PetaboxLoader3.resolve: 844.272
+  exclusion.robots: 0.29
+  CDXLines.iter: 39.991 (3)
+  LoadShardBlock: 1323.319 (3)
+  RedisCDXSource: 116.614
+  esindex: 0.016
+  captures_list: 1485.309
+  exclusion.robots.policy: 0.274
+  load_resource: 1167.517
+-->

@@ -1,0 +1,497 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141001 - Exercise 1
+  Modified:	20141002 - Exercises 2-4
+		20141003 - Exercises 5 and 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=1938;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter12D","20180503123421","http://web.archive.org/","web","/_static/",
+	      "1525350861");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 12, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180503123421im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180503123421cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter12" rel="parent" rev="child">
+  <link href="Chapter12C" rel="prev" rev="next">
+  <link href="Chapter12E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Equivalence Relations on Groups</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Let <span class="Set">G</span> be a group. In each of the following,
+    a relation on <span class="Set">G</span> is defined. Prove it is an
+    equivalence relation. Then describe the equivalence class of e.
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	If <span class="Set">H</span> is a subgroup of
+	<span class="Set">G</span>, a~b iff ab<sup>-1</sup> &isin;
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since a subgroup contains e, aa<sup>-1</sup> &isin;
+	<span class="Set">H</span>, and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Let a~b. Then, ab<sup>-1</sup> = h &isin; <span class="Set">H</span>,
+	which gives:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ab<sup>-1</sup></td>
+	  <td>h</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>(ab<sup>-1</sup>)<sup>-1</sup></td>
+	  <td>h<sup>-1</sup></td>
+	  <td>invert both sides</td>
+	</tr>
+	<tr>
+	  <td>(b<sup>-1</sup>)<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>h<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ba<sup>-1</sup></td>
+	  <td>h<sup>-1</sup></td>
+	  <td>inverse of the inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	If a~b, then ab<sup>-1</sup> = h &isin; <span class="Set">H</span>,
+	which gives ba<sup>-1</sup> = h<sup>-1</sup>. Since
+	<span class="Set">H</span> is a subgroup, which is closed under
+	inversion, h<sup>-1</sup> &isin; <span class="Set">H</span>. Therefore,
+	ba<sup>-1</sup> &isin; <span class="Set">H</span>, making the
+	relation symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let a~b and b~c. Then, ab<sup>-1</sup> &isin;
+	<span class="Set">H</span> and bc<sup>-1</sup> &isin;
+	<span class="Set">H</span>. Since subgroups are closed under
+	multiplication, it must be true that (ab<sup>-1</sup>)(bc<sup>-1</sup>)
+	&isin; <span class="Set">H</span>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>(ab<sup>-1</sup>)(bc<sup>-1</sup>)</td>
+	  <td>a(b<sup>-1</sup>b)c<sup>-1</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>aec<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>ac<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, ac<sup>-1</sup> &isin; <span class="Set">H</span>, which
+	means that a~c. Since a~b and b~c implies a~c, the relation is
+	transitive.
+      </p>
+
+      <p>
+	Since the relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	Since e = e<sup>-1</sup>, if h &isin; <span class="Set">H</span>,
+	then he<sup>-1</sup> = he = h &isin; <span class="Set">H</span>.
+	Therefore, all members of <span class="Set">H</span> are in the
+	equivalence class of e. By the same reasoning, if p &notin;
+	<span class="Set">H</span>, p cannot be in the equivalence class of e.
+	Therefore, the equivalence class of e is <span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">H</span> is a subgroup of
+	<span class="Set">G</span>, a~b iff a<sup>-1</sup>b &isin;
+	<span class="Set">H</span>. Is this the same equivalence relation
+	as in <a href="#Ex01">part 1</a>? Prove or disprove.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since a subgroup contains e, a<sup>-1</sup>a &isin;
+	<span class="Set">H</span>, and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Let a~b. Then, a<sup>-1</sup>b = h &isin; <span class="Set">H</span>,
+	which gives:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>a<sup>-1</sup>b</td>
+	  <td>h</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>(a<sup>-1</sup>b)<sup>-1</sup></td>
+	  <td>h<sup>-1</sup></td>
+	  <td>invert both sides</td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>(a<sup>-1</sup>)<sup>-1</sup></td>
+	  <td>h<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>h<sup>-1</sup></td>
+	  <td>inverse of the inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	If a~b, then a<sup>-1</sup>b = h &isin; <span class="Set">H</span>,
+	which gives b<sup>-1</sup>a = h<sup>-1</sup>. Since
+	<span class="Set">H</span> is a subgroup, which is closed under
+	inversion, h<sup>-1</sup> &isin; <span class="Set">H</span>. Therefore,
+	b<sup>-1</sup>a &isin; <span class="Set">H</span>, making the
+	relation symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let a~b and b~c. Then, a<sup>-1</sup>b &isin;
+	<span class="Set">H</span> and b<sup>-1</sup>c &isin;
+	<span class="Set">H</span>. Since <span class="Set">H</span> is a
+	subgroup, it is closed under multiplication, so it must be true that
+	(a<sup>-1</sup>b)(b<sup>-1</sup>c) &isin;
+	<span class="Set">H</span>. Since (a<sup>-1</sup>b)(b<sup>-1</sup>c) =
+	a<sup>-1</sup>c, a~c. Since a~b and b~c together imply a~c, the
+	relation is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	Since e = e<sup>-1</sup>, if h &isin; <span class="Set">H</span>,
+	then e<sup>-1</sup>h = eh = h &isin; <span class="Set">H</span>.
+	Therefore, all members of <span class="Set">H</span> are in the
+	equivalence class of e. By the same reasoning, if p &notin;
+	<span class="Set">H</span>, p cannot be in the equivalence class of e.
+	Therefore, the equivalence class of e is <span class="Set">H</span>.
+      </p>
+
+      <p>
+	Call the relation from part 1 "R<sub>1</sub>" and this one
+	"R<sub>2</sub>".  Let <span class="Set">G</span> = {I, A, B, C, D, K}
+	be the six-matrix group from pages 28 and 29 of the text, and let
+	<span class="Set">H</span> = {I, A}.
+      </p>
+
+      <p>
+	The equivalence classes of R<sub>1</sub> are {{I,A}, {B,C}, {D,K}},
+	while those of R<sub>2</sub> are {{I,A}, {B,K}, {C,D}}.
+      </p>
+
+      <p>
+	Therefore, R<sub>1</sub> and R<sub>2</sub> are <em>not</em> the same
+	equivalence relation.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let a~b iff &exist; x &isin; <span class="Set">G</span> such that
+	a = xbx<sup>-1</sup>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since a = eae<sup>-1</sup>, a~a and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If a~b then a = xbx<sup>-1</sup> for some x &isin;
+	<span class="Set">G</span>. If x &isin; <span class="Set">G</span>,
+	then x<sup>-1</sup> &isin; <span class="Set">G</span>, and
+	x<sup>-1</sup>ax = b. Therefore a~b implies b~a, making the
+	relation symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Let a~b and b~c. Then, &exist; x,y &isin; <span class="Set">G</span>
+	such that a = xbx<sup>-1</sup> and b = ycy<sup>-1</sup>. Therefore,
+	a = xycy<sup>-1</sup>x<sup>-1</sup>. Since xy &isin;
+	<span class="Set">G</span> and y<sup>-1</sup>x<sup>-1</sup> =
+	(xy)<sup>-1</sup>, a~c. Since a~b and b~c together imply a~c, this
+	relation is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	The equivalence class of e is {e}. Let e~b. Then, by symmetry, b~e
+	and b = xex<sup>-1</sup> = xx<sup>-1</sup> = e.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let a~b iff &exist; k &isin; <span class="Set">Z</span> such that
+	a<sup>k</sup> = b<sup>k</sup>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since a<sup>k</sup> = a<sup>k</sup>, a~a and this relation is
+	reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If a~b then a<sup>k</sup> = b<sup>k</sup> for some k &isin;
+	<span class="Set">Z</span>. Therefore, b<sup>k</sup> =
+	a<sup>k</sup>, which means b~a. Since a~b implies b~a, this relation
+	is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If a~b and b~c, then &exist; j,k &isin; <span class="Set">Z</span>
+	such that a<sup>j</sup> = b<sup>j</sup> and b<sup>k</sup> =
+	c<sup>k</sup>. Then, a<sup>jk</sup> = c<sup>jk</sup> and a~c. Since
+	a~b and b~c together imply a~c, this relation is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	The equivalence class of e is {x &isin; <span class="Set">G</span> :
+	ord(x) is finite}.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let a~b iff ab<sup>-1</sup> commutes with every x &isin;
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since aa<sup>-1</sup> = e, which commutes with every element in a
+	group, a~a and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Assume a~b. Then:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ab<sup>-1</sup>x</td>
+	  <td>xab<sup>-1</sup></td>
+	  <td>a~b</td>
+	</tr>
+	<tr>
+	  <td>ab<sup>-1</sup>xb</td>
+	  <td>xa</td>
+	  <td>post-multiply both sides by b</td>
+	</tr>
+	<tr>
+	  <td>ab<sup>-1</sup>xba<sup>-1</sup></td>
+	  <td>x</td>
+	  <td>post-multiply both sides by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xba<sup>-1</sup></td>
+	  <td>(ab<sup>-1</sup>)<sup>-1</sup>x</td>
+	  <td>pre-multiply both sides by (ab<sup>-1</sup>)<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>xba<sup>-1</sup></td>
+	  <td>ba<sup>-1</sup>x</td>
+	  <td>inverse of ab<sup>-1</sup></td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, if ab<sup>-1</sup> commutes with x, ba<sup>-1</sup> does,
+	which means that a~b implies b~a, and this relation is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If b~c, then for any y &isin; <span class="Set">G</span>,
+	bc<sup>-1</sup>y = ybc<sup>-1</sup>. Let x = bc<sup>-1</sup>y =
+	ybc<sup>-1</sup>. Then, since a~b, ab<sup>-1</sup>x = xab<sup>-1</sup>.
+	Substituting x = bc<sup>-1</sup>y on the left-hand side and x =
+	ybc<sup>-1</sup> gives ab<sup>-1</sup>bc<sup>-1</sup>y =
+	ybc<sup>-1</sup>ab<sup>-1</sup>. Because b~c, bc<sup>-1</sup>
+	commutes with ab<sup>-1</sup>, giving ab<sup>-1</sup>bc<sup>-1</sup>y =
+	yab<sup>-1</sup>bc<sup>-1</sup>. Since b<sup>-1</sup>b = e, both sides
+	may be simplified, leaving ac<sup>-1</sup>y = yac<sup>-1</sup>. This
+	means that taking a~b and b~c together implies a~c, and this relation
+	is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	The equivalence class of e is the set of all elements that commute with
+	every element of <span class="Set">G</span>. (Note that symmetry shows
+	that if an element commutes, its inverse will, as well. In fact, this
+	is a subgroup of <span class="Set">G</span>.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let a~b iff ab<sup>-1</sup> = c<sup>k</sup> for some fixed c &isin;
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since aa<sup>-1</sup> = e = c<sup>0</sup>, a~a and this relation is
+	reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	If a~b then ab<sup>-1</sup> = c<sup>k</sup>.
+	Then, c<sup>-k</sup> = ba<sup>-1</sup>. Since this is a power of c,
+	a~b implies b~a and this relation is symmetric.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	It would have been nice if Pinter had picked something other than
+	"c" to define the relation.
+      </p>
+      </div>
+
+      <p>
+	<span class="Case">Transitive</span>
+	If a~b then ab<sup>-1</sup> = c<sup>j</sup>. If b~d then
+	bd<sup>-1</sup> = c<sup>k</sup>. Multiplying them gives
+	ab<sup>-1</sup>bd<sup>-1</sup> = c<sup>j+k</sup>, or
+	ad<sup>-1</sup> = c<sup>j+k</sup>, or a~d. Since a~b and b~d taken
+	together imply a~d, this relation is transitive.
+      </p>
+
+      <p>
+	Since this relation is reflexive, symmetric, and transitive, it is an
+	equivalence relation.
+      </p>
+
+      <p>
+	The equivalence class of e is the set of powers of c, which is a
+	cyclic subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter12">Chapter 12</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180503123421/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180503123421/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180503123421/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180503123421im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180503123421/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180503123421im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:34:21 May 03, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:46 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots: 0.184
+  exclusion.robots.policy: 0.17
+  PetaboxLoader3.resolve: 1075.38
+  load_resource: 1383.897
+  esindex: 0.014
+  PetaboxLoader3.datanode: 156.547 (4)
+  captures_list: 538.063
+  CDXLines.iter: 26.7 (3)
+  RedisCDXSource: 441.685
+  LoadShardBlock: 64.411 (3)
+-->

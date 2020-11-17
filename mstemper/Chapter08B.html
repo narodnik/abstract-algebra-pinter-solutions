@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130731 - Exercises 1-3
+  Modified:	20130801 - Exercises 4-7
+		20140324 - Exercise 8 (finally!!!)
+		20140419 - Patched hole in 8 that Tony Nance spotted
+		20140423 - Added ID to Exercise 4
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=1580;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08B","20180607061505","http://web.archive.org/","web","/_static/",
+	      "1528352105");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem B
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607061505im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607061505cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08A" rel="prev" rev="next">
+  <link href="Chapter08C" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem B &mdash; Powers of Permutations</h1>
+
+<div class="Section Problem" id="ProblemB">
+
+  <p>
+    If &pi; is a permutation, &pi;<sup>1</sup>=&pi;,
+    &pi;<sup>n+1</sup>=&pi;<sup>n</sup>&#8728;&pi;, and
+    &pi;<sup>n</sup>&#8728;&pi;<sup>-n</sup>=e.
+  </p>
+
+  <p>
+    In Exercises 2 through 8, &alpha; is a cycle of length "s".
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Compute &alpha;<sup>-1</sup>, &alpha;<sup>2</sup>,
+	&alpha;<sup>3</sup>, &alpha;<sup>4</sup>, &alpha;<sup>2</sup> for each
+	of the following:
+      </p>
+
+      <ol>
+
+	<li>
+	  <p>&alpha; = (123)</p>
+	  <ul>
+	    <li>&alpha;<sup>-1</sup> = (321) </li>
+	    <li>&alpha;<sup>2</sup> = (321)</li>
+	    <li>&alpha;<sup>3</sup> = ()</li>
+	    <li>&alpha;<sup>4</sup> = (123)</li>
+	    <li>&alpha;<sup>5</sup> = (321)</li>
+	  </ul>
+	</li>
+
+	<li>
+	  <p>&alpha; = (12345)</p>
+	  <ul>
+	    <li>&alpha;<sup>-1</sup> = (54321) </li>
+	    <li>&alpha;<sup>2</sup> = (13524)</li>
+	    <li>&alpha;<sup>3</sup> = (14253)</li>
+	    <li>&alpha;<sup>4</sup> = (54321)</li>
+	    <li>&alpha;<sup>5</sup> = ()</li>
+	  </ul>
+	</li>
+
+	<li>
+	  <p>&alpha; = (123456)</p>
+	  <ul>
+	    <li>&alpha;<sup>-1</sup> = (654321) </li>
+	    <li>&alpha;<sup>2</sup> = (135)(246)</li>
+	    <li>&alpha;<sup>3</sup> = (14)(25)(36)</li>
+	    <li>&alpha;<sup>4</sup> = (153)(264)</li>
+	    <li>&alpha;<sup>5</sup> = (654321)</li>
+	  </ul>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Describe the <em>distinct</em> powers of &alpha;. How many are there?
+      </p>
+
+      <p>
+	Each application of &alpha; moves an element one "to the right" in
+	&alpha;. Since &alpha; has length "s", s applications of &alpha; will
+	move each element "all the way around" until it has moved back to its
+	starting point &mdash; itself. Therefore, &alpha;<sup>s</sup>=e,
+	&alpha;<sup>s+1</sup>=&alpha;<sup>1</sup>, and so on. This gives us
+	s distinct powers of &alpha;.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find the inverse of &alpha; and show that
+	&alpha;<sup>-1</sup>=&alpha;<sup>s-1</sup>.
+      </p>
+
+      <p>
+	If &alpha; = (a<sub>1</sub>, a<sub>2</sub>, ... a<sub>s</sub>), then
+	&alpha;<sup>-1</sup> = (a<sub>s</sub>, ... a<sub>2</sub>,
+	a<sub>1</sub>).
+      </p>
+
+      <p>
+	Since &alpha;<sup>s-1</sup>&alpha;<sup>1</sup> = &alpha;<sup>s</sup>,
+	and &alpha;<sup>s</sup> = e,
+	&alpha;<sup>s-1</sup> = &alpha;<sup>-1</sup>.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Prove that &alpha;<sup>2</sup> is a cycle if and only if s is odd.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	This may be generalized to "&alpha;<sup>n</sup> is a cycle if and only
+	if gcd(s,n)=1."
+      </p>
+      </div>
+
+      <p>
+	<span class="Case">If</span>
+	&alpha;<sup>2</sup> maps a<sub>s-1</sub> to a<sub>1</sub>,
+	a<sub>s</sub> to a<sub>2</sub>, and all other a<sub>i</sub> to
+	a<sub>i+2</sub>. Since s is odd, this gives:
+	(a<sub>1</sub>, a<sub>3</sub>, ... a<sub>s</sub>, a<sub>2</sub>, ...
+	a<sub>s-1</sub>), which contains all elements of &alpha;.
+      </p>
+
+      <p>
+	<span class="Case">Only if</span>
+	If s is even, then &alpha;<sup>2</sup> maps a<sub>i</sub> with i even
+	to a<sub>j</sub> with j even, while a<sub>i</sub> with i odd are
+	mapped to a<sub>j</sub> with j odd. This means that &alpha;<sup>2</sup>
+	is the product of two disjoint cycles, when s&gt;2. (When s=2, then
+	&alpha;<sup>2</sup> = &alpha;, which is a cycle.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if s is odd, &alpha; is the square of a cycle of length s.
+      </p>
+
+      <p>
+	Let p = (s+1)/2. Then, the square of
+	(a<sub>1</sub>, a<sub>p+1</sub>, a<sub>2</sub>, a<sub>p+2</sub>, ...
+	a<sub>s</sub>, a<sub>p</sub>) is &alpha;.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if s is even, &alpha;<sup>2</sup> is the product of two
+	cycles of length s/2.
+      </p>
+
+      <p>
+	The two cycles are (a<sub>1</sub>, a<sub>3</sub>, ... a<sub>s-1</sub>)
+	and (a<sub>2</sub>, a<sub>4</sub>, ... a<sub>s</sub>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if s=kt, then &alpha;<sup>k</sup> is the product of k
+	cycles of length t.
+      </p>
+
+      <p>
+	&alpha;<sup>k</sup> maps a<sub>jk</sub> to a<sub>(j+1)k</sub> when
+	j&lt;t and a<sub>s</sub> to a<sub>k</sub>, which is a cycle of length
+	t. Simlarly, the elements a<sub>jk-q</sub> form a cycle for any q&lt;k.
+	This gives k cycles, each of which is of length t.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if s is a prime number, every power of &alpha; is a cycle.
+      </p>
+
+      <p>
+	Label the elements of &alpha; as "a<sub>0</sub>", "a<sub>1</sub>", ...
+	"a<sub>s-1</sub>", so that &alpha;(a<sub>i</sub>) = a<sub>i+1</sub>
+	when i&lt;(s-1) and &alpha;(a<sub>s-1</sub>) = a<sub>0</sub>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Pinter does not (as far as I can tell) refer to the identity function
+	as a "one-cycle". In fact, his statement of Theorem 1 says: "[...]
+	either the identity, a single cycle, or a product of disjoint cycles."
+	The wording seems to treat these as mutually-exclusive cases.
+      </p>
+
+      <p>
+	However, since &alpha;<sup>s</sup> is the identity (whether or not
+	s is prime), we must be expected to consider the identity a one-cycle.
+      </p>
+      </div>
+
+      <p>
+	Define the function m(i) as the remainder when i is divided by s.
+	(In programming languages, this would be "<code>mod(i,s)</code>"
+	or "<code>i%s</code>".)
+      </p>
+
+      <p>
+	With these in place, &alpha;<sup>k</sup>(a<sub>i</sub>) =
+	a<sub>m(ki)</sub>. One factor of &alpha; is then
+	(a<sub>m(k)</sub>a<sub>m(2k)</sub>...a<sub>0</sub>).
+      </p>
+
+      <p>
+	Since s is
+	prime, lcm(s,k)=sk if k is not a multiple of s. This means that the
+	smallest positive i for which m(ik)=0 is s. Therefore this cycle
+	has s elements, and &alpha;<sup>k</sup> has no other factors and
+	<em>is</em> a cycle.
+      </p>
+
+      <p>
+	On the other hand, if k is a multiple of s, say k=st, then for any
+	p (0&le;p&le;s), &alpha;<sup>k</sup>(a<sub>p</sub>) =
+	&alpha;<sup>st</sup>(a<sub>p</sub>) =
+	&alpha;<sup>s</sup>&#8728;&alpha;<sup>s</sup>...&alpha;<sup>s</sup>(a<sub>p</sub>).
+	("t" applications of &alpha;<sup>s</sup>)
+      </p>
+
+      <p>
+        Since &alpha;<sup>s</sup>(p) = p, this means that
+	&alpha;<sup>st</sup> is the identity function, which is a
+	one-cycle.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemB -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607061505/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607061505/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607061505/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607061505im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607061505/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607061505im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013, 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:15:05 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:01:58 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 1098.177 (4)
+  PetaboxLoader3.resolve: 153.113
+  exclusion.robots: 0.197
+  CDXLines.iter: 22.46 (3)
+  LoadShardBlock: 1243.869 (3)
+  RedisCDXSource: 29.151
+  esindex: 0.014
+  captures_list: 1300.129
+  exclusion.robots.policy: 0.183
+  load_resource: 267.105
+-->

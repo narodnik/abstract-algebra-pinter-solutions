@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130528
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=311;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter07D","20180531110541","http://web.archive.org/","web","/_static/",
+	      "1527764741");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 7, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180531110541im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180531110541cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter07" rel="parent" rev="child">
+  <link href="Chapter07C" rel="prev" rev="next">
+  <link href="Chapter07E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; A Cyclic Group of Permutations</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Define f<sub>n</sub>(x) = x+n for all n in <span class="Set">Z</span>.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that for each n, f<sub>n</sub> is a permutation on
+	<span class="Set">R</span>.
+      </p>
+
+      <p>
+	For any a&isin;<span class="Set">R</span>, f<sub>n</sub>(a-n) = a,
+	so f<sub>n</sub> is onto <span class="Set">R</span>.
+      </p>
+
+      <p>
+	If f<sub>n</sub>(a) = f<sub>n</sub>(b), then a+n = b+n, so we must
+	have a=b. This shows that f<sub>n</sub> is one-to-one.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that f<sub>n</sub>&#8728;f<sub>m</sub> = f<sub>n+m</sub> and
+	that f<sub>n</sub><sup>-1</sup> = f<sub>-n</sub>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>[f<sub>n</sub>&#8728;f<sub>m</sub>](x)</td>
+	  <td>f<sub>n</sub>(f<sub>m</sub>(x))</td>
+	  <td>definition of composition</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f<sub>n</sub>(x+m)</td>
+	  <td>definition of f<sub>m</sub></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(x+m)+n</td>
+	  <td>definition of f<sub>n</sub></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x+(m+n)</td>
+	  <td>associativity of addition</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x+(n+m)</td>
+	  <td>commutativity of addition</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>[f<sub>n+m</sub>](x)</td>
+	  <td>definition of f<sub>n+m</sub></td>
+	</tr>
+      </table>
+
+      <p>
+	To show an inverse, we must first determine the identity element for
+	this potential group. Since f<sub>n</sub>&#8728;f<sub>0</sub> =
+	f<sub>n+0</sub> = f<sub>n</sub>, f<sub>0</sub> is the identity.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f<sub>n</sub>&#8728;f<sub>-n</sub></td>
+	  <td>f<sub>n+(-n)</sub></td>
+	  <td>previous result</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>f<sub>0</sub></td>
+	  <td>additivie inverse</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> =
+	{f<sub>n</sub> | n&isin;<span class="Set">Z</span>}. Show that
+	<span class="Set">G</span> is a sub-group of
+	<span class="Set">S<sub>R</sub></span>.
+      </p>
+
+      <p>
+	For <span class="Set">G</span> to be a sub-group of
+	<span class="Set">S<sub>R</sub></span>:
+      </p>
+
+      <ul>
+	<li>
+	  Each element of <span class="Set">G</span> must be an element
+	  of <span class="Set">S<sub>R</sub></span>. This was proved in 
+	  Exercise 1 of this problem.
+	</li>
+	<li>
+	  <span class="Set">G</span> must be closed under the group
+	  operation (composition in this case). This was proved in Exercise
+	  2 of this problem.
+	</li>
+	<li>
+	  <span class="Set">G</span> must be closed under inversion.
+	  This was proved in Exercise 2 of this problem.
+	</li>
+      </ul>
+    </li>
+
+    <li>
+      <p>
+	Prove that <span class="Set">G</span> is cyclic.
+      </p>
+
+      <p>
+	Since, for any n&isin;<span class="Set">N</span>,
+	f<sub>1</sub><sup>n</sup> = f<sub>n</sub>, f<sub>1</sub> generates
+	<span class="Set">G</span>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemY -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter07">Chapter 7</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180531110541/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180531110541/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180531110541/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180531110541im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180531110541/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180531110541im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:05:41 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:00:42 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 22.268 (3)
+  LoadShardBlock: 139.111 (3)
+  esindex: 0.015
+  exclusion.robots.policy: 0.131
+  PetaboxLoader3.datanode: 167.4 (4)
+  captures_list: 198.057
+  load_resource: 103.239
+  PetaboxLoader3.resolve: 39.517
+  exclusion.robots: 0.142
+  RedisCDXSource: 32.915
+-->

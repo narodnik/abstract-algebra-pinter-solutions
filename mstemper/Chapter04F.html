@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121028
+  Modified:	20121029 - Deleted border="on", now Cayley tables styled such
+		20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=1803;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04F","20180402132625","http://web.archive.org/","web","/_static/",
+	      "1522675585");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180402132625im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180402132625cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04E" rel="prev" rev="next">
+  <link href="Chapter04G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Constructing Small Groups</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+    In each of the following, let <span class="Set">G</span> be any group,
+    and e its identity element.
+  </p>
+
+  <ol>
+    <li>
+      <p>With a, b &isin;<span class="Set">G</span>, prove:</p>
+      <ol>
+	<li>
+	  <p>a<sup>2</sup>=a &rarr; a=e</p>
+	  <table class="Derive">
+	    <tr>
+	      <td>a<sup>2</sup></td>
+	      <td>a</td>
+	    </tr>
+	    <tr>
+	      <td>aa</td>
+	      <td>a</td>
+	      <td>definition of a<sup>2</sup></td>
+	    </tr>
+	    <tr>
+	      <td>aaa<sup>-1</sup></td>
+	      <td>aa<sup>-1</sup></td>
+	      <td>post-multiply by a<sup>-1</sup></td>
+	    </tr>
+	    <tr>
+	      <td>ae</td>
+	      <td>e</td>
+	      <td>inverse</td>
+	    </tr>
+	    <tr>
+	      <td>a</td>
+	      <td>e</td>
+	      <td>identity</td>
+	    </tr>
+	  </table>
+	</li>
+	<li>
+	  <p>ab=a &rarr; b=e</p>
+	  <table class="Derive">
+	    <tr>
+	      <td>ab</td>
+	      <td>a</td>
+	    </tr>
+	    <tr>
+	      <td>a<sup>-1</sup>ab</td>
+	      <td>a<sup>-1</sup>a</td>
+	      <td>pre-multiply by a<sup>-1</sup></td>
+	    </tr>
+	    <tr>
+	      <td>eb</td>
+	      <td>e</td>
+	      <td>inverse</td>
+	    </tr>
+	    <tr>
+	      <td>b</td>
+	      <td>e</td>
+	      <td>identity</td>
+	    </tr>
+	  </table>
+	</li>
+	<li>
+	  <p>ab=b &rarr; a=e</p>
+	  <table class="Derive">
+	    <tr>
+	      <td>ab</td>
+	      <td>b</td>
+	    </tr>
+	    <tr>
+	      <td>abb<sup>-1</sup></td>
+	      <td>bb<sup>-1</sup></td>
+	      <td>post-multiply by b<sup>-1</sup></td>
+	    </tr>
+	    <tr>
+	      <td>ae</td>
+	      <td>e</td>
+	      <td>inverse</td>
+	    </tr>
+	    <tr>
+	      <td>a</td>
+	      <td>e</td>
+	      <td>identity</td>
+	    </tr>
+	  </table>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>Show that any row of a group's Cayley table must contain each
+	 element exactly once.</p>
+      <p>By Part 6 of <a href="Chapter04B">Problem B</a>, each element
+	 must appear in each row. Since there are only as many columns
+	 as there are elements, no element can appear twice in one row.</p>
+    </li>
+
+    <li>
+      <p>Complete the Cayley table for a three-element group.</p>
+      <table class="Cayley">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Complete the Cayley table for a four-element group in which
+	 each element is its own inverse.</p>
+      <table class="Cayley">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>c</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>c</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>c</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>c</td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>c</th>
+	  <td>c</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Complete the Cayley table for a four-element group in which
+	 some element other than the identity is its own inverse and
+	 some element is not its own inverse.</p>
+      <p>I choose to let a be its own inverse. Then, since elements
+	 that aren't their own inverses come in pairs, b and c must
+	 be inverses of each other.</p>
+      <table class="Cayley">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>b</th>
+	  <th>c</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>b</td>
+	  <td>c</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>c</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>c</td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>c</th>
+	  <td>c</td>
+	  <td>b</td>
+	  <td>e</td>
+	  <td>a</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Using part 3 of <a href="Chapter04E">Problem E</a>, show that
+	 the two previous groups are the only possible four-element groups.</p>
+      <p>In both cases (all elements are their own inverses, and two
+	 elements are their own inverses), there is only one choice for
+	 placing each element in the Cayley table after dealing with
+	 multiplication by the identity element and inverses.</p>
+      <p>By part 3 of <a href="Chapter04E">Problem E</a>, it is not possible
+	 to have three elements that are their own inverses, and the
+	 identity element is always its own inverse.</p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180402132625/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180402132625/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180402132625/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180402132625im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180402132625/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180402132625im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 13:26:25 Apr 02, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:06 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 1327.298 (4)
+  load_resource: 326.5
+  captures_list: 1467.49
+  exclusion.robots: 0.197
+  LoadShardBlock: 1373.515 (3)
+  esindex: 0.013
+  CDXLines.iter: 22.252 (3)
+  RedisCDXSource: 65.693
+  PetaboxLoader3.resolve: 256.462 (2)
+  exclusion.robots.policy: 0.184
+-->

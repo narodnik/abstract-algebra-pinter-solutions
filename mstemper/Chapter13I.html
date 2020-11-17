@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141019 - Exercises 1-4
+  Modified:	20141020 - Exercises 5,6
+		20151022 - Added id to Exercise 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=930;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13I","20180501173806","http://web.archive.org/","web","/_static/",
+	      "1525196286");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem I
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180501173806im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180501173806cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13H" rel="prev" rev="next">
+  <link href="Chapter13J" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem I &mdash; Conjugate Elements</h1>
+
+<div class="Section Problem" id="ProblemI">
+
+  <p>
+    If a &isin; <span class="Set">G</span>, a <dfn>conjugate</dfn> of a
+    is any element of the form xax<sup>-1</sup>, where x &isin;
+    <span class="Set">G</span>. (Also see <a href="Chapter08E">Chapter 8,
+    Problem E</a>.)
+  </p>
+
+  <p>
+    For any element a &isin; <span class="Set">G</span>, the
+    <dfn>centralizer</dfn> of a, <span class="Set">C<sub>a</sub></span>, is
+    the set of all elements of <span class="Set">G</span> which commute
+    with a. That is, <span class="Set">C<sub>a</sub></span> =
+    {x &isin; <span class="Set">G</span> : xa = ax} =
+    {x &isin; <span class="Set">G</span> : xax<sup>-1</sup> = a}.
+  </p>
+
+  <p>
+    Prove each of the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	The relation "a is a conjugate of b" (a~b) is an equivalence relation
+	on <span class="Set">G</span>.
+      </p>
+
+      <p>
+	<span class="Case">Reflexive</span>
+	Since e = e<sup>-1</sup>, a = eae = eae<sup>-1</sup>.
+	Therefore, a~a and this relation is reflexive.
+      </p>
+
+      <p>
+	<span class="Case">Symmetric</span>
+	Assume that a~b. Then &exist; x &isin; <span class="Set">G</span>
+	such that b = xax<sup>-1</sup>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>b</td>
+	  <td>xax<sup>-1</sup></td>
+	  <td>a~b</td>
+	</tr>
+	<tr>
+	  <td>bx</td>
+	  <td>xax<sup>-1</sup>x</td>
+	  <td>post-multiply both sides by x</td>
+	</tr>
+	<tr>
+	  <td>bx</td>
+	  <td>xae</td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td>bx</td>
+	  <td>xa</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>bx</td>
+	  <td>x<sup>-1</sup>xa</td>
+	  <td>pre-multiply both sides by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>bx</td>
+	  <td>ea</td>
+	  <td>inverses</td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>a(x<sup>-1</sup>)<sup>-1</sup></td>
+	  <td>b</td>
+	  <td>an element is the inverse of its inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, a~b implies b~a and this relation is symmetric.
+      </p>
+
+      <p>
+	<span class="Case">Transitive</span>
+	Assume that a~b and b~c. Then &exist; x &isin;
+	<span class="Set">G</span> such that a = xbx<sup>-1</sup> and
+	&exist; y &isin; <span class="Set">G</span> such that
+	b = ycy<sup>-1</sup>. Replacing b in the first expression with
+	ycy<sup>-1</sup> gives
+	a = xycy<sup>-1</sup>x<sup>-1</sup>, or a = (xy)c(xy)<sup>-1</sup>.
+	Therefore, a~b and b~c implies a~c and this relation is transitive.
+      </p>
+
+      <p>
+	 Since this relation is reflexive, symmetric, and transitive,
+	 it is an equivalence relation.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For any a &isin; <span class="Set">G</span>,
+	<span class="Set">C<sub>a</sub></span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	If x &isin; <span class="Set">C<sub>a</sub></span>, then
+	xax<sup>-1</sup> = a.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>xax<sup>-1</sup></td>
+	  <td>a</td>
+	  <td>x &isin; <span class="Set">C<sub>a</sub></span></td>
+	</tr>
+	<tr>
+	  <td>x<sup>-1</sup>xax<sup>-1</sup></td>
+	  <td>x<sup>-1</sup>a</td>
+	  <td>pre-multiply both sides by x<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>eax<sup>-1</sup></td>
+	  <td>x<sup>-1</sup>a</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ax<sup>-1</sup></td>
+	  <td>x<sup>-1</sup>a</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>ax<sup>-1</sup>x</td>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>post-multiply both sides by x</td>
+	</tr>
+	<tr>
+	  <td>ae</td>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>x<sup>-1</sup>a(x<sup>-1</sup>)<sup>-1</sup></td>
+	  <td>an element is the inverse of its inverse</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, x &isin; <span class="Set">C<sub>a</sub></span> implies
+	that x<sup>-1</sup> &isin; <span class="Set">C<sub>a</sub></span>, and
+	<span class="Set">C<sub>a</sub></span> is closed under inversion.
+      </p>
+
+      <p>
+	If x,y &isin; <span class="Set">C<sub>a</sub></span>, then xa = ax
+	and ya = ay.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>(xy)a</td>
+	  <td>x(ya)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x(ay)</td>
+	  <td>ya = ay</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(xa)y</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(ax)y</td>
+	  <td>xa = ax</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a(xy)</td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, (xy) commutes with a, making (xy) &isin;
+	<span class="Set">C<sub>a</sub></span>, and
+	<span class="Set">C<sub>a</sub></span> is closed under multiplication.
+      </p>
+
+      <p>
+	Since <span class="Set">C<sub>a</sub></span> is closed under
+	inversion and multiplication, it is a subgroup.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	x<sup>-1</sup>ax = y<sup>-1</sup>ay iff xy<sup>-1</sup> commutes
+	with a (that is, xy<sup>-1</sup> &isin;
+	<span class="Set">C<sub>a</sub></span>).
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	If (xy<sup>-1</sup>) commutes with a, we have:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>x<sup>-1</sup>axe</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x<sup>-1</sup>ax(y<sup>-1</sup>y)</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x<sup>-1</sup>a(xy<sup>-1</sup>)y</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>x<sup>-1</sup>(xy<sup>-1</sup>)ay</td>
+	  <td>(xy<sup>-1</sup>) commutes with a</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(x<sup>-1</sup>x)y<sup>-1</sup>ay</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>ey<sup>-1</sup>ay</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>y<sup>-1</sup>ay</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, if (xy<sup>-1</sup>) commutes with a, x<sup>-1</sup>ax =
+	y<sup>-1</sup>ay.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If x<sup>-1</sup>ax = y<sup>-1</sup>ay, we have:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>x<sup>-1</sup>ax</td>
+	  <td>y<sup>-1</sup>ay</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>xx<sup>-1</sup>ax</td>
+	  <td>xy<sup>-1</sup>ay</td>
+	  <td>pre-multiply both sides by x</td>
+	</tr>
+	<tr>
+	  <td>eax</td>
+	  <td>xy<sup>-1</sup>ay</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>ax</td>
+	  <td>xy<sup>-1</sup>ay</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>axy<sup>-1</sup></td>
+	  <td>xy<sup>-1</sup>ayy<sup>-1</sup></td>
+	  <td>post-multiply both sides by y<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>axy<sup>-1</sup></td>
+	  <td>xy<sup>-1</sup>ae</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>axy<sup>-1</sup></td>
+	  <td>xy<sup>-1</sup>a</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, if x<sup>-1</sup>ax = y<sup>-1</sup>ay,
+	(xy<sup>-1</sup>) commutes with a.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	x<sup>-1</sup>ax = y<sup>-1</sup>ay iff
+	<span class="Set">C<sub>a</sub></span>x =
+	<span class="Set">C<sub>a</sub></span>y.
+      </p>
+
+      <p>
+	In Exercise 3, we showed that x<sup>-1</sup>ax = y<sup>-1</sup>ay iff
+	xy<sup>-1</sup> &isin; <span class="Set">C<sub>a</sub></span>. In
+	<a href="Chapter13E#Ex01">Problem E, Exercise 1</a>, we showed that
+	ab<sup>-1</sup> &isin; <span class="Set">H</span> iff
+	<span class="Set">H</span>a = <span class="Set">H</span>b.
+      </p>
+
+      <p>
+	Combining these gives
+	x<sup>-1</sup>ax = y<sup>-1</sup>ay iff
+	<span class="Set">C<sub>a</sub></span>x =
+	<span class="Set">C<sub>a</sub></span>y.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	There is a one-to-one correspondence between the conjugates of a and
+	the cosets of <span class="Set">C<sub>a</sub></span>.
+      </p>
+
+      <p>
+	By Exercise 4, two conjugates of a, such as x<sup>-1</sup>ax and
+	y<sup>-1</sup>ay, are equal iff the cosets of
+	<span class="Set">C<sub>a</sub></span>
+	(<span class="Set">C<sub>a</sub></span>x and
+	<span class="Set">C<sub>a</sub></span>y) are equal.
+      </p>
+    </li>
+
+    <li id="Ex06">
+      <p>
+	The number of distinct conjugates of a is equal to
+	(<span class="Set">G</span> :
+	<span class="Set">C<sub>a</sub></span>).
+      </p>
+
+      <p>
+	Since there is a one-to-one correspondence between the distinct
+	cosets of <span class="Set">C<sub>a</sub></span> and the distinct
+	conjugates of a, the number of distinct conjugates is the same as the
+	number of cosets, which is the index,
+	(<span class="Set">G</span> :
+	<span class="Set">C<sub>a</sub></span>).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemI -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180501173806/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180501173806/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180501173806/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180501173806im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180501173806/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180501173806im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:38:06 May 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:53 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 490.428
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.087
+  RedisCDXSource: 18.371
+  esindex: 0.01
+  LoadShardBlock: 449.405 (3)
+  PetaboxLoader3.resolve: 415.883 (3)
+  PetaboxLoader3.datanode: 360.727 (4)
+  CDXLines.iter: 19.963 (3)
+  load_resource: 430.526
+-->

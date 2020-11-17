@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140814 - Exercise 1
+  Modified:	20140817 - Exercises 2, 3
+		20140818 - Exercises 4-6
+		20140822 - Added ID to Exercise 4
+		20141013 - Added ID to Exercise 3
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app102.us.archive.org';v.server_ms=789;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter10E","20180225165151","http://web.archive.org/","web","/_static/",
+	      "1519577511");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 10, Problem E
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180225165151im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180225165151cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter10" rel="parent" rev="child">
+  <link href="Chapter10D" rel="prev" rev="next">
+  <link href="Chapter10F" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem E &mdash; Relationship Between ord(ab), ord(a),
+    and ord(b)</h1>
+
+<div class="Section Problem" id="ProblemE">
+
+  <p>
+    Let a and b be elements of a group <span class="Set">G</span>. Let
+    ord(a) = m and ord(b) = n. Prove parts 1-5:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If a and b commute, then ord(ab) | lcm(m,n).
+      </p>
+
+      <p>
+	If a = b<sup>-1</sup>, then ab=e and ord(ab) = 1, which trivially
+	divides lcm(m,n).
+      </p>
+
+      <p>
+	Otherwise, let q = ord(ab). Then (ab)<sup>q</sup> = e. Since a and b
+	commute, e = (ab)<sup>q</sup> = a<sup>q</sup>b<sup>q</sup>. Since
+	a&ne;b<sup>-1</sup>, a<sup>q</sup> &ne; (b<sup>q</sup>)<sup>-1</sup>.
+      </p>
+
+      <p>
+	Therefore, we must have a<sup>q</sup>=e and b<sup>q</sup>=e. This is
+	true for a if q is a multiple of m, and it is true for b if q is a
+	multiple of n. Therefore, it is true for both a and b if q is any
+	multiple of m and n. This includes lcm(m,n), which trivially divides
+	lcm(m,n).
+      </p>
+
+      <p>
+	Therefore, whether or not a=b<sup>-1</sup>, ord(ab) | lcm(m,n).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If m and n are relatively prime, no power of a can be equal to any
+	power of b (except for a<sup>pm</sup> = e = b<sup>qn</sup>).
+      </p>
+
+      <p>
+	Select any integers r and s such that a<sup>r</sup> = b<sup>s</sup>
+	= x. By <a href="Chapter10D#Ex02">Exercise 2 of Problem D</a>,
+	ord(x) = ord(a<sup>r</sup>) | ord(a), and ord(x) = ord(b<sup>s</sup>) |
+	ord(b).
+      </p>
+
+      <p>
+	Since ord(x) divides both ord(a) and ord(b), but ord(a) and ord(b) are
+	relatively prime, it must be true that ord(x) = 1, which means that
+	x = e.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	If m and n are relatively prime, then the products
+	a<sup>i</sup>b<sup>j</sup> (0&le;i&lt;m, 0&le;j&lt;n) are all distinct.
+      </p>
+
+      <p>
+	By Theorem 3, a<sup>i</sup> (0&le;i&lt;m) are all distinct, as are
+	b<sup>j</sup> (0&le;j&lt;n). By the previous exercise, all of the
+	a<sup>i</sup> are distinct from all of the b<sup>j</sup> (except for
+	a<sup>0</sup> = e = b<sup>0</sup>), which means that all of the products
+	must be distinct, as well.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Let a and b commute. If m and n are relatively prime, ord(ab) = mn.
+      </p>
+
+      <p>
+	Since ab=ba, (ab)<sup>k</sup> = a<sup>k</sup>b<sup>k</sup>.
+	This means that (ab)<sup>k</sup> = e whenever k is a multiple of both
+	m and n, because a<sup>mx</sup>b<sup>ny</sup> =
+	(a<sup>m</sup>)<sup>x</sup>(b<sup>n</sup>)<sup>y</sup> =
+	e<sup>x</sup>e<sup>y</sup> = e. Therefore, the maximum value that
+	ord(ab) can take is lcm(m,n). Since m and n are relatively prime,
+	lcm(m,n) = mn.
+      </p>
+
+      <p>
+	By the Division Algorithm, k may be written as pm+q (0&le;q&lt;m) or
+	rn+s (0&le;s&lt;n). Since (ab)<sup>pm</sup> = e = (ab)<sup>rn</sup>,
+	this means that (ab)<sup>k</sup> = a<sup>q</sup>b<sup>s</sup> (since
+	ab = ba). As shown in the previous exercise, these products are all
+	distinct, giving mn possible products.
+      </p>
+
+      <p>
+	Therefore, mn is not only the maximum possible value of ord(ab), but
+	the minimum possible value, and ord(ab) = mn.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let a and b commute. Then there is an element c in
+	<span class="Set">G</span> such that ord(c) = lcm(m,n).
+      </p>
+
+      <p>
+	In the previous exercise, it was shown that ord(ab) = lcm(m,n) when
+	ab = ba.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Show that if a and b do not commute, it is not necessarily true that
+	ord(ab) | lcm(m,n).
+      </p>
+
+      <p>
+	The group <span class="Set">G</span> of matrices described on pages
+	28 and 29 of the text will be used.
+      </p>
+
+      <p>
+	C<sup>2</sup> = I = K<sup>2</sup>, so ord(C) = ord(K) = 2. The
+	lcm(ord(C),ord(K)) = 2.
+      </p>
+
+      <p>
+	If we look at the powers of CK = B, they are:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>B<sup>1</sup></td>
+	  <td>B</td>
+	</tr>
+	<tr>
+	  <td>B<sup>2</sup></td>
+	  <td>D</td>
+	</tr>
+	<tr>
+	  <td>B<sup>3</sup></td>
+	  <td>I</td>
+	</tr>
+      </table>
+
+      <p>
+	So, ord(CK) = ord(B) = 3 &ne; 2 = lcm(2,2) = lcm(ord(C),ord(K)).
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemE -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter10">Chapter 10</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180225165151/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180225165151/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180225165151/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180225165151im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180225165151/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180225165151im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 16:51:51 Feb 25, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:51 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 533.629 (4)
+  captures_list: 468.175
+  LoadShardBlock: 394.885 (3)
+  exclusion.robots: 0.271
+  exclusion.robots.policy: 0.25
+  load_resource: 310.559
+  RedisCDXSource: 41.966
+  CDXLines.iter: 24.356 (3)
+  esindex: 0.019
+  PetaboxLoader3.resolve: 88.999
+-->

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140726 - Exercise 1
+  Modified:	20140727 - Exercises 2-5
+		20140730 - Exercise 6
+		20140814 - Exercises 7 and 8 (finally!)
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app29.us.archive.org';v.server_ms=287;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter10D","20180419222140","http://web.archive.org/","web","/_static/",
+	      "1524176500");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 10, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180419222140im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180419222140cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter10" rel="parent" rev="child">
+  <link href="Chapter10X" rel="prev" rev="next">
+  <link href="Chapter10Z" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Further Properties of Order</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Let a be any element of finite order of a group
+    <span class="Set">G</span>. Prove the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If a<sup>p</sup> = e where p is a prime number, ord(a) = p. (a&ne;e).
+      </p>
+
+      <p>
+	By Theorem 5, a<sup>p</sup> = e implies that p is a multiple of ord(a).
+	Since p is prime, it is only a multiple of itself and 1. The only
+	element having order 1 is e, which is excluded by the problem
+	statement. Therefore, ord(a) = p.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	The order of a<sup>k</sup> is a divisor of the order of a.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Looking again at kp = lcm(k,m), we see that p = lcm(k,m)/k. This
+	proves <a href="Chapter10B#Hunch1">my hunch from Problem B</a>.
+      </p>
+      </div>
+
+      <p>
+	Let ord(a) = m and ord(a<sup>k</sup>) = p.
+	e = (a<sup>k</sup>)<sup>p</sup> = a<sup>kp</sup>. By Theorem 5, kp is
+	a multiple of ord(a) = m. In fact, kp must be lcm(k,m), because raising
+	a to any multiple of m will yield e.
+      </p>
+
+      <p>
+	kp = lcm(k,m) = km/gcd(k,m). p = m/gcd(k,m). gcd(k,m)p = m.
+	Therefore, p|m (or: the order of a<sup>k</sup> divides the order of a).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) = km, ord(a<sup>k</sup>) = m.
+      </p>
+
+      <p>
+	Ord(a) = km implies that e = a<sup>km</sup> =
+	(a<sup>k</sup>)<sup>m</sup>.
+	If 0&lt;x&lt;m, (a<sup>k</sup>)<sup>x</sup> = a<sup>kx</sup> &ne; e,
+	because kx&lt;km, and ord(a) = km implies that km is the
+	<em>smallest</em> positive integer such that a<sup>km</sup> = e.
+      </p>
+
+      <p>
+	Therefore, ord(a<sup>k</sup>) = m.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) = n and n is odd, then ord(a<sup>2</sup>) = n.
+      </p>
+
+      <p>
+	As shown in <a href="#Ex02">Exercise 2</a>, ord(a<sup>k</sup>) =
+	lcm(k,ord(a))/k. In this case, k=2 and ord(a)=n. lcm(2,n) = 2n when
+	n is odd, so lcm(2,n)/2 = n.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) = n and a<sup>r</sup> = a<sup>s</sup>, then n|(r-s).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>a<sup>s</sup></td>
+	  <td>a<sup>r</sup></td>
+	  <td>Given</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>r-s+s</sup></td>
+	  <td>additive inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>(r-s)+s</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>(r-s)</sup>a<sup>s</sup></td>
+	  <td>x<sup>p+q</sup> = x<sup>p</sup>x<sup>q</sup></td>
+	</tr>
+      </table>
+
+      <p>
+	Since a<sup>s</sup> = a<sup>(r-s)</sup>a<sup>s</sup>, it must be
+	true that a<sup>(r-s)</sup> = e. By Theorem 5, n|(r-s).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If a is the <em>only</em> element of order k in
+	<span class="Set">G</span>, then a is in the center of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	As shown in <a href="Chapter10C#Ex04">Problem C, Exercise 4</a>,
+	ord(a) = ord(bab<sup>-1</sup>) for all b. If a is the only element
+	of <span class="Set">G</span> that has order k, then it must be the
+	case that a = bab<sup>-1</sup> for all b.
+      </p>
+
+      <table class="Derive">
+        <tr>
+	  <td>a</td>
+	  <td>bab<sup>-1</sup></td>
+	  <td>a is only element with order k</td>
+	</tr>
+        <tr>
+	  <td>ab</td>
+	  <td>bab<sup>-1</sup>b</td>
+	  <td>post-multiply by b</td>
+	</tr>
+        <tr>
+	  <td>ab</td>
+	  <td>bae</td>
+	  <td>inverses</td>
+	</tr>
+        <tr>
+	  <td>ab</td>
+	  <td>ba</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, a commutes with every b, and is by definition an element
+	of the center of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) is not a multiple of m, then ord(a<sup>k</sup>) is not a
+	multiple of m.
+      </p>
+
+      <p>
+	In <a href="#Ex02">Exercise 2</a>, it was shown that
+	ord(a<sup>k</sup>) | ord(a). Another was to express this is that there
+	exists a natural number p such that p&times;ord(a<sup>k</sup>) =
+	ord(a).
+      </p>
+
+      <p>
+	If ord(a<sup>k</sup>) is a multiple of m, then there is a natural
+	number q such that qm = ord(a<sup>k</sup>). This means that
+	p&times;ord(a<sup>k</sup>) = pqm = ord(a), or ord(a) is a multiple
+	of m.
+      </p>
+
+      <p>
+	Therefore, if ord(a) is not a multiple of m, ord(a<sup>k</sup>)
+	cannot be a multiple of m either.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If ord(a) = mk and a<sup>rk</sup> = e, then r is a multiple of m.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Remember that, since ord(x) is the least <em>positive</em>
+	integer such that x<sup>ord(x)</sup> = e, ord(e) = 1, not 0.
+      </p>
+      </div>
+
+      <p>
+	By Theorem 5, rk must be a multiple of mk. In other words, there is
+	some positive integer q such that rk = qmk. Dividing both sides by
+	k (which is positive), we get r = qm, or r is a multiple of m.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter10">Chapter 10</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180419222140/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180419222140/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180419222140/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180419222140im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180419222140/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180419222140im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 22:21:40 Apr 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:48 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.resolve: 152.363
+  exclusion.robots.policy: 0.193
+  load_resource: 195.121
+  captures_list: 77.203
+  PetaboxLoader3.datanode: 62.78 (4)
+  exclusion.robots: 0.205
+  RedisCDXSource: 1.039
+  CDXLines.iter: 25.447 (3)
+  esindex: 0.012
+  LoadShardBlock: 46.506 (3)
+-->

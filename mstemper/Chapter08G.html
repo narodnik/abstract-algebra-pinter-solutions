@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140523 - The whole thing in two and one-half hours
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=1507;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08G","20180226193818","http://web.archive.org/","web","/_static/",
+	      "1519673898");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180226193818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180226193818cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08F" rel="prev" rev="next">
+  <link href="Chapter08H" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Even/Odd Permutations in Subgroups
+    of <span class="Set">S<sub>n</sub></span></h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    Prove or disprove each of the following in
+    <span class="Set">S<sub>n</sub></span>:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	Let &alpha;<sub>1</sub>, ..., &alpha;<sub>r</sub> be distinct even
+	permutations, and &beta; an odd permutation. Then
+	&alpha;<sub>1</sub>&beta;, ... &alpha;<sub>r</sub>&beta; are
+	<em>distinct</em> odd permutations.
+      </p>
+
+      <p>
+	As shown in <a href="Chapter08C#Ex02c">Problem C, Exercise 2c</a>, the
+	product of an even permutation and an odd permutation is odd.
+	Therefore, &alpha;<sub>1</sub>&beta;, ... &alpha;<sub>r</sub>&beta;
+	are odd permutations.
+      </p>
+
+      <p>
+	To show that &alpha;<sub>1</sub>&beta;, ... &alpha;<sub>r</sub>&beta;
+	are distinct, contradiction will be used.
+      </p>
+
+      <p>
+	Assume that for some i&ne;j (1&le;i&le;r and 1&le;j&le;r),
+	&alpha;<sub>i</sub>&beta; = &alpha;<sub>j</sub>&beta;. Then,
+	&alpha;<sub>i</sub>&beta;&beta;<sup>-1</sup> =
+	&alpha;<sub>j</sub>&beta;&beta;<sup>-1</sup>, which gives
+	&alpha;<sub>i</sub>e = &alpha;<sub>j</sub>e, or
+	&alpha;<sub>i</sub> = &alpha;<sub>j</sub>, which contradicts the fact
+	that the &alpha;s are distinct.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	If &beta;<sub>1</sub>, ..., &beta;<sub>r</sub> are distinct odd
+	permutations,
+	&beta;<sub>1</sub>&beta;<sub>1</sub>, 
+	&beta;<sub>1</sub>&beta;<sub>2</sub>, ...
+	&beta;<sub>1</sub>&beta;<sub>r</sub> are
+	<em>distinct</em> even permutations.
+      </p>
+
+      <p>
+	As shown in <a href="Chapter08C#Ex02b">Problem C, Exercise 2b</a>, the
+	product of two odd permutations is even.
+	Therefore, &beta;<sub>1</sub>&beta;<sub>1</sub>, 
+	&beta;<sub>1</sub>&beta;<sub>2</sub>, ...
+	&beta;<sub>1</sub>&beta;<sub>r</sub> are even permutations.
+      </p>
+
+      <p>
+	To show that &beta;<sub>1</sub>&beta;<sub>1</sub>, 
+	&beta;<sub>1</sub>&beta;<sub>2</sub>, ...
+	&beta;<sub>1</sub>&beta;<sub>r</sub> are distinct, contradiction will
+	again be used.
+      </p>
+
+      <p>
+	Assume that for some i&ne;j (1&le;i&le;r and 1&le;j&le;r),
+	&beta;<sub>1</sub>&beta;<sub>i</sub> =
+	&beta;<sub>1</sub>&beta;<sub>j</sub>. Then,
+	&beta;<sub>1</sub><sup>-1</sup>&beta;<sub>1</sub>&beta;<sub>i</sub> =
+	&beta;<sub>1</sub><sup>-1</sup>&beta;<sub>1</sub>&beta;<sub>j</sub>.
+	Then, e&beta;<sub>i</sub> = e&beta;<sub>j</sub> and
+	&beta;<sub>i</sub> = &beta;<sub>j</sub>, which contradicts the fact
+	that the &beta;s are distinct.
+      </p>
+    </li>
+
+    <li>
+      <div class="SideBar">
+      <p>
+	This is not true in the case where n=1.
+	<span class="Set">S<sub>1</sub></span> consists of only the identity
+	function, which is even. <span class="Set">S<sub>1</sub></span> has no
+	odd permutations.
+      </p>
+      </div>
+
+      <p>
+	In <span class="Set">S<sub>n</sub></span>, there are the same number
+	of odd permutations as even permutations.
+      </p>
+
+      <p>
+	Assume n&ge;2. Label two of the elements of the underlying set
+	"&mu;" and "&eta;". Then <span class="Set">S<sub>n</sub></span>
+	contains the transposition (&mu;&eta;), which is odd. Therefore, if
+	n&ge;2, <span class="Set">S<sub>n</sub></span> contains at least
+	one odd permutation.
+      </p>
+
+      <p>
+	With n&ge;2, let "r" be the number of distinct even permutations in
+	<span class="Set">S<sub>n</sub></span>. Since
+	<span class="Set">S<sub>n</sub></span> contains an odd permutation,
+	we can take the product of each of the r distinct even permutations
+	with this odd permutation. Each of these products is a distinct odd
+	permutation, which means that <span class="Set">S<sub>n</sub></span>
+	must contain <em>at least</em> r odd permutations.
+      </p>
+
+      <p>
+	With n&ge;2, let "s" be the number of distinct odd permutations in
+	<span class="Set">S<sub>n</sub></span>. (Note that s&ge;1.) Select
+	any one of them and form its product with each of the odd permutations
+	(including itself). This will yield s distinct even permutations, which
+	means that the number of distinct even permutations in
+	<span class="Set">S<sub>n</sub></span> is at least s.
+      </p>
+
+      <p>
+	Since the number of odd permutations in
+	<span class="Set">S<sub>n</sub></span> must be at least as large as the
+	number of even permutations and the number of even permutations must
+	be at least as large as the number of odd permutations,
+	<span class="Set">S<sub>n</sub></span> must have as many odd
+	permutations as even permutations.
+      </p>
+
+      <p>
+	When n&ge;2.
+      </p>
+    </li>
+
+    <li>
+
+      <div class="SideBar">
+      <p>
+	This is denoted by <span class="Set">A<sub>n</sub></span>, and called
+	the <dfn>alternating group</dfn> on n symbols.
+      </p>
+      </div>
+
+      <p>
+	The set of all even permutations is a subgroup of
+	<span class="Set">S<sub>n</sub></span>.
+      </p>
+
+      <p>
+	Let &alpha; and &beta; be two even permutations in
+	<span class="Set">S<sub>n</sub></span> (not necessarily unique). As
+	shown in <a href="Chapter08C#Ex02a">Problem C, Exercise 2a</a>,
+	the product of two even permutations is even. Therefore, the set of all
+	even permutations in <span class="Set">S<sub>n</sub></span> is closed
+	under multiplication.
+      </p>
+
+      <p>
+	It was shown in the text that the identity permutation is even. Since
+	the product of an even permutation and an odd permutation is odd, and
+	the product of a permutation and its inverse is even, the inverse of an
+	even permutation must also be even. Therefore, the set of all even
+	permutations in <span class="Set">S<sub>n</sub></span> is closed
+	under inversion.
+      </p>
+
+      <p>
+	Since the set of all even permutations in
+	<span class="Set">S<sub>n</sub></span> is closed under multiplication
+	and inversion, it is a subgroup of
+	<span class="Set">S<sub>n</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> be any subgroup of
+	<span class="Set">S<sub>n</sub></span>. <span class="Set">H</span>
+	either contains only even permutations or it contains equal numbers of
+	even and odd permutations.
+      </p>
+
+      <p>
+	Since <span class="Set">H</span> is a group, it is closed under
+	multiplication. As shown in <a href="#Ex02">Exercise 2</a>, it must
+	have at least as many even permutations as odd ones.
+      </p>
+
+      <p>
+	Let <span class="Set">H</span> contain at least one odd permutation.
+	Since it is a group, it contains the identity, which is even. Since
+	it is a group and therefore closed under multiplication, it must have
+	at least as many odd permutations as even ones, as shown in
+	<a href="#Ex01">Exercise 1</a>.
+      </p>
+
+      <p>
+	It is therefore possible for <span class="Set">H</span> to either
+	contain only even permutations or for it to contain equal numbers of
+	even and odd permutations.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemG -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180226193818/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180226193818/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180226193818/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180226193818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180226193818/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180226193818im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 19:38:18 Feb 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:52 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.015
+  exclusion.robots.policy: 0.214
+  CDXLines.iter: 17.743 (3)
+  LoadShardBlock: 637.621 (3)
+  PetaboxLoader3.datanode: 839.545 (4)
+  RedisCDXSource: 108.766
+  PetaboxLoader3.resolve: 456.5
+  load_resource: 725.047
+  exclusion.robots: 0.231
+  captures_list: 767.819
+-->

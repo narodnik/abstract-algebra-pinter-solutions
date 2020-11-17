@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121007 - Problems G1-5
+  Modified:	20121007 - Problems G6-8
+		20121120 - Split off problems into individual pages
+		20141029 - ID for Exercise 1, label set C_1
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=1251;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter03G","20180607160653","http://web.archive.org/","web","/_static/",
+	      "1528387613");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 3, Problem G
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180607160653im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180607160653cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.Numeric TD {text-align: right;}
+  </style>
+
+  <link href="./Chapter03" rel="parent" rev="child">
+  <link href="Chapter03F" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem G &mdash; Maximum-Likelihood Decoding</h1>
+
+<div class="Section Problem" id="ProblemG">
+
+  <p>
+    The <dfn>weight</dfn> of a binary word is the number of ones in it.
+    The <dfn>distance</dfn> between <span title="of the same length">two
+    binary words</span>, d(a,b), is the number of positions in which they
+    differ.
+    The <dfn>minimum distance</dfn> of a set of
+    <span title="of the same length">binary words</span>
+    is the smallest distance between any two distinct words in that set.
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>Verify that each codeword in the following set,
+	 <span class="Set">C<sub>1</sub></span>, satisfies the
+	 parity equations a<sub>4</sub>=a<sub>1</sub>+a<sub>3</sub>
+	 and a<sub>5</sub>=a<sub>1</sub>+a<sub>2</sub>+a<sub>3</sub>.</p>
+
+      <table class="Numeric">
+	<tr>
+	  <th>Codeword</th>
+	  <th>a<sub>1</sub>+a<sub>3</sub></th>
+	  <th>a<sub>1</sub>+a<sub>2</sub>+a<sub>3</sub></th>
+	</tr>
+	<tr>
+	  <td>00000</td>
+	  <td>0</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td>00111</td>
+	  <td>1</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td>01001</td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td>01110</td>
+	  <td>1</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td>10011</td>
+	  <td>1</td>
+	  <td>1</td>
+	</tr>
+	<tr>
+	  <td>10100</td>
+	  <td>0</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td>11010</td>
+	  <td>1</td>
+	  <td>0</td>
+	</tr>
+	<tr>
+	  <td>11101</td>
+	  <td>0</td>
+	  <td>1</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Define a code, C<sub>2</sub> in
+	 <span class="Set">B<sup>6</sup></span>, with the first three bits
+	 being information, and the remainder satisying:
+	 a<sub>4</sub>=a<sub>2</sub>,
+	 a<sub>5</sub>=a<sub>1</sub>+a<sub>2</sub>, and
+	 a<sub>6</sub>=a<sub>1</sub>+a<sub>2</sub>+a<sub>3</sub>.
+      </p>
+
+      <ol>
+        <li>
+	  <p>List the codewords in C<sub>2</sub>:</p>
+	  <p>000000, 001001, 010111, 011110, 100011, 101010, 110100, 111101</p>
+	</li>
+        <li>
+	  <p>Find the minimum distance between codewords in C<sub>2</sub>.</p>
+	  <p>The distance between 000000 and 001001 (and some other pairs)
+	     is two. Since the information part of every codeword differs
+	     from that of every other codeword, and the parity part of each
+	     codeword also differs from that of every other codeword, no
+	     smaller difference is possible.</p>
+	</li>
+        <li>
+	  <p>How many errors in any word of C<sub>2</sub> are guaranteed to
+	     to be detected?</p>
+	  <p>This code is only guaranteed to detect single errors, since there
+	     are pairs of codewords that only differ in two positions.</p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>Design a code in <span class="Set">B<sup>4</sup></span>, with two
+	 positions for information and two for parity.</p>
+      <p>Let a<sub>3</sub>=a<sub>1</sub> and a<sub>4</sub>=a<sub>2</sub>.
+	 The codewords are then 0000, 0101, 1010, and 1111. The minimum
+	 distance is 2.</p> 
+    </li>
+
+    <li>
+      <p>Find the words in C<sub>1</sub> closest to each of the following:</p>
+      <table>
+        <tr><td>11111</td><td>11101</td></tr>
+        <tr><td>00101</td><td>00111</td></tr>
+        <tr><td>11000</td><td>11010</td></tr>
+        <tr><td>10011</td><td>11101</td></tr>
+        <tr><td>10001</td><td>10011</td></tr>
+        <tr><td>10111</td><td>00111, 10011</td></tr>
+      </table> 
+    </li>
+
+    <li>
+      <p>For a code in <span class="Set">B<sup>n</sup></span> with a
+	 minimum distance of m, prove that it is always possible to
+	 detect up to m-1 transmission errors in a single word.</p>
+      <p>Since any two words, a and b, will always differ in m bits, an
+	 error involving no more than m-1 bits will change the transmitted
+	 word into something that differs from any word by at least one
+	 bit.</p>
+    </li>
+
+    <li>
+      <p>
+	Define the <dfn>sphere of radius k</dfn> about the word a to be the
+	set of all words in <span class="Set">B<sup>n</sup></span> such that
+	their distance from a is no greater than k. S(a;k) =
+	{x&isin;<span class="Set">B<sup>n</sup></span> : d(a,x)&le;k}.
+	If m is the minimum distance for some set of binary words, and
+	t=(m-1)/2, show that any two spheres of radius t have an empty
+	intersection.
+      </p>
+
+      <p>
+	First, I will show that d, as previously defined, is a <span title="I don't know if this is useful, I just like metric functions">
+	metric function</span>.
+      </p>
+
+      <ul>
+        <li>d(a,a) = 0 &mdash; This is true, since a binary word doesn't
+	    differ in any positions from itself.</li>
+	<li>d(a,b) &gt; 0 when a&ne;b &mdash; Since a and b must differ in
+	    at least one position to be different words, this is also
+	    true.</li>
+	<li>d(a,b) = d(b,a) &mdash; The number of bits that differ between
+	    a and b is the same no matter which we look at first.</li>
+	<li>d(a,b)+d(b,c) &ge; d(a,c) &mdash; If none of the positions
+	    in which a and b differ are the same as any of the positions
+	    in which c and b differ, then d(a,b)+d(b,c) = d(a,c).
+	    Otherwise, we have the case where a and c both differ from
+	    b in the same position at least once. In any of these
+	    positions, a and c then have the same bits, so their distance
+	    is reduced by the number of positions of overlap.</li>
+      </ul>
+
+      <p>
+	Therefore, d is a metric function.
+      </p>
+
+      <p>
+	Let a and c be words in <span class="Set">B<sup>n</sup></span>,
+	with a&ne;c.
+	Assume that the two spheres, S(a;t) and S(c;t), have an non-empty
+	intersection. Let b &isin; S(a;t)&cap;S(c;t). Then, since
+	b&isin;S(a;t), d(a,b)&le;t. Similarly, d(b,c)&le;t. By the triangle
+	inequality, d(a,c)&le;t+t. t+t = 2t = 2(m-1)/2 = m-1. Since the
+	minimum distance between two distinct words is m, the assumption
+	that S(a;t) and S(c;t), have an non-empty intersection is false.
+      </p>
+
+      <p>
+	Another way to show this is to notice that, since (m-1)/2 is less
+	than m, any sphere, S(x;t), contains only one element, x.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Use the fact just shown to prove that in any transmission of a codeword
+	that has no more than t transmission errors, the codeword can be
+	correctly decoded.
+      </p>
+
+      <p>
+	This follows immediately from the fact that
+	any sphere, S(x;t), contains only one element, x.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Show that any transmission of a codeword in C<sub>2</sub> with one
+	error can be corrected and any transmissions of two errors can be
+	detected.
+      </p>
+
+      <p>
+	Since the minimum distance of C<sub>2</sub> is 2, t = (m-1)/2 = 1/2.
+	Therefore, the claim is false. A received code word of 000001 can be
+	detected as incorrect, but it is not possible to tell whether it
+	was supposed to be 000000 or 001001, either of which differs from it
+	in only one position.
+      </p>
+    </li>
+         
+  </ol>
+</div> <!-- ProblemG -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter03">Chapter 3</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180607160653/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180607160653/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180607160653/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180607160653im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180607160653/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180607160653im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 16:06:53 Jun 07, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:48 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 807.825 (3)
+  exclusion.robots.policy: 0.178
+  esindex: 0.017
+  captures_list: 904.322
+  RedisCDXSource: 68.329
+  exclusion.robots: 0.192
+  PetaboxLoader3.resolve: 195.272
+  PetaboxLoader3.datanode: 817.624 (4)
+  CDXLines.iter: 24.002 (3)
+  load_resource: 335.053
+-->

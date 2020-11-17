@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130101
+  Modified:	20140601 - Fix typo
+		20140607 - Caught another one
+		20140910 - Three bad "times" entities
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=1817;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter06C","20180608063931","http://web.archive.org/","web","/_static/",
+	      "1528439971");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 6, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608063931im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608063931cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter06" rel="parent" rev="child">
+  <link href="Chapter06B" rel="prev" rev="next">
+  <link href="Chapter06D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Functions on Arbitrary Sets and Groups</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Determine whether each of the following functions is injective or surjective.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	f:<span class="Set">A</span>&times;<span class="Set">B</span>&rarr;<span class="Set">A</span>, defined by
+	f(x,y)=x.
+      </p>
+
+      <p>
+	If |<span class="Set">B</span>|&gt;1, this function is not injective.
+	Let v,w&isin;<span class="Set">B</span> with v&ne;w. Then, for any
+	x&isin;<span class="Set">A</span>, f(x,v)=x=f(x,w).
+      </p>
+
+      <p>
+	This function is surjective. Let a&isin;<span class="Set">A</span> and
+	b&isin;<span class="Set">B</span>. Then, f(a,b)=a.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:<span class="Set">A</span>&times;<span class="Set">B</span>&rarr;<span class="Set">B</span>&times;<span class="Set">A</span>, defined by f(x,y)=(y,x).
+      </p>
+
+      <p>
+	This function is injective. Let f(p,q)=f(r,s).
+	Then, (q,p)=f(p,q)=f(r,s)=(s,r). By the definition of ordered pairs,
+	this gives us q=s and p=r, which means that (p,q)=(r,s).
+      </p>
+
+      <p>
+	This function is surjective. Let (y,x) be any element of
+	<span class="Set">B</span>&times;<span class="Set">A</span>. Then
+	f(x,y)=(y,x).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:<span class="Set">A</span>&rarr;<span class="Set">A</span>&times;<span class="Set">B</span>, defined by f(x)=(x,b), for some fixed
+	b&isin;<span class="Set">B</span>.
+      </p>
+
+      <p>
+	This function is injective. Let f(p)=f(q). Then, (p,b)=(q,b), and by
+	the definition of ordered pairs, p=q.
+      </p>
+
+      <p>
+	If |<span class="Set">B</span>|&gt;1, this function is not surjective.
+	Let c&isin;<span class="Set">B</span>, such that c&ne;b. Then, for
+	any a&isin;<span class="Set">A</span>, f(a)&ne;(a,c).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> is a group, with
+	a&isin;<span class="Set">G</span>, and
+	f:<span class="Set">G</span>&rarr;<span class="Set">G</span> is
+	defined as f(x)=ax.
+      </p>
+
+      <p>
+	This function is injective. Let f(p)=f(q).
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>f(p)</td>
+	  <td>f(q)</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>ap</td>
+	  <td>aq</td>
+	  <td>definition of f</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>ap</td>
+	  <td>a<sup>-1</sup>aq</td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ep</td>
+	  <td>eq</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>p</td>
+	  <td>q</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	This function is surjective. Let v&isin;<span class="Set">G</span>.
+	Then, f(a<sup>-1</sup>v)=aa<sup>-1</sup>v=ev=v.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> is a group, and
+	f:<span class="Set">G</span>&rarr;<span class="Set">G</span> is
+	defined as f(x)=x<sup>-1</sup>.
+      </p>
+
+      <p>
+	Since the inverse of an element is unique, this is an injection.
+      </p>
+
+      <p>
+	Since every element of a group has an inverse, this is a surjection.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">G</span> is a group, and
+	f:<span class="Set">G</span>&rarr;<span class="Set">G</span> is
+	defined as f(x)=x<sup>2</sup>.
+      </p>
+
+      <p>
+	Whether this is injective or not depends upon the group structure.
+	For instance, it is injective in the three-element group and the
+	additive group of the integers. However, it is not injective in
+	the dihedral group <span class="Set">D<sub>4</sub></span>, or the
+	multiplicative group of the non-zero reals.
+      </p>
+
+      <p>
+	Again, whether this is surjective or not depends upon the group
+	structure. It is surjective in the cyclic group of order five and the
+	multiplicative group of the non-zero reals. It is not surjective in
+	the dihedral group <span class="Set">D<sub>4</sub></span>, or the
+	additive group of the integers.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter06">Chapter 6</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608063931/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608063931/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608063931/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608063931im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608063931/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608063931im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:39:31 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:54 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 1624.753 (3)
+  CDXLines.iter: 21.663 (3)
+  exclusion.robots: 0.199
+  PetaboxLoader3.datanode: 1302.298 (4)
+  exclusion.robots.policy: 0.184
+  RedisCDXSource: 3.45
+  PetaboxLoader3.resolve: 372.693 (4)
+  load_resource: 151.818
+  esindex: 0.015
+  captures_list: 1654.466
+-->

@@ -1,0 +1,610 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130527
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=219;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter07C","20180531104012","http://web.archive.org/","web","/_static/",
+	      "1527763212");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 7, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180531104012im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180531104012cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter07" rel="parent" rev="child">
+  <link href="Chapter07B" rel="prev" rev="next">
+  <link href="Chapter07D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Groups of Permutations of
+  <span class="Set">R</span></h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    <span class="Set">A</span> is a subset of <span class="Set">R</span>, and
+    <span class="Set">G</span> is a set of permutations of
+    <span class="Set">A</span>. Show that <span class="Set">G</span> is a
+    subgroup of <span class="Set">S<sub>A</sub></span> and give its table.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	<span class="Set">A</span> = <span class="Set">R</span>-{0,1}.
+	<span class="Set">G</span> = {e,f,g}, where f(x)=1/(1-x) and
+	g(x)=(x-1)/x.
+      </p>
+
+      <p>
+	f(a) = 1/(1-a) and f(b) = 1/(1-b), when a&ne;1&ne;b. Setting
+	f(a)=f(b) gives 1/(1-a) = 1/(1-b). Given the restriction on the
+	domain of f, we can multiply both sides by (1-a)(1-b), yielding
+	1-b = 1-a, or a = b. Therefore, f is one-to-one.
+	Since 0 has no reciprocal, it is not in the range of f.
+	Let y = 1/(1-x). Then, y=1 when x=0. Since 0 is excluded from the
+	range of f, 1 is not in the range of f.
+	For any p&isin;<span class="Set">R</span>-{0,1}, we have p = 1/(1-x).
+	Solving for x gives x = (p-1)/p, with p&notin;{0,1}.
+	Therefore, f is onto <span class="Set">R</span>-{0,1}, and an element
+	of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	g(a) = (a-1)/a and g(b) = (b-1)/b, when a&ne;0&ne;b. Setting
+	g(a)=g(b) gives (a-1)/a = (b-1)/b. Given the restriction on the
+	domain of g, we can multiply both sides by ab, yielding ab-b = ab-a,
+	or a = b. Therefore, g is one-to-one.
+	Let y = (x-1)/x. Then y=0 when x=1. Since 1 is excluded from the range
+	of g and g is one-to-one, 0 is not in the range of g.
+	Setting y = 1 = (x-1)/x gives x-1 = x, so 1 is not in the range of g.
+	For any q&isin;<span class="Set">R</span>-{0,1}, we have q = (x-1)/x.
+	Solving for x gives x = 1/(1-q), with q&notin;{0,1}.
+	Therefore, g is onto <span class="Set">R</span>-{0,1}, and an element
+	of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Since the identity function, e, on any set is a permutation on that
+	set, we have {e,f,g}&sub;<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	[g&#8728;f](x) = ((1/(1-x)-1)/(1/(1-x)) =
+	(1-x)(1/(1-x)-1) = 1-(1-x) = x, so g = f<sup>-1</sup>.
+	[f&#8728;g](x) = 1/(1-(x-1)/x) = x/(x-x-1) = x, so f = g<sup>-1</sup>.
+	Therefore, <span class="Set">G</span> is closed under inversion.
+      </p>
+
+      <p>
+	[f&#8728;f](x) = 1/(1-1/(1-x)) = (1-x)/((1-x)-1) = (1-x)/(-x) =
+	(x-1)/x = g(x).
+	[g&#8728;g](x) = (((x-1)/x)-1)/((x-1)/x) = (x-1-x)/(x-1) =
+	-1/(x-1) = 1/(x-1) = f(x).
+	With this and the previous result we have shown that,
+	<span class="Set">G</span> is closed under multiplication.
+      </p>
+
+      <p>
+	Therefore, <span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>A</sub></span>. Its table follows:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>e</th>
+	  <th>f</th>
+	  <th>g</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>f</td>
+	  <td>g</td>
+	</tr>
+	<tr>
+	  <th>f</th>
+	  <td>f</td>
+	  <td>g</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>g</th>
+	  <td>g</td>
+	  <td>e</td>
+	  <td>f</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">A</span> = <span class="Set">R</span>-{0}.
+	<span class="Set">G</span> = {e,f,g,h}, where f(x)=1/x, g(x)=-x, and
+	h(x)=-1/x.
+      </p>
+
+      <p>
+	f(a) = 1/a and f(b) = 1/b, when ab&ne;0. Setting f(a)=f(b) gives
+	1/a = 1/b, or a=b. Therefore, f is one-to-one.
+	Since any non-zero real has a reciprocal, f is onto
+	<span class="Set">R</span>-{0}.
+	Therefore, f is a permutation on <span class="Set">R</span>-{0}, and
+	an element of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	g(x) is obviously one-to-one and onto <span class="Set">R</span>-{0},
+	so it is also a permutation and an element of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	The demonstration that h is an element of
+	<span class="Set">S<sub>A</sub></span> is nearly identical to that
+	for f.
+	We therefore have {e,f,g,h}&sub;<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	[f&#8728;f](x) = x = e(x), so f is its own inverse.
+      </p>
+
+      <p>
+	[g&#8728;g](x) = x = e(x), so g is its own inverse.
+      </p>
+
+      <p>
+	[h&#8728;h](x) = x = e(x), so h is its own inverse.
+      </p>
+
+      <p>
+	Therefore, {e,f,g,h} is closed under inversion.
+      </p>
+
+      <p>
+	[f&#8728;g](x) = 1/-x = h(x).
+	[f&#8728;h](x) = -x = g(x).
+      </p>
+
+      <p>
+	[g&#8728;f](x) = 1/-x = h(x).
+	[g&#8728;h](x) = 1/x = f(x).
+      </p>
+
+      <p>
+	[h&#8728;f](x) = -x = g(x).
+	[h&#8728;g](x) = 1/x = f(x).
+      </p>
+
+      <p>
+	This shows that <span class="Set">G</span> is closed under
+	multiplication.
+	Therefore, <span class="Set">G</span> is a subgroup of
+	<span class="Set">S<sub>A</sub></span>. Its table follows:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>e</th>
+	  <th>f</th>
+	  <th>g</th>
+	  <th>h</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>f</td>
+	  <td>g</td>
+	  <td>h</td>
+	</tr>
+	<tr>
+	  <th>f</th>
+	  <td>f</td>
+	  <td>e</td>
+	  <td>h</td>
+	  <td>g</td>
+	</tr>
+	<tr>
+	  <th>g</th>
+	  <td>g</td>
+	  <td>h</td>
+	  <td>e</td>
+	  <td>f</td>
+	</tr>
+	<tr>
+	  <th>h</th>
+	  <td>h</td>
+	  <td>g</td>
+	  <td>f</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">A</span> = <span class="Set">R</span>-{0,1}.
+	<span class="Set">G</span> = {e,f,g,h,j,k}, where f(x)=1-x,
+	g(x)=1/x, h(x)=1/(1-x), j(x)=(x-1)/x, k(x)=x/(x-1).
+      </p>
+
+      <p>
+	f(a) = 1-a and f(b) = 1-b. Setting f(a)=f(b) give a = b, so f is
+	one-to-one.
+	Since 1-x = 0 when x=1 and 1-x = 1 when x=0, neither 0 nor 1 is in
+	the range of f.
+	For any p&isin;<span class="Set">R</span>-{0,1}, f(1-p) = p, so
+	f is onto <span class="Set">R</span>-{0,1}.
+	Therefore, f is a permutation on <span class="Set">R</span>-{0,1}
+	and an element of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	g(a) = 1/a and g(b) = 1/b, so g(a) = g(b) only when a=b, and g is
+	one-to-one.
+	Since 1/x&ne;0 and 1/x=1 when x is outside the domain of g, neither
+	0 nor 1 is in the range of g.
+	For any q&isin;<span class="Set">R</span>-{0,1}, g(1/q) = q, so g
+	is onto <span class="Set">R</span>-{0,1}.
+	Therefore, g is a permutation on <span class="Set">R</span>-{0,1}
+	and an element of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	The proofs that h and j are elements of
+	<span class="Set">S<sub>A</sub></span> was given in Exercise 1 of
+	this problem.
+      </p>
+
+      <p>
+	With a,b&notin;{0,1}, k(a) = a/(a-1) and k(b) = b/(b-1). Setting
+	k(a)=k(b) gives a/(a-1) = b/(b-1). With the given restriction on
+	the domain of k, this yields a = b, so k is one-to-one.
+	0/(0-1) = 0. Since 0 is not in the domain of k, it is not in its
+	range, either. Since x&ne;x-1, 1 is not in the range of k.
+	For any r&notin;{0,1}, let f(x)=r. Solving for x gives x = r/(r-1),
+	so k is onto <span class="Set">R</span>-{0,1} and an element of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Therefore, {e,f,g,h,j,k}&sub;<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+      	[f&#8728;f](x) = 1-(1-x) = x = e(x), so f is its own inverse.
+      </p>
+
+      <p>
+      	[g&#8728;g](x) = 1/(1/x) = x = e(x), so g is its own inverse.
+      </p>
+
+      <p>
+      	[h&#8728;j](x) = 1/(1-(x-1)/x) = x = e(x), so h = j<sup>-1</sup>.
+      </p>
+
+      <p>
+      	[j&#8728;h](x) = (1/(1-x)-1)/(1/(1-x)) = x = e(x), so
+	j = h<sup>-1</sup>.
+      </p>
+
+      <p>
+      	[k&#8728;k](x) = ((x/(x-1))/((x/(x-1))-1) = x = e(x), so
+	k is its own inverse.
+      </p>
+
+      <p>
+	Therefore, {e,f,g,h,j,k} is closed under inversion.
+      </p>
+
+      <p>
+	The following table shows that {e,f,g,h,j,k} is closed under
+	multiplication and hence a subgroup of
+	<span class="Set">S<sub>A</sub></span>:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>e</th>
+	  <th>f</th>
+	  <th>g</th>
+	  <th>h</th>
+	  <th>j</th>
+	  <th>k</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>f</td>
+	  <td>g</td>
+	  <td>h</td>
+	  <td>j</td>
+	  <td>k</td>
+	</tr>
+	<tr>
+	  <th>f</th>
+	  <td>f</td>
+	  <td>e</td>
+	  <td>j</td>
+	  <td>k</td>
+	  <td>g</td>
+	  <td>h</td>
+	</tr>
+	<tr>
+	  <th>g</th>
+	  <td>g</td>
+	  <td>h</td>
+	  <td>e</td>
+	  <td>f</td>
+	  <td>k</td>
+	  <td>j</td>
+	</tr>
+	<tr>
+	  <th>h</th>
+	  <td>h</td>
+	  <td>g</td>
+	  <td>k</td>
+	  <td>j</td>
+	  <td>e</td>
+	  <td>f</td>
+	</tr>
+	<tr>
+	  <th>j</th>
+	  <td>j</td>
+	  <td>k</td>
+	  <td>f</td>
+	  <td>e</td>
+	  <td>h</td>
+	  <td>g</td>
+	</tr>
+	<tr>
+	  <th>k</th>
+	  <td>k</td>
+	  <td>j</td>
+	  <td>h</td>
+	  <td>g</td>
+	  <td>f</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	<span class="Set">A</span> = <span class="Set">R</span>-{0,1,2}.
+	<span class="Set">G</span> is the subgroup of
+	<span class="Set">S<sub>A</sub></span> generated by
+	f(x)=2-x and g(x)=2/x.
+      </p>
+
+      <p>
+	It is obvious that f and g are one-to-one.
+      </p>
+
+      <p>
+	Since 2-0 = 2, 2-1 = 1, and 2-2 = 0, the exclusion of these from
+	the domain of f also excludes them from its range.
+	For any a&isin;<span class="Set">R</span>-{0,1,2}, f(2-a) = a, so
+	f is onto <span class="Set">R</span>-{0,1,2}, and hence an
+	element of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Since 2/1 = 2, 2/2 = 1, and 0 has no reciprocal, the exclusion of
+	{0,1,2} from the domain of g also excludes them from its range.
+	For any b&isin;<span class="Set">R</span>-{0,1,2}, g(2a) = a, so
+	g is onto <span class="Set">R</span>-{0,1,2}, and hence an
+	element of <span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	Since the composition of permutations is a permutation, all possible
+	combinations of f and g will be elements of
+	<span class="Set">S<sub>A</sub></span>.
+      </p>
+
+      <p>
+	f and g are their own inverses.
+      </p>
+
+      <p>
+	Let h(x) = [f&#8728;g](x) = 2-(2/x).
+      </p>
+
+      <p>
+	Let j(x) = [g&#8728;f](x) = 2/(2-x).
+	(Note that since f&#8728;g &ne; g&#8728;f, this subgroup will not be
+	commutative.)
+      </p>
+
+      <p>
+	Let k(x) = [f&#8728;j](x) = (2-2x)/(2-x).
+      </p>
+
+      <p>
+	Let l(x) = [g&#8728;j](x) = x/(x-1).
+      </p>
+
+      <p>
+	Finally, let m(x) = [f&#8728;l](x) = (x-2)/(x-1).
+      </p>
+
+      <p>
+	The table follows:
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th>&#8728;</th>
+	  <th>e</th>
+	  <th>f</th>
+	  <th>g</th>
+	  <th>h</th>
+	  <th>j</th>
+	  <th>k</th>
+	  <th>l</th>
+	  <th>m</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>f</td>
+	  <td>g</td>
+	  <td>h</td>
+	  <td>j</td>
+	  <td>k</td>
+	  <td>l</td>
+	  <td>m</td>
+	</tr>
+	<tr>
+	  <th>f</th>
+	  <td>f</td>
+	  <td>e</td>
+	  <td>h</td>
+	  <td>g</td>
+	  <td>k</td>
+	  <td>j</td>
+	  <td>m</td>
+	  <td>l</td>
+	</tr>
+	<tr>
+	  <th>g</th>
+	  <td>g</td>
+	  <td>j</td>
+	  <td>e</td>
+	  <td>l</td>
+	  <td>f</td>
+	  <td>m</td>
+	  <td>h</td>
+	  <td>k</td>
+	</tr>
+	<tr>
+	  <th>h</th>
+	  <td>h</td>
+	  <td>k</td>
+	  <td>f</td>
+	  <td>m</td>
+	  <td>e</td>
+	  <td>l</td>
+	  <td>g</td>
+	  <td>j</td>
+	</tr>
+	<tr>
+	  <th>j</th>
+	  <td>j</td>
+	  <td>g</td>
+	  <td>l</td>
+	  <td>e</td>
+	  <td>m</td>
+	  <td>f</td>
+	  <td>k</td>
+	  <td>h</td>
+	</tr>
+	<tr>
+	  <th>k</th>
+	  <td>k</td>
+	  <td>h</td>
+	  <td>m</td>
+	  <td>f</td>
+	  <td>l</td>
+	  <td>e</td>
+	  <td>j</td>
+	  <td>g</td>
+	</tr>
+	<tr>
+	  <th>l</th>
+	  <td>l</td>
+	  <td>m</td>
+	  <td>j</td>
+	  <td>k</td>
+	  <td>g</td>
+	  <td>h</td>
+	  <td>e</td>
+	  <td>j</td>
+	</tr>
+	<tr>
+	  <th>m</th>
+	  <td>m</td>
+	  <td>l</td>
+	  <td>k</td>
+	  <td>j</td>
+	  <td>h</td>
+	  <td>g</td>
+	  <td>f</td>
+	  <td>e</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter07">Chapter 7</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180531104012/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180531104012/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180531104012/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180531104012im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180531104012/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180531104012im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:40:12 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:00:36 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots: 0.268
+  exclusion.robots.policy: 0.254
+  PetaboxLoader3.resolve: 59.588 (2)
+  load_resource: 61.228
+  esindex: 0.011
+  PetaboxLoader3.datanode: 78.906 (4)
+  captures_list: 139.178
+  CDXLines.iter: 24.219 (3)
+  RedisCDXSource: 1.066
+  LoadShardBlock: 109.563 (3)
+-->

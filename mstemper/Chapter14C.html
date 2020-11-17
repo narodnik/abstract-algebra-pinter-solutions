@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141121 - Exercises 1 and 2
+  Modified:	20141122 - Exercises 3 and 4
+		20141123 - Exercises 5-9
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=1071;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14C","20180605034128","http://web.archive.org/","web","/_static/",
+	      "1528170088");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605034128im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605034128cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14B" rel="prev" rev="next">
+  <link href="Chapter14D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Elementary Properties of Homomorphisms</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Let <span class="Set">G</span>, <span class="Set">H</span>, and
+    <span class="Set">K</span> be groups. Prove the following:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If f:<span class="Set">G</span> &rarr; <span class="Set">H</span> and
+	g:<span class="Set">H</span> &rarr; <span class="Set">K</span> are
+	homomorphisms, then
+	g&#8728;f:<span class="Set">G</span> &rarr; <span class="Set">K</span>
+	is a homomorphisms.
+      </p>
+
+      <p>
+	Let x,y &isin; <span class="Set">G</span>. Since f is a
+	homomorphism, f(x)f(y) = f(xy). Let p=f(x) and q=f(y). Since g is a
+	homomorphism, g(p)g(q) = g(pq), which means that g(f(x))g(f(y)) =
+	g(f(x)f(y)) = g(f(xy)), which can also be written
+	(g&#8728;f)(x)(g&#8728;f)(y) = (g&#8728;f)(xy).
+      </p>
+
+      <p>
+	Therefore, g&#8728;f preserves products and is a homomorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f:<span class="Set">G</span> &rarr; <span class="Set">H</span> is
+	a homomorphism with kernel <span class="Set">K</span>, then f is
+	injective iff <span class="Set">K</span> = {e}.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Assume that <span class="Set">K</span> = {e}.
+	Let f(x) = f(y). Then, e = (f(x))<sup>-1</sup>f(x) =
+	(f(x))<sup>-1</sup>f(y). (f(x))<sup>-1</sup>f(x) = e =
+	f(x<sup>-1</sup>x) = f(x<sup>-1</sup>)f(x), so (f(x))<sup>-1</sup> =
+	f(x<sup>-1</sup>). Since <span class="Set">K</span> = {e}, f(z) = e
+	iff z=e. Since homomorphisms preserve products,
+	e = (f(x))<sup>-1</sup>f(y) = f(x<sup>-1</sup>)f(y) =
+	f(x<sup>-1</sup>y) means that x<sup>-1</sup>y = e. Since any element of
+	a group has only one inverse, x<sup>-1</sup> = y<sup>-1</sup>, and
+	x=y. Therefore, f is injective.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	If f is a homomorphism, then e &isin; <span class="Set">K</span>. If
+	f(e) &ne; e, then f(a)f(e) &ne; f(a) = f(ae), and products are not
+	preserved. Therefore, if <span class="Set">K</span>&ne;{e}, then
+	&exist; x &isin; <span class="Set">K</span> such that x&ne;e. Thus,
+	f(e) = e = f(x), and f is not injective.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f:<span class="Set">G</span> &rarr; <span class="Set">H</span> is
+	a homomorphism and <span class="Set">K</span> is any subgroup of
+	<span class="Set">G</span>, then f(<span class="Set">K</span>) =
+	{f(x) : x &isin; <span class="Set">K</span>} is a subgroup of
+	<span class="Set">H</span>.
+      </p>
+
+      <p>
+	Let p,q &isin; <span class="Set">K</span>. Since
+	<span class="Set">K</span> is a group, it is closed under
+	multiplication, so pq &isin; <span class="Set">K</span> and f(pq)
+	&isin; f(<span class="Set">K</span>). Since f is a
+	homomorphism, f(p)f(q) = f(pq), so f(<span class="Set">K</span>) is
+	closed under multiplication.
+      </p>
+
+      <p>
+	Let a &isin; <span class="Set">K</span>. Since
+	<span class="Set">K</span> is a group, it is closed under inversion,
+	so a<sup>-1</sup> &isin; <span class="Set">K</span>. Since f is a
+	homomorphism, f(e) = f(aa<sup>-1</sup>) = f(a)f(a<sup>-1</sup>),
+	which means that f(a<sup>-1</sup>) = (f(a))<sup>-1</sup>, and
+	f(<span class="Set">K</span>) is closed under inversion.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f:<span class="Set">G</span> &rarr; <span class="Set">H</span> is
+	a homomorphism and <span class="Set">J</span> is any subgroup of
+	<span class="Set">H</span>, then
+	f<sup>-1</sup>(<span class="Set">J</span>) =
+	{x &isin; <span class="Set">G</span> : f(x) &isin;
+	<span class="Set">J</span>} is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let a,b &isin; f<sup>-1</sup>(<span class="Set">J</span>). Then,
+	f(a),f(b) &isin; <span class="Set">J</span>. Since
+	<span class="Set">J</span> is a group, it is closed under
+	multiplication. Therefore, f(ab) = f(a)f(b) &isin;
+	<span class="Set">J</span>. Therefore, ab &isin;
+	f<sup>-1</sup>(<span class="Set">J</span>), which means that
+	f<sup>-1</sup>(<span class="Set">J</span>) is closed under
+	multiplication.
+      </p>
+
+      <p>
+	Let c &isin; f<sup>-1</sup>(<span class="Set">J</span>). Then, f(c)
+	&isin; <span class="Set">J</span>. Since <span class="Set">J</span> is
+	a group, it is closed under inversion. Therefore
+	(f(c))<sup>-1</sup> &isin; <span class="Set">J</span>. As shown in the
+	<span title="and the one before that">previous exercise</span>,
+	(f(c))<sup>-1</sup> = f(c<sup>-1</sup>), which means that
+	f(c<sup>-1</sup>) &isin; <span class="Set">J</span> and
+	c<sup>-1</sup> &isin; f<sup>-1</sup>(<span class="Set">J</span>).
+	Therefore, f<sup>-1</sup>(<span class="Set">J</span>) is closed under
+	inversion.
+      </p>
+
+      <p>
+	Since f<sup>-1</sup>(<span class="Set">J</span>) is closed under both
+	multiplication and inversion, it is a subgroup.
+      </p>
+
+      <p>
+	Also prove that ker(f) &sub;
+	f<sup>-1</sup>(<span class="Set">J</span>).
+      </p>
+
+      <p>
+	Since <span class="Set">J</span> is a group, e &isin;
+	<span class="Set">J</span>. If x &isin; <span class="Set">G</span> and
+	f(x) = e, then (by definition) x &isin; ker(f). Therefore, x &isin;
+	f<sup>-1</sup>(e) &sub; f<sup>-1</sup>(<span class="Set">J</span>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f:<span class="Set">G</span> &rarr; <span class="Set">H</span> is
+	a homomorphism with kernel <span class="Set">K</span>,
+	and <span class="Set">J</span> is a subgroup of
+	<span class="Set">G</span>, let f<sub>1</sub> designate the restriction
+	of f to <span class="Set">J</span>. Then ker(f<sub>1</sub>) =
+	<span class="Set">J</span> &cap; <span class="Set">K</span>.
+      </p>
+
+      <p>
+	Let x &isin; ker(f<sub>1</sub>). Since ker(f<sub>1</sub>) &sub;
+	<span class="Set">J</span>, x &isin; <span class="Set">J</span>.
+	Since f<sub>1</sub>(x) = e, f(x) = e, and x &isin;
+	<span class="Set">K</span>.
+      </p>
+
+      <p>
+	Therefore, if x &isin; ker(f<sub>1</sub>), then x &isin;
+	<span class="Set">J</span> &cap; <span class="Set">K</span>.
+      </p>
+
+      <p>
+	Therefore, ker(f<sub>1</sub>) &sub;
+	<span class="Set">J</span> &cap; <span class="Set">K</span>.
+      </p>
+
+      <p>
+	Let y &isin; <span class="Set">J</span> &cap;
+	<span class="Set">K</span>. Then, y &isin; <span class="Set">J</span>
+	and y &isin; <span class="Set">K</span>. Since x &isin;
+	<span class="Set">J</span>, x &isin; the range of f<sub>1</sub>. Since
+	x &isin; <span class="Set">K</span>, f<sub>1</sub>(x) = f(x) = e.
+      </p>
+
+      <p>
+	Therefore, if x &isin; <span class="Set">J</span> &cap; 
+	<span class="Set">K</span>, then x &isin; ker(f<sub>1</sub>).
+      </p>
+
+      <p>
+	Therefore,
+	<span class="Set">J</span> &cap; <span class="Set">K</span>
+	&sub; ker(f<sub>1</sub>).
+      </p>
+
+      <p>
+	Since each is a subset of the other, ker(f<sub>1</sub>) =
+	<span class="Set">J</span> &cap; <span class="Set">K</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For any group <span class="Set">G</span>, the function
+	f:<span class="Set">G</span> &rarr; <span class="Set">G</span> given
+	by f(x) = e is a homomorphism.
+      </p>
+
+      <p>
+	Let a,b &isin; <span class="Set">G</span>. f(a)f(b) = ee = e = f(ab).
+	Therefore f preserves products and is a homomorphism.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For any group <span class="Set">G</span>, {e} and
+	<span class="Set">G</span> are homomorphic images of
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	The previous exercise showed that f(x) = e is a homomorphism. That
+	this function is onto {e} is obvious. Therefore {e} is a
+	homomorphic image of <span class="Set">G</span>.
+      </p>
+
+      <p>
+	The identity function on <span class="Set">G</span> is a homomorphism,
+	and it is onto <span class="Set">G</span>. Therefore,
+	<span class="Set">G</span> is a homomorphic image of itself.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The function f:<span class="Set">G</span> &rarr;
+	<span class="Set">G</span> given by f(x) = x<sup>2</sup> is a
+	homomorphism iff <span class="Set">G</span> is Abelian.
+      </p>
+
+      <p>
+	<span class="Case">If</span>
+	Let a,b &isin; <span class="Set">G</span>. If
+	<span class="Set">G</span> is Abelian, then
+	f(a)f(b) = a<sup>2</sup>b<sup>2</sup> = aabb = abab = (ab)<sup>2</sup>
+	= f(ab), and f preserves products, making it a homomorphism.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span>
+	Let a,b &isin; <span class="Set">G</span>. If f is a homomorphism,
+	then it preserves products, giving aabb = a<sup>2</sup>b<sup>2</sup> =
+	f(a)f(b) = f(ab) = (ab)<sup>2</sup> = abab. In other words, if f is a
+	homomorphism, then a and b commute. Since a and b were <em>any</em>
+	elements of <span class="Set">G</span>, it is Abelian.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The functions f<sub>1</sub>:<span class="Set">G</span> &times;
+	<span class="Set">H</span> &rarr; <span class="Set">G</span> given by
+	f<sub>1</sub>(x,y) = x, and
+	f<sub>2</sub>:<span class="Set">G</span> &times;
+	<span class="Set">H</span> &rarr; <span class="Set">H</span>, given by
+	f<sub>2</sub>(x,y) = y are homomorphisms.
+      </p>
+
+      <p>
+	<span class="Case">f<sub>1</sub></span>
+	Let (x<sub>1</sub>,y<sub>1</sub>),(x<sub>2</sub>,y<sub>2</sub>) &isin;
+	<span class="Set">G</span> &times; <span class="Set">H</span>. Then
+	f<sub>1</sub>(x<sub>1</sub>,y<sub>1</sub>)f<sub>1</sub>(x<sub>2</sub>,y<sub>2</sub>) =
+	x<sub>1</sub>x<sub>2</sub>, and
+	f<sub>1</sub>((x<sub>1</sub>,y<sub>1</sub>)(x<sub>2</sub>,y<sub>2</sub>)) =
+	f<sub>1</sub>(x<sub>1</sub>x<sub>2</sub>,y<sub>1</sub>y<sub>2</sub>) =
+	x<sub>1</sub>x<sub>2</sub>. Therefore f<sub>1</sub> preserves products
+	and is a homomorphism.
+      </p>
+
+      <p>
+	<span class="Case">f<sub>2</sub></span>
+	Let (x<sub>1</sub>,y<sub>1</sub>),(x<sub>2</sub>,y<sub>2</sub>) &isin;
+	<span class="Set">G</span> &times; <span class="Set">H</span>. Then
+	f<sub>2</sub>(x<sub>1</sub>,y<sub>1</sub>)f<sub>2</sub>(x<sub>2</sub>,y<sub>2</sub>) =
+	y<sub>1</sub>y<sub>2</sub>, and
+	f<sub>2</sub>((x<sub>1</sub>,y<sub>1</sub>)(x<sub>2</sub>,y<sub>2</sub>)) =
+	f<sub>2</sub>(x<sub>1</sub>x<sub>2</sub>,y<sub>1</sub>y<sub>2</sub>) =
+	y<sub>1</sub>y<sub>2</sub>. Therefore f<sub>2</sub> preserves products
+	and is a homomorphism.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605034128/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605034128/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605034128/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605034128im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605034128/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605034128im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:41:28 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:09 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 624.558 (3)
+  exclusion.robots.policy: 0.21
+  esindex: 0.017
+  captures_list: 689.001
+  RedisCDXSource: 18.151
+  exclusion.robots: 0.225
+  PetaboxLoader3.resolve: 69.144
+  PetaboxLoader3.datanode: 683.824 (4)
+  CDXLines.iter: 41.082 (3)
+  load_resource: 364.61
+-->

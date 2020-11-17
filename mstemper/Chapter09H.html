@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140717 - Exercises 1 and 2
+  Modified:	20140718 - Exercises 3, 4, and 5
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=803;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter09H","20180605202201","http://web.archive.org/","web","/_static/",
+	      "1528230121");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 9, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605202201im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605202201cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter09" rel="parent" rev="child">
+  <link href="Chapter09G" rel="prev" rev="next">
+  <link href="Chapter09I" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Some General Properties of Isomorphism</h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Let <span class="Set">G</span> and <span class="Set">H</span>
+	be groups. Prove that <span class="Set">G</span> &times;
+	<span class="Set">H</span> &#x2258; <span class="Set">H</span> &times;
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Let I<sub>GH</sub>:<span class="Set">G</span> &times;
+	<span class="Set">H</span> &rarr; <span class="Set">H</span> &times;
+	<span class="Set">G</span> be defined as I<sub>GH</sub>(g,h) = (h,g).
+	If a,c&isin;<span class="Set">G</span> and
+	b,d&isin;<span class="Set">H</span>, then I<sub>GH</sub>(a,b) = (b,a)
+	= (d,c) = I<sub>GH</sub>(c,d) if and only if a=c and b=d. Therefore,
+	I<sub>GH</sub> is a bijection.
+      </p>
+
+      <p>
+	I<sub>GH</sub>(a,b)*I<sub>GH</sub>(c,d) = (b,a)*(d,c) = (bd,ac) =
+	I<sub>GH</sub>(ac,bd) = I<sub>GH</sub>((a,b)(c,d)). Therefore,
+	I<sub>GH</sub> preserves products.
+      </p>
+
+      <p>
+	Since I<sub>GH</sub> is a bijection that preserves products, it is an
+	isomporphism, and its domain and co-domain are isomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If <span class="Set">G<sub>1</sub></span> &#x2258;
+	<span class="Set">G<sub>2</sub></span> and
+	<span class="Set">H<sub>1</sub></span> &#x2258;
+	<span class="Set">H<sub>2</sub></span>, prove that
+	<span class="Set">G<sub>1</sub></span> &times;
+	<span class="Set">H<sub>1</sub></span> &#x2258;
+	<span class="Set">G<sub>2</sub></span> &times;
+	<span class="Set">H<sub>2</sub></span>.
+      </p>
+
+      <p>
+	Let g:<span class="Set">G<sub>1</sub></span> &rarr;
+	<span class="Set">G<sub>2</sub></span> and
+	h:<span class="Set">H<sub>1</sub></span> &rarr;
+	<span class="Set">H<sub>2</sub></span>
+	be isomorphisms.
+	Define I<sub>GH</sub>:<span class="Set">G<sub>1</sub></span> &times;
+	<span class="Set">H<sub>1</sub></span> &rarr;
+	<span class="Set">G<sub>2</sub></span> &times;
+	<span class="Set">H<sub>2</sub></span> as
+	I<sub>GH</sub>(p,q) = (g(p),h(q)).
+      </p>
+
+      <p>
+	Since g and h are bijections, I<sub>GH</sub>(a,b) = (g(a),h(b)) =
+	(g(c),h(d)) = I<sub>GH</sub>(c,d) if and only if a=c and b=d.
+	Therefore, I<sub>GH</sub> is a bijection.
+      </p>
+
+      <p>
+	Since g and h are isomorphisms,
+	I<sub>GH</sub>(a,b)I<sub>GH</sub>(c,d) = (g(a),h(b))(g(c),h(d)) =
+	(g(a)g(c),h(b)h(d)) = (g(ac),h(bd)) = I<sub>GH</sub>((a,b)(c,d)).
+      </p>
+
+      <p>
+	Since I<sub>GH</sub> is a bijection that preserves products, it is an
+	isomorphism. Therefore, its domain and codomain are isomorphic.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	Let <span class="Set">G</span> be any group. Prove that
+	<span class="Set">G</span> is Abelian if and only if f(x) =
+	x<sup>-1</sup> is an isomorphism from <span class="Set">G</span> to
+	<span class="Set">G</span>.
+      </p>
+
+      <p>
+	Since every element in a group has a unique inverse, f is a bijection.
+      </p>
+
+      <p>
+	To show that f preserves products, we will make use of the fact
+	that (ab)<sup>-1</sup> = b<sup>-1</sup>a<sup>-1</sup>.
+      </p>
+
+      <p>
+	If <span class="Set">G</span> is Abelian, then rs = sr for all
+	r,s&isin;<span class="Set">G</span>. f(rs) = (rs)<sup>-1</sup> =
+	(sr)<sup>-1</sup> = r<sup>-1</sup>s<sup>-1</sup> = f(r)f(s).
+	Therefore, if <span class="Set">G</span> is Abelian, f preserves
+	products and is an isomorphism.
+      </p>
+
+      <p>
+	f(pq) = (pq)<sup>-1</sup> = q<sup>-1</sup>p<sup>-1</sup> = f(q)f(p).
+	If f is an isomorphism, then it preserves products, so it must be the
+	case that f(pq) = f(p)f(q). Therefore, f(p)f(q) = f(q)f(p), and
+	<span class="Set">G</span> is shown to be Abelian.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> be any group, with its operation
+	expressed multiplicatively. Let <span class="Set">H</span> be a
+	group with the same set as <span class="Set">G</span>, and let its
+	operation be x*y = y&middot;x, where "&middot;" is the operation of
+	<span class="Set">G</span>. Prove that <span class="Set">G</span>
+	&#x2258; <span class="Set">H</span>.
+      </p>
+
+      <p>
+	I will show that f:<span class="Set">G</span> &rarr;
+	<span class="Set">H</span>, defined as f(x) = x<sup>-1</sup>,
+	is an isomorphism.
+      </p>
+
+      <p>
+	As shown in <a href="#Ex03">Exercise 3</a>, f is a bijection.
+      </p>
+
+      <p>
+	f(p&middot;q) = (p&middot;q)<sup>-1</sup> =
+	q<sup>-1</sup>&middot;p<sup>-1</sup> =
+	p<sup>-1</sup>*q<sup>-1</sup> = f(p)*f(q)
+      </p>
+
+      <p>
+	Therefore, f is preserves products and is an isomorphism. This provess
+	that <span class="Set">G</span> &#x2258; <span class="Set">H</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let c be a fixed element of <span class="Set">G</span>. Let
+	<span class="Set">H</span> be a group with the same set as
+	<span class="Set">G</span> and the operation x*y = xcy. Prove that
+	the function f(x) = c<sup>-1</sup>x is an isomorphism from
+	<span class="Set">G</span> to <span class="Set">H</span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	This was probably proved earlier, but I'm too lazy to find the proof.
+      </p>
+      </div>
+
+      <p>
+	For any element p&isin;<span class="Set">H</span>, f(cp) = p, so f is
+	onto <span class="Set">H</span>.
+	For any elements a,b&isin;<span class="Set">G</span>, if f(a)=f(b),
+	then c<sup>-1</sup>a=c<sup>-1</sup>b, 
+	cc<sup>-1</sup>a=cc<sup>-1</sup>b, and a=b. Therefore, f is one-to-one
+	and a bijection.
+      </p>
+
+      <p>
+	f(rs) = c<sup>-1</sup>rs = c<sup>-1</sup>res  =
+	c<sup>-1</sup>rcc<sup>-1</sup>s = f(r)cf(s) = f(r)*f(s).
+	Therefore f preserves products.
+      </p>
+
+      <p>
+	Since f is a bijection that preserves products, it is an isomorphism.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemH -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter09">Chapter 9</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605202201/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605202201/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605202201/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605202201im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605202201/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605202201im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:22:01 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:04:24 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 360.246 (4)
+  PetaboxLoader3.resolve: 279.91
+  exclusion.robots: 0.256
+  CDXLines.iter: 19.582 (3)
+  LoadShardBlock: 297.908 (3)
+  RedisCDXSource: 70.433
+  esindex: 0.016
+  captures_list: 391.858
+  exclusion.robots.policy: 0.219
+  load_resource: 402.379
+-->

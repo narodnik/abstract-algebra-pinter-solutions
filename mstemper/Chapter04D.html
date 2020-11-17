@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121027
+  Modified:	20121120 - Split off problems into individual pages
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=606;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter04D","20180322193306","http://web.archive.org/","web","/_static/",
+	      "1521747186");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 4, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180322193306im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180322193306cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter04" rel="parent" rev="child">
+  <link href="Chapter04C" rel="prev" rev="next">
+  <link href="Chapter04E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Group Elements and Their Inverses</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Let a&isin;<span class="Set">G</span>, b&isin;<span class="Set">G</span>,
+    and C&isin;<span class="Set">G</span>, with e as the identity.
+  </p>
+
+  <ol>
+    <li>
+      <p>Prove ab=e &rarr; ba=e.</p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ab</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>abb<sup>-1</sup></td>
+	  <td>eb<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ae</td>
+	  <td>eb<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>b<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>ba</td>
+	  <td>bb<sup>-1</sup></td>
+	  <td>pre-multiply by b</td>
+	</tr>
+	<tr>
+	  <td>ba</td>
+	  <td>e</td>
+	  <td>inverse</td>
+	</tr>
+      </table>
+      <p>
+	Note that we could have used the fact that the inverse of the
+	inverse of an element is the element itself.
+      </p>
+    </li>
+
+    <li>
+      <p>Prove that abc=e &rarr; cab=e</p>
+      <table class="Derive">
+	<tr>
+	  <td>abc</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>(ab)c</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>c(ab)</td>
+	  <td>e</td>
+	  <td>inverses commute</td>
+	</tr>
+	<tr>
+	  <td>cab</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+
+      <p>Prove that abc=e &rarr; bca=e</p>
+      <table class="Derive">
+	<tr>
+	  <td>abc</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>a(bc)</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>(bc)a</td>
+	  <td>e</td>
+	  <td>inverses commute</td>
+	</tr>
+	<tr>
+	  <td>bca</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>State a generalization of the previous two exercises.</p>
+      <p>If the product of n elements of a group is the identity element,
+	 it remains so no matter in what order the terms are multiplied.</p>
+    </li>
+
+    <li>
+      <p>Prove that xay=a<sup>-1</sup> &rarr; yax=a<sup>-1</sup>.</p>
+      <table class="Derive">
+	<tr>
+	  <td>xay</td>
+	  <td>a<sup>-1</sup></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>axay</td>
+	  <td>aa<sup>-1</sup></td>
+	  <td>pre-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>axay</td>
+	  <td>e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>(axa)y</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>y(axa)</td>
+	  <td>e</td>
+	  <td>inverses commute</td>
+	</tr>
+	<tr>
+	  <td>(yax)a</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>(yax)aa<sup>-1</sup></td>
+	  <td>ea<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>(yax)e</td>
+	  <td>ea<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>yax</td>
+	  <td>a<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Let a, b, and c be their own inverses.</p>
+      <p>Prove ab=c &rarr; bc=a</p>
+      <table class="Derive">
+	<tr>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>aab</td>
+	  <td>ac</td>
+	  <td>pre-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>eb</td>
+	  <td>ac</td>
+	  <td>a is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>b</td>
+	  <td>ac</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>bc</td>
+	  <td>acc</td>
+	  <td>post-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>bc</td>
+	  <td>ae</td>
+	  <td>c is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>bc</td>
+	  <td>a</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>Prove ab=c &rarr; ca=b</p>
+      <table class="Derive">
+	<tr>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>cab</td>
+	  <td>cc</td>
+	  <td>pre-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>cab</td>
+	  <td>e</td>
+	  <td>c is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>cabb</td>
+	  <td>eb</td>
+	  <td>post-multiply by b</td>
+	</tr>
+	<tr>
+	  <td>cae</td>
+	  <td>eb</td>
+	  <td>b is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>ca</td>
+	  <td>b</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Prove that if abc is its own inverse, bca is its own inverse. </p>
+      <table class="Derive">
+	<tr>
+	  <td>(abc)(abc)</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>abcabc</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>abcabc</td>
+	  <td>a<sup>-1</sup>e</td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ebcabc</td>
+	  <td>a<sup>-1</sup>e</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>bcabc</td>
+	  <td>a<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>bcabcc<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>post-multiply by c<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>bcabe</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>bcab</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>bcabb<sup>-1</sup></td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>post-multiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>bcae</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>bca</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup>b<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>bca</td>
+	  <td>(bca)<sup>-1</sup></td>
+	  <td>product of inverses is inverse of reverse product</td>
+	</tr>
+      </table>
+
+      <p>Prove that if abc is its own inverse, cab is its own inverse. </p>
+      <table class="Derive">
+	<tr>
+	  <td>(abc)(abc)</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>abcabc</td>
+	  <td>e</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>abcabcc<sup>-1</sup></td>
+	  <td>ec<sup>-1</sup></td>
+	  <td>post-multiply by c<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>abcabe</td>
+	  <td>ec<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>abcab</td>
+	  <td>c<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>abcab</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>pre-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ebcab</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>bcab</td>
+	  <td>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>b<sup>-1</sup>bcab</td>
+	  <td>b<sup>-1</sup>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>pre-multiply by b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ecab</td>
+	  <td>b<sup>-1</sup>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>cab</td>
+	  <td>b<sup>-1</sup>a<sup>-1</sup>c<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>cab</td>
+	  <td>(cab)<sup>-1</sup></td>
+	  <td>product of inverses is inverse of reverse product</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Prove that if a and b are their own inverses,
+	 ba = (ab)<sup>-1</sup>.</p>
+      <table class="Derive">
+	<tr>
+	  <td>ba</td>
+	  <td>b<sup>-1</sup>a</td>
+	  <td>b = b<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>-1</sup>a<sup>-1</sup></td>
+	  <td>a = a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(ab)<sup>-1</sup></td>
+	  <td>product of inverses is inverse of reverse product</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Prove that a=a<sup>-1</sup> iff aa=e.</p>
+      <p>If:</p>
+      <table class="Derive">
+	<tr>
+	  <td>a</td>
+	  <td>a<sup>-1</sup></td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>aa</td>
+	  <td>aa<sup>-1</sup></td>
+	  <td>pre-multiply by a</td>
+	</tr>
+	<tr>
+	  <td>aa</td>
+	  <td>e</td>
+	  <td>inverse</td>
+	</tr>
+      </table>
+      <p>Only if:</p>
+      <table class="Derive">
+	<tr>
+	  <td>aa</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>aaa<sup>-1</sup></td>
+	  <td>ea<sup>-1</sup></td>
+	  <td>post-multiply by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>ae</td>
+	  <td>ea<sup>-1</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>a<sup>-1</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>Let c=c<sup>-1</sup>. Prove ab=c iff abc=e.</p>
+      <p>If:</p>
+      <table class="Derive">
+	<tr>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>abc</td>
+	  <td>cc</td>
+	  <td>post-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>abc</td>
+	  <td>e</td>
+	  <td>c is its own inverse</td>
+	</tr>
+      </table>
+      <p>Only if:</p>
+      <table class="Derive">
+	<tr>
+	  <td>abc</td>
+	  <td>e</td>
+	  <td>given</td>
+	</tr>
+	<tr>
+	  <td>abcc</td>
+	  <td>ec</td>
+	  <td>post-multiply by c</td>
+	</tr>
+	<tr>
+	  <td>abe</td>
+	  <td>ec</td>
+	  <td>c is its own inverse</td>
+	</tr>
+	<tr>
+	  <td>ab</td>
+	  <td>c</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter04">Chapter 4</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180322193306/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180322193306/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180322193306/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180322193306im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180322193306/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180322193306im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 19:33:06 Mar 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:53:59 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 187.517 (3)
+  exclusion.robots.policy: 0.292
+  esindex: 0.03
+  captures_list: 223.876
+  RedisCDXSource: 7.308
+  exclusion.robots: 0.307
+  PetaboxLoader3.resolve: 222.02
+  PetaboxLoader3.datanode: 248.668 (4)
+  CDXLines.iter: 23.909 (3)
+  load_resource: 370.059
+-->

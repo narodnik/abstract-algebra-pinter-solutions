@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20151004 - The whole thing!
+  Modified:	n/a
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app101.us.archive.org';v.server_ms=5866;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter14F","20180605174122","http://web.archive.org/","web","/_static/",
+	      "1528220482");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 14, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180605174122im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180605174122cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter14" rel="parent" rev="child">
+  <link href="Chapter14E" rel="prev" rev="next">
+  <link href="Chapter14G" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; Homomorphism and the Order of Elements</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+    If f:<span class="Set">G</span>&rarr;<span class="Set">H</span> is a
+    homomorphism, prove each of the following.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	For each element a &isin; <span class="Set">G</span>, the order of
+	f(a) is a divisor of the order of a.
+      </p>
+
+      <p>
+	Let |a| = n. Then, a<sup>n</sup> = e. Since homomorphisms preserve
+	products, it is also true that f(a<sup>n</sup>) = e =
+	(f(a))<sup>n</sup>. Since f(a)<sup>n</sup> = e, |f(a)| | n = |a|.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The order of any element b&ne;e in the range of f is a common divisor
+	of |<span class="Set">G</span>| and of |<span class="Set">H</span>|.
+      </p>
+
+      <p>
+	By Lagrange's Theorem, |b| &#8739; |<span class="Set">G</span>|. By
+	Exercise 1, |f(b)| &#8739; |b|, so |f(b)| &#8739;
+	|<span class="Set">G</span>|. Back to Lagrange, |f(b)| &#8739;
+	|<span class="Set">H</span>|.
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If the range of f has n elements, x<sup>n</sup> &isin; ker(f) &forall;
+	x &isin; <span class="Set">G</span>.
+      </p>
+
+      <p>
+	Since the range of a homomorphism is a group, the order of each element
+	in the range of f divides n. Therefore, &forall; f(x), 
+	(f(x))<sup>n</sup> = e. Since homomorphisms preserve products,
+	f(x<sup>n</sup>) = e. Therefore, x<sup>n</sup> &isin; ker(f).
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let m &isin; &#8484; such that gcd(m, |<span class="Set">H</span>|) =
+	1. &forall; x &isin; <span class="Set">G</span>, if x<sup>m</sup>
+	&isin; ker(f), x &isin; ker(f).
+      </p>
+
+      <p>
+	If x<sup>m</sup> &isin; ker(f), then f(x<sup>m</sup>) = e. Since
+	homomorphisms preserve products, (f(x))<sup>m</sup> = e. Therefore,
+	|f(x)| &#8739; m. Since gcd(m, |<span class="Set">H</span>|) = 1,
+	gcd(|f(x)|, |<span class="Set">H</span>|) = 1. Because the order of an
+	element divides the order of the group, this means that |f(x)| = 1, or
+	f(x) = e. Therefore x &isin; ker(f).
+	&#8718;
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let the range of f have m elements. If a &isin;
+	<span class="Set">G</span> has order n, where gcd(m,n) = 1, then a
+	&isin; ker(f).
+      </p>
+
+      <p>
+	|f(a)| &#8739; |<span class="Set">H</span>| = m, by Exercise 2. |f(a)|
+	&#8739; |a| = n, by Exercise 1. Therefore, |f(a)| is a common divisor
+	of m and n. Since gcd(m,n) = 1, |f(a)| = 1, which means that f(a) = e
+	and a &isin; ker(f).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let p be prime. If ran(f) has an element of order p, then
+	<span class="Set">G</span> has an element of order p.
+      </p>
+
+      <p>
+	Let |f(a)| = p. Then, by Exercise 1, p &#8739; |a|. Let |a| = kp.
+	Then, e = a<sup>kp</sup> = (a<sup>k</sup>)<sup>p</sup>, and
+	|a<sup>k</sup>| = p. (|a<sup>k</sup>| cannot be less than p, because
+	it must divide p since (a<sup>k</sup>)<sup>p</sup> = e.)
+	&#8718;
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter14">Chapter 14</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180605174122/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180605174122/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180605174122/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180605174122im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180605174122/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180605174122im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2015 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:41:22 Jun 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:07:24 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.014
+  load_resource: 307.054
+  captures_list: 5549.853
+  LoadShardBlock: 5460.833 (3)
+  PetaboxLoader3.datanode: 1626.294 (4)
+  exclusion.robots: 0.196
+  CDXLines.iter: 23.854 (3)
+  RedisCDXSource: 60.358
+  exclusion.robots.policy: 0.182
+  PetaboxLoader3.resolve: 1821.182 (2)
+-->

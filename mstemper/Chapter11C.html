@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140822 - Exercises 1 and 2
+  Modified:	20140824 - Exercise 3
+		20140825 - Exercise 4
+		20140831 - Exercises 5 and 6
+		20140904 - Exercises 7 and 8
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app101.us.archive.org';v.server_ms=1768;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter11C","20180709065247","http://web.archive.org/","web","/_static/",
+	      "1531119167");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 11, Problem C
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180709065247im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180709065247cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter11" rel="parent" rev="child">
+  <link href="Chapter11B" rel="prev" rev="next">
+  <link href="Chapter11D" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem C &mdash; Generators of Cyclic Groups</h1>
+
+<div class="Section Problem" id="ProblemC">
+
+  <p>
+    Let &phi;(j) be the number of positive integers less than j and relatively
+    prime to j. Let ord(a) = n, and prove the following:
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	a<sup>r</sup> is a generator of &lt;a&gt; iff r and n are relatively
+	prime.
+      </p>
+
+      <p>
+	<span class="Case">If</span> (a<sup>r</sup>)<sup>p</sup> =
+	a<sup>rp</sup> = e only when rp is a multiple of n. If r and n are
+	relatively prime, then lcm(r,n) = rn. This means that there are
+	n distinct powers of a<sup>r</sup>, and a<sup>r</sup> generates
+	&lt;a&gt;.
+      </p>
+
+      <p>
+	<span class="Case">Only If</span> If a<sup>r</sup> generates
+        &lt;a&gt;, there are n distinct powers of a<sup>r</sup>. If gcd(r,n)
+	&gt;1, then lcm(r,n) = rn/gcd(r,n) &lt; rn, which would mean that
+	there were fewer than n distinct powers of a<sup>r</sup>, and
+	a<sup>r</sup> could not generate all n elements of &lt;a&gt;.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	&lt;a&gt; has &phi;(n) different generators.
+      </p>
+
+      <p>
+	As shown in the previous exercise, a<sup>r</sup> is a generator of
+	&lt;a&gt; iff n and r are relatively prime. By the Division Theorem,
+	we can ignore any r&ge;n, since each corresponds to some 0&le;r&lt;n.
+	We can also ignore r=0, since a<sup>r</sup> = e does not generate
+	any non-trivial groups.
+      </p>
+
+      <p>
+	We are left with integers in the range 1&le;r&lt;n to consider. Since
+	a<sup>r</sup> is a generator of &lt;a&gt; iff r is relatively prime
+	to n, we end up with &phi;(n) different generators.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	For any m|n, let <span class="Set">C<sub>m</sub></span> =
+	{x&isin;&lt;a&gt; : x<sup>m</sup> = e}.
+	<span class="Set">C<sub>m</sub></span> is a subgroup of &lt;a&gt;.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	A simpler proof, for the more general case of Abelian groups and any
+	exponent, was done in
+	<a href="Chapter05C#Ex02">Chapter 5, Problem C, Exercise 2</a>.
+      </p>
+      </div>
+
+      <p>
+	Select any two elements of <span class="Set">C<sub>m</sub></span>,
+	a<sup>r</sup> and a<sup>s</sup>. By the definition of
+	<span class="Set">C<sub>m</sub></span>, a<sup>rm</sup> = e =
+	a<sup>sm</sup>. a<sup>r</sup>a<sup>s</sup> = a<sup>r+s</sup>.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>(a<sup>r+s</sup>)<sup>m</sup></td>
+	  <td>a<sup>(r+s)m</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>a<sup>rm+sm</sup></td>
+	  <td>distributive property</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>a<sup>rm</sup>a<sup>sm</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>(a<sup>r</sup>)<sup>m</sup>(a<sup>s</sup>)<sup>m</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	  <td>ee</td>
+	  <td>a<sup>rm</sup> = e = a<sup>sm</sup></td>
+	</tr>
+      </table>
+
+      <p>
+	Since (a<sup>r+s</sup>)<sup>m</sup> = e, a<sup>r</sup>a<sup>s</sup>
+	&isin; <span class="Set">C<sub>m</sub></span>, and
+	<span class="Set">C<sub>m</sub></span> is closed under multiplication.
+      </p>
+
+      <p>
+	Let a<sup>p</sup> &isin; <span class="Set">C<sub>m</sub></span>.
+      </p>
+
+      <table class="Derive">
+        <tr>
+	  <td>(a<sup>-p</sup>)<sup>m</sup></td>
+	  <td>a<sup>-pm</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>a<sup>-mp</sup></td>
+	  <td>commutativity of multiplication</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>-m</sup>)<sup>p</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(ea<sup>-m</sup>)<sup>p</sup></td>
+	  <td>identity</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>n</sup>a<sup>-m</sup>)<sup>p</sup></td>
+	  <td>ord(&lt;a&gt;) = n</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>km</sup>a<sup>-m</sup>)<sup>p</sup></td>
+	  <td>m|n</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>km-m</sup>)<sup>p</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>(k-1)m</sup>)<sup>p</sup></td>
+	  <td>distributive property</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>a<sup>(k-1)mp</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>a<sup>(k-1)pm</sup></td>
+	  <td>commutativity of multiplication</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>(k-1)p</sup>)<sup>m</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(a<sup>p(k-1)</sup>)<sup>m</sup></td>
+	  <td>commutativity of multiplication</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>((a<sup>p</sup>)<sup>(k-1)</sup>)<sup>m</sup></td>
+	  <td>laws of exponents</td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>(e<sup>(k-1)</sup>)<sup>m</sup></td>
+	  <td>a<sup>p</sup> &isin; <span class="Set">C<sub>m</sub></span></td>
+	</tr>
+        <tr>
+	  <td>&nbsp;
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	Therefore, if a<sup>p</sup> &isin;
+	<span class="Set">C<sub>m</sub></span>, then a<sup>-p</sup> &isin;
+	<span class="Set">C<sub>m</sub></span>.
+      </p>
+
+      <p>
+	Since <span class="Set">C<sub>m</sub></span> is a subset of &lt;a&gt;
+	that closed under multiplication and inversion, it is a subgroup
+	of &lt;a&gt;.
+      </p>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	<span class="Set">C<sub>m</sub></span> has exactly m elements.
+      </p>
+
+      <p>
+	Let k = n/m. Then, (a<sup>ik</sup>)<sup>m</sup> = a<sup>ikm</sup> =
+	(a<sup>km</sup>)<sup>i</sup> = e<sup>i</sup> = e. This means that
+	all members of {a<sup>ik</sup> : i&isin;<span class="Set">Z</span>}
+	are members of <span class="Set">C<sub>m</sub></span>. This set has
+	m unique members: a<sup>jk</sup> (1&le;j&le;m).
+      </p>
+
+      <p>
+	Suppose that a<sup>p</sup> &notin; {a<sup>ik</sup> :
+	i&isin;<span class="Set">Z</span>}. In this case, p = jk+x, where
+	0&lt;x&lt;k, by the Division Algorithm.
+      </p>
+
+      <p>
+	(a<sup>p</sup>)<sup>m</sup> = (a<sup>jk+x</sup>)<sup>m</sup> =
+	a<sup>jkm+xm</sup> = (a<sup>km</sup>)<sup>j</sup>a<sup>xm</sup> =
+	e<sup>j</sup>a<sup>xm</sup> = a<sup>xm</sup>. Since 0&lt;x&lt;k,
+	xm is not a multiple of n, and (a<sup>p</sup>)<sup>m</sup> &ne; e.
+      </p>
+
+      <p>
+	Therefore <span class="Set">C<sub>m</sub></span> =
+	{a<sup>ik</sup> : i&isin;<span class="Set">Z</span>} and has exactly
+	m elements.
+      </p>
+    </li>
+
+    <li id="Ex05">
+      <p>
+	An element x in &lt;a&gt; has order m iff x is a generator of
+	<span class="Set">C<sub>m</sub></span>.
+      </p>
+
+      <p>
+        <span class="Case">If</span>
+	If x is a generator of <span class="Set">C<sub>m</sub></span>, then
+	we have the facts that x<sup>m</sup> = e and |{x<sup>i</sup> :
+	i&isin;<span class="Set">Z<sub>m</sub></span>}| =
+	|<span class="Set">C<sub>m</sub></span>| = m. Therefore, m is the
+	smallest positive integer such that x<sup>m</sup> = e, and hence is the
+	order of x.
+      </p>
+
+      <p>
+        <span class="Case">Only If</span>
+	If ord(x) = m, then x<sup>m</sup> = e, and |{x<sup>i</sup> :
+        i&isin;<span class="Set">Z<sub>m</sub></span>}| = m. Therefore, if all
+	of the elements in |{x<sup>i</sup> :
+        i&isin;<span class="Set">Z<sub>m</sub></span>}| are in
+	<span class="Set">C<sub>m</sub></span>, x generates
+	<span class="Set">C<sub>m</sub></span>.
+      </p>
+
+      <p>
+	Let j&isin;<span class="Set">Z<sub>m</sub></span>.
+	(x<sup>j</sup>)<sup>m</sup> = x<sup>jm</sup> =
+	(x<sup>m</sup>)<sup>j</sup> = e<sup>j</sup> = e. Therefore,
+	x<sup>j</sup>&isin;<span class="Set">C<sub>m</sub></span>, and x is a
+	generator of <span class="Set">C<sub>m</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	There are &phi;(m) elements of order m in &lt;a&gt;.
+      </p>
+
+      <p>
+	By <a href="#Ex05">Exercise 5</a>, the elements in &lt;a&gt; that are
+	of order m are also the generators of
+	<span class="Set">C<sub>m</sub></span>.
+      </p>
+
+      <p>
+	By <a href="#Ex02">Exercise 2</a>, a cyclic group of order m has
+	&phi;(m) different generators. <span class="Set">C<sub>m</sub></span>
+	is a cyclic group. By <a href="#Ex04">Exercise 4</a>,
+	<span class="Set">C<sub>m</sub></span> is of order m.
+      </p>
+
+      <p>
+	Therefore, <span class="Set">C<sub>m</sub></span> has &phi;(m)
+	generators, which are the elements of &lt;a&gt; with order m.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let n = mk. Then a<sup>r</sup> has order m iff r = kl, where l and m
+	are relatively prime.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Restating it this way covers both "If" and "Only If".
+      </p>
+      </div>
+
+      <p>
+	The given condition may be rewritten if we observe that the requirement
+	that l and m be relatively prime implies that k = gcd(n,r). Then,
+	m = n/gcd(n,r). We can then restate the conjecture as
+	ord(a<sup>r</sup>) = n/gcd(n,r) = lcm(n,r)/r.
+      </p>
+
+      <p>
+	This was shown to be true in <a href="Chapter10G#Ex05">Exercise G5</a>
+	of Chapter 10.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If c is any generator of &lt;a&gt;, then { c<sup>r</sup> :
+	r is relatively prime to n } is the set of all generators of
+	&lt;a&gt;.
+      </p>
+
+      <p>
+	If c is a generator of &lt;a&gt;, then ord(c) = n (= |&lt;a&gt;|).
+	By Theorem 5 of Chapter 10, c<sup>t</sup> = e iff t is a multiple of n.
+	Therefore, c<sup>pr</sup> = e iff pr is a multiple of n. Since
+	gcd(r,n) = 1 (r and n are relatively prime), lcm(r,n) = rn, and
+	c<sup>r</sup> has n distinct powers, which makes it a generator of
+	&lt;a&gt;.
+      </p>
+
+      <p>
+	Since there are &phi;(n) positive integers less than n that are
+	relatively prime to it, and &lt;a&gt; has &phi;(n) generators (as
+	shown in <a href="#Ex02">Exercise 2</a>),
+	{ c<sup>r</sup> : r is relatively prime to n } must contain all of
+	the generators of &lt;a&gt;.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemC -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter11">Chapter 11</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180709065247/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180709065247/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180709065247/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180709065247im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180709065247/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180709065247im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:52:47 Jul 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:15 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.015
+  load_resource: 335.512
+  captures_list: 1412.313
+  LoadShardBlock: 1341.586 (3)
+  PetaboxLoader3.datanode: 1277.595 (4)
+  exclusion.robots: 0.199
+  CDXLines.iter: 25.051 (3)
+  RedisCDXSource: 41.11
+  exclusion.robots.policy: 0.184
+  PetaboxLoader3.resolve: 156.176
+-->

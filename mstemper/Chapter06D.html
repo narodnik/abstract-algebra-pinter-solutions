@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20130105 - Exercises 1-3
+  Modified:	20130106 - Exercise 4
+		20130126 - Exercises 5-7
+		20130224 - Replaced "o" with charent 8728 for composition
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=1267;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter06D","20180608061721","http://web.archive.org/","web","/_static/",
+	      "1528438641");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 6, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180608061721im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180608061721cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.Generic
+    {border-style: solid;
+     border-width: thin;
+     border-color: gray black black gray;}
+    TABLE.Generic TD,
+    TABLE.Generic TH
+    {border-style: solid;
+     border-width: thin;
+     border-color: black gray gray black;
+     vertical-align: bottom;}
+  </style>
+
+  <link href="./Chapter06" rel="parent" rev="child">
+  <link href="Chapter06C" rel="prev" rev="next">
+  <link href="Chapter06E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Composite Functions</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <ol>
+    <li>
+      <p>
+	f:<span class="Set">R</span>&rarr;<span class="Set">R</span>,
+	defined by f(x) = sin(x).<br>
+	g:<span class="Set">R</span>&rarr;<span class="Set">R</span>,
+	defined by g(x) = e<sup>x</sup>.<br>
+	Find f&#8728;g and g&#8728;f.
+      </p>
+
+      <p>
+	[f&#8728;g](x) = sin(e<sup>x</sup>)<br>
+	[g&#8728;f](x) = e<sup>sin(x)</sup>
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:<span class="Set">A</span>&times;<span class="Set">B</span>&rarr;<span class="Set">B</span>&times;<span class="Set">A</span>, defined by f(x,y) = (y,x).<br>
+	g:<span class="Set">B</span>&times;<span class="Set">A</span>&rarr;<span class="Set">B</span>, defined by
+	g(y,x) = y.<br>
+	Find g&#8728;f.
+      </p>
+
+      <p>
+	[g&#8728;f](x,y) = y.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:(0,1)&rarr;<span class="Set">R</span>, defined by f(x) = 1/x.<br>
+	g:<span class="Set">R</span>&rarr;<span class="Set">R</span>, defined
+	by g(x) = ln(x).<br>
+	Find g&#8728;f and explain why f&#8728;g is undefined.
+      </p>
+
+      <p>
+	[g&#8728;f](x) = ln(1/x).
+      </p>
+
+      <p>
+	f&#8728;g is undefined because g is not defined on all of
+	<span class="Set">R</span>, and because its image includes values
+	not in the range of f.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	f:([a-z]*)&rarr;[a-z]*, defined by spelling each word
+	backwards and exchanging all s's and t's.<br>
+	g:([a-z]*)&rarr;[a-z]*, defined by a's with o's, i's with u's,
+	e's with y's, and s's with t's.<br>
+	Describe f&#8728;g and g&#8728;f. Are they the same?
+      </p>
+
+      <p>
+	Both f&#8728;g and g&#8728;f replace "aeiouy" with "oyuaie", while
+	reversing the order of letters in each word. "S" and "t" remain
+	unchanged. Not only do f and g commute, but each is also its own
+	inverse.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">A</span> = {a, b, c, d} and let
+	f:<span class="Set">A</span>&rarr;<span class="Set">A</span> and
+	g:<span class="Set">A</span>&rarr;<span class="Set">A</span> be
+	defined as:
+      </p>
+
+      <table class="Matrix">
+	<tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+	<tr><td>a</td><td>c</td><td>a</td><td>c</td></tr>
+      </table><br>
+
+      <table class="Matrix">
+	<tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+	<tr><td>b</td><td>a</td><td>b</td><td>a</td></tr>
+      </table>
+
+      <p>
+	What is f&#8728;g?
+      </p>
+
+      <table class="Matrix">
+	<tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+	<tr><td>c</td><td>a</td><td>c</td><td>a</td></tr>
+      </table>
+
+      <p>
+	What is g&#8728;f?
+      </p>
+
+      <table class="Matrix">
+	<tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+	<tr><td>b</td><td>b</td><td>b</td><td>b</td></tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	With <span class="Set">G</span> a group and
+	a,b &isin;<span class="Set">G</span>, let
+	f:<span class="Set">G</span>&rarr;<span class="Set">G</span> be
+	f(x)=ax and
+	g:<span class="Set">G</span>&rarr;<span class="Set">G</span> be
+	g(x)=bx, find f&#8728;g and g&#8728;f.
+      </p>
+
+      <p>
+	[f&#8728;g](x) = abx and [g&#8728;f](x) = bax.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find the domain and range of each composite function from Exercises
+	1-6.
+      </p>
+
+      <table class="Generic">
+	<tr>
+	  <th rowspan="2">Ex.</th>
+	  <th colspan="2">f&#8728;g</th>
+	  <th colspan="2">g&#8728;f</th>
+	</tr>
+	<tr>
+	  <th>Domain</th>
+	  <th>Range</th>
+	  <th>Domain</th>
+	  <th>Range</th>
+	</tr>
+	<tr>
+	  <th>1</th>
+	  <td><span class="Set">R</span></td>
+	  <td>(-1,1)</td>
+	  <td><span class="Set">R</span></td>
+	  <td>(1/e,e)</td>
+	</tr>
+	<tr>
+	  <th>2</th>
+	  <td>n/a</td>
+	  <td>n/a</td>
+	  <td><span class="Set">A</span>&times;<span class="Set">B</span></td>
+	  <td><span class="Set">B</span></td>
+	</tr>
+	<tr>
+	  <th>3</th>
+	  <td>n/a</td>
+	  <td>n/a</td>
+	  <td>(0,1)</td>
+	  <td>(0,&infin;)</td>
+	</tr>
+	<tr>
+	  <th>4</th>
+	  <td>[a-z]*</td>
+	  <td>[a-z]*</td>
+	  <td>[a-z]*</td>
+	  <td>[a-z]*</td>
+	</tr>
+	<tr>
+	  <th>5</th>
+	  <td>{a, b, c, d}</td>
+	  <td>{a, c}</td>
+	  <td>{a, b, c, d}</td>
+	  <td>{b}</td>
+	</tr>
+	<tr>
+	  <th>6</th>
+	  <td><span class="Set">G</span></td>
+	  <td><span class="Set">G</span></td>
+	  <td><span class="Set">G</span></td>
+	  <td><span class="Set">G</span></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter06">Chapter 6</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180608061721/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180608061721/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180608061721/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180608061721im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180608061721/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180608061721im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2013 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:17:21 Jun 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:57 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 409.465 (3)
+  PetaboxLoader3.resolve: 71.567
+  exclusion.robots: 0.188
+  PetaboxLoader3.datanode: 1063.28 (4)
+  exclusion.robots.policy: 0.174
+  RedisCDXSource: 20.425
+  CDXLines.iter: 24.771 (3)
+  load_resource: 795.1
+  esindex: 0.012
+  captures_list: 459.437
+-->

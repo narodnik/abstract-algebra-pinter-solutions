@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140911 - Exercise 1
+  Modified:	20140912 - Exercise 2
+		20140913 - Exercises 3-6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app103.us.archive.org';v.server_ms=550;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter11F","20180503063649","http://web.archive.org/","web","/_static/",
+	      "1525329409");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 11, Problem F
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180503063649im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180503063649cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    TABLE.Itemizing TH:first-child,
+    TABLE.Itemizing TD:first-child
+    {text-align: right;}
+    TABLE.Itemizing TH + TH {text-align: left;}
+    TABLE.Itemizing TD {vertical-align: top;}
+  </style>
+
+  <link href="Chapter11" rel="parent" rev="child">
+  <link href="Chapter11E" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem F &mdash; kth Roots of Elements in a Cyclic Group</h1>
+
+<div class="Section Problem" id="ProblemF">
+
+  <p>
+    Let &lang;a&rang; be a cyclic group of order n.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Let ord(a) = 10. For what integers k (0&le;k&le;12) does a have a
+	k-th root? For what integers k (0&le;k&le;12) does a<sup>6</sup> have
+	a k-th root?
+      </p>
+
+      <table class="Itemizing">
+	<tr>
+	  <th>k</th>
+	  <th>Discussion</th>
+	</tr>
+
+	<tr>
+	  <td>0</td>
+	  <td>For all p, p<sup>0</sup>=e. Since ord(e)=1, a&ne;e. Therefore,
+	      a does not have a zeroth root.</td>
+	</tr>
+
+	<tr>
+	  <td>1</td>
+	  <td>a<sup>1</sup>=a, so a has a first root.</td>
+	</tr>
+
+	<tr>
+	  <td>2</td>
+	  <td>In order for a to have a k-th root, k must divide
+	      p&lowast;ord(a)+1. Since p&lowast;ord(a)+1 is odd for all p, a
+	      does not have a square root.</td>
+	</tr>
+
+	<tr>
+	  <td>3</td>
+	  <td>(a<sup>7</sup>)<sup>3</sup> = a<sup>21</sup> = a, so a has
+	      a cube root.</td>
+	</tr>
+
+	<tr>
+	  <td>4</td>
+	  <td>Since a does not have a square root, it cannot have a fourth
+	      root.</td>
+	</tr>
+
+	<tr>
+	  <td>5</td>
+	  <td>In order for a to have a k-th root, k must divide
+	      p&lowast;ord(a)+1. Since p&lowast;ord(a)+1 is never divisible
+	      by five for any p, a does not have a fifth root.</td>
+	</tr>
+
+	<tr>
+	  <td>6</td>
+	  <td>Since a does not have a square root, it cannot have a sixth
+	      root.</td>
+	</tr>
+
+	<tr>
+	  <td>7</td>
+	  <td>(a<sup>3</sup>)<sup>7</sup> = a<sup>21</sup> = a, so a has
+	      a seventh root.</td>
+	</tr>
+
+	<tr>
+	  <td>8</td>
+	  <td>Since a does not have a square root, it cannot have a eighth
+	      root.</td>
+	</tr>
+
+	<tr>
+	  <td>9</td>
+	  <td>(a<sup>9</sup>)<sup>9</sup> = a<sup>81</sup> = a, so a has
+	      a ninth root.</td>
+	</tr>
+
+	<tr>
+	  <td>10</td>
+	  <td>Since a does not have a square root, it cannot have a tenth
+	      root.</td>
+	</tr>
+
+	<tr>
+	  <td>11</td>
+	  <td>a<sup>11</sup> = a, so a has an eleventh root.</td>
+	</tr>
+
+	<tr>
+	  <td>12</td>
+	  <td>Since a does not have a square root, it cannot have a twelfth
+	      root.</td>
+	</tr>
+      </table>
+
+      <p>
+	(a<sup>6</sup>)<sup>5</sup> = a<sup>30</sup> = e, so ord(a<sup>6</sup>)
+	= 5.
+      </p>
+
+      <table class="Itemizing">
+	<tr>
+	  <th>k</th>
+	  <th>Discussion</th>
+	</tr>
+
+	<tr>
+	  <td>0</td>
+	  <td>For all p, p<sup>0</sup>=e. Since ord(e)=1, a<sup>6</sup>&ne;e.
+	      Therefore, a<sup>6</sup> does not have a zeroth root.</td>
+	</tr>
+
+	<tr>
+	  <td>1</td>
+	  <td>(a<sup>6</sup>)<sup>1</sup> = a<sup>6</sup>, so a<sup>6</sup>
+	      has a first root.</td>
+	</tr>
+
+	<tr>
+	  <td>2</td>
+	  <td>(a<sup>3</sup>)<sup>2</sup> = a<sup>6</sup>, so a<sup>6</sup>
+	      has a square root.</td>
+	</tr>
+
+	<tr>
+	  <td>3</td>
+	  <td>(a<sup>2</sup>)<sup>3</sup> = a<sup>6</sup>, so a<sup>6</sup>
+	      has a cube root.</td>
+	</tr>
+
+	<tr>
+	  <td>4</td>
+	  <td>(a<sup>4</sup>)<sup>4</sup> = a<sup>16</sup> =
+	      a<sup>10</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a fourth root.</td>
+	</tr>
+
+	<tr>
+	  <td>5</td>
+	  <td>In order for a<sup>6</sup> to have a k-th root, k must divide
+	      p&lowast;ord(a)+6. Since p&lowast;ord(a)+6 is never divisible
+	      by five for any p, a<sup>6</sup> does not have a fifth root.</td>
+	</tr>
+
+	<tr>
+	  <td>6</td>
+	  <td>a<sup>6</sup> = a<sup>6</sup>, so a<sup>6</sup> has a sixth
+	      root.</td>
+	</tr>
+
+	<tr>
+	  <td>7</td>
+	  <td>(a<sup>8</sup>)<sup>7</sup> = a<sup>56</sup> =
+	      a<sup>50</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a seventh root.</td>
+	</tr>
+
+	<tr>
+	  <td>8</td>
+	  <td>(a<sup>2</sup>)<sup>8</sup> = a<sup>16</sup> =
+	      a<sup>10</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a eighth root.</td>
+	</tr>
+
+	<tr>
+	  <td>9</td>
+	  <td>(a<sup>4</sup>)<sup>9</sup> = a<sup>36</sup> =
+	      a<sup>30</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a ninth root.</td>
+	</tr>
+
+	<tr>
+	  <td>10</td>
+	  <td>In order for a<sup>6</sup> to have a k-th root, k must divide
+	      p&lowast;ord(a)+6. Since p&lowast;ord(a)+6 is never divisible
+	      by ten for any p, a<sup>6</sup> does not have a tenth root.</td>
+	</tr>
+
+	<tr>
+	  <td>11</td>
+	  <td>(a<sup>6</sup>)<sup>11</sup> = a<sup>66</sup> =
+	      a<sup>60</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a eleventh root.</td>
+	</tr>
+
+	<tr>
+	  <td>12</td>
+	  <td>(a<sup>3</sup>)<sup>12</sup> = a<sup>36</sup> =
+	      a<sup>30</sup>a<sup>6</sup> = e&lowast;a<sup>6</sup> =
+	      a<sup>6</sup>, so a<sup>6</sup> has a twelfth root.</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	Prove that if m is a multiple of gcd(k,n), a<sup>m</sup> has a k-th
+	root in &lang;a&rang;.
+      </p>
+
+      <p>
+	Since n = ord(a), a<sup>np</sup> = (a<sup>n</sup>)<sup>p</sup> =
+	e<sup>p</sup> = e. Therefore, a<sup>np+m</sup> = a<sup>m</sup>.
+      </p>
+
+      <p>
+	If (np+m)/k is an integer, then (a<sup>(np+m)/k</sup>)<sup>k</sup> =
+	a<sup>np+m</sup> = a<sup>m</sup>, which makes a<sup>(np+m)/k</sup> a
+	k-th root of a<sup>m</sup>.
+      </p>
+
+      <p>
+	Let (np+m)/k = q. Then np+m = qk, or np-kq = m. Since m was specified
+	to be a multiple of gcd(k,n), it can be expressed as a linear
+	combination of k and n, which means that q is an integer. Since
+	q = (np+m)/k, a<sup>q</sup> is a k-th root of a<sup>m</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that if a<sup>m</sup> has a k-th root in &lang;a&rang;, m is a
+	multiple of gcd(k,n).
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Is it valid to derive xk&nbsp;=&nbsp;np+m from
+	a<sup>xk</sup>&nbsp;=&nbsp;a<sup>np+m</sup>?
+      </p>
+      </div>
+
+      <p>
+	Let a<sup>x</sup> be the k-th root of a<sup>m</sup>. Then,
+	(a<sup>x</sup>)<sup>k</sup> = a<sup>m</sup> = e&lowast;a<sup>m</sup> =
+	e<sup>p</sup>a<sup>m</sup> = (a<sup>n</sup>)<sup>p</sup>a<sup>m</sup> =
+	a<sup>np+m</sup> for some p.
+      </p>
+
+      <p>
+	Then xk = np+m, or m = xk-np. Therefore, m can be expressed as a linear
+	combination of n and k. A simple fact of number theory shows that this
+	means m must be a multiple of gcd(k,n).
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that a has a k-th root in &lang;a&rang; iff k and n are
+	relatively prime.
+      </p>
+
+      <p>
+	Remembering that a = a<sup>1</sup>, we see that (by the two previous
+	exercises) a<sup>1</sup> has a k-th root in &lang;a&rang; iff 1 is a
+	multiple of gcd(k,n). This is only true when gcd(k,n) = 1; in other
+	words, when k and n are relatively prime.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let p be a prime number. Prove that:
+      </p>
+
+      <ol>
+	<li>
+	  <p>
+	    If n is not a multiple of p, then every element in &lang;a&rang;
+	    has a p-th root.
+	  </p>
+	  <p>
+	    If p is prime and n is not a multiple of p, then gcd(n,p) = 1, and
+	    every positive integer m is a multiple of gcd(n,p). Therefore, by
+	    Exercises 2 and 3, a<sup>m</sup> has a p-th root.
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    If n is a multiple of p, and a<sup>m</sup> has a p-th root, then
+	    m is a multiple of p.
+	  </p>
+	  <p>
+	    For a<sup>m</sup> to have a p-th root, m must be a multiple of
+	    gcd(p,n). If n is a multiple of a prime p, then gcd(n,p) = p.
+	    Therefore, m must be a multiple of p.
+	  </p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Prove that the set of all elements of &lang;a&rang; having a k-th
+	root is a subgroup of &lang;a&rang;. Explain why this subgroup is
+	cyclic, say &lang;a<sup>m</sup>&rang;. What is the value of m?
+      </p>
+
+      <p>
+	An element of &lang;a&rang; has a k-th root is of the form
+	a<sup>q&lowast;gcd(n,k)</sup>. Furthermore, every element of this
+	form has a k-th root.
+      </p>
+
+      <p>
+	Let a<sup>i&lowast;gcd(n,k)</sup> and a<sup>j&lowast;gcd(n,k)</sup>
+	be two such elements. They may also be written as
+	(a<sup>gcd(n,k)</sup>)<sup>i</sup> and
+	(a<sup>gcd(n,k)</sup>)<sup>j</sup>. Their product is and
+	(a<sup>gcd(n,k)</sup>)<sup>i</sup>(a<sup>gcd(n,k)</sup>)<sup>j</sup> =
+	(a<sup>gcd(n,k)</sup>)<sup>(i+j)</sup> =
+	a<sup>(i+j)&lowast;gcd(n,k)</sup>. Therefore, this set is closed under
+	multiplication.
+      </p>
+
+      <p>
+	For a<sup>i&lowast;gcd(n,k)</sup> in this set,
+	a<sup>i&lowast;gcd(n,k)</sup>a<sup>(-i)&lowast;gcd(n,k)</sup> =
+	a<sup>(i+(-i))&lowast;gcd(n,k)</sup> =
+	a<sup>0&lowast;gcd(n,k)</sup> = a<sup>0</sup> = e. Therefore, this set
+	is closed under multiplication.
+      </p>
+
+      <p>
+	Since this set is closed under multiplication and inversion, it is a
+	subgroup.
+      </p>
+
+      <p>
+	Since all members of this set are of the form
+	a<sup>q&lowast;gcd(n,k)</sup>, it is a cyclic group with generator
+	a<sup>gcd(n,k)</sup>.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemF -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter11">Chapter 11</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180503063649/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180503063649/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180503063649/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180503063649im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180503063649/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180503063649im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:36:49 May 03, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:05:26 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 343.108 (3)
+  exclusion.robots.policy: 0.185
+  esindex: 0.014
+  captures_list: 390.667
+  RedisCDXSource: 19.508
+  exclusion.robots: 0.202
+  PetaboxLoader3.resolve: 26.877
+  PetaboxLoader3.datanode: 421.117 (4)
+  CDXLines.iter: 23.417 (3)
+  load_resource: 143.828
+-->

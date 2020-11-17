@@ -1,0 +1,789 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20141014 - Started
+  Modified:	20141015 - Exercises 1-3
+		20141016 - Exercise 4
+		20141017 - Exercises 5-7
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app13.us.archive.org';v.server_ms=693;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter13H","20180423095715","http://web.archive.org/","web","/_static/",
+	      "1524477435");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 13, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180423095715im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180423095715cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="Chapter13" rel="parent" rev="child">
+  <link href="Chapter13G" rel="prev" rev="next">
+  <link href="Chapter13I" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem H &mdash; Survey of All Eight-Element Groups</h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+    Let <span class="Set">G</span> be any group of order 8. If
+    <span class="Set">G</span> has an element of order 8, then
+    <span class="Set">G</span> &#8792; <span class="Set">Z<sub>8</sub></span>.
+    We will assume that <span class="Set">G</span> has no elements of order 8,
+    hence all elements &ne;e have order 2 or 4.
+  </p>
+
+  <p>
+    In exercises 2-7, assume &exist; a &isin; <span class="Set">G</span> such
+    that ord(a) = 4. Let <span class="Set">H</span> = &lang;a&rang; =
+    {e, a, a<sup>2</sup>, a<sup>3</sup>}, and let b &notin;
+    <span class="Set">H</span>.
+  </p>
+
+  <ol>
+    <li id="Ex01">
+      <p>
+	If every x &isin; <span class="Set">G</span> (x &ne; e) has order 2,
+	let a, b, c be three such elements. Prove that
+	<span class="Set">G</span> = {e, a, b, c, ab, ac, bc, abc} and conclude
+	that <span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>.
+      </p>
+
+      <p>
+	<span class="Case">Lemma</span>
+	Any group having only elements with order under 3 is Abelian.
+	First, we note that in such a group, every element is its own inverse.
+	Then, selecting x and y from such a group, xy = (xy)<sup>-1</sup> =
+	y<sup>-1</sup>x<sup>-1</sup> = yx.
+      </p>
+
+      <p>
+	Now, we look at possible products in <span class="Set">G</span>.
+	Pre-multiplying each element of {e, a, b, c, ab, ac, bc, abc} gives
+	{ae, aa, ab, ac, aab, aac, abc, aabc}. Since each element is its own
+	inverse, this is {a, e, ab, ac, b, c, abc, bc}, which is the same
+	set. Post-multiplying each element of {e, a, b, c, ab, ac, bc, abc} by
+	a gives the same result, since this group is Abelian (by the lemma).
+      </p>
+
+      <p>
+	Multiplying each element of {e, a, b, c, ab, ac, bc, abc} by b gives
+	{be, ba, bb, bc, bab, bac, bbc, babc}. Applying commutativity and the
+	fact that each element is its own inverse gives {b, ab, e, bc, a, abc,
+	c, ac}, which is the same set.
+      </p>
+
+      <p>
+	Multiplying each element of {e, a, b, c, ab, ac, bc, abc} by c gives
+	{ce, ca, cb, cc, cab, cac, cbc, cabc}. Applying commutativity and the
+	fact that each element is its own inverse gives {c, ac, bc, e, abc, a,
+	b, ab}, which is the same set.
+      </p>
+
+      <p>
+	Therefore, no products other than those listed are possible, and
+	<span class="Set">G</span> = {e, a, b, c, ab, ac, bc, abc}. As shown in
+	<a href="Chapter09F#Ex04">Chapter 9, Problem F, Exercise 4</a>, this
+	group is isomorphic to <span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Assume that there is in <span class="Set">H</span>b (see introduction)
+	an element of order 2. (Let b be this element.) If ba =
+	a<sup>2</sup>b, prove that b<sup>2</sup>a =
+	a<sup>4</sup>b<sup>2</sup>, hence a = a<sup>4</sup>, which is
+	impossible. Conclude that either ba = ab or ba = a<sup>3</sup>b.
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ba</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>assumption</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>ba<sup>2</sup>b</td>
+	  <td>pre-multiply both sides by b</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>(ba)(ab)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>(a<sup>2</sup>b)(ab)</td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>a<sup>2</sup>(ba)b</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>a<sup>2</sup>(a<sup>2</sup>b)b</td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>(a<sup>2</sup>a<sup>2</sup>)bb</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup>a</td>
+	  <td>a<sup>4</sup>b<sup>2</sup></td>
+	  <td>simplify</td>
+	</tr>
+	<tr>
+	  <td>ea</td>
+	  <td>a<sup>4</sup>e</td>
+	  <td>ord(b) = 2</td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>a<sup>4</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td>a<sup>-1</sup>a</td>
+	  <td>a<sup>-1</sup>a<sup>4</sup></td>
+	  <td>pre-multiply both sides by a<sup>-1</sup></td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>ea<sup>3</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>a<sup>3</sup></td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	The assumption that ba = a<sup>2</sup>b leads to the result that
+	a<sup>3</sup> = e. However, this is not true, because 3 does not
+	divide |<span class="Set">G</span>| = 8. (For that matter, it was
+	stated that ord(a) = 4.)
+      </p>
+
+      <p>
+	Since ord(a) = 4, possible values for ba are ab, a<sup>2</sup>b,
+	a<sup>3</sup>b, eb. We have just shown that ba &ne; a<sup>2</sup>b.
+	It cannot be true that ba = b, because that would imply a = e. Since
+	ord(a) = 4, this cannot be true, either.
+      </p>
+
+      <p>
+	Thus the only possible values of ba are ab or a<sup>3</sup>b.
+      </p>
+    </li>
+
+    <li id="Ex03">
+      <p>
+	Continuing from Exercise 2 with ord(b) = 2, prove that ba = ab
+	implies <span class="Set">G</span> &#8792;
+	<span class="Set">Z<sub>4</sub></span> &times;
+	<span class="Set">Z<sub>2</sub></span>.
+      </p>
+
+      <p>
+	The assumption that ba = ab implies that b commutes with all powers
+	of a, as shown below:
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>ba</td>
+	  <td>ab</td>
+	  <td>assumption</td>
+	</tr>
+	<tr>
+	  <td>baa</td>
+	  <td>aba</td>
+	  <td>post-multiply both sides by a</td>
+	</tr>
+	<tr>
+	  <td>baa</td>
+	  <td>aab</td>
+	  <td>ba = ab</td>
+	</tr>
+	<tr>
+	  <td>baaa</td>
+	  <td>aaba</td>
+	  <td>post-multiply both sides by a</td>
+	</tr>
+	<tr>
+	  <td>baaa</td>
+	  <td>aaab</td>
+	  <td>ba = ab</td>
+	</tr>
+      </table>
+
+      <p>
+	This being the case, we have the following isomorphism:
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th>
+	    <span class="Set">Z<sub>4</sub></span> &times;
+	    <span class="Set">Z<sub>2</sub></span>
+	  </th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>(0,0)</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>(1,0)</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>(2,0)</td>
+	  <td>a<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>(3,0)</td>
+	  <td>a<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>(0,1)</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>(1,1)</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <td>(2,1)</td>
+	  <td>a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td>(3,1)</td>
+	  <td>a<sup>3</sup>b</td>
+	</tr>
+      </table>
+    </li>
+
+    <li id="Ex04">
+      <p>
+	Continuing from Exercise 2 with ord(b) = 2, prove that ba =
+	a<sup>3</sup>b implies <span class="Set">G</span> &#8792;
+	<a href="Chapter05F#Ex02"><span class="Set">D<sub>4</sub></span></a>.
+      </p>
+
+      <p>
+	The reference for <span class="Set">D<sub>4</sub></span> will be
+	as it was shown in <a href="Chapter05F#Ex02">Chapter 5, Problem F,
+	Exercise 2</a>. This is unfortunately written differently, with a
+	being used to represent the order 2 element, and b representing the
+	order 4 element. Additionally, that exercise generally has the order
+	2 element written before the order 4 element.
+      </p>
+
+      <p>
+	However, once one adjusts for the differences in notation, the
+	<span class="Set">G</span> and <span class="Set">D<sub>4</sub></span>
+	have the same generating equations:
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">D<sub>4</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>a<sup>2</sup> = e</td>
+	  <td>b<sup>2</sup> = e</td>
+	</tr>
+	<tr>
+	  <td>b<sup>4</sup> = e</td>
+	  <td>a<sup>4</sup> = e</td>
+	</tr>
+	<tr>
+	  <td>ba = ab<sup>3</sup></td>
+	  <td>ba = a<sup>3</sup>b</td>
+	</tr>
+      </table>
+
+      <p>
+	The following table expressing the isomorphsim must be read very
+	carefully to prevent confusion.
+      </p>
+
+      <table class="Isomorphism">
+	<tr>
+	  <th><span class="Set">D<sub>4</sub></span></th>
+	  <th><span class="Set">G</span></th>
+	</tr>
+	<tr>
+	  <td>e</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <td>b</td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <td>b<sup>2</sup></td>
+	  <td>a<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td>b<sup>3</sup></td>
+	  <td>a<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <td>a</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <td>ab</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <td>ab<sup>2</sup></td>
+	  <td>a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td>ab<sup>3</sup></td>
+	  <td>a<sup>3</sup>b</td>
+	</tr>
+      </table>
+    </li>
+
+    <li>
+      <p>
+	Contrary to Exercise 2, assume that there is no element of order 2
+	in <span class="Set">H</span>b.
+	Prove that b<sup>2</sup> = a<sup>2</sup>.
+      </p>
+
+      <p>
+	The only possible orders of elements are 1 (only for the identity),
+	2, and 4. By assumption, there are no elements of order 2
+	in <span class="Set">H</span>b. Therefore, all of its elements are
+	of order 4.
+      </p>
+
+      <p>
+	Squaring an element of order 4 yields an element of order 2. Since
+	there are no elements of order 2 in <span class="Set">H</span>b,
+	it must be true that b<sup>2</sup> &isin; <span class="Set">H</span>.
+	Since ord(e) = 1, ord(a) = 4, ord(a<sup>2</sup>) = 2, and
+	ord(a<sup>3</sup>) = 1, we must have b<sup>2</sup> = a<sup>2</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Continuing from 5, prove that if ba = ab then
+	(a<sup>3</sup>b)<sup>2</sup> = e, contradicting the assumption that
+	ord(a<sup>3</sup>b) = 4.
+	Follow by proving that if ba =
+	a<sup>2</sup>b then a = b<sup>4</sup>a = e, which is impossible.
+	Conclude that ba = a<sup>3</sup>b.
+      </p>
+
+      <p>
+	<span class="Case">ba = ab</span>
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>(a<sup>3</sup>b)<sup>2</sup></td>
+	  <td>a<sup>3</sup>ba<sup>3</sup>b</td>
+	  <td>definition of squaring</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>3</sup>a<sup>3</sup>bb</td>
+	  <td>a and b commute</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>4</sup>a<sup>2</sup>b<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>4</sup>b<sup>2</sup>b<sup>2</sup></td>
+	  <td>a<sup>2</sup> = b<sup>2</sup></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>2</sup>)<sup>2</sup>b<sup>4</sup></td>
+	  <td>powers of elements</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(e)<sup>2</sup>e</td>
+	  <td>ord(a) = 2, ord(b) = 4</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(e)<sup>2</sup>e</td>
+	  <td>ord(a) = 2, ord(b) = 4</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	This shows that (a<sup>3</sup>b)<sup>2</sup> = e, which means that
+	ord(a<sup>3</sup>b) = 2. Because a<sup>3</sup>b &isin;
+	<span class="Set">H</span>b, ord(a<sup>3</sup>b) = 4. Therefore, the
+	assumption that ba = ab is false.
+      </p>
+
+      <p>
+	<span class="Case">ba = a<sup>2</sup>b</span>
+      </p>
+
+      <table class="Derive">
+	<tr>
+	  <td>a</td>
+	  <td>ea</td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>4</sup>a</td>
+	  <td>ord(b) = 4</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>3</sup>(ba)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>3</sup>(a<sup>2</sup>b)</td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>(ba)ab</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>(a<sup>3</sup>b)ab</td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>a<sup>3</sup>(ba)b</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>a<sup>3</sup>(a<sup>3</sup>b)b</td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>a<sup>4</sup>a<sup>2</sup>b<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>ea<sup>2</sup>b<sup>2</sup></td>
+	  <td>ord(a) = 4</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b<sup>2</sup>a<sup>2</sup>b<sup>2</sup></td>
+	  <td>identity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b(ba)ab<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>b(a<sup>2</sup>b)ab<sup>2</sup></td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(ba)a(ba)b<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>2</sup>b)a(a<sup>2</sup>b)b<sup>2</sup></td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>2</sup>(ba)a<sup>2</sup>b<sup>3</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>2</sup>(a<sup>2</sup>b)a<sup>2</sup>b<sup>3</sup></td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>2</sup>a<sup>2</sup>)(ba)ab<sup>3</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>2</sup>b)ab<sup>3</sup></td>
+	  <td>ord(a) = 4; ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>2</sup>(ba)b<sup>3</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>a<sup>2</sup>(a<sup>2</sup>b)b<sup>3</sup></td>
+	  <td>ba = a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>2</sup>a<sup>2</sup>)(bb<sup>3</sup>)</td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(a<sup>4</sup>)(b<sup>4</sup>)</td>
+	  <td>powers of elements</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>ee</td>
+	  <td>ord(a) = ord(b) = 4</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>e</td>
+	  <td>identity</td>
+	</tr>
+      </table>
+
+      <p>
+	This shows that the assumption that ba = a<sup>2</sup>b leads to
+	a = e. Since ord(a) = 4, this assumption must be false.
+      </p>
+
+      <p>
+	Since we've eliminated the possibilities that ba = ab or ba =
+	ba = a<sup>2</sup>b, it must be true that if
+	<span class="Set">H</span>b has no elements with order 2, then
+	ba = a<sup>3</sup>b.
+      </p>
+    </li>
+
+    <li id="Ex07">
+      <p>
+	The equations a<sup>4</sup> = b<sup>4</sup> = e,
+	a<sup>2</sup> = b<sup>2</sup>, and ba = a<sup>3</sup>b completely
+	determine <span class="Set">G</span>. In this case, it is the
+	<dfn>quaternion group</dfn>, <span class="Set">Q</span>. Write the
+	Cayley table of <span class="Set">Q</span>.
+      </p>
+
+      <table class="Cayley">
+	<tr>
+	  <th></th>
+	  <th>e</th>
+	  <th>a</th>
+	  <th>a<sup>2</sup></th>
+	  <th>a<sup>3</sup></th>
+	  <th>b</th>
+	  <th>ab</th>
+	  <th>a<sup>2</sup>b</th>
+	  <th>a<sup>3</sup>b</th>
+	</tr>
+	<tr>
+	  <th>e</th>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>a<sup>2</sup></td>
+	  <td>a<sup>3</sup></td>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>a<sup>3</sup>b</td>
+	</tr>
+	<tr>
+	  <th>a</th>
+	  <td>a</td>
+	  <td>a<sup>2</sup></td>
+	  <td>a<sup>3</sup></td>
+	  <td>e</td>
+	  <td>ab</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>b</td>
+	</tr>
+	<tr>
+	  <th>a<sup>2</sup></th>
+	  <td>a<sup>2</sup></td>
+	  <td>a<sup>3</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>b</td>
+	  <td>ab</td>
+	</tr>
+	<tr>
+	  <th>a<sup>3</sup></th>
+	  <td>a<sup>3</sup></td>
+	  <td>e</td>
+	  <td>a</td>
+	  <td>a<sup>2</sup></td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>b</td>
+	  <td>ab</td>
+	  <td>a<sup>2</sup>b</td>
+	</tr>
+	<tr>
+	  <th>b</th>
+	  <td>b</td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>ab</td>
+	  <td>a<sup>2</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>a<sup>3</sup></td>
+	</tr>
+	<tr>
+	  <th>ab</th>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>a<sup>3</sup></td>
+	  <td>a<sup>2</sup></td>
+	  <td>a</td>
+	  <td>e</td>
+	</tr>
+	<tr>
+	  <th>a<sup>2</sup>b</th>
+	  <td>a<sup>2</sup>b</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a<sup>3</sup>b</td>
+	  <td>e</td>
+	  <td>a<sup>3</sup></td>
+	  <td>a<sup>2</sup></td>
+	  <td>a</td>
+	</tr>
+	<tr>
+	  <th>a<sup>3</sup>b</th>
+	  <td>a<sup>3</sup>b</td>
+	  <td>a<sup>2</sup>b</td>
+	  <td>ab</td>
+	  <td>b</td>
+	  <td>a</td>
+	  <td>e</td>
+	  <td>a<sup>3</sup></td>
+	  <td>a<sup>2</sup></td>
+	</tr>
+      </table>
+    </li>
+
+  </ol>
+
+  <p>
+    Therefore, the only groups of order 8 are:
+    <span class="Set">Z<sub>8</sub></span>,
+    <span class="Set">Z<sub>2</sub></span> &times;
+    <span class="Set">Z<sub>2</sub></span> &times;
+    <span class="Set">Z<sub>2</sub></span>,
+    <span class="Set">Z<sub>4</sub></span> &times;
+    <span class="Set">Z<sub>2</sub></span>,
+    <span class="Set">D<sub>4</sub></span>, and
+    <span class="Set">Q</span>.
+  </p>
+
+  <p>
+  </p>
+</div> <!-- ProblemH -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="Chapter13">Chapter 13</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180423095715/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180423095715/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180423095715/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180423095715im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180423095715/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180423095715im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 09:57:15 Apr 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:50 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 406.454 (3)
+  PetaboxLoader3.resolve: 155.32 (2)
+  exclusion.robots: 0.211
+  PetaboxLoader3.datanode: 381.906 (4)
+  exclusion.robots.policy: 0.197
+  RedisCDXSource: 7.417
+  CDXLines.iter: 23.65 (3)
+  load_resource: 219.704
+  esindex: 0.014
+  captures_list: 441.985
+-->

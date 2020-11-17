@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140528 - Exercises 1-4 and a start on 5
+  Modified:	20140529 - Finished exercise 5
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=239;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08H","20180225182733","http://web.archive.org/","web","/_static/",
+	      "1519583253");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem H
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180225182733im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180225182733cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08G" rel="prev" rev="next">
+
+</head>
+
+<body>
+
+  <h1 id="Top">
+    Problem H &mdash; Generators of <span class="Set">A<sub>n</sub></span>
+    and <span class="Set">S<sub>n</sub></span>
+  </h1>
+
+<div class="Section Problem" id="ProblemH">
+
+  <p>
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	Prove that the set <span class="Set">T</span> of all the transpositions
+	in <span class="Set">S<sub>n</sub></span> generates
+	<span class="Set">S<sub>n</sub></span>.
+      </p>
+
+      <p>
+	As shown in Theorem 1, "[e]very permutation is either the identity, a
+	single cycle, or a product of disjoint cycles." If we can show that
+	the transpositions in <span class="Set">S<sub>n</sub></span> generate
+	all of these, we are done.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Note that this is only true when n&ge;2. If n=1, then there are no
+	transpositions in <span class="Set">S<sub>n</sub></span>, even though
+	<span class="Set">S<sub>n</sub></span> contains one element (the
+	identity) and is a group.
+      </p>
+      <p>
+	The assumption that n&ge;2 will be used.
+      </p>
+      </div>
+
+      <p>
+	<span class="Case">Identity</span>
+	Let (ab) be any transposition in <span class="Set">S<sub>n</sub></span>.
+	The product (ab)(ab) is the identity. Therefore, the identity can be
+	generated.
+      </p>
+
+      <p>
+	<span class="Case">Single Cycle</span>
+	It was shown in the text that "[...] every cycle can be expressed as
+	a product of one or more transpositions." Therefore, any single cycle
+	can be generated.
+      </p>
+
+      <p>
+	<span class="Case">Product of Disjoint Cycles</span>
+	Let &pi; be any permutation in <span class="Set">S<sub>n</sub></span>
+	that is the product of disjoint cycles, say
+	&pi; = &alpha;<sub>1</sub> ... &alpha;<sub>p</sub>. Since each
+	&alpha;<sub>i</sub> can be expressed as a product of one or more
+	transpositions, &pi; can be expressed as the product of all of those
+	products.
+      </p>
+    </li>
+
+    <li id="Ex02">
+      <p>
+	Prove that the set <span class="Set">T<sub>1</sub></span> = {(12),
+	(13), ..., (1n)} generates <span class="Set">S<sub>n</sub></span>.
+      </p>
+
+      <p>
+	Let (xy) be any transposition in <span class="Set">S<sub>n</sub></span>
+	such that (xy)&notin; <span class="Set">T<sub>1</sub></span>.
+	(That is, x&ne;1&ne;y.)
+      </p>
+
+      <p>
+	(xy) = (1x)(1y)(1x). Since {(1x), (1y)} &sub;
+	<span class="Set">T<sub>1</sub></span>, (xy) can be generated from
+	<span class="Set">T<sub>1</sub></span>. Since the choice of x and y
+	was arbitrary, this shows that any transposition not in
+	<span class="Set">T<sub>1</sub></span> can be generated.
+      </p>
+
+      <p>
+	Therefore, we have <em>all</em> of the transpositions, and
+	<span class="Set">S<sub>n</sub></span> can be generated, as shown in
+	Exercise 1.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that every even permutation is a product of one or more cycles
+	of length 3. Conclude the set <span class="Set">U</span> of all cycles
+	of length 3 generates <span class="Set">A<sub>n</sub></span>.
+      </p>
+
+      <div class="SideBar">
+      <p>
+	Note that this is only true when n&ge;3. If n&lt;2, there are no
+	cycles of length 3. The assumption that n&ge;3 will be used.
+      </p>
+      </div>
+
+      <p>
+	Let &pi; be any even permutation. Express it as the product of
+	transpositions. Since &pi; is even, there is an even number of
+	transpositions. Group them in pairs, starting from the left.
+      </p>
+
+      <p>
+	For pair of transpositions, there are the following options: they are
+	the same transposition, they are overlapping transpositions (having
+	one element in common), or they are disjoint transpositions. Let's
+	look at each case individually.
+      </p>
+
+      <p>
+	<span class="Case">Same transposition</span>
+	If an adjacent pair of transpositions has two instances of the same
+	transposition, (xy)(xy), the product of this pair is the identity.
+	(abc)(abc)(abc) = e, so (xy)(xy) may replaced (abc)(abc)(abc), which is
+	the product of cycles of length three.
+      </p>
+
+      <p>
+	<span class="Case">Overlapping transpositions</span>
+	If an adjacent pair of transpositions has one element in common,
+	(xz)(xy) = (zx)(xy) = (xz)(yx) = (zx)(yx) = (xyz), so this pair may be
+	replaced by a cycle of length three.
+      </p>
+
+      <p>
+	<span class="Case">Disjoint transpositions</span>
+	If an adjacent pair of transpositions has no elements in common,
+	(ab)(cd) = (cba)(acd), so this pair may be replaced by the product of
+	cycles of length three.
+      </p>
+
+      <p>
+	Since each pair of transpositions may be replaced by the product of
+	one to three cycles of length three, &pi; may be expressed as the
+	product of one or more cycles of length three. Since &pi; was any
+	element of <span class="Set">A<sub>n</sub></span> may be expressed as
+	the product of members of <span class="Set">U</span>, and
+	<span class="Set">U</span> generates
+	<span class="Set">A<sub>n</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that the set <span class="Set">U<sub>1</sub></span> = {(123),
+	(124), ..., (12n)} generates <span class="Set">A<sub>n</sub></span>.
+      </p>
+
+      <p>
+	As shown in the hint, a three-cycle that does not contain 1 or 2 may be
+	expressed as (abc) = (1ca)(1ba).
+      </p>
+
+      <p>
+	As shown in the hint, a three-cycle that starts with 1 may be expressed
+	as (1ab) = (1b2)(12a)(12b). If a three-cycle has 1 in another position,
+	it may be expressed as (ab1) = (b1a) = (1ab), and still expressed as
+	(1b2)(12a)(12b).
+      </p>
+
+      <p>
+	This allows us to replace the (1ca) or the (1ba) in the first part
+	with the product of a cycle starting with 1 and ending with 2 and two
+	elements of <span class="Set">U<sub>1</sub></span>.
+      </p>
+
+      <p>
+	A three-cycle that starts with 2 and does not contain 1 may be
+	expressed as (2bc) = (1c2)(12b). Of course, (bc2) = (c2b) = (2bc).
+	This again gives us the product of a cycle that starts with 1 and ends
+	with 2 and an element of <span class="Set">U<sub>1</sub></span>.
+      </p>
+
+      <p>
+	As shown in the hint, a three-cycle that starts with 1 and ends with 2
+	may be expressed as (1b2) = (12b)<sup>2</sup>, which is the product
+	of one (repeated) element of <span class="Set">U<sub>1</sub></span>.
+      </p>
+
+      <p>
+	The identity may be expressed as e = (12a)<sup>3</sup>.
+      </p>
+
+      <p>
+	So, any three-cycle and the identity may be expressed as the product
+	of one or more members of <span class="Set">U<sub>1</sub></span>,
+	which means that <span class="Set">U<sub>1</sub></span> generates
+	<span class="Set">U</span>, which in turn generates
+	<span class="Set">A<sub>n</sub></span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Prove that the pair of cycles (12) and (12...n) generates
+	<span class="Set">S<sub>n</sub></span>.
+      </p>
+
+      <p>
+	As stated in the hint, (12...n)(12)(12...n)<sup>-1</sup> = (23).
+	Furthermore, (12...n)(i i+1)(12...n)<sup>-1</sup> = (i+1 i+2) when
+	i+1&le;n and (i+1 1) when i+1=n. These are true because
+	&pi;&alpha;&pi;<sup>-1</sup> is the cycle (&pi;(a<sub>1</sub>) ...
+	&pi;(a<sub>s</sub>)), as shown in <a href="Chapter08E#Ex01">Exercise 1
+	of Problem E</a> of this chapter.
+      </p>
+
+      <p>
+	This shows that the cycles (12) and (12...n) generate {(12), (23),
+	..., (n-1 n), (n1)}.
+      </p>
+
+      <p>
+	As stated in the hint, (12)(23)(12) = (13). More generally,
+	(1p)(pq)(1p) = (1q), as may be seen either from direct multiplication
+	or from realizing that (1p) = (1p)<sup>-1</sup> and applying the
+	result from <a href="Chapter08E#Ex01">Exercise 1 of Problem E</a>.
+      </p>
+
+      <p>
+	Between these two results, the cycles (12) and (12...n) generate
+	the set of transpositions <span class="Set">T<sub>1</sub></span> =
+	{(12), (13), ..., (1n)}. As shown in <a href="#Ex02">Exercise 2</a>,
+	<span class="Set">T<sub>1</sub></span> generates
+	<span class="Set">S<sub>n</sub></span>.
+      </p>
+
+      <p>
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemH -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180225182733/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180225182733/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180225182733/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180225182733im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180225182733/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180225182733im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 18:27:33 Feb 25, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:56 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 103.429
+  exclusion.robots: 0.151
+  exclusion.robots.policy: 0.137
+  RedisCDXSource: 7.74
+  esindex: 0.021
+  LoadShardBlock: 67.987 (3)
+  PetaboxLoader3.datanode: 115.696 (4)
+  CDXLines.iter: 22.326 (3)
+  load_resource: 127.346
+  PetaboxLoader3.resolve: 46.519
+-->

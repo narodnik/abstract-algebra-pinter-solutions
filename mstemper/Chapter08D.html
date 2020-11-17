@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	coelurosaur
+  Created:	20140421 - Exercises 1-3
+  Modified:	20140423 - Exercises 4, 5
+			   Simplified proof of Exercise 3
+		20140503 - Exercise 6
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=751;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter08D","20180628233737","http://web.archive.org/","web","/_static/",
+	      "1530229057");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 8, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180628233737im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180628233737cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter08" rel="parent" rev="child">
+  <link href="Chapter08C" rel="prev" rev="next">
+  <link href="Chapter08E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Disjoint Cycles</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    In each of the following, let &alpha; and &beta; be disjoint cycles, with
+    &alpha; = (a<sub>1</sub>a<sub>2</sub>...a<sub>s</sub>) and
+    &beta; = (b<sub>1</sub>b<sub>2</sub>...b<sub>r</sub>).
+  </p>
+
+  <p>
+    Prove exercises 1-3:
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	For every positive integer n, (&alpha;&beta;)<sup>n</sup> =
+	&alpha;<sup>n</sup>&beta;<sup>n</sup>.
+      </p>
+
+      <p>
+	Note that since &alpha; and &beta; are disjoint, they commute.
+      </p>
+
+      <p><span class="Ind">Base</span>
+	 (&alpha;&beta;)<sup>1</sup> = &alpha;&beta; =
+	 &alpha;<sup>1</sup>&beta;<sup>1</sup>.
+      </p>
+
+      <p><span class="Ind">Hypothesis</span>
+	 Assume that (&alpha;&beta;)<sup>k</sup> = 
+	 &alpha;<sup>k</sup>&beta;<sup>k</sup>.
+      </p>
+
+      <p><span class="Ind">Step</span>
+	 (&alpha;&beta;)<sup>k+1</sup> = 
+	 (&alpha;&beta;)<sup>k</sup>(&alpha;&beta;) =
+	 &alpha;<sup>k</sup>&beta;<sup>k</sup>&alpha;&beta;. Since &alpha;
+	 commutes with &beta;, it commutes with k &beta;s, which means that
+	 &alpha;<sup>k</sup>&beta;<sup>k</sup>&alpha;&beta; =
+	 &alpha;<sup>k</sup>&alpha;&beta;<sup>k</sup>&beta; =
+	 &alpha;<sup>k+1</sup>&beta;<sup>k+1</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If &alpha;&beta;=e then &alpha;=e=&beta;.
+      </p>
+
+      <p>
+	Since &alpha; and &beta; are disjoint cycles, &alpha; does not move any
+	of the "b"s. This means that if &beta; moves any "b"s, &alpha;&beta;
+	can not be e. Therefore &beta; must not move any "b"s and must be the
+	identity.
+      </p>
+
+      <p>
+	Since &alpha; and &beta; are disjoint cycles, &beta; does not move any
+	of the "a"s. This means that if &alpha; moves any "a"s, &alpha;&beta;
+	can not be e. Therefore &alpha; must not move any "a"s and must be the
+	identity.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If (&alpha;&beta;)<sup>t</sup>=e, then &alpha;<sup>t</sup>=e and
+	&beta;<sup>t</sup>=e.
+      </p>
+
+      <p>
+	As shown in Exercise 1, (&alpha;&beta;)<sup>t</sup> =
+	&alpha;<sup>t</sup>&beta;<sup>t</sup>.
+      </p>
+
+      <p>
+	Since &alpha; and &beta; are disjoint cycles, &alpha;<sup>t</sup>
+	and &beta;<sup>t</sup> are disjoint cycles. As shown in Exercise 2,
+	&alpha;<sup>t</sup>&beta;<sup>t</sup> = e means that
+	&alpha;<sup>t</sup> = e = &beta;<sup>t</sup>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Find a transposition &gamma; such that &alpha;&beta;&gamma; is a
+	cycle.
+      </p>
+
+      <p>
+	Let &gamma; = (a<sub>1</sub>b<sub>1</sub>). Then, &alpha;&beta;&gamma;
+	= (a<sub>1</sub>b<sub>2</sub> ...
+	b<sub>r</sub>b<sub>1</sub>a<sub>2</sub> ... a<sub>s</sub>), which is
+	a cycle.
+      </p>
+
+      <p>
+	Note that (a<sub>1</sub>a<sub>2</sub> ... a<sub>s</sub>) =
+	(a<sub>i+1</sub> ... a<sub>s</sub>a<sub>1</sub> ... a<sub>i</sub>).
+	Therefore, any element of &alpha; could be used instead of
+	a<sub>1</sub>.
+	Also, since (b<sub>1</sub>b<sub>2</sub> ... b<sub>r</sub>) =
+	(b<sub>j+1</sub> ... b<sub>r</sub>b<sub>1</sub> ... b<sub>j</sub>),
+	any element of &beta; could be used instead of b<sub>1</sub>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let &gamma; be the same transposition as in the preceeding exercise.
+	Show that &alpha;&gamma;&beta; and &gamma;&alpha;&beta; are cycles.
+      </p>
+
+      <p>
+	&alpha;&gamma;&beta; = (a<sub>1</sub>b<sub>1</sub> ...
+	b<sub>r</sub>a<sub>2</sub> ... a<sub>s</sub>), which is a cycle.
+	&gamma;&alpha;&beta; = (a<sub>1</sub>... a<sub>s</sub>b<sub>1</sub>
+	... b<sub>r</sub>), which is a cycle.
+      </p>
+    </li>
+
+    <li>
+
+      <div class="SideBar">
+      <p>
+	Why did he put this exercise (about non-disjoint cycles) in a
+	problem titled "Disjoint Cycles"?
+      </p>
+      </div>
+
+      <p>
+	Let &alpha; and &beta; be cycles of odd length (not disjoint). Prove
+	that if &alpha;<sup>2</sup>=&beta;<sup>2</sup> then &alpha;=&beta;.
+      </p>
+
+      <p>
+	Since |&alpha;| is odd, &alpha;<sup>2</sup> is a cycle, as shown in
+	<a href="Chapter08B#Ex04">Problem B, Exercise 4</a>. Let
+	&alpha;<sup>2</sup> = (a<sub>0</sub>a<sub>1</sub>...a<sub>n</sub>).
+      </p>
+
+      <p>
+	For &alpha;<sup>2</sup>(a<sub>i</sub>) to be equal to a<sub>j</sub>,
+	we must have &alpha;(&alpha;(a<sub>i</sub>)) = a<sub>j</sub>. In a
+	cycle, &alpha;(a<sub>i</sub>)=&alpha;(a<sub>i+1</sub>) when i&lt;n and
+	&alpha;(a<sub>i</sub>)=&alpha;(a<sub>0</sub>) when i=n. This means that
+	there is exactly one choice for &alpha;, and therefore &beta;=&alpha;.
+      </p>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter08">Chapter 8</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180628233737/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180628233737/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180628233737/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180628233737im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180628233737/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180628233737im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2014 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:37:37 Jun 28, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:02:37 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 275.967
+  exclusion.robots: 0.125
+  exclusion.robots.policy: 0.112
+  RedisCDXSource: 1.961
+  esindex: 0.01
+  LoadShardBlock: 245.803 (3)
+  PetaboxLoader3.datanode: 103.419 (4)
+  CDXLines.iter: 23.568 (3)
+  PetaboxLoader3.resolve: 536.572 (2)
+  load_resource: 463.5
+-->

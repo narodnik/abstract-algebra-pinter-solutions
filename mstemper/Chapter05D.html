@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<!--
+  Author:	Michael F. Stemper
+  Source:	Home PC
+  Created:	20121119 - Problems D1-4
+  Modified:	20121120 - Problems D5-6
+		20121120 - Split off problems into individual pages
+		20121123 - Exercises D7-8
+		20140516 - Fixed error in statement of Exercise 1
+		20140827 - Fixed typo in definition of center of a group
+-->
+
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app105.us.archive.org';v.server_ms=554;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=VsAvnOBw" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://www.math.wisc.edu:80/~mstemper2/Math/Pinter/Chapter05D","20180422101700","http://web.archive.org/","web","/_static/",
+	      "1524392220");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <title>
+    Math | Pinter, Chapter 5, Problem D
+  </title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <link href="/web/20180422101700im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/web/20180422101700cs_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/Local.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  </style>
+
+  <link href="./Chapter05" rel="parent" rev="child">
+  <link href="Chapter05C" rel="prev" rev="next">
+  <link href="Chapter05E" rel="next" rev="prev">
+
+</head>
+
+<body>
+
+  <h1 id="Top">Problem D &mdash; Subgroups of an Arbitrary Group</h1>
+
+<div class="Section Problem" id="ProblemD">
+
+  <p>
+    Let <span class="Set">G</span> be any group.
+  </p>
+
+  <ol>
+    <li>
+      <p>
+	If <span class="Set">H</span> and <span class="Set">K</span> are
+	subgroups of <span class="Set">G</span>, show that
+	<span class="Set">H</span>&cap;<span class="Set">K</span> is a
+	subgroup of <span class="Set">G</span>.
+      </p>
+      <p>Previously done <a href="/web/20180422101700/http://www.math.wisc.edu/~mstemper2/Math/MisGroup#SubGroups">here</a>.</p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> and <span class="Set">K</span> are
+	subgroups of <span class="Set">G</span>. Prove that if
+	<span class="Set">H</span>&sub;<span class="Set">K</span>, then
+	<span class="Set">H</span> is a subgroup of <span class="Set">K</span>.
+      </p>
+      <p>
+	Since <span class="Set">H</span> is a subgroup of
+	<span class="Set">G</span>, it is closed under multiplication and
+	inversion. This combined with the fact that it is a subset of
+	<span class="Set">K</span>, makes it a subgroup of
+	<span class="Set">K</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	The <dfn>center of a group</dfn> is the set of all its elements that
+	commute with all elements of the group. <span class="Set">C</span> =
+	{a&isin;<span class="Set">G</span>:
+	xa=ax &forall;x&isin;<span class="Set">G</span>}. Prove that
+	<span class="Set">C</span> is a subgroup of <span class="Set">G</span>.
+      </p>
+      <p>
+	Let p,q&isin;<span class="Set">C</span>. For any
+	x&isin;<span class="Set">G</span>, xp=px and xq=qx. Therefore,
+	pqx=pxq=xpq.
+	Since pq commutes with any element of <span class="Set">G</span>,
+	pq&isin;<span class="Set">C</span>, and <span class="Set">C</span> is
+	closed under multiplication.
+      </p>
+      <p>
+	Let p&isin;<span class="Set">C</span> and
+	x&isin;<span class="Set">G</span>.
+      </p>
+      <table class="Derive">
+	<tr>
+	  <td>pxp<sup>-1</sup></td>
+	  <td>xpp<sup>-1</sup></td>
+	  <td>px=xp</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>xe</td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>ex</td>
+	  <td>identity always commutes</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>pp<sup>-1</sup>x</td>
+	  <td>inverse</td>
+	</tr>
+      </table>
+      <p>
+	Since pxp<sup>-1</sup>=pp<sup>-1</sup>, x and p<sup>-1</sup>
+	commute, and p<sup>-1</sup>&isin;<span class="Set">C</span>.
+      </p>
+      <p>
+	Since <span class="Set">C</span> is closed under mulitplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">C'</span> =
+	{a&isin;<span class="Set">G</span>: (ax)<sup>2</sup>=(xa)<sup>2</sup>
+	&forall;x&isin;<span class="Set">G</span>}. Show that
+	<span class="Set">C'</span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	Let p,q&isin;<span class="Set">C'</span>. Then:
+      </p>
+      <table class="Derive">
+	<tr>
+	  <td>((pq)x)<sup>2</sup></td>
+	  <td>(p(qx))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>((qx)p)<sup>2</sup></td>
+	  <td>p&isin;<span class="Set">C'</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(q(xp))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>((xp)q)<sup>2</sup></td>
+	  <td>q&isin;<span class="Set">C'</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(x(pq))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+      <p>
+	Since ((pq)x)<sup>2</sup>=(x(pq))<sup>2</sup>,
+	pq&isin;<span class="Set">C'</span>, and <span class="Set">C'</span>
+	is closed under multiplication.
+      </p>
+      <p>
+	Let p&isin;<span class="Set">C</span> and
+	x&isin;<span class="Set">G</span>.
+      </p>
+      <table class="Derive">
+	<tr>
+	  <td>((px)p<sup>-1</sup>)<sup>2</sup></td>
+	  <td>(p(xp<sup>-1</sup>))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>((xp<sup>-1</sup>)p)<sup>2</sup></td>
+	  <td>p&isin;<span class="Set">C'</span></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(x(p<sup>-1</sup>p))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(xe)<sup>2</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(ex)<sup>2</sup></td>
+	  <td>identity always commutes</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>((p<sup>-1</sup>p)x)<sup>2</sup></td>
+	  <td>inverse</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>(p<sup>-1</sup>(px))<sup>2</sup></td>
+	  <td>associativity</td>
+	</tr>
+      </table>
+      <p>
+	Since ((px)p<sup>-1</sup>)<sup>2</sup>=(p<sup>-1</sup>(px))<sup>2</sup>,
+	p<sup>-1</sup>&isin;<span class="Set">C'</span>, and
+	<span class="Set">C'</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">C'</span> is closed under multiplication and
+	inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> be a <em>finite</em> group, and let
+	<span class="Set">S</span>&ne;&empty; be a subset of
+	<span class="Set">G</span> that is closed under multiplication.
+	Show that <span class="Set">S</span> is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	Since <span class="Set">S</span>&sube;<span class="Set">G</span>,
+	<span class="Set">S</span> is finite. Let
+	|<span class="Set">S</span>|=n. Pick an element
+	s&isin;<span class="Set">S</span>. Since <span class="Set">S</span> is
+	closed under multiplication, <span class="Set">T</span>={s<sup>1</sup>,
+	s<sup>2</sup>, ... s<sup>n</sup>,
+	s<sup>n+1</sup>}&sube;<span class="Set">S</span>. But, since
+	|<span class="Set">S</span>|=n, at least two elements of
+	<span class="Set">T</span> must be identical. Call two identical
+	elements of <span class="Set">T</span> s<sup>i</sup> and s<sup>j</sup>,
+	with j&gt;i. Then,
+	s<sup>i</sup>s<sup>j-i</sup>=s<sup>j</sup>=s<sup>i</sup>. Therefore,
+	s<sup>j-i</sup>=e&isin;<span class="Set">S</span>.
+      </p>
+      <p>
+	For any s&isin;<span class="Set">S</span>, &exist;k such that k&gt;0
+	and s<sup>k</sup>=e. (In the first part of this exercise, k=j-i).
+	s<sup>1</sup>s<sup>k-1</sup>=s<sup>k</sup>=e, so
+	s<sup>k-1</sup>=s<sup>-1</sup>, and <span class="Set">S</span> is
+	closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">S</span> is closed under addition and negation,
+	it is a subgroup of <span class="Set">G</span>. (Note that the only
+	use made of the fact that <span class="Set">G</span> is finite was to
+	establish that <span class="Set">S</span> is finite. Therefore, this
+	result applies to a finite subset of <em>any</em> group, whether the
+	group is finite or not.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+	If f:<span class="Set">G</span>&rarr;<span class="Set">G</span>,
+	a is a <dfn>period of f</dfn> if f(ax)=f(x)
+	&forall;:x&isin;<span class="Set">G</span>. Prove that
+	<span class="Set">B</span>={b&isin;<span class="Set">G</span>: b is a
+	period of <span class="Set">G</span>} is a subgroup of
+	<span class="Set">G</span>.
+      </p>
+      <p>
+	Let p,q&isin;<span class="Set">B</span>. Then, for any
+	x&isin;<span class="Set">G</span>, qx&isin;<span class="Set">G</span>.
+	Therefore, f((pq)x)=f(p(qx))=f(x), and
+	pq&isin;<span class="Set">G</span>. So, <span class="Set">G</span>
+	is closed under multiplication.
+      </p>
+      <p>
+	Let r&isin;<span class="Set">B</span>. Then, for any
+	x&isin;<span class="Set">G</span>, rx&isin;<span class="Set">G</span>.
+	f(r<sup>-1</sup>(rx))=f((r<sup>-1</sup>r)x)=f(ex)=f(x). Therefore,
+	r<sup>-1</sup>&isin;<span class="Set">B</span> and
+	<span class="Set">B</span> is closed under inversion.
+      </p>
+      <p>
+	Since <span class="Set">B</span> is closed under multiplication
+	and inversion, it is a subgroup of <span class="Set">G</span>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">H</span> be a subgroup of
+	<span class="Set">G</span> and let <span class="Set">K</span> =
+	{x&isin;<span class="Set">G</span>:
+	xax<sup>-1</sup>&isin;<span class="Set">H</span> iff
+	a&isin;<span class="Set">H</span>}. Prove:
+      </p>
+      <ol>
+	<li>
+	  <p><span class="Set">K</span> is a subgroup of
+	     <span class="Set">G</span>:</p>
+	  <p>
+	    Let p,q&isin;<span class="Set">K</span>&sube;<span class="Set">G</span>. Then, pap<sup>-1</sup>&isin;<span class="Set">G</span>, iff a&isin;<span class="Set">H</span>,
+	    as is qaq<sup>-1</sup>. To see if <span class="Set">K</span>
+	    is closed under multiplication, we check to see if
+	    pq&isin;<span class="Set">K</span>. Let qaq<sup>-1</sup> = b.
+	    (pq)a(pq)<sup>-1</sup> = pqaq<sup>-1</sup>p<sup>-1</sup> =
+	    pbp<sup>-1</sup> = c. Since p&isin;<span class="Set">K</span>,
+	    c&isin;<span class="Set">H</span> iff b is. Since
+	    q&isin;<span class="Set">K</span>,
+	    b&isin;<span class="Set">H</span> iff a is. So, pq satisfies the
+	    requirement for membership in <span class="Set">K</span>, and
+	    <span class="Set">K</span> is closed under multiplication.
+	  </p>
+	  <p>
+	    Let p&isin;<span class="Set">K</span>. Choose an element
+	    a&isin;<span class="Set">G</span>, and let
+	    b=pap<sup>-1</sup>. Then, b&isin;<span class="Set">H</span>
+	    iff a is. a = eae = (p<sup>-1</sup>p)a(p<sup>-1</sup>p) =
+	    p<sup>-1</sup>(pap<sup>-1</sup>)p = p<sup>-1</sup>bp, which is
+	    in <span class="Set">H</span> iff a is (since they are equal).
+	    Therefore, <span class="Set">K</span> is closed under inversion.
+	  </p>
+	  <p>
+	    Since <span class="Set">K</span> is closed under multiplication
+	    and inversion, it is a subgroup of <span class="Set">G</span>.
+	  </p>
+	</li>
+	<li>
+	  <p><span class="Set">H</span> is a subgroup of
+	     <span class="Set">K</span>:</p>
+	  <p>
+	    Let b&isin;<span class="Set">H</span>. Since
+	    <span class="Set">H</span> is a group, it is closed under
+	    inversion, and b<sup>-1</sup>&isin;<span class="Set">H</span>.
+	    Since a group is closed under multiplication,
+	    bab<sup>-1</sup>&isin;<span class="Set">H</span> whenever a is.
+	    Therefore, b&isin;<span class="Set">H</span>&rarr;b&isin;<span class="Set">H</span>, and
+	    <span class="Set">H</span>&sube;<span class="Set">K</span>.
+	  </p>
+	</li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+	Let <span class="Set">G</span> and <span class="Set">H</span> be
+	groups, and let
+	<span class="Set">G</span>&times;<span class="Set">H</span> be their
+	direct product. Prove:
+      </p>
+      <ol>
+	<li>
+	  <p><span class="Set">L</span>={(x,e):
+	     x&isin;<span class="Set">G</span>} is a subgroup of
+	     <span class="Set">G</span>&times;<span class="Set">H</span>:
+	  </p>
+	  <p>
+	    Let a,b&isin;<span class="Set">G</span>. Then, (a,e) and (b,e)
+	    are in <span class="Set">G</span>&times;<span class="Set">H</span>
+	    and in <span class="Set">L</span>.
+	    (a,e)(b,e)=(ab,e). Since ab&isin;<span class="Set">G</span> and
+	    e&isin;<span class="Set">H</span>,
+	    (ab,e)&isin;<span class="Set">L</span>, and
+	    <span class="Set">L</span> is closed under multiplication.
+	  </p>
+	  <p>
+	    Let c&isin;<span class="Set">G</span>. Then,
+	    (c,e)&isin;<span class="Set">L</span>. Since
+	    c<sup>-1</sup>&isin;<span class="Set">G</span>,
+	    (c<sup>-1</sup>,e)&isin;<span class="Set">L</span>, and
+	    (c,e)(c<sup>-1</sup>,e)=(e,e),
+	    <span class="Set">L</span> is closed under inversion.
+	  </p>
+	  <p>
+	    Because <span class="Set">L</span> is closed under
+	    multiplication and inversion, it is a subgroup.
+	  </p>
+	</li>
+	<li>
+	  <p><span class="Set">M</span>={(x,x):
+	     x&isin;<span class="Set">G</span>} is a subgroup of
+	     <span class="Set">G</span>&times;<span class="Set">G</span>:
+	  </p>
+	  <p>
+	    Let a,b&isin;<span class="Set">G</span>. Then, (a,a) and (b,b)
+	    are in <span class="Set">G</span>&times;<span class="Set">G</span>
+	    and in <span class="Set">M</span>.
+	    (a,a)(b,b)=(ab,ab). Since <span class="Set">G</span> is a group,
+	    it is closed under multiplication, and
+	    ab&isin;<span class="Set">G</span>. Therefore,
+	    (ab,ab)&isin;<span class="Set">M</span>, and
+	    <span class="Set">M</span> is closed under multiplication.
+	  </p>
+	  <p>
+	    Let c&isin;<span class="Set">G</span>. Then, (c,c)&isin;<span class="Set">M</span>. Since
+	    <span class="Set">G</span> is a group, it is closed under
+	    inversion. This means that c<sup>-1</sup>&isin;<span class="Set">G</span>, and that
+	    (c<sup>-1</sup>,c<sup>-1</sup>)&isin;<span class="Set">M</span>.
+	    Since (c,c)(c<sup>-1</sup>,c<sup>-1</sup>)=(e,e),
+	    <span class="Set">M</span> is closed under inversion
+	  </p>
+	  <p>
+	    Since <span class="Set">M</span> is closed under multiplication
+	    and inversion, it is a subgroup.
+	  </p>
+	</li>
+      </ol>
+    </li>
+
+  </ol>
+</div> <!-- ProblemD -->
+
+<div class="Section" id="Footer">
+<ul class="SiteNav">
+  <li><a href="./Chapter05">Chapter 5</a></li>
+  <li><a href="./">Pinter</a></li>
+  <li><a href="/web/20180422101700/http://www.math.wisc.edu/~mstemper2/Math/">Mathematics</a></li>
+  <li><a href="/web/20180422101700/http://www.math.wisc.edu/~mstemper2/">Mike Stemper</a></li>
+</ul>
+
+<p class="FINEPRINT">
+  <a href="http://web.archive.org/web/20180422101700/http://validator.w3.org/" class="HiddenLink"><img src="/web/20180422101700im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/valid-html401.gif" alt="Valid HTML 4.01!" width="88" height="31"></a>
+  <a href="http://web.archive.org/web/20180422101700/http://www.anybrowser.org/campaign/" class="HiddenLink"><img src="/web/20180422101700im_/http://www.math.wisc.edu/~mstemper2/Math/Pinter/AnyBrowser.gif" alt="Viewable with any browser" width="88" height="31"></a>
+  <cite>A Book of Abstract Algebra</cite> &copy; 1990 by Charles C. Pinter<br>
+  &copy; 2012 Michael F. Stemper
+
+</p>
+</div>
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:17:00 Apr 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:54:26 Nov 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  load_resource: 325.177
+  exclusion.robots: 0.216
+  PetaboxLoader3.datanode: 173.352 (4)
+  captures_list: 206.873
+  exclusion.robots.policy: 0.201
+  PetaboxLoader3.resolve: 79.29
+  CDXLines.iter: 21.334 (3)
+  LoadShardBlock: 165.315 (3)
+  esindex: 0.011
+  RedisCDXSource: 15.591
+-->
