@@ -1,3 +1,9 @@
+Moved to https://github.com/narodnik/math-notes
+
+This repo is no longer active
+
+---
+
 Use pandoc to view the md files.
 
 Here's my pandoc wrapper: https://github.com/narodnik/md2pdf/
